@@ -9,7 +9,7 @@ run
 -opt_mode Speed
 -opt_level 2
 -power NO
--uc "D:/Program/MYPRJ~1/HG_Sync/FPGA/VW/SIFT/source/TOP.XCF"
+-uc "D:/Program/MYPRJ~1/HG_Sync/FPGA/SIFT/source/TOP.XCF"
 -iuc NO
 -keep_hierarchy No
 -netlist_hierarchy As_Optimized

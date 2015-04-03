@@ -1,0 +1,141 @@
+`include"BMPIO.v"
+
+`include"ShiftReg_window.v"
+`include"downSamplePixMem.v"
+
+
+`include "MFixPoint_ToolBox/MFixPointBasic.v"
+`include "MFixPoint_ToolBox/MFixPointMAC.v"
+`include "MFixPoint_ToolBox/MFixPointTables.v"
+//This example shows how to load 2 image(imL.bmp & imR.bmp) and process the image
+//then output the result to an image (Mix.bmp)
+module test;
+integer file1_R,file1_L,file2W,file2W2;
+reg rst,reload,pixClk,wsrst;
+wire ReadEnd;
+wire [8*60-1:0]  bmp_header;
+wire [31:0] x,y;
+
+wire [23:0] OutPixel_R;
+wire [23:0] OutPixel_L;
+
+
+
+readBMPStream rS_R(file1_R,pixClk,rst,reload,bmp_header,ReadEnd,OutPixel_R,x,y);
+writeBMPStream wS(.fileHandle(file2W),.clk(pixClk),.rst(wsrst),.reload(0),.bmp_refheader(bmp_header),.writeEnd(writeEnd),.InPixel(mixPixel));
+
+wire [23:0]mixPixel={3{DoGOut[0][7:0]}};//mix the row data
+wire [23:0]mixPixel2={3{DoGOut[1][7:0]}};//mix the row data
+writeBMPStream wS2(.fileHandle(file2W2),.clk(pixClk),.rst(wsrst),.reload(0),.bmp_refheader(bmp_header),.writeEnd(writeEnd),.InPixel(mixPixel2));
+
+
+
+
+
+
+parameter dataW=9;
+parameter windowSize=7;
+parameter windowRadi=windowSize/2;
+
+parameter GausTableN=3;
+
+wire [windowSize*dataW-1:0]GaussT[0:GausTableN-1];
+
+genvar gi;
+generate
+	/*for(gi=0;gi<GausTableN;gi=gi+1)
+	begin:lgen
+		
+		MFP_gaussianTableArr #(.xstart(-windowRadi),.xend(windowRadi),
+				.sig(1.26**(gi)),.outputW(dataW),.scale(255.0/255)) gS(GaussT[gi]);
+	end*/
+	MFP_gaussianTableArr #(.xstart(-windowRadi),.xend(windowRadi),
+				.sig(1.26**(0)),.outputW(dataW),.scale(255.0/256)) gS0(GaussT[0]);
+	MFP_gaussianTableArr #(.xstart(-windowRadi),.xend(windowRadi),
+				.sig(1.26**(1)),.outputW(dataW),.scale(255.0/257)) gS1(GaussT[1]);
+	MFP_gaussianTableArr #(.xstart(-windowRadi),.xend(windowRadi),
+				.sig(1.26**(2)),.outputW(dataW),.scale(255.0/258)) gS2(GaussT[2]);
+endgenerate
+
+
+
+
+parameter downS=0;
+//^^^^^^^  change downS to get different down sample
+//(0:original, 1:down by 2 ,2:down by 4 .... ) 
+parameter downSBufferL=(200/(2**downS));
+wire ys=(downS==0)?1:(y[0+:(downS==0)?1:downS]==0);
+wire xs=(downS==0)?1:(x[0+:(downS==0)?1:downS]==0);
+//
+
+
+wire [dataW*windowSize-1:0]VerticleBuff;
+ShiftReg_window
+#(.pixel_depth(dataW),.frame_width(downSBufferL),.block_width(1),.block_height(windowSize)) SW_Ver
+(pixClk,ys&xs,{1'b0,OutPixel_R[8-1:0]},VerticleBuff);//padding 0 for signed bit
+
+
+parameter FilterOutW=dataW+2;
+wire signed[FilterOutW-1:0]FilterOut[0:GausTableN-1];
+wire signed[dataW-1:0]DoGOut[0:GausTableN-1-1];
+generate
+	for(gi=0;gi<GausTableN;gi=gi+1)
+	begin:FilterL
+		
+		wire [19-1:0]accSum1ZZZ,accSum2ZZZ;
+		wire [FilterOutW-1:0]MAC_Ver_rounded;
+		MFP_MAC_par #(.In1W(dataW),.ArrL(windowSize),.AccW_ROUND(FilterOutW))MACpV(VerticleBuff,GaussT[gi],accSum1ZZZ,MAC_Ver_rounded);
+
+		wire [FilterOutW*windowSize-1:0]HerizontalBuff;
+		ShiftReg_window
+		#(.pixel_depth(FilterOutW),.frame_width(downSBufferL),.block_width(windowSize),.block_height(1)) SW_Hor
+		(pixClk,ys&xs,MAC_Ver_rounded,HerizontalBuff);
+
+		MFP_MAC_par #(.In1W(FilterOutW),.In2W(dataW),.ArrL(windowSize),.AccW_ROUND(FilterOutW))MACpH(HerizontalBuff,GaussT[gi],accSum2ZZZ,FilterOut[gi]);
+
+		
+	end
+	
+	for(gi=0;gi<GausTableN-1;gi=gi+1)
+	begin:DogL
+		assign DoGOut[gi]=127+(FilterOut[gi+1]-FilterOut[gi]);
+		//assign DoGOut[gi]=FilterOut[gi]>>2;
+	end
+endgenerate
+
+
+
+
+always
+begin
+    #10 pixClk=~pixClk;
+end
+///////////////////////////Important don't change it, unless you know what are you doing.
+initial begin
+    //$dumpfile("wave.vcd");$dumpvars;
+    file1_R = $fopen("imR.bmp","rb");
+    file2W = $fopen("Mix.bmp","wb");
+    file2W2 = $fopen("Mix2.bmp","wb");
+    pixClk=0;
+    rst=1;
+    reload=1;
+    #50
+     rst=0;
+    reload=0;
+end
+always@(posedge pixClk)wsrst=rst;
+always@(writeEnd)if(writeEnd)
+    begin
+        $fclose(file1_R);
+       // $fclose(file1_L);
+        $fclose(file2W);
+        $fclose(file2W2);
+        $finish;
+    end
+
+///////////////////////////Important end
+
+
+
+
+endmodule

@@ -1,0 +1,56 @@
+[*]
+[*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
+[*] Fri Apr 03 05:53:24 2015
+[*]
+[dumpfile] "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\For Simulate\MFixPoint_ToolBox\wave.vcd"
+[dumpfile_mtime] "Fri Apr 03 05:53:11 2015"
+[dumpfile_size] 19086
+[savefile] "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\For Simulate\MFixPoint_ToolBox\_Save1.gtk"
+[timestart] 0
+[size] 944 1002
+[pos] -1 -1
+*-8.000000 214 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TB1.
+[sst_width] 197
+[signals_width] 190
+[sst_expanded] 1
+[sst_vpaned_height] 295
+@24
+TB1.Mul.Out_[14:0]
+@420
+TB1.Mul.In1[7:0]
+TB1.Mul.In2[7:0]
+TB1.Mul.Out[7:0]
+TB1.Mul.Out_[14:0]
+@200
+-
+@24
+TB1.Muluns.In1[7:0]
+TB1.Muluns.In2[7:0]
+TB1.Muluns.Out[7:0]
+@c00024
+TB1.Muluns.Out_[15:0]
+@28
+(0)TB1.Muluns.Out_[15:0]
+(1)TB1.Muluns.Out_[15:0]
+(2)TB1.Muluns.Out_[15:0]
+(3)TB1.Muluns.Out_[15:0]
+(4)TB1.Muluns.Out_[15:0]
+(5)TB1.Muluns.Out_[15:0]
+(6)TB1.Muluns.Out_[15:0]
+(7)TB1.Muluns.Out_[15:0]
+(8)TB1.Muluns.Out_[15:0]
+(9)TB1.Muluns.Out_[15:0]
+(10)TB1.Muluns.Out_[15:0]
+(11)TB1.Muluns.Out_[15:0]
+(12)TB1.Muluns.Out_[15:0]
+(13)TB1.Muluns.Out_[15:0]
+(14)TB1.Muluns.Out_[15:0]
+(15)TB1.Muluns.Out_[15:0]
+@1401200
+-group_end
+@24
+TB1.MAC.acc_sum_rounded[7:0]
+TB1.MACunS.acc_sum_rounded[7:0]
+[pattern_trace] 1
+[pattern_trace] 0

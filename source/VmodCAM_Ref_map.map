@@ -4,15 +4,15 @@ Xilinx Map Application Log File for Design 'VmodCAM_Ref'
 Design Information
 ------------------
 Command Line   : map -filter
-D:/Program/MYPRJ~1/HG_Sync/FPGA/VW/SIFT/source/iseconfig/filter.filter -intstyle
+D:/Program/MYPRJ~1/HG_Sync/FPGA/SIFT/source/iseconfig/filter.filter -intstyle
 ise -p xc6slx45-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -r 4 -global_opt
-area -equivalent_register_removal on -mt 2 -ir off -pr i -lc auto -power off -o
-VmodCAM_Ref_map.ncd VmodCAM_Ref.ngd VmodCAM_Ref.pcf 
+area -equivalent_register_removal on -mt 2 -detail -ir off -pr i -lc auto -power
+off -o VmodCAM_Ref_map.ncd VmodCAM_Ref.ngd VmodCAM_Ref.pcf 
 Target Device  : xc6slx45
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Apr 01 23:08:16 2015
+Mapped Date    : Fri Apr 03 10:49:16 2015
 
 Running global optimization...
 Mapping design into LUTs...
@@ -47,12 +47,12 @@ WARNING:MapLib:701 - Signal IO_O<0> connected to top level port IO_O<0> has been
 Running directed packing...
 Running delay-based LUT packing...
 Updating timing models...
-WARNING:Timing:3402 - The Clock Modifying COMP, Inst_SysCon/Inst_dcm_fixed/dcm_sp_inst, has the attribute CLK_FEEDBACK set to NONE.  No
-   phase relationship exists between the input and output clocks of this Clock Modifying COMP. Data paths between these clock domains must
-   be constrained using FROM/TO constraints.
 WARNING:Timing:3159 - The DCM, Inst_SysCon/Inst_dcm_recfg/dcm_clkgen_inst, has the attribute DFS_OSCILLATOR_MODE not set to PHASE_FREQ_LOCK.
    No phase relationship exists between the input clock and CLKFX or CLKFX180 outputs of this DCM. Data paths between these clock domains
    must be constrained using FROM/TO constraints.
+WARNING:Timing:3402 - The Clock Modifying COMP, Inst_SysCon/Inst_dcm_fixed/dcm_sp_inst, has the attribute CLK_FEEDBACK set to NONE.  No
+   phase relationship exists between the input and output clocks of this Clock Modifying COMP. Data paths between these clock domains must
+   be constrained using FROM/TO constraints.
 WARNING:Pack:1653 - At least one timing constraint is impossible to meet because component delays alone exceed the constraint. A timing
    constraint summary below shows the failing constraints (preceded with an Asterisk (*)). Please use the Timing Analyzer (GUI) or TRCE
    (command line) with the Mapped NCD and PCF files to identify which constraints and paths are failing because of the component delays
@@ -80,22 +80,22 @@ Asterisk (*) preceding a constraint indicates it was not met.
   nst_dcm_recfg_clkfx HIGH 50%              |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
 * TS_Inst_SysCon_pllout_x2 = PERIOD TIMEGRP | SETUP       |     3.623ns|     1.007ns|       0|           0
-   "Inst_SysCon_pllout_x2" TS_Inst_SysCon_I | HOLD        |    -0.954ns|            |      20|       18906
+   "Inst_SysCon_pllout_x2" TS_Inst_SysCon_I | HOLD        |    -0.954ns|            |      20|       18972
   nst_dcm_recfg_clkfx * 2 HIGH 50%          | MINPERIOD   |     2.900ns|     1.730ns|       0|           0
 ----------------------------------------------------------------------------------------------------------
-* OFFSET = IN 1.25 ns VALID 7.5 ns BEFORE C | SETUP       |    -0.682ns|     1.932ns|     130|       37535
+* OFFSET = IN 1.25 ns VALID 7.5 ns BEFORE C | SETUP       |    -0.514ns|     1.764ns|     130|       37198
   OMP "CAMB_PCLK_I" "RISING"                | HOLD        |     5.880ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-* TS_Inst_SysCon_ddr2clk_2x_180 = PERIOD TI | MINPERIOD   |    -0.249ns|     1.249ns|       1|         249
-  MEGRP "Inst_SysCon_ddr2clk_2x_180" TS_CLK |             |            |            |        |            
-  _I * 10 PHASE 0.500050005 ns HIGH 50%     |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
 * TS_Inst_SysCon_ddr2clk_2x = PERIOD TIMEGR | MINPERIOD   |    -0.249ns|     1.249ns|       1|         249
   P "Inst_SysCon_ddr2clk_2x" TS_CLK_I * 10  |             |            |            |        |            
   HIGH 50%                                  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-* TS_Inst_SysCon_Inst_dcm_fixed_clkfx = PER | SETUP       |    38.973ns|     2.697ns|       0|           0
-  IOD TIMEGRP "Inst_SysCon_Inst_dcm_fixed_c | HOLD        |    -0.097ns|            |     130|       11010
+* TS_Inst_SysCon_ddr2clk_2x_180 = PERIOD TI | MINPERIOD   |    -0.249ns|     1.249ns|       1|         249
+  MEGRP "Inst_SysCon_ddr2clk_2x_180" TS_CLK |             |            |            |        |            
+  _I * 10 PHASE 0.500050005 ns HIGH 50%     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+* TS_Inst_SysCon_Inst_dcm_fixed_clkfx = PER | SETUP       |    38.893ns|     2.777ns|       0|           0
+  IOD TIMEGRP "Inst_SysCon_Inst_dcm_fixed_c | HOLD        |    -0.097ns|            |     130|       12482
   lkfx" TS_CLK_I * 0.24 HIGH 50%            |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_Inst_SysCon_Inst_dcm_recfg_clkfx = PER | MINLOWPULSE |     5.926ns|     3.334ns|       0|           0
@@ -109,11 +109,11 @@ Asterisk (*) preceding a constraint indicates it was not met.
   OFFSET = IN 1.25 ns VALID 7.5 ns BEFORE C | SETUP       |     0.468ns|     0.782ns|       0|           0
   OMP "CAMA_PCLK_I" "RISING"                | HOLD        |     5.880ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_Inst_SysCon_mcb_drp_clk_bfg = PERIOD T | SETUP       |     5.070ns|     2.930ns|       0|           0
+  TS_Inst_SysCon_mcb_drp_clk_bfg = PERIOD T | SETUP       |     5.329ns|     2.671ns|       0|           0
   IMEGRP "Inst_SysCon_mcb_drp_clk_bfg" TS_C | HOLD        |     0.060ns|            |       0|           0
   LK_I * 1.25 HIGH 50%                      |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_CAMB_PCLK_I = PERIOD TIMEGRP "CAMB_PCL | SETUP       |     7.748ns|     4.752ns|       0|           0
+  TS_CAMB_PCLK_I = PERIOD TIMEGRP "CAMB_PCL | SETUP       |     8.779ns|     3.721ns|       0|           0
   K_I" 80 MHz HIGH 50%                      | HOLD        |     0.071ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_CAMA_PCLK_I = PERIOD TIMEGRP "CAMA_PCL | SETUP       |     9.481ns|     3.019ns|       0|           0
@@ -148,31 +148,31 @@ Analyzed       |
 Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
 ----------+
-|TS_CLK_I                       |     10.001ns|      5.340ns|    142.578ns|            0|          156|          347|   
-    22006|
+|TS_CLK_I                       |     10.001ns|      5.340ns|    142.578ns|            0|          156|          346|   
+    21621|
+| TS_Inst_SysCon_mcb_drp_clk_bfg|      8.001ns|      2.671ns|          N/A|            0|            0|        12135|   
+        0|
+| TS_Inst_SysCon_ddr2clk_2x     |      1.000ns|      1.249ns|          N/A|            1|            0|            0|   
+        0|
+| TS_Inst_SysCon_ddr2clk_2x_180 |      1.000ns|      1.249ns|          N/A|            1|            0|            0|   
+        0|
+| TS_Inst_SysCon_Inst_dcm_fixed_|     41.671ns|      2.777ns|          N/A|          130|            0|         6243|   
+        0|
+| clkfx                         |             |             |             |             |             |             |   
+         |
 | TS_Inst_SysCon_Inst_dcm_fixed_|     41.671ns|      1.730ns|          N/A|            0|            0|            0|   
         0|
 | clkfx180                      |             |             |             |             |             |             |   
          |
-| TS_Inst_SysCon_Inst_dcm_fixed_|     41.671ns|      2.697ns|          N/A|          130|            0|         6235|   
-        0|
-| clkfx                         |             |             |             |             |             |             |   
-         |
 | TS_Inst_SysCon_Inst_dcm_recfg_|      9.260ns|      3.334ns|    132.017ns|            0|           24|            0|   
-     3079|
+     3243|
 | clkfx                         |             |             |             |             |             |             |   
          |
-|  TS_Inst_SysCon_pllout_x1     |      9.260ns|    132.017ns|          N/A|            4|            0|         2996|   
+|  TS_Inst_SysCon_pllout_x1     |      9.260ns|    132.017ns|          N/A|            4|            0|         3160|   
         0|
 |  TS_Inst_SysCon_pllout_xs     |      0.926ns|          N/A|          N/A|            0|            0|            0|   
         0|
 |  TS_Inst_SysCon_pllout_x2     |      4.630ns|      1.730ns|          N/A|           20|            0|           83|   
-        0|
-| TS_Inst_SysCon_ddr2clk_2x_180 |      1.000ns|      1.249ns|          N/A|            1|            0|            0|   
-        0|
-| TS_Inst_SysCon_ddr2clk_2x     |      1.000ns|      1.249ns|          N/A|            1|            0|            0|   
-        0|
-| TS_Inst_SysCon_mcb_drp_clk_bfg|      8.001ns|      2.930ns|          N/A|            0|            0|        12692|   
         0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
 ----------+
@@ -188,78 +188,78 @@ INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 1 mins 36 secs 
-Total CPU  time at the beginning of Placer: 1 mins 36 secs 
+Total REAL time at the beginning of Placer: 1 mins 30 secs 
+Total CPU  time at the beginning of Placer: 1 mins 30 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:25f186e3) REAL time: 1 mins 39 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:f145956d) REAL time: 1 mins 33 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:25f186e3) REAL time: 1 mins 41 secs 
+Phase 2.7  Design Feasibility Check (Checksum:f145956d) REAL time: 1 mins 35 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:25f186e3) REAL time: 1 mins 41 secs 
+Phase 3.31  Local Placement Optimization (Checksum:f145956d) REAL time: 1 mins 35 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:c7180f9c) REAL time: 2 mins 14 secs 
+(Checksum:2146426) REAL time: 2 mins 8 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:c7180f9c) REAL time: 2 mins 14 secs 
+Phase 5.36  Local Placement Optimization (Checksum:2146426) REAL time: 2 mins 8 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:c7180f9c) REAL time: 2 mins 14 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:2146426) REAL time: 2 mins 8 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:c7180f9c) REAL time: 2 mins 15 secs 
+Phase 7.3  Local Placement Optimization (Checksum:2146426) REAL time: 2 mins 8 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:c7180f9c) REAL time: 2 mins 15 secs 
+Phase 8.5  Local Placement Optimization (Checksum:2146426) REAL time: 2 mins 8 secs 
 
 Phase 9.8  Global Placement
-.................................
-....................................................................................
-...................................................................................................................................................................................
-............................................................................................................................................................................................
-.......................................................
-Phase 9.8  Global Placement (Checksum:e5ba8cd5) REAL time: 3 mins 56 secs 
+....................................
+.................................................................................................
+..................................................................................................................................................................
+........................................................................................................................................................................................
+.......................
+Phase 9.8  Global Placement (Checksum:8bd6dbda) REAL time: 3 mins 47 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:e5ba8cd5) REAL time: 3 mins 57 secs 
+Phase 10.5  Local Placement Optimization (Checksum:8bd6dbda) REAL time: 3 mins 47 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:46ee92a5) REAL time: 4 mins 41 secs 
+Phase 11.18  Placement Optimization (Checksum:25dc99ad) REAL time: 3 mins 55 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:46ee92a5) REAL time: 4 mins 42 secs 
+Phase 12.5  Local Placement Optimization (Checksum:25dc99ad) REAL time: 3 mins 56 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:d1cff7c3) REAL time: 4 mins 42 secs 
+Phase 13.34  Placement Validation (Checksum:51cfb501) REAL time: 3 mins 56 secs 
 
-Total REAL time to Placer completion: 4 mins 43 secs 
-Total CPU  time to Placer completion: 5 mins 21 secs 
+Total REAL time to Placer completion: 3 mins 56 secs 
+Total CPU  time to Placer completion: 4 mins 1 secs 
 Running post-placement packing...
 Writing output files...
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6999_197 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7075_173 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6995_195 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7079_175 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7015_205 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7099_185 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7019_207 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7095_183 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7007_201 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7087_179 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7003_199 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7083_177 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7011_203 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7091_181 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
@@ -274,42 +274,42 @@ Design Summary:
 Number of errors:      0
 Number of warnings:   25
 Slice Logic Utilization:
-  Number of Slice Registers:                 2,599 out of  54,576    4%
-    Number used as Flip Flops:               2,551
+  Number of Slice Registers:                 2,732 out of  54,576    5%
+    Number used as Flip Flops:               2,641
     Number used as Latches:                      7
     Number used as Latch-thrus:                  0
-    Number used as AND/OR logics:               41
-  Number of Slice LUTs:                     10,995 out of  27,288   40%
-    Number used as logic:                    9,691 out of  27,288   35%
-      Number using O6 output only:           5,528
-      Number using O5 output only:           1,693
-      Number using O5 and O6:                2,470
+    Number used as AND/OR logics:               84
+  Number of Slice LUTs:                      8,309 out of  27,288   30%
+    Number used as logic:                    5,515 out of  27,288   20%
+      Number using O6 output only:           4,468
+      Number using O5 output only:             440
+      Number using O5 and O6:                  607
       Number used as ROM:                        0
-    Number used as Memory:                      85 out of   6,408    1%
+    Number used as Memory:                      92 out of   6,408    1%
       Number used as Dual Port RAM:              0
       Number used as Single Port RAM:           34
-        Number using O6 output only:             2
-        Number using O5 output only:             0
+        Number using O6 output only:             1
+        Number using O5 output only:             1
         Number using O5 and O6:                 32
-      Number used as Shift Register:            51
-        Number using O6 output only:            14
+      Number used as Shift Register:            58
+        Number using O6 output only:            19
         Number using O5 output only:             0
-        Number using O5 and O6:                 37
-    Number used exclusively as route-thrus:  1,219
-      Number with same-slice register load:     23
-      Number with same-slice carry load:     1,196
+        Number using O5 and O6:                 39
+    Number used exclusively as route-thrus:  2,702
+      Number with same-slice register load:    131
+      Number with same-slice carry load:     2,571
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 3,708 out of   6,822   54%
-  Number of MUXCYs used:                    11,952 out of  13,644   87%
-  Number of LUT Flip Flop pairs used:       11,463
-    Number with an unused Flip Flop:         8,973 out of  11,463   78%
-    Number with an unused LUT:                 468 out of  11,463    4%
-    Number of fully used LUT-FF pairs:       2,022 out of  11,463   17%
-    Number of unique control sets:             164
+  Number of occupied Slices:                 3,318 out of   6,822   48%
+  Number of MUXCYs used:                     9,584 out of  13,644   70%
+  Number of LUT Flip Flop pairs used:        8,717
+    Number with an unused Flip Flop:         6,117 out of   8,717   70%
+    Number with an unused LUT:                 408 out of   8,717    4%
+    Number of fully used LUT-FF pairs:       2,192 out of   8,717   25%
+    Number of unique control sets:             162
     Number of slice register sites lost
-      to control set restrictions:             792 out of  54,576    1%
+      to control set restrictions:             773 out of  54,576    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -360,11 +360,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                2.21
+Average Fanout of Non-Clock Nets:                2.77
 
-Peak Memory Usage:  785 MB
-Total REAL time to MAP completion:  4 mins 48 secs 
-Total CPU time to MAP completion (all processors):   5 mins 25 secs 
+Peak Memory Usage:  742 MB
+Total REAL time to MAP completion:  4 mins 1 secs 
+Total CPU time to MAP completion (all processors):   4 mins 6 secs 
 
 Mapping completed.
 See MAP report file "VmodCAM_Ref_map.mrp" for details.

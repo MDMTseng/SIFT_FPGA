@@ -1,0 +1,34 @@
+[*]
+[*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
+[*] Wed Apr 01 10:22:51 2015
+[*]
+[dumpfile] "D:\Program\Verilog\work\EE278\KK\wave.vcd"
+[dumpfile_mtime] "Wed Apr 01 10:22:46 2015"
+[dumpfile_size] 60157
+[savefile] "D:\Program\Verilog\work\EE278\KK\_Save1.gtk"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-3.000000 31 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TB1.
+[sst_width] 197
+[signals_width] 142
+[sst_expanded] 1
+[sst_vpaned_height] 312
+@800200
+-TB1.gS.GSum
+@25
+TB1.GaussSVar[8:0]
+@20000
+-
+-
+-
+-
+-
+-
+-
+-
+@1001200
+-group_end
+[pattern_trace] 1
+[pattern_trace] 0

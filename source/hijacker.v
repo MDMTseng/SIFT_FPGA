@@ -157,19 +157,20 @@ SGMDataDepth=6
 	
 	wire [DataDepth-1:0]DI1r=(SaData[2]==0)?ColorMean1:{dat_PixK[23-:5],dat_PixK[15-:6],dat_PixK[7-:8]};//may kick off red
 	
-	wire signed[dataW-1:0]DoGOut[0:GausTableN-1-1];
+	localparam dataW=8;//unsigned data
+	localparam sidataW=dataW+1;
+	wire signed[sidataW-1:0]DoGOut[0:GausTableN-1-1];
+	wire signed[sidataW-1:0]DoGOut2[0:GausTableN-1-1];
 	
 	always@(*)
 	begin
 		case(SaData[0])
-		 0:spiRet<=Gaussian1[0+:8];
+		 0:spiRet<=DoGOut[0];
 		 1:spiRet<=DoGOut[1];
 		 2:spiRet<=DoGOut[2];
-		 3:spiRet<=0;//FilterL[0].FilterOutReg;
+		 3:spiRet<=DoGOut[3];
 		
-		// 3:spiRet<=dat_PixK[16+:8];
-		 4:spiRet<=dat_PixK[40+:8];
-		 5:spiRet<=ColorMean2;
+		 5:spiRet<=dat_PixK[40+:8];
 		// 3:spiRet<=DIxL;
 		 //4:spiRet<=(DIxL==0)?0:255;
 		 6:spiRet<=(pixX>pixY)?pixX:pixY;
@@ -189,18 +190,29 @@ SGMDataDepth=6
 	Pc1(clk_p,en_p,rst_p,pixX,pixY);
 	
 	parameter GausTableN=5;
-	localparam dataW=9;
+	wire [GausTableN*dataW-1:0]Gaussian1;//unsigned
+	wire [GausTableN*dataW-1:0]Gaussian2;
 	
-	wire [5*dataW-1:0]Gaussian1;
+	octaveModule OM1(clk_p,en_p,{DI1r[0+:8]},Gaussian1);
+	//octaveModule OM2(clk_p,en_p,{DI1r[0+:8]},Gaussian2);
 	
-	octaveModule OM1(clk_p,en_p,{1'b0,DI1r[0+:8]},Gaussian1);
+	wire [GausTableN*dataW-1:0]Gaussian1Reg;//unsigned
+	MFP_RegOWire#(.dataW(GausTableN*dataW),.isWire(0)) RoW(clk_p,en_p,Gaussian1,Gaussian1Reg);
+	wire [GausTableN*dataW-1:0]Gaussian2Reg;//unsigned
+	//MFP_RegOWire#(.dataW(GausTableN*dataW),.isWire(0)) RoW2(clk_p,en_p,Gaussian2,Gaussian2Reg);
+
 	generate
 		genvar gi;
 		 for(gi=0;gi<GausTableN-1;gi=gi+1)
 		 begin:FilterL
-			wire signed[dataW-1:0] GaussianA=Gaussian1[gi*dataW+:dataW];
-			wire signed[dataW-1:0] GaussianB=Gaussian1[(gi+1)*dataW+:dataW];
+			wire signed[sidataW-1:0] GaussianA=Gaussian1Reg[gi*dataW+:dataW];
+			wire signed[sidataW-1:0] GaussianB=Gaussian1Reg[(gi+1)*dataW+:dataW];
 			assign DoGOut[gi]=128+GaussianA-GaussianB;
+			
+			/*wire signed[sidataW-1:0] GaussianA2=Gaussian2Reg[gi*dataW+:dataW];
+			wire signed[sidataW-1:0] GaussianB2=Gaussian2Reg[(gi+1)*dataW+:dataW];
+			assign DoGOut2[gi]=128+GaussianA2-GaussianB2;*/
+			
 		 end
 	endgenerate	
 	

@@ -6,7 +6,7 @@ D:\Program\FPGA\xilinxISE\14.7\ISE_DS\ISE\.
 -3
 Opened constraints file VmodCAM_Ref.pcf.
 
-Wed Apr 01 23:14:46 2015
+Fri Apr 03 10:54:48 2015
 
 D:\Program\FPGA\xilinxISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -filter iseconfig/filter.filter -intstyle ise -w -g Binary:no -g Compress -g CRC:Enable -g Reset_on_err:No -g ConfigRate:2 -g ProgPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g ExtMasterCclk_en:No -g SPI_buswidth:1 -g TIMER_CFG:0xFFFF -g multipin_wakeup:No -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:No -g DriveDone:No -g en_sw_gsr:No -g drive_awake:No -g sw_clk:Startupclk -g sw_gwe_cycle:5 -g sw_gts_cycle:4 VmodCAM_Ref.ncd 
 
@@ -134,25 +134,25 @@ There were 1 CONFIG constraint(s) processed from VmodCAM_Ref.pcf.
    CONFIG VCCAUX = "3.3"
 
 Running DRC.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6999_197 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7075_173 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6995_195 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7079_175 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7015_205 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7099_185 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7019_207 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7095_183 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7007_201 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7087_179 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7003_199 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7083_177 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7011_203 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7091_181 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
@@ -166,5 +166,5 @@ DRC detected 0 errors and 8 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
 Creating bit map...
 Saving bit stream in "vmodcam_ref.bit".
-Bitstream compression saved 1355936 bits.
+Bitstream compression saved 1541232 bits.
 Bitstream generation is complete.
