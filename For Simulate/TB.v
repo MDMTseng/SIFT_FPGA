@@ -90,11 +90,10 @@ generate
     for(gi=0;gi<GausTableN;gi=gi+1)
     begin:FilterL
 
-        wire [19-1:0]accSum1ZZZ,accSum2ZZZ;
         wire [FilterOutW-1:0]MAC_Ver_rounded;
-       // MFP_MAC_symmetric_par #(.In1W(dataW),.ArrL(windowSize),.PordW_ROUND(FilterOutW+2),.AccW_ROUND(FilterOutW),.pipeInterval(3))MACpV(pixClk,en_p,VerticleBuff,GaussT[gi],FilterOut[gi]);
+        MFP_MAC_symmetric_par #(.In1W(dataW),.In2W(tableDataW),.In2EQW(dataW),.ArrL(windowSize),.PordW_ROUND(FilterOutW+2),.AccW_ROUND(FilterOutW),.pipeInterval(2),.isFloor(0),.isUnsigned(1))MACpV(pixClk,en_p,VerticleBuff,GaussT[gi],FilterOut[gi]);
 			
-			 MFP_MAC_par #(.In1W(dataW),.In2W(tableDataW),.In2EQW(dataW),.ArrL(windowSize),.PordW_ROUND(FilterOutW+1),.AccW_ROUND(FilterOutW),.pipeInterval(3),.isUnsigned(1))MACpV(pixClk,en_p,VerticleBuff,GaussT[gi],FilterOut[gi]);
+			//MFP_MAC_par #(.In1W(dataW),.In2W(tableDataW),.In2EQW(dataW),.ArrL(windowSize),.PordW_ROUND(FilterOutW+2),.AccW_ROUND(FilterOutW),.pipeInterval(3),.isFloor(0),.isUnsigned(1))MACpV(pixClk,en_p,VerticleBuff,GaussT[gi],FilterOut[gi]);
        /* reg [FilterOutW*windowSize-1:0]HerizontalBuff;
 		always@(posedge pixClk)if(en_p)HerizontalBuff<={HerizontalBuff,MAC_Ver_rounded};
 				

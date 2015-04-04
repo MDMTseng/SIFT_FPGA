@@ -9,13 +9,18 @@
     module MFP_MAC_symmetric_par
         #(
             parameter
-            In1W=8,
-            In2W=In1W,
-            ArrL=7,
-            PordW_ROUND=PordW,
-            AccW_ROUND=PordW_ROUND,
-            levelIdx=0,
-            pipeInterval=0
+            
+        In1W=8,
+        In2W=In1W,
+			In2EQW=In2W,
+        ArrL=16,
+        PordW_ROUND=PordW,
+        //no round by default, to save resource decrease this but it will lose some precision
+        AccW_ROUND=PordW_ROUND,//select output width with round
+			isFloor=1,
+        levelIdx=0,
+        pipeInterval=0,
+        isUnsigned=0
         )
 
         (
@@ -25,7 +30,7 @@
             output [AccW_ROUND-1:0]acc_sum_rounded);
 
 localparam PordW=In1W+In2W-1;
-localparam CoeffL=(ArrL/2+ArrL[0]);
+localparam integer CoeffL=(ArrL/2+ArrL[0]);
 localparam In1FW=In1W+1;
 wire[In1FW*CoeffL-1:0]In1ArrFold;
 
@@ -35,14 +40,20 @@ generate
 genvar gi;
 for(gi=0;gi<ArrL/2;gi=gi+1)
 begin:foldLoop
-    MFP_Adder #(.In1W(In1W),.In2W(In1W),.OutW(In1FW))
+    MFP_Adder #(.In1W(In1W),.In2W(In1W),.OutW(In1FW),.isUnsigned(isUnsigned))
               aS(In1Arr[In1W*gi+:In1W],In1Arr[In1W*(ArrL-1-gi)+:In1W],In1ArrFold[In1FW*gi+:In1FW]);
 end
 endgenerate
-    MFP_MAC_par #(.In1W(In1FW),.In2W(In2W),.ArrL(CoeffL),.PordW_ROUND(PordW_ROUND),.AccW_ROUND(AccW_ROUND),
-                  .pipeInterval(pipeInterval),.levelIdx(levelIdx))
-    MACpH(clk,en,In1ArrFold,Coeff,acc_sum_rounded);
 
+wire[In1FW*CoeffL-1:0]In1ArrFold_stage;
+
+MFP_RegOWire#(.dataW(In1FW*CoeffL),.levelIdx(levelIdx),.regInterval(pipeInterval)) RoW(clk,en,In1ArrFold,In1ArrFold_stage);
+
+wire extrasum_roundedBit;
+    MFP_MAC_par #(.In1W(In1FW),.In2W(In2W),.In2EQW(In2EQW),
+	 .ArrL(CoeffL),.PordW_ROUND(PordW_ROUND+1),.AccW_ROUND(AccW_ROUND+1),
+    .pipeInterval(pipeInterval),.levelIdx(levelIdx+1),.isUnsigned(isUnsigned))
+    MACpH(clk,en,In1ArrFold_stage,Coeff,{extrasum_roundedBit,acc_sum_rounded});
 
 endmodule
 
@@ -51,9 +62,9 @@ module MFP_MAC_par
     #(
         parameter
         In1W=8,
-        In2W=In1W,//signed
+        In2W=In1W,
 			In2EQW=In2W,
-        ArrL=2,//signed
+        ArrL=2,
         PordW_ROUND=PordW,
         //no round by default, to save resource decrease this but it will lose some precision
         AccW_ROUND=PordW_ROUND,//select output width with round
@@ -75,11 +86,15 @@ localparam PordW=In1W+In2W+((isUnsigned)?0:-1);
 
 
 wire [PordW_ROUND*ArrL-1:0]productArr_rounded;
+wire [PordW_ROUND*ArrL-1:0]productArr_rounded_stage;
 wire [PordW_ROUND-1:0]productArr_roundedSum;
 
 MFP_Multi_Arr#(.ArrL(ArrL),.In1W(In1W),.In2W(In2W),.In2EQW(In2EQW),.OutW(PordW_ROUND),.isUnsigned(isUnsigned),.isFloor(isFloor)) AMFP
              (In1Arr,In2Arr,productArr_rounded);
-MFP_AdderTree#(.data_depth(PordW_ROUND),.ArrL(ArrL),.levelIdx(levelIdx),.pipeInterval(pipeInterval),.isUnsigned(isUnsigned)) ATFP(clk,en,productArr_rounded,productArr_roundedSum);
+			 
+MFP_RegOWire#(.dataW(PordW_ROUND*ArrL),.levelIdx(levelIdx),.regInterval(pipeInterval)) RoW(clk,en,productArr_rounded,productArr_rounded_stage);
+
+MFP_AdderTree#(.data_depth(PordW_ROUND),.ArrL(ArrL),.levelIdx(levelIdx+1),.pipeInterval(pipeInterval),.isUnsigned(isUnsigned)) ATFP(clk,en,productArr_rounded,productArr_roundedSum);
 MFP_Round #(.InW(PordW_ROUND),.OutW(AccW_ROUND),.isUnsigned(isUnsigned))round_acc ( productArr_roundedSum, acc_sum_rounded );
 
 endmodule

@@ -80,7 +80,7 @@ isUnsigned=unsignedAddIn2
 generate 
 	genvar gi;
 	for(gi=0;gi<ArrL;gi=gi+1 )begin:oparr
-		MFP_Adder #(.In1W(In1W),.In2W(In2W),.OutW(OutW),.Saturate(Saturate),.isUnsigned(isUnsigned),.isUnsigned(isUnsigned)) a0(
+		MFP_Adder #(.In1W(In1W),.In2W(In2W),.OutW(OutW),.Saturate(Saturate),.isUnsigned(isUnsigned)) a0(
 		prescale1*In1Arr[gi*In1W+:In1W],prescale2*In2Arr[gi*In2W+:In2W],OutArr[gi*OutW+:OutW]);
 	end
 endgenerate

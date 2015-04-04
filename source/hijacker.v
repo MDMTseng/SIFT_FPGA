@@ -170,10 +170,15 @@ SGMDataDepth=6
 		 2:spiRet<=DoGOut[2];
 		 3:spiRet<=DoGOut[3];
 		
-		 5:spiRet<=dat_PixK[40+:8];
+		 4:spiRet<=DoGOut2[0];
+		 5:spiRet<=DoGOut2[1];
+		 6:spiRet<=DoGOut2[2];
+		 7:spiRet<=DoGOut2[3];
+		 
 		// 3:spiRet<=DIxL;
 		 //4:spiRet<=(DIxL==0)?0:255;
-		 6:spiRet<=(pixX>pixY)?pixX:pixY;
+		 8:spiRet<=(pixX>pixY)?pixX:pixY;
+		// 9:spiRet<=dat_PixK[40+:8];
 		 default:spiRet<=0;
 		 endcase
 	
@@ -193,41 +198,29 @@ SGMDataDepth=6
 	wire [GausTableN*dataW-1:0]Gaussian1;//unsigned
 	wire [GausTableN*dataW-1:0]Gaussian2;
 	
-	//octaveModule OM2(clk_p,en_p,{DI1r[0+:8]},Gaussian2);
 	
-	parameter downS=0;
-	//^^^^^^^  change downS to get different down sample
-	//(0:original, 1:down by 2 ,2:down by 4 .... )
-	parameter downSBufferL=(ImageW/(2**downS));
-	wire ys=(downS==0)?1:(pixY[0+:(downS==0)?1:downS]==0);
-	wire xs=(downS==0)?1:(pixX[0+:(downS==0)?1:downS]==0);
-	//
-	wire en_op=ys&xs&en_p;
+	octaveModule#(.frameW(ImageW)) 
+	OM1(clk_p,en_p,DI1r[0+:8],pixX,pixY,Gaussian1);
 	
-	octaveModule#(.frameW(downSBufferL)) 
-	OM1(clk_p,en_op,{DI1r[0+:8]},Gaussian1);
 	
-	wire [GausTableN*dataW-1:0]Gaussian1Reg;//unsigned
-	MFP_RegOWire#(.dataW(GausTableN*dataW),.isWire(0)) RoW(clk_p,en_op,Gaussian1,Gaussian1Reg);
-	
+	octaveModule#(.frameW(ImageW),.downS(2)) 
+	OM2(clk_p,en_p,DI1r[0+:8],pixX,pixY,Gaussian2);
 	/*module downSamplePixMem
 	#(.downSBufferL(downSBufferL),.dataW(GausTableN*dataW))
 	(input clk,input xs,input ys,input[dataW-1:0] din,output [dataW-1:0] dout);*/
 
-	wire [GausTableN*dataW-1:0]Gaussian2Reg;//unsigned
-	MFP_RegOWire#(.dataW(GausTableN*dataW),.isWire(0)) RoW2(clk_p,en_op,Gaussian2,Gaussian2Reg);
 
 	generate
 		genvar gi;
 		 for(gi=0;gi<GausTableN-1;gi=gi+1)
 		 begin:FilterL
-			wire signed[sidataW-1:0] GaussianA=Gaussian1Reg[gi*dataW+:dataW];
-			wire signed[sidataW-1:0] GaussianB=Gaussian1Reg[(gi+1)*dataW+:dataW];
+			wire signed[sidataW-1:0] GaussianA=Gaussian1[gi*dataW+:dataW];
+			wire signed[sidataW-1:0] GaussianB=Gaussian1[(gi+1)*dataW+:dataW];
 			assign DoGOut[gi]=128+GaussianA-GaussianB;
 			
-			/*wire signed[sidataW-1:0] GaussianA2=Gaussian2Reg[gi*dataW+:dataW];
-			wire signed[sidataW-1:0] GaussianB2=Gaussian2Reg[(gi+1)*dataW+:dataW];
-			assign DoGOut2[gi]=128+GaussianA2-GaussianB2;*/
+			wire signed[sidataW-1:0] GaussianA2=Gaussian2[gi*dataW+:dataW];
+			wire signed[sidataW-1:0] GaussianB2=Gaussian2[(gi+1)*dataW+:dataW];
+			assign DoGOut2[gi]=128+GaussianA2-GaussianB2;
 			
 		 end
 	endgenerate	

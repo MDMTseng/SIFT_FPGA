@@ -1,0 +1,52 @@
+[*]
+[*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
+[*] Sat Apr 04 05:25:53 2015
+[*]
+[dumpfile] "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\wave.vcd"
+[dumpfile_mtime] "Sat Apr 04 05:23:36 2015"
+[dumpfile_size] 949450
+[savefile] "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\_Save1.gtk"
+[timestart] 0
+[size] 1916 1018
+[pos] -1 -1
+*-8.000000 1024 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TB1.
+[treeopen] TB1.MACSymUnsigned.MACpH.
+[treeopen] TB1.MACSymUnsigned.MACpH.AMFP.
+[treeopen] TB1.MACSymUnsigned.MACpH.AMFP.oparr[0].
+[treeopen] TB1.MACSymUnsigned.MACpH.AMFP.oparr[1].
+[treeopen] TB1.MACSymUnsigned.MACpH.AMFP.oparr[2].
+[sst_width] 439
+[signals_width] 286
+[sst_expanded] 1
+[sst_vpaned_height] 300
+@8022
+TB1.In1WNum[7:0]
+@20000
+-
+-
+-
+-
+@200
+-
+-
+@8022
+TB1.MACSymUnsigned.acc_sum_rounded[7:0]
+@20000
+-
+-
+-
+@200
+-
+@201
+-
+@8022
+TB1.MACSymUnsigned2.acc_sum_rounded[7:0]
+@20000
+-
+-
+-
+-
+-
+[pattern_trace] 1
+[pattern_trace] 0
