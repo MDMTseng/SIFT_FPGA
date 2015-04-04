@@ -22,7 +22,8 @@
 module octaveModule
 #(parameter
 dataW=8,
-outoutW=dataW
+outoutW=dataW,
+frameW=640
 )
 (
 input clk,en,
@@ -52,7 +53,7 @@ assign GaussT[2]={6'd1,6'd1,6'd3,6'd5,6'd9,6'd15,6'd21,6'd26,6'd30,6'd31,6'd30,6
 assign GaussT[3]={6'd3,6'd5,6'd7,6'd10,6'd13,6'd16,6'd19,6'd21,6'd23,6'd23,6'd23,6'd21,6'd19,6'd16,6'd13,6'd10,6'd7,6'd5,6'd3};
 assign GaussT[4]={6'd7,6'd8,6'd10,6'd12,6'd14,6'd15,6'd17,6'd18,6'd18,6'd18,6'd18,6'd18,6'd17,6'd15,6'd14,6'd12,6'd10,6'd8,6'd7};
 
-	ScanLWindow_blkRAM #(.block_height(windowSize),.block_width(1)) win1(clk,en,dataIn,WinX);
+	ScanLWindow_blkRAM #(.block_height(windowSize),.block_width(1),.frame_width(frameW)) win1(clk,en,dataIn,WinX);
 	 
 	
 	
@@ -73,6 +74,8 @@ assign GaussT[4]={6'd7,6'd8,6'd10,6'd12,6'd14,6'd15,6'd17,6'd18,6'd18,6'd18,6'd1
 			  MFP_MAC_par #(.In1W(dataW),.In2W(windowDataW),.In2EQW(dataW),.ArrL(windowSize),.isUnsigned(1)
 			  ,.PordW_ROUND(dataW+1),.AccW_ROUND(dataW),.pipeInterval(2),.isFloor(0))
 			  MACpV(clk,en,W1,GaussT[gi],MAC_Ver_rounded);
+			  
+			  
 
 			  reg [dataW*windowSize-1:0]HerizontalBuff;
 			  always@(posedge clk)if(en)HerizontalBuff<={HerizontalBuff,MAC_Ver_rounded};

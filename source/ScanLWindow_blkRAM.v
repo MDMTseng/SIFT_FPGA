@@ -22,10 +22,10 @@ module ScanLWindow_blkRAM(input clk,input enable,input [pixel_depth-1:0]inData,o
 
 	parameter block_width=1;
 	parameter block_height=8;
+	parameter frame_width=640;
 	
 	
 	localparam pixel_depth=32;//fixed
-	localparam frame_width=640;
 	localparam RAMAccessSpace=frame_width-block_width;
 	
 	reg [10-1:0]addra_bramR;

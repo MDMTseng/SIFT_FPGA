@@ -12,7 +12,7 @@ Target Device  : xc6slx45
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Fri Apr 03 10:49:16 2015
+Mapped Date    : Fri Apr 03 12:34:09 2015
 
 Running global optimization...
 Mapping design into LUTs...
@@ -219,26 +219,26 @@ Phase 8.5  Local Placement Optimization (Checksum:2146426) REAL time: 2 mins 8 s
 
 Phase 9.8  Global Placement
 ....................................
-.................................................................................................
-..................................................................................................................................................................
-........................................................................................................................................................................................
-.......................
-Phase 9.8  Global Placement (Checksum:8bd6dbda) REAL time: 3 mins 47 secs 
+...................................................................................................
+..........................................................................................................................................................................................................
+.............................................................................................................................................................................
+..........................
+Phase 9.8  Global Placement (Checksum:52df4b18) REAL time: 3 mins 53 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:8bd6dbda) REAL time: 3 mins 47 secs 
+Phase 10.5  Local Placement Optimization (Checksum:52df4b18) REAL time: 3 mins 54 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:25dc99ad) REAL time: 3 mins 55 secs 
+Phase 11.18  Placement Optimization (Checksum:817a1c27) REAL time: 4 mins 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:25dc99ad) REAL time: 3 mins 56 secs 
+Phase 12.5  Local Placement Optimization (Checksum:817a1c27) REAL time: 4 mins 1 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:51cfb501) REAL time: 3 mins 56 secs 
+Phase 13.34  Placement Validation (Checksum:9db6fef7) REAL time: 4 mins 1 secs 
 
-Total REAL time to Placer completion: 3 mins 56 secs 
-Total CPU  time to Placer completion: 4 mins 1 secs 
+Total REAL time to Placer completion: 4 mins 1 secs 
+Total CPU  time to Placer completion: 4 mins 6 secs 
 Running post-placement packing...
 Writing output files...
 WARNING:PhysDesignRules:372 - Gated clock. Clock net lut7075_173 is sourced by a
@@ -279,34 +279,34 @@ Slice Logic Utilization:
     Number used as Latches:                      7
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:               84
-  Number of Slice LUTs:                      8,309 out of  27,288   30%
-    Number used as logic:                    5,515 out of  27,288   20%
-      Number using O6 output only:           4,468
-      Number using O5 output only:             440
-      Number using O5 and O6:                  607
+  Number of Slice LUTs:                      8,285 out of  27,288   30%
+    Number used as logic:                    5,502 out of  27,288   20%
+      Number using O6 output only:           4,445
+      Number using O5 output only:             435
+      Number using O5 and O6:                  622
       Number used as ROM:                        0
     Number used as Memory:                      92 out of   6,408    1%
       Number used as Dual Port RAM:              0
       Number used as Single Port RAM:           34
-        Number using O6 output only:             1
-        Number using O5 output only:             1
+        Number using O6 output only:             0
+        Number using O5 output only:             2
         Number using O5 and O6:                 32
       Number used as Shift Register:            58
         Number using O6 output only:            19
         Number using O5 output only:             0
         Number using O5 and O6:                 39
-    Number used exclusively as route-thrus:  2,702
-      Number with same-slice register load:    131
-      Number with same-slice carry load:     2,571
+    Number used exclusively as route-thrus:  2,691
+      Number with same-slice register load:    111
+      Number with same-slice carry load:     2,580
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 3,318 out of   6,822   48%
+  Number of occupied Slices:                 3,277 out of   6,822   48%
   Number of MUXCYs used:                     9,584 out of  13,644   70%
-  Number of LUT Flip Flop pairs used:        8,717
-    Number with an unused Flip Flop:         6,117 out of   8,717   70%
-    Number with an unused LUT:                 408 out of   8,717    4%
-    Number of fully used LUT-FF pairs:       2,192 out of   8,717   25%
+  Number of LUT Flip Flop pairs used:        8,700
+    Number with an unused Flip Flop:         6,098 out of   8,700   70%
+    Number with an unused LUT:                 415 out of   8,700    4%
+    Number of fully used LUT-FF pairs:       2,187 out of   8,700   25%
     Number of unique control sets:             162
     Number of slice register sites lost
       to control set restrictions:             773 out of  54,576    1%
@@ -362,9 +362,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                2.77
 
-Peak Memory Usage:  742 MB
-Total REAL time to MAP completion:  4 mins 1 secs 
-Total CPU time to MAP completion (all processors):   4 mins 6 secs 
+Peak Memory Usage:  744 MB
+Total REAL time to MAP completion:  4 mins 6 secs 
+Total CPU time to MAP completion (all processors):   4 mins 11 secs 
 
 Mapping completed.
 See MAP report file "VmodCAM_Ref_map.mrp" for details.

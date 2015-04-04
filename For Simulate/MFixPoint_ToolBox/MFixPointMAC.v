@@ -9,13 +9,18 @@
     module MFP_MAC_symmetric_par
         #(
             parameter
-            In1W=8,
-            In2W=In1W,
-            ArrL=7,
-            PordW_ROUND=PordW,
-            AccW_ROUND=PordW_ROUND,
-            levelIdx=0,
-            pipeInterval=0
+            
+        In1W=8,
+        In2W=In1W,
+			In2EQW=In2W,
+        ArrL=2,
+        PordW_ROUND=PordW,
+        //no round by default, to save resource decrease this but it will lose some precision
+        AccW_ROUND=PordW_ROUND,//select output width with round
+			isFloor=1,
+        levelIdx=0,
+        pipeInterval=0,
+        isUnsigned=0
         )
 
         (
@@ -35,12 +40,13 @@ generate
 genvar gi;
 for(gi=0;gi<ArrL/2;gi=gi+1)
 begin:foldLoop
-    MFP_Adder #(.In1W(In1W),.In2W(In1W),.OutW(In1FW))
+    MFP_Adder #(.In1W(In1W),.In2W(In1W),.OutW(In1FW),.isUnsigned(isUnsigned))
               aS(In1Arr[In1W*gi+:In1W],In1Arr[In1W*(ArrL-1-gi)+:In1W],In1ArrFold[In1FW*gi+:In1FW]);
 end
 endgenerate
-    MFP_MAC_par #(.In1W(In1FW),.In2W(In2W),.ArrL(CoeffL),.PordW_ROUND(PordW_ROUND),.AccW_ROUND(AccW_ROUND),
-                  .pipeInterval(pipeInterval),.levelIdx(levelIdx))
+    MFP_MAC_par #(.In1W(In1FW),.In2W(In2W),.In2EQW(In2EQW),
+	 .ArrL(CoeffL),.PordW_ROUND(PordW_ROUND),.AccW_ROUND(AccW_ROUND),
+    .pipeInterval(pipeInterval),.levelIdx(levelIdx),.isUnsigned(isUnsigned))
     MACpH(clk,en,In1ArrFold,Coeff,acc_sum_rounded);
 
 
@@ -51,9 +57,9 @@ module MFP_MAC_par
     #(
         parameter
         In1W=8,
-        In2W=In1W,//signed
+        In2W=In1W,
 			In2EQW=In2W,
-        ArrL=2,//signed
+        ArrL=2,
         PordW_ROUND=PordW,
         //no round by default, to save resource decrease this but it will lose some precision
         AccW_ROUND=PordW_ROUND,//select output width with round

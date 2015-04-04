@@ -780,7 +780,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings: 205
 
-Total memory usage is 228892 kilobytes
+Total memory usage is 228636 kilobytes
 
 Writing NGD file "VmodCAM_Ref.ngd" ...
 Total REAL time to NGDBUILD completion:  11 sec

@@ -10,7 +10,7 @@ Total CPU time to Xst completion: 0.11 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> 
 Reading constraint file D:/Program/MYPRJ~1/HG_Sync/FPGA/SIFT/source/TOP.XCF.
@@ -133,12 +133,12 @@ Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\PixCoordinat
 Parsing module <PixCoordinator>.
 Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" into library work
 Parsing module <octaveModule>.
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 35. parameter declaration becomes local in octaveModule with formal parameter declaration list
 INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 36. parameter declaration becomes local in octaveModule with formal parameter declaration list
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 38. parameter declaration becomes local in octaveModule with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 37. parameter declaration becomes local in octaveModule with formal parameter declaration list
 INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 39. parameter declaration becomes local in octaveModule with formal parameter declaration list
 INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 40. parameter declaration becomes local in octaveModule with formal parameter declaration list
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 43. parameter declaration becomes local in octaveModule with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 41. parameter declaration becomes local in octaveModule with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 44. parameter declaration becomes local in octaveModule with formal parameter declaration list
 Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ColorTranse.v" into library work
 Parsing module <ColorTranse>.
 Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" into library work
@@ -146,6 +146,8 @@ Parsing module <hijacker>.
 WARNING:HDLCompiler:751 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 42: Redeclaration of ansi port mosi is not allowed
 WARNING:HDLCompiler:751 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 143: Redeclaration of ansi port spi_ScreenRst is not allowed
 INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 192. parameter declaration becomes local in hijacker with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 198. parameter declaration becomes local in hijacker with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 201. parameter declaration becomes local in hijacker with formal parameter declaration list
 Parsing VHDL file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ipcore_dir\blkRAM_W32D640_SP.vhd" into library work
 Parsing entity <blkRAM_W32D640_SP>.
 Parsing architecture <blkRAM_W32D640_SP_a> of entity <blkram_w32d640_sp>.
@@ -248,9 +250,9 @@ WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\PixCoordi
 WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\PixCoordinator.v" Line 42: Result of 12-bit expression is truncated to fit in 11-bit target.
 WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 190: Size mismatch in connection of port <Y>. Formal port size is 10-bit while actual signal size is 11-bit.
 
-Elaborating module <octaveModule>.
+Elaborating module <octaveModule(frameW=32'sb01010000000)>.
 
-Elaborating module <ScanLWindow_blkRAM(block_height=19,block_width=1)>.
+Elaborating module <ScanLWindow_blkRAM(block_height=19,block_width=1,frame_width=32'sb01010000000)>.
 WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ScanLWindow_blkRAM.v" Line 38: Result of 11-bit expression is truncated to fit in 10-bit target.
 Going to vhdl side to elaborate module blkRAM_W32D640_SP
 
@@ -293,10 +295,10 @@ Going to vhdl side to elaborate module blkRAM_W32D640_SP
 Back to verilog to continue elaboration
 WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ScanLWindow_blkRAM.v" Line 96: Result of 64-bit expression is truncated to fit in 32-bit target.
 WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ScanLWindow_blkRAM.v" Line 98: Result of 64-bit expression is truncated to fit in 32-bit target.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 55: Size mismatch in connection of port <inData>. Formal port size is 32-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 56: Size mismatch in connection of port <inData>. Formal port size is 32-bit while actual signal size is 8-bit.
 
 Elaborating module <groupArrReOrderBABA2BBAA(Arr1EleW=8,Arr2EleW=24,Arr3EleW=0,Arr4EleW=0,ArrL=19)>.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 64: Size mismatch in connection of port <groupArrBBAA>. Formal port size is 608-bit while actual signal size is 152-bit.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 65: Size mismatch in connection of port <groupArrBBAA>. Formal port size is 608-bit while actual signal size is 152-bit.
 
 Elaborating module <MFP_MAC_par(In1W=8,In2W=6,In2EQW=8,ArrL=19,isUnsigned=1,PordW_ROUND=9,AccW_ROUND=8,pipeInterval=2,isFloor=0)>.
 
@@ -337,24 +339,26 @@ Elaborating module <MFP_RegOWire(dataW=9,levelIdx=4,regInterval=2)>.
 Elaborating module <MFP_AdderTree(data_depth=9,ArrL=32'sb01010,levelIdx=1,pipeInterval=2,isUnsigned=1)>.
 
 Elaborating module <MFP_Round(InW=9,OutW=8,isUnsigned=1)>.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 75: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 78: Result of 160-bit expression is truncated to fit in 152-bit target.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 84: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 75: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 78: Result of 160-bit expression is truncated to fit in 152-bit target.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 84: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 75: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 78: Result of 160-bit expression is truncated to fit in 152-bit target.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 84: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 75: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 78: Result of 160-bit expression is truncated to fit in 152-bit target.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 84: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 75: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 78: Result of 160-bit expression is truncated to fit in 152-bit target.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 84: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 76: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
+WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 79: Result of 160-bit expression is truncated to fit in 152-bit target.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 85: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 76: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
+WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 79: Result of 160-bit expression is truncated to fit in 152-bit target.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 85: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 76: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
+WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 79: Result of 160-bit expression is truncated to fit in 152-bit target.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 85: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 76: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
+WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 79: Result of 160-bit expression is truncated to fit in 152-bit target.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 85: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 76: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
+WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 79: Result of 160-bit expression is truncated to fit in 152-bit target.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 85: Size mismatch in connection of port <In2Arr>. Formal port size is 114-bit while actual signal size is 152-bit.
 
 Elaborating module <MFP_RegOWire(dataW=40,isWire=0)>.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 210: Result of 11-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:1127 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 218: Assignment to Gaussian2Reg ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 226: Result of 11-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:634 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 194: Net <Gaussian2[39]> does not have a driver.
 Back to vhdl to continue elaboration
 WARNING:HDLCompiler:1127 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\VmodCAM_Ref.vhd" Line 190: Assignment to flclk_odivlv ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\VmodCAM_Ref.vhd" Line 194: Assignment to fbrdclkdivlv ignored, since the identifier is never used
@@ -442,6 +446,7 @@ INFO:HDLCompiler:679 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\remote_sourc
 INFO:HDLCompiler:679 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\remote_sources\_\lib\digilent\TWICtl.vhd" Line 411. Case statement is complete. others clause is never selected
 INFO:HDLCompiler:679 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\remote_sources\_\lib\digilent\TWICtl.vhd" Line 429. Case statement is complete. others clause is never selected
 INFO:HDLCompiler:679 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\CamCtl.vhd" Line 464. Case statement is complete. others clause is never selected
+WARNING:Xst:2972 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" line 218. All outputs of instance <RoW2> of block <MFP_RegOWire> are unconnected in block <hijacker>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -483,6 +488,8 @@ WARNING:Xst:647 - Input <FbWrARst> is never used. This port will be preserved an
 INFO:Xst:3210 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" line 63: Output port <dat_i> of the instance <SPI_S1> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" line 63: Output port <accep_dat_o> of the instance <SPI_S1> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" line 63: Output port <rdy> of the instance <SPI_S1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" line 218: Output port <out> of the instance <RoW2> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <Gaussian2> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 1-bit register for signal <KGate>.
     Found 6-bit register for signal <Pix_C>.
     Found 3-bit register for signal <SPI_C>.
@@ -490,21 +497,21 @@ INFO:Xst:3210 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" line 63
     Found 48-bit register for signal <dataG>.
     Found 48-bit register for signal <dat_PixK>.
     Found 8-bit register for signal <feedData>.
-    Found 64-bit register for signal <n0114[63:0]>.
+    Found 64-bit register for signal <n0116[63:0]>.
     Found 1-bit register for signal <spi_ScreenRst>.
     Found 1-bit register for signal <misoGate>.
-    Found 6-bit adder for signal <n0218[5:0]> created at line 153.
-    Found 7-bit adder for signal <n0221[6:0]> created at line 153.
-    Found 10-bit adder for signal <GND_9_o_FilterL[0].GaussianA[8]_add_73_OUT> created at line 210.
-    Found 10-bit adder for signal <GND_9_o_FilterL[1].GaussianA[8]_add_77_OUT> created at line 210.
-    Found 10-bit adder for signal <GND_9_o_FilterL[2].GaussianA[8]_add_81_OUT> created at line 210.
-    Found 10-bit adder for signal <GND_9_o_FilterL[3].GaussianA[8]_add_85_OUT> created at line 210.
+    Found 6-bit adder for signal <n0220[5:0]> created at line 153.
+    Found 7-bit adder for signal <n0223[6:0]> created at line 153.
+    Found 10-bit adder for signal <GND_9_o_FilterL[0].GaussianA[8]_add_73_OUT> created at line 226.
+    Found 10-bit adder for signal <GND_9_o_FilterL[1].GaussianA[8]_add_77_OUT> created at line 226.
+    Found 10-bit adder for signal <GND_9_o_FilterL[2].GaussianA[8]_add_81_OUT> created at line 226.
+    Found 10-bit adder for signal <GND_9_o_FilterL[3].GaussianA[8]_add_85_OUT> created at line 226.
     Found 9-bit subtractor for signal <DoGOut<0>> created at line 162.
     Found 9-bit subtractor for signal <DoGOut<1>> created at line 162.
     Found 9-bit subtractor for signal <DoGOut<2>> created at line 162.
     Found 9-bit subtractor for signal <DoGOut<3>> created at line 162.
     Found 8-bit 8-to-1 multiplexer for signal <ndat_i[2]_SaData[7][7]_wide_mux_15_OUT> created at line 118.
-    Found 9-bit 8-to-1 multiplexer for signal <_n0426> created at line 167.
+    Found 9-bit 8-to-1 multiplexer for signal <_n0428> created at line 167.
     Found 1-bit tristate buffer for signal <miso> created at line 43
     Found 8-bit comparator lessequal for signal <n0022> created at line 123
     Found 11-bit comparator greater for signal <pixY[10]_pixX[10]_LessThan_58_o> created at line 176
@@ -562,6 +569,7 @@ Synthesizing Unit <octaveModule>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v".
         dataW = 8
         outoutW = 8
+        frameW = 640
     Found 8-bit register for signal <FilterL[0].FilterOutReg>.
     Found 152-bit register for signal <FilterL[1].HerizontalBuff>.
     Found 8-bit register for signal <FilterL[1].FilterOutReg>.
@@ -580,6 +588,7 @@ Synthesizing Unit <ScanLWindow_blkRAM>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ScanLWindow_blkRAM.v".
         block_width = 1
         block_height = 19
+        frame_width = 640
     Found 608-bit register for signal <Window>.
     Found 10-bit register for signal <addra_bramR>.
     Found 10-bit adder for signal <addra_bramR[9]_GND_17_o_add_2_OUT> created at line 38.
@@ -3389,7 +3398,7 @@ Delay:               6.623ns (Levels of Logic = 6)
      FD:C->Q              18   0.447   1.154  Inst_DVITransmitter/Inst_TMDSEncoder_blue/n0_q_m_1 (Inst_DVITransmitter/Inst_TMDSEncoder_blue/n0_q_m_1)
      LUT2:I0->O            4   0.203   0.684  Inst_DVITransmitter/Inst_TMDSEncoder_blue/Msub_dc_bias_lut<1>11 (Inst_DVITransmitter/Inst_TMDSEncoder_blue/Msub_dc_bias_lut<1>)
      LUT6:I5->O           17   0.205   1.132  Inst_DVITransmitter/Inst_TMDSEncoder_blue/cond_balanced (Inst_DVITransmitter/Inst_TMDSEncoder_blue/cond_balanced)
-     LUT2:I0->O            2   0.203   0.721  Inst_DVITransmitter/Inst_TMDSEncoder_blue/cond_balanced_q_m_d[8]_AND_235_o1 (Inst_DVITransmitter/Inst_TMDSEncoder_blue/cond_balanced_q_m_d[8]_AND_235_o)
+     LUT2:I0->O            2   0.203   0.721  Inst_DVITransmitter/Inst_TMDSEncoder_blue/cond_balanced_q_m_d[8]_AND_237_o1 (Inst_DVITransmitter/Inst_TMDSEncoder_blue/cond_balanced_q_m_d[8]_AND_237_o)
      LUT6:I4->O            1   0.203   0.580  Inst_DVITransmitter/Inst_TMDSEncoder_blue/Maccum_cnt_t_1_lut<4>2 (Inst_DVITransmitter/Inst_TMDSEncoder_blue/Maccum_cnt_t_1_lut<4>2)
      LUT6:I5->O            1   0.205   0.580  Inst_DVITransmitter/Inst_TMDSEncoder_blue/Maccum_cnt_t_1_lut<4>3 (Inst_DVITransmitter/Inst_TMDSEncoder_blue/Maccum_cnt_t_1_lut<4>)
      LUT6:I5->O            1   0.205   0.000  Inst_DVITransmitter/Inst_TMDSEncoder_blue/Maccum_cnt_t_1_xor<4>11 (Inst_DVITransmitter/Inst_TMDSEncoder_blue/Result<4>)
@@ -3464,8 +3473,8 @@ Offset:              5.731ns (Levels of Logic = 4)
     ----------------------------------------  ------------
      IBUF:I->O            21   1.222   1.458  css_IBUF (css_IBUF)
      begin scope: 'hijacker1:css'
-     LUT6:I1->O            1   0.203   0.684  _n0468_inv21 (_n0468_inv2)
-     LUT6:I4->O           64   0.203   1.639  _n0468_inv23 (_n0468_inv)
+     LUT6:I1->O            1   0.203   0.684  _n0470_inv21 (_n0470_inv2)
+     LUT6:I4->O           64   0.203   1.639  _n0470_inv23 (_n0470_inv)
      FDE:CE                    0.322          SaData_0_0
     ----------------------------------------
     Total                      5.731ns (1.950ns logic, 3.781ns route)
@@ -4022,14 +4031,14 @@ CAMB_PCLK_I    |         |         |    2.350|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 55.00 secs
-Total CPU time to Xst completion: 55.37 secs
+Total REAL time to Xst completion: 60.00 secs
+Total CPU time to Xst completion: 60.21 secs
  
 --> 
 
-Total memory usage is 394284 kilobytes
+Total memory usage is 397164 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  778 (   0 filtered)
-Number of infos    :  154 (   0 filtered)
+Number of warnings :  782 (   0 filtered)
+Number of infos    :  155 (   0 filtered)
 
