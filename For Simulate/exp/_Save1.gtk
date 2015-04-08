@@ -1,0 +1,59 @@
+[*]
+[*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
+[*] Wed Apr 08 05:51:58 2015
+[*]
+[dumpfile] "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\For Simulate\exp\wave.vcd"
+[dumpfile_mtime] "Wed Apr 08 05:51:00 2015"
+[dumpfile_size] 30219
+[savefile] "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\For Simulate\exp\_Save1.gtk"
+[timestart] 0
+[size] 1916 1018
+[pos] -1 -1
+*-10.000000 1690 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test.
+[sst_width] 197
+[signals_width] 297
+[sst_expanded] 1
+[sst_vpaned_height] 300
+@24
+test.xm.absIn1[6:0]
+test.xm.absIn2[6:0]
+@8420
+test.xm.in1[7:0]
+@20000
+-
+-
+-
+-
+@24
+test.xm.in2[7:0]
+@20000
+-
+-
+-
+@8024
+test.xm.minAbs[6:0]
+@20000
+-
+-
+-
+@8024
+test.xm.outDataAbs[6:0]
+@20000
+-
+-
+-
+@20001
+-
+@8420
+test.xm.outData[7:0]
+@20000
+-
+-
+-
+-
+-
+@28
+test.xm.outSign
+[pattern_trace] 1
+[pattern_trace] 0

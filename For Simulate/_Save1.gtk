@@ -1,25 +1,23 @@
 [*]
 [*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
-[*] Wed Apr 01 10:22:51 2015
+[*] Tue Apr 07 11:38:56 2015
 [*]
-[dumpfile] "D:\Program\Verilog\work\EE278\KK\wave.vcd"
-[dumpfile_mtime] "Wed Apr 01 10:22:46 2015"
-[dumpfile_size] 60157
-[savefile] "D:\Program\Verilog\work\EE278\KK\_Save1.gtk"
-[timestart] 0
-[size] 1000 600
-[pos] -1 -1
-*-3.000000 31 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
-[treeopen] TB1.
+[dumpfile] "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\For Simulate\wave.vcd"
+[dumpfile_mtime] "Tue Apr 07 11:33:43 2015"
+[dumpfile_size] 344350947
+[savefile] "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\For Simulate\_Save1.gtk"
+[timestart] 48978
+[size] 1920 1018
+[pos] -34 -34
+*-7.000000 45270 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test.
 [sst_width] 197
 [signals_width] 142
 [sst_expanded] 1
-[sst_vpaned_height] 312
-@800200
+[sst_vpaned_height] 363
+@800600
 -TB1.gS.GSum
-@25
-TB1.GaussSVar[8:0]
-@20000
+@20400
 -
 -
 -
@@ -28,7 +26,26 @@ TB1.GaussSVar[8:0]
 -
 -
 -
-@1001200
+@420
+test.addL[0].MulIxIy[7:0]
+test.addL[0].bij[12:0]
+test.addL[1].MulIxIy[7:0]
+test.addL[1].bij[12:0]
+test.addL[2].MulIxIy[7:0]
+test.addL[2].bij[12:0]
+test.addL[3].MulIxIy[7:0]
+test.addL[3].bij[12:0]
+test.addL[4].MulIxIy[7:0]
+test.addL[4].bij[12:0]
+test.addL[5].MulIxIy[7:0]
+test.addL[5].bij[12:0]
+test.addL[6].MulIxIy[7:0]
+test.addL[6].bij[12:0]
+test.addL[7].MulIxIy[7:0]
+test.addL[7].bij[12:0]
+test.addL[8].MulIxIy[7:0]
+test.addL[8].bij[12:0]
+@1001600
 -group_end
 [pattern_trace] 1
 [pattern_trace] 0

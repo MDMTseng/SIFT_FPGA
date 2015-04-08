@@ -16,7 +16,7 @@ reg signed[inputW-1:0]dA,dB;
 reg [inputW*40-1:0]dAArr2;
 wire [inputW*40-1:0]dBArr;
 wire signed[outputW-1:0]acc_sum_rounded_par2;
-MFP_MAC_par #(.InAW(inputW),.ArrL(40),.AccW_ROUND(outputW))MACp2(dAArr2,dBArr,ghfghghfg, acc_sum_rounded_par2);
+MFP_MAC_par #(.In1W(inputW),.ArrL(40),.AccW_ROUND(outputW))MACp2(clk,en,dAArr2,dBArr,acc_sum_rounded_par2);
 
 
 
