@@ -1,22 +1,23 @@
 [*]
 [*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
-[*] Sat Apr 04 06:06:21 2015
+[*] Thu Apr 09 07:30:08 2015
 [*]
 [dumpfile] "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\For Simulate\MFixPoint_ToolBox\wave.vcd"
-[dumpfile_mtime] "Sat Apr 04 06:06:16 2015"
-[dumpfile_size] 375495
+[dumpfile_mtime] "Thu Apr 09 07:29:44 2015"
+[dumpfile_size] 37594
 [savefile] "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\For Simulate\MFixPoint_ToolBox\_Save1.gtk"
-[timestart] 604
-[size] 1916 1018
-[pos] -1 -1
-*-6.000000 110 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[timestart] 356
+[size] 944 1002
+[pos] 909 -1
+*-5.000000 380 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] TB1.
+[treeopen] TB1.sat.
 [sst_width] 197
-[signals_width] 358
+[signals_width] 231
 [sst_expanded] 1
-[sst_vpaned_height] 301
-@208022
-TB1.In1WNum[7:0]
+[sst_vpaned_height] 295
+@420
+TB1.CC[8:0]
 @20000
 -
 -
@@ -25,20 +26,54 @@ TB1.In1WNum[7:0]
 -
 -
 -
-@208022
-TB1.MACOut[7:0]
 @20000
 -
 -
 -
 @200
 -
+@201
 -
-@208022
-TB1.MACSymUnsigned2.acc_sum_rounded[7:0]
 @20000
 -
 -
 -
+@28
+TB1.sat.sign
+@800200
+-TB1.sat.dataIn
+@8420
+TB1.sat.dataIn[14:0]
+@800420
+TB1.sat.dataOut[14:0]
+@28
+(0)TB1.sat.dataOut[14:0]
+(1)TB1.sat.dataOut[14:0]
+(2)TB1.sat.dataOut[14:0]
+(3)TB1.sat.dataOut[14:0]
+(4)TB1.sat.dataOut[14:0]
+(5)TB1.sat.dataOut[14:0]
+(6)TB1.sat.dataOut[14:0]
+(7)TB1.sat.dataOut[14:0]
+(8)TB1.sat.dataOut[14:0]
+(9)TB1.sat.dataOut[14:0]
+(10)TB1.sat.dataOut[14:0]
+(11)TB1.sat.dataOut[14:0]
+(12)TB1.sat.dataOut[14:0]
+(13)TB1.sat.dataOut[14:0]
+(14)TB1.sat.dataOut[14:0]
+@1001200
+-group_end
+@8420
+TB1.sat.genblk2.Out_[2:0]
+TB1.satOut[14:0]
+@22
+TB1.Mul.Out[7:0]
+@1001200
+-group_end
+@420
+TB1.Mul.In1[6:0]
+TB1.Mul.In2[6:0]
+TB1.Mul.Out_[12:0]
 [pattern_trace] 1
 [pattern_trace] 0

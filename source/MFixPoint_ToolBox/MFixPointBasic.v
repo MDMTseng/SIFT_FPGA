@@ -42,7 +42,7 @@ input [In1W-1:0]In1;
 input [In2W-1:0]In2;
 output [OutW-1:0]Out;
 
-localparam RealOutW=In1W+In2EQW+((isUnsigned)?0:-1);
+localparam RealOutW=In1W+In2EQW+((isUnsigned==1)?0:-1);
 
 
 wire [RealOutW-1:0]Out_;
@@ -195,5 +195,48 @@ endgenerate
 
 endmodule
 
+module MFP_Saturate
+#(parameter
+InW=8,
+OutW=4,
+Sat2W=OutW,
+isUnsigned=0
+)
+(input [InW-1:0]dataIn,output [OutW-1:0]dataOut);
+wire sign=dataIn[InW-1];
+parameter checkbits=InW-Sat2W;
+parameter MAX_POS=(isUnsigned)?((2**(Sat2W))-1):((2**(Sat2W-1))-1);
 
+generate
+
+if(isUnsigned)begin
+	assign dataOut=
+	((dataIn[InW-1-:checkbits]==0)?MAX_POS:dataIn[0+:Sat2W]);
+end else begin
+	wire signed[Sat2W-1:0]Out_;
+	assign Out_=(sign)?
+	(((dataIn[InW-2-:checkbits])=={checkbits{1'b1}}&&
+	(dataIn[0+:Sat2W-1]!=0)
+	)?dataIn[0+:Sat2W]:-MAX_POS):
+	((dataIn[InW-2-:checkbits]!=0)?MAX_POS:dataIn[0+:Sat2W]);
+	
+	wire signed[OutW-1:0]Out=Out_;
+	assign dataOut=Out;
+end	
+	
+endgenerate
+
+endmodule
+
+
+module MFP_Abs
+#(parameter
+InW=8,
+OutW=4
+)
+(input signed[InW-1:0]dataIn,output signed[OutW-1:0]dataOut);
+assign dataOut=(dataIn[InW-1])?-dataIn:dataIn;
+	
+
+endmodule
 `endif

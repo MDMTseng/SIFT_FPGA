@@ -1,23 +1,26 @@
 [*]
 [*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
-[*] Tue Apr 07 11:38:56 2015
+[*] Thu Apr 09 06:27:56 2015
 [*]
 [dumpfile] "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\For Simulate\wave.vcd"
-[dumpfile_mtime] "Tue Apr 07 11:33:43 2015"
-[dumpfile_size] 344350947
+[dumpfile_mtime] "Thu Apr 09 06:27:40 2015"
+[dumpfile_size] 20143095
 [savefile] "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\For Simulate\_Save1.gtk"
-[timestart] 48978
-[size] 1920 1018
-[pos] -34 -34
-*-7.000000 45270 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[timestart] 48779
+[size] 944 1002
+[pos] 961 -1
+*-9.000000 49363 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] test.
+[treeopen] test.addL[0].
+[treeopen] test.addL[0].m_b.
+[treeopen] test.addL[0].m_c.
 [sst_width] 197
-[signals_width] 142
+[signals_width] 221
 [sst_expanded] 1
-[sst_vpaned_height] 363
-@800600
+[sst_vpaned_height] 356
+@800200
 -TB1.gS.GSum
-@20400
+@20000
 -
 -
 -
@@ -26,26 +29,55 @@
 -
 -
 -
+@8420
+test.addL[0].Iy[6:0]
+@20000
+-
+-
+-
+-
+-
+@200
+-
+@8420
+test.addL[0].Ix[6:0]
+@20000
+-
+-
+-
+-
+-
+@8420
+test.addL[0].IxIy[7:0]
+@20000
+-
+-
+-
+@20001
+-
+@c00420
+test.addL[0].m_b.In1[6:0]
+@28
+(0)test.addL[0].m_b.In1[6:0]
+(1)test.addL[0].m_b.In1[6:0]
+(2)test.addL[0].m_b.In1[6:0]
+(3)test.addL[0].m_b.In1[6:0]
+(4)test.addL[0].m_b.In1[6:0]
+(5)test.addL[0].m_b.In1[6:0]
+(6)test.addL[0].m_b.In1[6:0]
+@1401200
+-group_end
 @420
-test.addL[0].MulIxIy[7:0]
-test.addL[0].bij[12:0]
-test.addL[1].MulIxIy[7:0]
-test.addL[1].bij[12:0]
-test.addL[2].MulIxIy[7:0]
-test.addL[2].bij[12:0]
-test.addL[3].MulIxIy[7:0]
-test.addL[3].bij[12:0]
-test.addL[4].MulIxIy[7:0]
-test.addL[4].bij[12:0]
-test.addL[5].MulIxIy[7:0]
-test.addL[5].bij[12:0]
-test.addL[6].MulIxIy[7:0]
-test.addL[6].bij[12:0]
-test.addL[7].MulIxIy[7:0]
-test.addL[7].bij[12:0]
-test.addL[8].MulIxIy[7:0]
-test.addL[8].bij[12:0]
-@1001600
+test.addL[0].m_b.In2[6:0]
+test.addL[0].m_b.Out_[12:0]
+@8420
+test.aij[13:0]
+test.aij_ave[8:0]
+test.cij[13:0]
+test.cij[13:0]
+test.bij[13:0]
+test.bij_ave[8:0]
+@1001200
 -group_end
 [pattern_trace] 1
 [pattern_trace] 0

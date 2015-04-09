@@ -27,11 +27,12 @@ localparam tableDataMax=(2**tableDataW)-1;
 parameter tableLW=dataW-1;
 localparam tableL=(2**tableLW);
 
-localparam FixTableL=128;
-localparam FixTableBitW=$clog2(FixTableL);
+localparam FixTableL=64;
+parameter FixTableBitW=$clog2(FixTableL);
 localparam FixTableMax=FixTableL-1;
 
-wire [FixTableBitW*FixTableL-1:0]sqTableS={7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd127,7'd126,7'd126,7'd126,7'd126,7'd126,7'd126,7'd126,7'd125,7'd125,7'd125,7'd125,7'd124,7'd124,7'd124,7'd123,7'd123,7'd122,7'd121,7'd121,7'd120,7'd119,7'd118,7'd117,7'd116,7'd115,7'd113,7'd112,7'd111,7'd109,7'd107,7'd106,7'd104,7'd102,7'd100,7'd97,7'd95,7'd93,7'd90,7'd88,7'd85,7'd83,7'd80,7'd77,7'd75,7'd72,7'd69,7'd66,7'd63,7'd60,7'd57,7'd54,7'd52,7'd49,7'd46,7'd43,7'd41,7'd38,7'd36,7'd33,7'd31,7'd29,7'd27,7'd24,7'd23,7'd21,7'd19,7'd17,7'd16,7'd14,7'd13,7'd12,7'd10,7'd9,7'd8,7'd7,7'd6,7'd6,7'd5,7'd4,7'd4,7'd3,7'd3,7'd2,7'd2,7'd2,7'd1,7'd1,7'd1,7'd0,7'd0,7'd0,7'd0};
+wire [FixTableBitW*FixTableL-1:0]sqTableS={6'd63,6'd63,6'd63,6'd63,6'd63,6'd63,6'd63,6'd63,6'd63,6'd62,6'd62,6'd62,6'd62,6'd62,6'd62,6'd61,6'd61,6'd61,6'd61,6'd60,6'd60,6'd59,6'd59,6'd58,6'd58,6'd57,6'd57,6'd56,6'd55,6'd54,6'd53,6'd52,6'd51,6'd50
+,6'd49,6'd48,6'd47,6'd45,6'd44,6'd42,6'd41,6'd39,6'd37,6'd36,6'd34,6'd32,6'd30,6'd29,6'd27,6'd25,6'd23,6'd21,6'd19,6'd17,6'd15,6'd14,6'd12,6'd10,6'd8,6'd6,6'd5,6'd3,6'd2,6'd0};
 wire [tableDataW-1:0]sqTable[0:tableL-1];
 genvar gi;
 generate 
