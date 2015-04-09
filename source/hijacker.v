@@ -150,17 +150,17 @@ SGMDataDepth=6
 	
 
 
-	wire [DataDepth-1:0]ColorMean1=DI1[11+:5]+DI1[0+:5]+DI1[5+:6];//(DI1[11+:5]+DI1[0+:5]*2+DI1[5+:6]*2);
-	wire [DataDepth-1:0]ColorMean2=DI2[11+:5]+DI2[0+:5]+DI2[5+:6];//(DI2[11+:5]+DI2[0+:5]*2+DI2[5+:6]*2);
+	wire [DataDepth-1:0]ColorMean1=(DI1[11+:5]+DI1[0+:5]+DI1[5+:6])*2;//(DI1[11+:5]+DI1[0+:5]*2+DI1[5+:6]*2);
+	wire [DataDepth-1:0]ColorMean2=(DI2[11+:5]+DI2[0+:5]+DI2[5+:6])*2;//(DI2[11+:5]+DI2[0+:5]*2+DI2[5+:6]*2);
 	
 	wire [DataDepth-1:0]DI2r=(SaData[2]==0)?ColorMean2:{dat_PixK[24+23-:5],dat_PixK[24+15-:6],dat_PixK[24+7-:8]};//giv full bit of blue
 	
 	wire [DataDepth-1:0]DI1r=(SaData[2]==0)?ColorMean1:{dat_PixK[23-:5],dat_PixK[15-:6],dat_PixK[7-:8]};//may kick off red
 	parameter GausTableN=5;
 	localparam dataW=8;//unsigned data
-	localparam sidataW=dataW+1;
-	wire signed[sidataW-1:0]DoGOut[0:GausTableN-1-1];
-	wire signed[sidataW-1:0]DoGOut2[0:GausTableN-1-1];
+	localparam sidataW=dataW;
+	wire [sidataW-1:0]DoGOut[0:GausTableN-1-1];
+	wire [sidataW-1:0]DoGOut2[0:GausTableN-1-1];
 	
 	always@(*)
 	begin
@@ -223,135 +223,9 @@ SGMDataDepth=6
 	*/
 	
 	
-
 	
-		genvar gi;
-	
-wire [32*3*3-1:0]WinX;
-wire [dataW*3*3-1:0]Buff3x3;
-
-
-ScanLWindow_blkRAM #(.block_height(3),.block_width(3),.frame_width(ImageW)) win1(clk_p,en_p,DI1r[0+:8],WinX);
-
-	
-
-	groupArrReOrderBABA2BBAA#(
-	.Arr1EleW(dataW),.Arr2EleW(32-dataW),.Arr3EleW(0),.Arr4EleW(0),
-	.ArrL(3*3))gARO(WinX,Buff3x3);
-	
-	
-
-parameter FilterOutW=dataW;
-
-wire  [dataW+1-1:0]DH1=(Buff3x3[0*dataW+:dataW]+Buff3x3[1*dataW+:dataW]*2+Buff3x3[2*dataW+:dataW])/2;
-wire  [dataW+1-1:0]DH2=(Buff3x3[6*dataW+:dataW]+Buff3x3[7*dataW+:dataW]*2+Buff3x3[8*dataW+:dataW])/2;
-wire  [dataW+1-1:0]DV1=(Buff3x3[0*dataW+:dataW]+Buff3x3[3*dataW+:dataW]*2+Buff3x3[6*dataW+:dataW])/2;
-wire  [dataW+1-1:0]DV2=(Buff3x3[2*dataW+:dataW]+Buff3x3[5*dataW+:dataW]*2+Buff3x3[8*dataW+:dataW])/2;
-
-wire signed[dataW+2-1:0]SobelXY_[0:2-1];
-assign SobelXY_[0]=(DV1-DV2);
-assign SobelXY_[1]=(DH1-DH2);
-
-
-wire signed[dataW-1:0]SobelXY[0:2-1];
-parameter satbits=1;
-MFP_Saturate#(.InW(dataW+2),.Sat2W(dataW-satbits),.OutW(dataW),.isUnsigned(0)) 
-sobelXsat(SobelXY_[0],SobelXY[0]);
-
-MFP_Saturate#(.InW(dataW+2),.Sat2W(dataW-satbits),.OutW(dataW),.isUnsigned(0)) 
-sobelYsat(SobelXY_[1],SobelXY[1]);
-
-parameter corWinDataW=2*dataW;
-parameter cornorwindowSize=5;
-parameter cornorwindowDim=cornorwindowSize*cornorwindowSize;
-
-
-	
-wire [32*cornorwindowDim-1:0]WinX_cornor;
-wire [corWinDataW*cornorwindowDim-1:0]corWin;
-
-	 
-ScanLWindow_blkRAM #(.block_height(cornorwindowSize),.block_width(cornorwindowSize),
-.frame_width(ImageW)) cornorWindow(clk_p,en_p,{SobelXY[0],SobelXY[1]},WinX_cornor);
-
-
-groupArrReOrderBABA2BBAA#(
-.Arr1EleW(corWinDataW),.Arr2EleW(32-corWinDataW),.Arr3EleW(0),.Arr4EleW(0),
-.ArrL(cornorwindowDim))gARO_cornerWin(WinX_cornor,corWin);
-
- 
-parameter abcCoeffW=dataW+$clog2(cornorwindowDim)+1+1;
-wire [abcCoeffW*cornorwindowDim-1:0]aij_arr;
-wire [abcCoeffW*cornorwindowDim-1:0]cij_arr;
-wire [abcCoeffW*cornorwindowDim-1:0]bij_arr;
-
-generate
-	for(gi=0;gi<cornorwindowDim;gi=gi+1)begin:addL
-			wire signed[dataW-satbits-1:0]Ix,Iy;
-			assign Ix=corWin[gi*corWinDataW+:dataW-satbits];
-			assign Iy=corWin[gi*corWinDataW+dataW+:dataW-satbits];
-			
-			
-			wire [dataW-1:0]IxIx;//signed
-			MFP_Multi #(.In1W(dataW-satbits),.OutW(dataW),.isUnsigned(0)) 
-			m_a(Ix,Ix,IxIx);
-			wire [dataW-1:0]IyIy;
-			MFP_Multi #(.In1W(dataW-satbits),.OutW(dataW),.isUnsigned(0)) 
-			m_c(Iy,Iy,IyIy);
-			wire signed[dataW-1:0]IxIy;
-			MFP_Multi #(.In1W(dataW-satbits),.OutW(dataW),.isUnsigned(0)) 
-			m_b(Iy,Ix,IxIy);
-			
-			assign aij_arr[gi*(abcCoeffW)+:abcCoeffW]=IxIx;
-			assign cij_arr[gi*(abcCoeffW)+:abcCoeffW]=IyIy;
-			
-			wire signed[abcCoeffW-1:0]IxIyEx=IxIy;//extend sign
-			assign bij_arr[gi*(abcCoeffW)+:abcCoeffW]=IxIyEx;
-				
-	end
-	
-	wire [abcCoeffW-1:0]aij;
-	wire [abcCoeffW-1:0]cij;
-	wire signed[abcCoeffW-1:0]bij;
-	 MFP_AdderTree
-    #(.data_depth(abcCoeffW),.ArrL(cornorwindowDim),.isUnsigned(0)
-     )AdderTree_aij(
-       clk_p,en_p,aij_arr,aij);
-	 MFP_AdderTree
-    #(.data_depth(abcCoeffW),.ArrL(cornorwindowDim),.isUnsigned(0)
-     )AdderTree_cij(
-       clk_p,en_p,cij_arr,cij);
-	 MFP_AdderTree
-    #(.data_depth(abcCoeffW),.ArrL(cornorwindowDim),.isUnsigned(0)
-     )AdderTree_bij(
-		clk_p,en_p,bij_arr,bij);
-	 
-	 
-	
-	
-	parameter tc=0;
-	//assign DataOutPix[0]=addL[cornorwindowSize*cornorwindowSize-1].aij*2/cornorwindowDim;
-	wire [dataW-1+1:0]aij_ave=aij*2/cornorwindowDim-tc;
-	wire [dataW-1+1:0]cij_ave=cij*2/cornorwindowDim-tc;
-	wire signed[dataW-1+1:0]bij_ave=bij*2/cornorwindowDim;
-	
-	wire signed[dataW-1+3:0]aijcij;
-	MFP_Multi #(.In1W(dataW+1),.OutW(dataW+3),.isUnsigned(0)) m_ac(aij_ave,cij_ave,aijcij);		
-	
-	wire[dataW-1+3:0]bijbij;
-	MFP_Multi #(.In1W(dataW+1),.OutW(dataW+3),.isUnsigned(0)) m_bb(bij_ave,bij_ave,bijbij);	
-	
-	
-	wire signed[dataW-1+1:0]acSbb=aijcij/2-bijbij/2;
-	
-	
-	assign DoGOut[1]=128+bijbij/4;
-	assign DoGOut[0]=128+aijcij/4;
-	assign DoGOut[2]=(acSbb[dataW])?0:acSbb;
-endgenerate
-	
-	
-	
+	harrisCornerResponse  #(.dataW(dataW),.ImageW(ImageW),.cornorwindowSize(5))hCornor
+	(clk_p,en_p,rst_p,DI1r[0+:8],DoGOut[0]);
 	
 	
 endmodule

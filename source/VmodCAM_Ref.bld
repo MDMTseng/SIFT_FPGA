@@ -4,8 +4,8 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Command Line:
 D:\Program\FPGA\xilinxISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 -filter iseconfig/filter.filter -intstyle ise -dd _ngo -sd ipcore_dir -nt
-timestamp -uc hijacker.ucf -uc atlys_vmodcam.ucf -uc timing.ucf -uc atlys.ucf -p
-xc6slx45-csg324-3 VmodCAM_Ref.ngc VmodCAM_Ref.ngd
+timestamp -uc hijacker.ucf -uc atlys_vmodcam.ucf -uc timing.ucf -uc atlys.ucf
+-bm sobelEdge.bmm -p xc6slx45-csg324-3 VmodCAM_Ref.ngc VmodCAM_Ref.ngd
 
 Reading NGO file "D:/Program/MYPRJ~1/HG_Sync/FPGA/SIFT/source/VmodCAM_Ref.ngc"
 ...
@@ -672,6 +672,11 @@ WARNING:NgdBuild:1012 - The constraint <NET "mcb3_dram_dq[9]" LOC = M1;>
    constraint <NET "mcb3_dram_dq<9>" LOC = M1;> [hijacker.ucf(17)].
 Done...
 
+Processing BMM file "sobelEdge.bmm" ...
+
+WARNING::53 - File 'sobelEdge.bmm' is empty or has no BMM content.
+
+
 WARNING:NgdBuild:1212 - User specified non-default attribute value (10.0) was
    detected for the CLKIN_PERIOD attribute on DCM
    "Inst_SysCon/Inst_dcm_recfg/dcm_clkgen_inst".  This does not match the PERIOD
@@ -719,16 +724,6 @@ WARNING:NgdBuild:452 - logical net 'FbRd0Data<3>' has no driver
 WARNING:NgdBuild:452 - logical net 'FbRd0Data<2>' has no driver
 WARNING:NgdBuild:452 - logical net 'FbRd0Data<1>' has no driver
 WARNING:NgdBuild:452 - logical net 'FbRd0Data<0>' has no driver
-WARNING:NgdBuild:452 - logical net 'N173' has no driver
-WARNING:NgdBuild:452 - logical net 'N174' has no driver
-WARNING:NgdBuild:452 - logical net 'N175' has no driver
-WARNING:NgdBuild:452 - logical net 'N176' has no driver
-WARNING:NgdBuild:452 - logical net 'N177' has no driver
-WARNING:NgdBuild:452 - logical net 'N178' has no driver
-WARNING:NgdBuild:452 - logical net 'N179' has no driver
-WARNING:NgdBuild:452 - logical net 'N180' has no driver
-WARNING:NgdBuild:452 - logical net 'N181' has no driver
-WARNING:NgdBuild:452 - logical net 'N182' has no driver
 WARNING:NgdBuild:452 - logical net 'N183' has no driver
 WARNING:NgdBuild:452 - logical net 'N184' has no driver
 WARNING:NgdBuild:452 - logical net 'N185' has no driver
@@ -736,12 +731,22 @@ WARNING:NgdBuild:452 - logical net 'N186' has no driver
 WARNING:NgdBuild:452 - logical net 'N187' has no driver
 WARNING:NgdBuild:452 - logical net 'N188' has no driver
 WARNING:NgdBuild:452 - logical net 'N189' has no driver
+WARNING:NgdBuild:452 - logical net 'N190' has no driver
+WARNING:NgdBuild:452 - logical net 'N191' has no driver
+WARNING:NgdBuild:452 - logical net 'N192' has no driver
+WARNING:NgdBuild:452 - logical net 'N193' has no driver
+WARNING:NgdBuild:452 - logical net 'N194' has no driver
+WARNING:NgdBuild:452 - logical net 'N195' has no driver
 WARNING:NgdBuild:452 - logical net 'N196' has no driver
 WARNING:NgdBuild:452 - logical net 'N197' has no driver
 WARNING:NgdBuild:452 - logical net 'N198' has no driver
 WARNING:NgdBuild:452 - logical net 'N199' has no driver
-WARNING:NgdBuild:452 - logical net 'N200' has no driver
-WARNING:NgdBuild:452 - logical net 'N201' has no driver
+WARNING:NgdBuild:452 - logical net 'N206' has no driver
+WARNING:NgdBuild:452 - logical net 'N207' has no driver
+WARNING:NgdBuild:452 - logical net 'N208' has no driver
+WARNING:NgdBuild:452 - logical net 'N209' has no driver
+WARNING:NgdBuild:452 - logical net 'N210' has no driver
+WARNING:NgdBuild:452 - logical net 'N211' has no driver
 WARNING:NgdBuild:452 - logical net 'Inst_FBCtl/mcb_ddr2/p0_cmd_byte_addr<29>'
    has no driver
 WARNING:NgdBuild:452 - logical net 'Inst_FBCtl/mcb_ddr2/p0_cmd_byte_addr<28>'
@@ -780,10 +785,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings: 205
 
-Total memory usage is 219028 kilobytes
+Total memory usage is 184340 kilobytes
 
 Writing NGD file "VmodCAM_Ref.ngd" ...
-Total REAL time to NGDBUILD completion:  12 sec
-Total CPU time to NGDBUILD completion:   10 sec
+Total REAL time to NGDBUILD completion:  9 sec
+Total CPU time to NGDBUILD completion:   8 sec
 
 Writing NGDBUILD log file "VmodCAM_Ref.bld"...
