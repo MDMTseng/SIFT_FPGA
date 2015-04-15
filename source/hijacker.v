@@ -224,8 +224,64 @@ SGMDataDepth=6
 	
 	
 	
-	harrisCornerResponse  #(.dataW(dataW),.ImageW(ImageW),.cornorwindowSize(5))hCornor
-	(clk_p,en_p,rst_p,DI1r[0+:8],DoGOut[0]);
+	/*harrisCornerResponse  #(.dataW(dataW),.ImageW(ImageW),.cornorwindowSize(5))hCornor
+	(clk_p,en_p,rst_p,DI1r[0+:8],DoGOut[0]);*/
 	
+	
+	
+	/*parameter testWin=16;
+	wire [32*testWin*testWin-1:0]WinX;
+	wire [dataW*testWin*testWin-1:0]BuffNxN;
+	wire [dataW*testWin*testWin-1:0]BuffWinRotate;
+	reg [dataW*testWin*testWin-1:0]BuffWinRotateReg;
+	
+	always@(posedge clk_p)if(en_p)BuffWinRotateReg=BuffWinRotate;
+	assign DoGOut[0]= ^BuffWinRotateReg;
+
+	ScanLWindow_blkRAM #(.block_height(testWin),.block_width(testWin),.frame_width(ImageW)) 
+	win1(clk_p,en_p,DI1r[0+:8],WinX);
+	groupArrReOrderBABA2BBAA#
+	(.Arr1EleW(dataW),.Arr2EleW(32-dataW),.Arr3EleW(0),.Arr4EleW(0),.ArrL(testWin*testWin))
+	gARO(WinX,BuffNxN);
+	
+	
+	windowRotate360#(.winW(testWin),.dataW(dataW),.nonPipe(0),.interpolateBits(4))
+	wS0(clk_p,en_p,pixX&7,BuffNxN,BuffWinRotate);
+	*/
+	
+endmodule
+
+
+module regionPick
+#(parameter
+dataW=8,
+xoffSet=0,
+yoffSet=0
+)
+(
+input [winHW*winHW*dataW-1:0]window,
+output [regionPixNum*dataW-1:0]ExtractRegion
+);
+localparam 
+winHW=19,
+regionPixNum=71;
+
+wire[regionPixNum*3:0]CircleTableX={
+           4'd4,4'd5,4'd6,
+    4'd2,4'd3,4'd4,4'd5,4'd6,4'd7,4'd8
+};
+wire[regionPixNum*3:0]CircleTableY={
+			4'd0,4'd0,4'd0,
+	4'd0,4'd0,4'd0,4'd0,4'd0,4'd0,4'd0
+};
+generate
+genvar i;
+for(i=0;i<8;i=i+1)begin:asLoop
+	assign ExtractRegion[i*dataW+:dataW]=
+	window[
+		(CircleTableX[i*4+:4]*winHW+CircleTableX[i*4+:4])*dataW+:dataW
+	];
+end
+endgenerate
 	
 endmodule

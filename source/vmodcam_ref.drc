@@ -1,37 +1,33 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Apr 09 05:08:32 2015
+Wed Apr 15 01:09:32 2015
 
 drc -z VmodCAM_Ref.ncd VmodCAM_Ref.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut3723_169 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut2225_183 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut3731_173 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut2221_181 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut3711_163 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut2217_179 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut3719_167 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut2213_177 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut3715_165 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut2209_175 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut3707_161 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut2205_173 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut3727_171 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut2229_185 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
    with the CLKFX and CLKFX180 outputs of the DCM comp
    Inst_SysCon/Inst_dcm_fixed/dcm_sp_inst, consult the device Data Sheet.
-WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
-   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
-   default, may be incorrect and should not be used.  For more information,
-   please reference Xilinx Answer Record 39999.
-DRC detected 0 errors and 8 warnings.  Please see the previously displayed
+DRC detected 0 errors and 7 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

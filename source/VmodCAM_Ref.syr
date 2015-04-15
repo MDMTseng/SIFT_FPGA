@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> 
 Reading constraint file D:/Program/MYPRJ~1/HG_Sync/FPGA/SIFT/source/TOP.XCF.
@@ -109,40 +109,10 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\sobelEdge.v" into library work
-Parsing module <sobelEdge>.
-Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ScanLWindow_blkRAM.v" into library work
-Parsing module <ScanLWindow_blkRAM>.
-Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v" into library work
-Parsing verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v" included at line 4.
-Parsing module <MFP_Multi_Arr>.
-Parsing module <MFP_Multi>.
-Parsing module <MFP_Adder_Arr>.
-Parsing module <MFP_Adder>.
-Parsing module <MFP_Round>.
-Parsing module <MFP_RegOWire>.
-Parsing module <MFP_Saturate>.
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v" Line 207. parameter declaration becomes local in MFP_Saturate with formal parameter declaration list
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v" Line 208. parameter declaration becomes local in MFP_Saturate with formal parameter declaration list
-Parsing module <MFP_Abs>.
-Parsing module <MFP_MAC_symmetric_par>.
-Parsing module <MFP_MAC_par>.
-Parsing module <MFP_AdderTree>.
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v" Line 117. parameter declaration becomes local in MFP_AdderTree with formal parameter declaration list
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v" Line 118. parameter declaration becomes local in MFP_AdderTree with formal parameter declaration list
-Parsing module <MFP_MAC_Seq>.
-Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\groupArrReOrderBABA2BBAA.v" into library work
-Parsing module <groupArrReOrderBABA2BBAA>.
 Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\SPI_slave.v" into library work
 Parsing module <SPI_slave>.
 Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\PixCoordinator.v" into library work
 Parsing module <PixCoordinator>.
-Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" into library work
-Parsing module <harrisCornerResponse>.
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 47. parameter declaration becomes local in harrisCornerResponse with formal parameter declaration list
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 55. parameter declaration becomes local in harrisCornerResponse with formal parameter declaration list
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 80. parameter declaration becomes local in harrisCornerResponse with formal parameter declaration list
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 159. parameter declaration becomes local in harrisCornerResponse with formal parameter declaration list
 Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ColorTranse.v" into library work
 Parsing module <ColorTranse>.
 Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" into library work
@@ -150,9 +120,7 @@ Parsing module <hijacker>.
 WARNING:HDLCompiler:751 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 42: Redeclaration of ansi port mosi is not allowed
 WARNING:HDLCompiler:751 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 143: Redeclaration of ansi port spi_ScreenRst is not allowed
 INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 159. parameter declaration becomes local in hijacker with formal parameter declaration list
-Parsing VHDL file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ipcore_dir\blkRAM_W32D640_SP.vhd" into library work
-Parsing entity <blkRAM_W32D640_SP>.
-Parsing architecture <blkRAM_W32D640_SP_a> of entity <blkram_w32d640_sp>.
+Parsing module <regionPick>.
 Parsing VHDL file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\iodrp_mcb_controller.vhd" into library work
 Parsing entity <iodrp_mcb_controller>.
 Parsing architecture <trans> of entity <iodrp_mcb_controller>.
@@ -251,88 +219,7 @@ Elaborating module <PixCoordinator(frameW=640,frameH=480)>.
 WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\PixCoordinator.v" Line 38: Result of 11-bit expression is truncated to fit in 10-bit target.
 WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\PixCoordinator.v" Line 42: Result of 12-bit expression is truncated to fit in 11-bit target.
 WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 195: Size mismatch in connection of port <Y>. Formal port size is 10-bit while actual signal size is 11-bit.
-
-Elaborating module <harrisCornerResponse(dataW=8,ImageW=640,cornorwindowSize=5)>.
-
-Elaborating module <ScanLWindow_blkRAM(block_height=3,block_width=1,frame_width=640)>.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ScanLWindow_blkRAM.v" Line 38: Result of 11-bit expression is truncated to fit in 10-bit target.
-Going to vhdl side to elaborate module blkRAM_W32D640_SP
-
-Elaborating entity <blkRAM_W32D640_SP> (architecture <blkRAM_W32D640_SP_a>) from library <work>.
-Back to verilog to continue elaboration
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ScanLWindow_blkRAM.v" Line 82: Size mismatch in connection of port <wea>. Formal port size is 1-bit while actual signal size is 32-bit.
-Going to vhdl side to elaborate module blkRAM_W32D640_SP
-Back to verilog to continue elaboration
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ScanLWindow_blkRAM.v" Line 96: Result of 64-bit expression is truncated to fit in 32-bit target.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ScanLWindow_blkRAM.v" Line 98: Result of 64-bit expression is truncated to fit in 32-bit target.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 24: Size mismatch in connection of port <inData>. Formal port size is 32-bit while actual signal size is 8-bit.
-
-Elaborating module <groupArrReOrderBABA2BBAA(Arr1EleW=8,Arr2EleW=24,Arr3EleW=0,Arr4EleW=0,ArrL=3)>.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 27: Size mismatch in connection of port <groupArrBBAA>. Formal port size is 96-bit while actual signal size is 24-bit.
-WARNING:HDLCompiler:604 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 37: Module instantiation should have an instance name
-
-Elaborating module <sobelEdge(dataW=8)>.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\sobelEdge.v" Line 37: Result of 40-bit expression is truncated to fit in 30-bit target.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\sobelEdge.v" Line 63: Result of 36-bit expression is truncated to fit in 27-bit target.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\sobelEdge.v" Line 67: Result of 12-bit expression is truncated to fit in 11-bit target.
-
-Elaborating module <MFP_Saturate(InW=10,Sat2W=7,OutW=8,isUnsigned=0)>.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v" Line 217: Result of 32-bit expression is truncated to fit in 7-bit target.
-
-Elaborating module <MFP_Multi(In1W=7,OutW=8,isUnsigned=0)>.
-
-Elaborating module <MFP_Round(InW=13,OutW=8,isFloor=1,Saturate=0,isUnsigned=0)>.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 58: Size mismatch in connection of port <In1>. Formal port size is 7-bit while actual signal size is 8-bit.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 61: Size mismatch in connection of port <In1>. Formal port size is 7-bit while actual signal size is 8-bit.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 64: Size mismatch in connection of port <In1>. Formal port size is 7-bit while actual signal size is 8-bit.
-
-Elaborating module <ScanLWindow_blkRAM(block_height=5,block_width=1,frame_width=640)>.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ScanLWindow_blkRAM.v" Line 38: Result of 11-bit expression is truncated to fit in 10-bit target.
-Going to vhdl side to elaborate module blkRAM_W32D640_SP
-Back to verilog to continue elaboration
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ScanLWindow_blkRAM.v" Line 82: Size mismatch in connection of port <wea>. Formal port size is 1-bit while actual signal size is 32-bit.
-Going to vhdl side to elaborate module blkRAM_W32D640_SP
-Back to verilog to continue elaboration
-Going to vhdl side to elaborate module blkRAM_W32D640_SP
-Back to verilog to continue elaboration
-Going to vhdl side to elaborate module blkRAM_W32D640_SP
-Back to verilog to continue elaboration
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ScanLWindow_blkRAM.v" Line 96: Result of 64-bit expression is truncated to fit in 32-bit target.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ScanLWindow_blkRAM.v" Line 98: Result of 64-bit expression is truncated to fit in 32-bit target.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 74: Size mismatch in connection of port <inData>. Formal port size is 32-bit while actual signal size is 24-bit.
-
-Elaborating module <groupArrReOrderBABA2BBAA(Arr1EleW=8,Arr2EleW=8,Arr3EleW=8,Arr4EleW=8,ArrL=5)>.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 78: Size mismatch in connection of port <groupArrBBAA>. Formal port size is 160-bit while actual signal size is 120-bit.
-
-Elaborating module <MFP_AdderTree(data_depth=13,ArrL=5,isUnsigned=0,pipeInterval=999)>.
-
-Elaborating module <MFP_Adder(In1W=13,In2W=13,OutW=13,isUnsigned=0)>.
-
-Elaborating module <MFP_RegOWire(dataW=13,levelIdx=0,regInterval=999)>.
-
-Elaborating module <MFP_AdderTree(data_depth=13,ArrL=32'sb010,levelIdx=1,pipeInterval=999,isUnsigned=0)>.
-
-Elaborating module <MFP_RegOWire(dataW=13,levelIdx=1,regInterval=999)>.
-
-Elaborating module <MFP_AdderTree(data_depth=13,ArrL=32'sb011,levelIdx=1,pipeInterval=999,isUnsigned=0)>.
-
-Elaborating module <MFP_AdderTree(data_depth=13,ArrL=32'sb010,levelIdx=2,pipeInterval=999,isUnsigned=0)>.
-
-Elaborating module <MFP_RegOWire(dataW=13,levelIdx=2,regInterval=999)>.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 139: Result of 78-bit expression is truncated to fit in 65-bit target.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 140: Result of 78-bit expression is truncated to fit in 65-bit target.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 141: Result of 78-bit expression is truncated to fit in 65-bit target.
-
-Elaborating module <MFP_Saturate(InW=15,OutW=12,isUnsigned=0)>.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v" Line 217: Result of 32-bit expression is truncated to fit in 12-bit target.
-
-Elaborating module <MFP_Round(InW=12,OutW=8,isFloor=1,isUnsigned=0)>.
-
-Elaborating module <MFP_Multi(In1W=8,OutW=11,isUnsigned=0)>.
-
-Elaborating module <MFP_Round(InW=15,OutW=11,isFloor=1,Saturate=0,isUnsigned=0)>.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 216: Result of 32-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:634 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 162: Net <DoGOut[1][7]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 162: Net <DoGOut[0][7]> does not have a driver.
 WARNING:HDLCompiler:634 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 163: Net <DoGOut2[0][7]> does not have a driver.
 Back to vhdl to continue elaboration
 WARNING:HDLCompiler:1127 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\VmodCAM_Ref.vhd" Line 190: Assignment to flclk_odivlv ignored, since the identifier is never used
@@ -462,6 +349,7 @@ WARNING:Xst:647 - Input <FbWrARst> is never used. This port will be preserved an
 INFO:Xst:3210 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" line 63: Output port <dat_i> of the instance <SPI_S1> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" line 63: Output port <accep_dat_o> of the instance <SPI_S1> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" line 63: Output port <rdy> of the instance <SPI_S1> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <DoGOut<0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <DoGOut<1>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <DoGOut<2>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <DoGOut<3>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -474,22 +362,18 @@ WARNING:Xst:653 - Signal <DoGOut2<3>> is used but never assigned. This sourceles
     Found 3-bit register for signal <SPI_C>.
     Found 1-bit register for signal <enD>.
     Found 48-bit register for signal <dataG>.
-    Found 48-bit register for signal <dat_PixK>.
     Found 8-bit register for signal <feedData>.
-    Found 64-bit register for signal <n0104[63:0]>.
+    Found 64-bit register for signal <n0098[63:0]>.
     Found 1-bit register for signal <spi_ScreenRst>.
     Found 1-bit register for signal <misoGate>.
-    Found 6-bit adder for signal <n0184[5:0]> created at line 153.
-    Found 7-bit adder for signal <n0187[6:0]> created at line 153.
     Found 8-bit 8-to-1 multiplexer for signal <ndat_i[2]_SaData[7][7]_wide_mux_15_OUT> created at line 118.
     Found 1-bit tristate buffer for signal <miso> created at line 43
-    Found 8-bit comparator lessequal for signal <n0022> created at line 123
+    Found 8-bit comparator lessequal for signal <n0020> created at line 123
     Found 11-bit comparator greater for signal <pixY[10]_pixX[10]_LessThan_58_o> created at line 180
     Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred 181 D-type flip-flop(s).
+	inferred 133 D-type flip-flop(s).
 	inferred   2 Comparator(s).
-	inferred  21 Multiplexer(s).
+	inferred  18 Multiplexer(s).
 	inferred   1 Tristate(s).
 Unit <hijacker> synthesized.
 
@@ -535,278 +419,6 @@ Synthesizing Unit <PixCoordinator>.
 	inferred   1 Multiplexer(s).
 Unit <PixCoordinator> synthesized.
 
-Synthesizing Unit <harrisCornerResponse>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v".
-        ImageW = 640
-        dataW = 8
-        outW = 8
-        cornorwindowSize = 5
-    Found 65-bit register for signal <IyIy_col_sum_SR>.
-    Found 65-bit register for signal <IxIy_col_sum_SR>.
-    Found 65-bit register for signal <IxIx_col_sum_SR>.
-    Found 15-bit register for signal <IxIx_win_sum>.
-    Found 15-bit register for signal <IyIy_win_sum>.
-    Found 15-bit register for signal <IxIy_win_sum>.
-    Found 15-bit subtractor for signal <IxIx_win_sum[14]_IxIx_cs_tail[12]_sub_59_OUT> created at line 170.
-    Found 15-bit subtractor for signal <IyIy_win_sum[14]_IyIy_cs_tail[12]_sub_61_OUT> created at line 171.
-    Found 15-bit subtractor for signal <IxIy_win_sum[14]_IxIy_cs_tail[12]_sub_63_OUT> created at line 172.
-    Found 11-bit adder for signal <n0084> created at line 40.
-    Found 11-bit adder for signal <n0085> created at line 41.
-    Found 15-bit adder for signal <IxIx_win_sum[14]_IxIx_col_sum[12]_add_57_OUT> created at line 170.
-    Found 15-bit adder for signal <IyIy_win_sum[14]_IyIy_col_sum[12]_add_59_OUT> created at line 171.
-    Found 15-bit adder for signal <IxIy_win_sum[14]_IxIy_col_sum[12]_add_61_OUT> created at line 172.
-    Found 10-bit adder for signal <n0171> created at line 214.
-    Found 10-bit adder for signal <n0172> created at line 214.
-    Found 9-bit subtractor for signal <acSbb> created at line 214.
-    Summary:
-	inferred  11 Adder/Subtractor(s).
-	inferred 240 D-type flip-flop(s).
-	inferred   1 Multiplexer(s).
-Unit <harrisCornerResponse> synthesized.
-
-Synthesizing Unit <ScanLWindow_blkRAM_1>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ScanLWindow_blkRAM.v".
-        block_width = 1
-        block_height = 3
-        frame_width = 640
-    Found 96-bit register for signal <Window>.
-    Found 10-bit register for signal <addra_bramR>.
-    Found 10-bit adder for signal <addra_bramR[9]_GND_17_o_add_2_OUT> created at line 38.
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred 106 D-type flip-flop(s).
-Unit <ScanLWindow_blkRAM_1> synthesized.
-
-Synthesizing Unit <groupArrReOrderBABA2BBAA_1>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\groupArrReOrderBABA2BBAA.v".
-        ArrL = 3
-        Arr1EleW = 8
-        Arr2EleW = 24
-        Arr3EleW = 0
-        Arr4EleW = 0
-        piledArrW = 32
-    Summary:
-	no macro.
-Unit <groupArrReOrderBABA2BBAA_1> synthesized.
-
-Synthesizing Unit <sobelEdge>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\sobelEdge.v".
-        dataW = 8
-        outW = 11
-    Found 27-bit register for signal <DX_ShiftReg>.
-    Found 30-bit register for signal <DY_ShiftReg>.
-    Found 11-bit subtractor for signal <YEdge> created at line 40.
-    Found 9-bit subtractor for signal <XFilter> created at line 59.
-    Found 10-bit adder for signal <n0048> created at line 33.
-    Found 10-bit adder for signal <YFilter> created at line 32.
-    Found 11-bit adder for signal <DX0[8]_DX1[8]_add_15_OUT> created at line 67.
-    Found 12-bit adder for signal <n0016> created at line 67.
-    Summary:
-	inferred   6 Adder/Subtractor(s).
-	inferred  57 D-type flip-flop(s).
-Unit <sobelEdge> synthesized.
-
-Synthesizing Unit <MFP_Saturate_1>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        InW = 10
-        OutW = 8
-        Sat2W = 7
-        isUnsigned = 0
-    Summary:
-	inferred   3 Multiplexer(s).
-Unit <MFP_Saturate_1> synthesized.
-
-Synthesizing Unit <MFP_Multi_1>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        In1W = 7
-        In2W = 7
-        In2EQW = 7
-        OutW = 8
-        isFloor = 1
-        Saturate = 0
-        isUnsigned = 0
-    Found 7x7-bit multiplier for signal <n0010> created at line 56.
-    Summary:
-	inferred   1 Multiplier(s).
-Unit <MFP_Multi_1> synthesized.
-
-Synthesizing Unit <MFP_Round_1>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        InW = 13
-        OutW = 8
-        Saturate = 0
-        isFloor = 1
-        isUnsigned = 0
-WARNING:Xst:647 - Input <in<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Summary:
-	no macro.
-Unit <MFP_Round_1> synthesized.
-
-Synthesizing Unit <ScanLWindow_blkRAM_2>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ScanLWindow_blkRAM.v".
-        block_width = 1
-        block_height = 5
-        frame_width = 640
-    Found 160-bit register for signal <Window>.
-    Found 10-bit register for signal <addra_bramR>.
-    Found 10-bit adder for signal <addra_bramR[9]_GND_25_o_add_2_OUT> created at line 38.
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred 170 D-type flip-flop(s).
-Unit <ScanLWindow_blkRAM_2> synthesized.
-
-Synthesizing Unit <groupArrReOrderBABA2BBAA_2>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\groupArrReOrderBABA2BBAA.v".
-        ArrL = 5
-        Arr1EleW = 8
-        Arr2EleW = 8
-        Arr3EleW = 8
-        Arr4EleW = 8
-        piledArrW = 32
-    Summary:
-	no macro.
-Unit <groupArrReOrderBABA2BBAA_2> synthesized.
-
-Synthesizing Unit <MFP_AdderTree_1>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
-        data_depth = 13
-        ArrL = 5
-        levelIdx = 0
-        pipeInterval = 999
-        isUnsigned = 0
-    Summary:
-	no macro.
-Unit <MFP_AdderTree_1> synthesized.
-
-Synthesizing Unit <MFP_Adder>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        In1W = 13
-        In2W = 13
-        OutW = 13
-        unsignedAddIn2 = 0
-        Saturate = 0
-        isUnsigned = 0
-    Found 13-bit adder for signal <TestAdd> created at line 121.
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-Unit <MFP_Adder> synthesized.
-
-Synthesizing Unit <MFP_RegOWire_1>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        dataW = 13
-        levelIdx = 0
-        regInterval = 999
-        isWire = 1'b0
-    Found 13-bit register for signal <in_reg>.
-    Summary:
-	inferred  13 D-type flip-flop(s).
-Unit <MFP_RegOWire_1> synthesized.
-
-Synthesizing Unit <MFP_AdderTree_2>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
-        data_depth = 13
-        ArrL = 2
-        levelIdx = 1
-        pipeInterval = 999
-        isUnsigned = 0
-    Summary:
-	no macro.
-Unit <MFP_AdderTree_2> synthesized.
-
-Synthesizing Unit <MFP_RegOWire_2>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        dataW = 13
-        levelIdx = 1
-        regInterval = 999
-        isWire = 1'b1
-WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Summary:
-	no macro.
-Unit <MFP_RegOWire_2> synthesized.
-
-Synthesizing Unit <MFP_AdderTree_3>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
-        data_depth = 13
-        ArrL = 3
-        levelIdx = 1
-        pipeInterval = 999
-        isUnsigned = 0
-    Summary:
-	no macro.
-Unit <MFP_AdderTree_3> synthesized.
-
-Synthesizing Unit <MFP_AdderTree_4>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
-        data_depth = 13
-        ArrL = 2
-        levelIdx = 2
-        pipeInterval = 999
-        isUnsigned = 0
-    Summary:
-	no macro.
-Unit <MFP_AdderTree_4> synthesized.
-
-Synthesizing Unit <MFP_RegOWire_3>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        dataW = 13
-        levelIdx = 2
-        regInterval = 999
-        isWire = 1'b1
-WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Summary:
-	no macro.
-Unit <MFP_RegOWire_3> synthesized.
-
-Synthesizing Unit <MFP_Saturate_2>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        InW = 15
-        OutW = 12
-        Sat2W = 12
-        isUnsigned = 0
-    Summary:
-	inferred   3 Multiplexer(s).
-Unit <MFP_Saturate_2> synthesized.
-
-Synthesizing Unit <MFP_Round_2>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        InW = 12
-        OutW = 8
-        Saturate = 0
-        isFloor = 1
-        isUnsigned = 0
-WARNING:Xst:647 - Input <in<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Summary:
-	no macro.
-Unit <MFP_Round_2> synthesized.
-
-Synthesizing Unit <MFP_Multi_2>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        In1W = 8
-        In2W = 8
-        In2EQW = 8
-        OutW = 11
-        isFloor = 1
-        Saturate = 0
-        isUnsigned = 0
-    Found 8x8-bit multiplier for signal <n0010> created at line 56.
-    Summary:
-	inferred   1 Multiplier(s).
-Unit <MFP_Multi_2> synthesized.
-
-Synthesizing Unit <MFP_Round_3>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        InW = 15
-        OutW = 11
-        Saturate = 0
-        isFloor = 1
-        isUnsigned = 0
-WARNING:Xst:647 - Input <in<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Summary:
-	no macro.
-Unit <MFP_Round_3> synthesized.
-
 Synthesizing Unit <SysCon>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\SysCon.vhd".
     Set property "KEEP = TRUE" for signal <ASYNC_RST>.
@@ -848,8 +460,8 @@ Synthesizing Unit <SysCon>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 4-bit adder for signal <bitCount[3]_GND_42_o_add_17_OUT> created at line 331.
-    Found 8-bit subtractor for signal <GND_42_o_GND_42_o_sub_3_OUT<7:0>> created at line 209.
+    Found 4-bit adder for signal <bitCount[3]_GND_18_o_add_17_OUT> created at line 331.
+    Found 8-bit subtractor for signal <GND_18_o_GND_18_o_sub_3_OUT<7:0>> created at line 209.
     WARNING:Xst:2404 -  FFs/Latches <RSEL_O<2:1>> (without init value) have a constant value of 0 in block <SysCon>.
     Summary:
 	inferred   2 Adder/Subtractor(s).
@@ -919,23 +531,23 @@ Synthesizing Unit <VideoTimingCtl>.
     Found 1-bit register for signal <hs>.
     Found 1-bit register for signal <vs>.
     Found 11-bit register for signal <HCnt>.
-    Found 32-bit subtractor for signal <GND_58_o_GND_58_o_sub_13_OUT> created at line 179.
-    Found 32-bit subtractor for signal <GND_58_o_GND_58_o_sub_15_OUT> created at line 181.
-    Found 32-bit subtractor for signal <GND_58_o_GND_58_o_sub_22_OUT> created at line 191.
-    Found 32-bit subtractor for signal <GND_58_o_GND_58_o_sub_24_OUT> created at line 191.
-    Found 32-bit subtractor for signal <GND_58_o_GND_58_o_sub_32_OUT> created at line 203.
-    Found 32-bit subtractor for signal <GND_58_o_GND_58_o_sub_34_OUT> created at line 204.
-    Found 10-bit adder for signal <VCnt[9]_GND_58_o_add_16_OUT> created at line 184.
-    Found 11-bit adder for signal <HCnt[10]_GND_58_o_add_18_OUT> created at line 187.
-    Found 32-bit comparator equal for signal <GND_58_o_GND_58_o_equal_14_o> created at line 179
-    Found 32-bit comparator equal for signal <GND_58_o_GND_58_o_equal_16_o> created at line 181
+    Found 32-bit subtractor for signal <GND_34_o_GND_34_o_sub_13_OUT> created at line 179.
+    Found 32-bit subtractor for signal <GND_34_o_GND_34_o_sub_15_OUT> created at line 181.
+    Found 32-bit subtractor for signal <GND_34_o_GND_34_o_sub_22_OUT> created at line 191.
+    Found 32-bit subtractor for signal <GND_34_o_GND_34_o_sub_24_OUT> created at line 191.
+    Found 32-bit subtractor for signal <GND_34_o_GND_34_o_sub_32_OUT> created at line 203.
+    Found 32-bit subtractor for signal <GND_34_o_GND_34_o_sub_34_OUT> created at line 204.
+    Found 10-bit adder for signal <VCnt[9]_GND_34_o_add_16_OUT> created at line 184.
+    Found 11-bit adder for signal <HCnt[10]_GND_34_o_add_18_OUT> created at line 187.
+    Found 32-bit comparator equal for signal <GND_34_o_GND_34_o_equal_14_o> created at line 179
+    Found 32-bit comparator equal for signal <GND_34_o_GND_34_o_equal_16_o> created at line 181
     Found 32-bit comparator lessequal for signal <n0019> created at line 191
-    Found 32-bit comparator greater for signal <GND_58_o_GND_58_o_LessThan_25_o> created at line 191
+    Found 32-bit comparator greater for signal <GND_34_o_GND_34_o_LessThan_25_o> created at line 191
     Found 31-bit comparator lessequal for signal <n0024> created at line 193
-    Found 31-bit comparator greater for signal <GND_58_o_V_AV_FP_S[30]_LessThan_27_o> created at line 193
-    Found 32-bit comparator greater for signal <GND_58_o_GND_58_o_LessThan_33_o> created at line 203
-    Found 32-bit comparator greater for signal <GND_58_o_GND_58_o_LessThan_35_o> created at line 204
-    Found 31-bit comparator greater for signal <GND_58_o_V_AV[30]_LessThan_36_o> created at line 204
+    Found 31-bit comparator greater for signal <GND_34_o_V_AV_FP_S[30]_LessThan_27_o> created at line 193
+    Found 32-bit comparator greater for signal <GND_34_o_GND_34_o_LessThan_33_o> created at line 203
+    Found 32-bit comparator greater for signal <GND_34_o_GND_34_o_LessThan_35_o> created at line 204
+    Found 31-bit comparator greater for signal <GND_34_o_V_AV[30]_LessThan_36_o> created at line 204
     Summary:
 	inferred   8 Adder/Subtractor(s).
 	inferred  24 D-type flip-flop(s).
@@ -1099,7 +711,7 @@ WARNING:Xst:653 - Signal <p2_rd_en> is used but never assigned. This sourceless 
     | Inputs             | 3                                              |
     | Outputs            | 1                                              |
     | Clock              | CLKA (rising_edge)                             |
-    | Reset              | SCalibDoneA_p1_wr_empty_OR_241_o (positive)       |
+    | Reset              | SCalibDoneA_p1_wr_empty_OR_207_o (positive)       |
     | Reset type         | synchronous                                    |
     | Reset State        | stwridle                                       |
     | Power Up State     | stwridle                                       |
@@ -1113,32 +725,32 @@ WARNING:Xst:653 - Signal <p2_rd_en> is used but never assigned. This sourceless 
     | Inputs             | 3                                              |
     | Outputs            | 1                                              |
     | Clock              | CLKB (rising_edge)                             |
-    | Reset              | SCalibDoneB_p2_wr_empty_OR_245_o (positive)       |
+    | Reset              | SCalibDoneB_p2_wr_empty_OR_211_o (positive)       |
     | Reset type         | synchronous                                    |
     | Reset State        | stwridle                                       |
     | Power Up State     | stwridle                                       |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 31-bit adder for signal <pc_rd_addr2[30]_GND_268_o_add_5_OUT> created at line 933.
+    Found 31-bit adder for signal <pc_rd_addr2[30]_GND_244_o_add_5_OUT> created at line 933.
     Found 32-bit adder for signal <n0286> created at line 943.
     Found 32-bit adder for signal <n0287> created at line 942.
-    Found 31-bit adder for signal <pc_rd_addr1[30]_GND_268_o_add_30_OUT> created at line 1034.
+    Found 31-bit adder for signal <pc_rd_addr1[30]_GND_244_o_add_30_OUT> created at line 1034.
     Found 32-bit adder for signal <n0296> created at line 1042.
-    Found 31-bit adder for signal <pa_wr_cnt[30]_GND_268_o_add_55_OUT> created at line 1185.
-    Found 23-bit adder for signal <pa_wr_addr[22]_GND_268_o_add_61_OUT> created at line 1202.
+    Found 31-bit adder for signal <pa_wr_cnt[30]_GND_244_o_add_55_OUT> created at line 1185.
+    Found 23-bit adder for signal <pa_wr_addr[22]_GND_244_o_add_61_OUT> created at line 1202.
     Found 30-bit adder for signal <p1_cmd_byte_addr> created at line 1208.
-    Found 31-bit adder for signal <pb_wr_cnt[30]_GND_268_o_add_82_OUT> created at line 1333.
-    Found 23-bit adder for signal <pb_wr_addr[22]_GND_268_o_add_88_OUT> created at line 1350.
+    Found 31-bit adder for signal <pb_wr_cnt[30]_GND_244_o_add_82_OUT> created at line 1333.
+    Found 23-bit adder for signal <pb_wr_addr[22]_GND_244_o_add_88_OUT> created at line 1350.
     Found 30-bit adder for signal <p2_cmd_byte_addr> created at line 1357.
-    Found 6-bit subtractor for signal <GND_268_o_GND_268_o_sub_51_OUT<5:0>> created at line 1162.
-    Found 6-bit subtractor for signal <GND_268_o_GND_268_o_sub_78_OUT<5:0>> created at line 1312.
-    Found 7-bit comparator greater for signal <p3_rd_count[6]_GND_268_o_LessThan_25_o> created at line 993
-    Found 7-bit comparator greater for signal <p0_rd_count[6]_GND_268_o_LessThan_47_o> created at line 1088
+    Found 6-bit subtractor for signal <GND_244_o_GND_244_o_sub_51_OUT<5:0>> created at line 1162.
+    Found 6-bit subtractor for signal <GND_244_o_GND_244_o_sub_78_OUT<5:0>> created at line 1312.
+    Found 7-bit comparator greater for signal <p3_rd_count[6]_GND_244_o_LessThan_25_o> created at line 993
+    Found 7-bit comparator greater for signal <p0_rd_count[6]_GND_244_o_LessThan_47_o> created at line 1088
     Found 31-bit comparator lessequal for signal <n0141> created at line 1244
-    Found 7-bit comparator greater for signal <p1_wr_count[6]_GND_268_o_LessThan_74_o> created at line 1252
+    Found 7-bit comparator greater for signal <p1_wr_count[6]_GND_244_o_LessThan_74_o> created at line 1252
     Found 31-bit comparator lessequal for signal <n0230> created at line 1393
-    Found 7-bit comparator greater for signal <p2_wr_count[6]_GND_268_o_LessThan_101_o> created at line 1401
+    Found 7-bit comparator greater for signal <p2_wr_count[6]_GND_244_o_LessThan_101_o> created at line 1401
     Summary:
 	inferred  13 Adder/Subtractor(s).
 	inferred 209 D-type flip-flop(s).
@@ -1484,8 +1096,8 @@ WARNING:Xst:2935 - Signal 'MCB_UIDQLOWERINC', unconnected in block 'mcb_soft_cal
 WARNING:Xst:2935 - Signal 'MCB_UIDQUPPERDEC', unconnected in block 'mcb_soft_calibration', is tied to its initial value (0).
 WARNING:Xst:2935 - Signal 'MCB_UIDQUPPERINC', unconnected in block 'mcb_soft_calibration', is tied to its initial value (0).
 WARNING:Xst:2935 - Signal 'MCB_RECAL', unconnected in block 'mcb_soft_calibration', is tied to its initial value (0).
-    Register <MCB_UIUDQSINC> equivalent to <MCB_UILDQSINC> has been removed
     Register <MCB_UIUDQSDEC> equivalent to <MCB_UILDQSDEC> has been removed
+    Register <MCB_UIUDQSINC> equivalent to <MCB_UILDQSINC> has been removed
     Found 1-bit register for signal <CKE_Train>.
     Found 1-bit register for signal <Block_Reset>.
     Found 16-bit register for signal <WAIT_200us_COUNTER>.
@@ -1555,31 +1167,31 @@ INFO:Xst:1799 - State 101010 is never reached in FSM <STATE>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 16-bit adder for signal <WAIT_200us_COUNTER[15]_GND_272_o_add_13_OUT> created at line 553.
-    Found 10-bit adder for signal <RstCounter[9]_GND_272_o_add_18_OUT> created at line 613.
-    Found 6-bit adder for signal <count[5]_GND_272_o_add_32_OUT> created at line 763.
-    Found 6-bit adder for signal <P_Term[5]_GND_272_o_add_46_OUT> created at line 931.
-    Found 7-bit adder for signal <N_Term[6]_GND_272_o_add_74_OUT> created at line 983.
-    Found 8-bit adder for signal <counter_inc[7]_GND_272_o_add_198_OUT> created at line 1316.
-    Found 8-bit adder for signal <DQS_DELAY[7]_GND_272_o_add_201_OUT> created at line 1322.
-    Found 8-bit adder for signal <counter_dec[7]_GND_272_o_add_211_OUT> created at line 1341.
+    Found 16-bit adder for signal <WAIT_200us_COUNTER[15]_GND_248_o_add_13_OUT> created at line 553.
+    Found 10-bit adder for signal <RstCounter[9]_GND_248_o_add_18_OUT> created at line 613.
+    Found 6-bit adder for signal <count[5]_GND_248_o_add_32_OUT> created at line 763.
+    Found 6-bit adder for signal <P_Term[5]_GND_248_o_add_46_OUT> created at line 931.
+    Found 7-bit adder for signal <N_Term[6]_GND_248_o_add_74_OUT> created at line 983.
+    Found 8-bit adder for signal <counter_inc[7]_GND_248_o_add_198_OUT> created at line 1316.
+    Found 8-bit adder for signal <DQS_DELAY[7]_GND_248_o_add_201_OUT> created at line 1322.
+    Found 8-bit adder for signal <counter_dec[7]_GND_248_o_add_211_OUT> created at line 1341.
     Found 8-bit subtractor for signal <Max_Value_Delta_Up> created at line 387.
     Found 8-bit subtractor for signal <Max_Value_Delta_Dn> created at line 389.
-    Found 8-bit subtractor for signal <GND_272_o_GND_272_o_sub_215_OUT<7:0>> created at line 1347.
-    Found 15-bit adder for signal <n0458> created at line 446.
-    Found 15-bit adder for signal <_n0706> created at line 446.
+    Found 8-bit subtractor for signal <GND_248_o_GND_248_o_sub_215_OUT<7:0>> created at line 1347.
+    Found 15-bit adder for signal <_n0703> created at line 446.
     Found 15-bit adder for signal <n0603> created at line 446.
     Found 15-bit adder for signal <n0422> created at line 446.
-    Found 15-bit adder for signal <_n0715> created at line 446.
+    Found 15-bit adder for signal <_n0712> created at line 446.
     Found 15-bit adder for signal <n0429> created at line 446.
+    Found 15-bit adder for signal <n0458> created at line 446.
     Found 1-bit 3-to-1 multiplexer for signal <IODRP_SDO> created at line 787.
-    Found 10-bit comparator greater for signal <RstCounter[9]_PWR_61_o_LessThan_18_o> created at line 611
-    Found 10-bit comparator greater for signal <RstCounter[9]_GND_272_o_LessThan_25_o> created at line 636
+    Found 10-bit comparator greater for signal <RstCounter[9]_PWR_34_o_LessThan_18_o> created at line 611
+    Found 10-bit comparator greater for signal <RstCounter[9]_GND_248_o_LessThan_25_o> created at line 636
     Found 8-bit comparator greater for signal <Dec_Flag> created at line 751
     Found 8-bit comparator greater for signal <Inc_Flag> created at line 752
     Found 6-bit comparator equal for signal <n0145> created at line 996
     Found 7-bit comparator equal for signal <n0154> created at line 1028
-    Found 6-bit comparator greater for signal <count[5]_PWR_61_o_LessThan_174_o> created at line 1259
+    Found 6-bit comparator greater for signal <count[5]_PWR_34_o_LessThan_174_o> created at line 1259
     Found 8-bit comparator greater for signal <Max_Value_int[7]_Max_Value_Previous[7]_LessThan_180_o> created at line 1292
     Found 8-bit comparator greater for signal <n0217> created at line 1292
     Found 8-bit comparator greater for signal <Max_Value_Previous[7]_Max_Value_int[7]_LessThan_185_o> created at line 1296
@@ -1624,7 +1236,7 @@ Synthesizing Unit <iodrp_controller>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 3-bit adder for signal <bit_cnt[2]_GND_273_o_add_12_OUT> created at line 238.
+    Found 3-bit adder for signal <bit_cnt[2]_GND_249_o_add_12_OUT> created at line 238.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  40 D-type flip-flop(s).
@@ -1661,7 +1273,7 @@ WARNING:Xst:647 - Input <drp_ioi_addr> is never used. This port will be preserve
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 3-bit adder for signal <bit_cnt[2]_GND_275_o_add_13_OUT> created at line 357.
+    Found 3-bit adder for signal <bit_cnt[2]_GND_251_o_add_13_OUT> created at line 357.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  41 D-type flip-flop(s).
@@ -1698,7 +1310,7 @@ WARNING:Xst:647 - Input <RST_I> is never used. This port will be preserved and l
     Found 5-bit adder for signal <n0219> created at line 59.
     Found 5-bit adder for signal <n0222> created at line 59.
     Found 5-bit adder for signal <n0225> created at line 59.
-    Found 5-bit adder for signal <GND_1134_o_GND_1134_o_add_7_OUT> created at line 59.
+    Found 5-bit adder for signal <GND_1110_o_GND_1110_o_add_7_OUT> created at line 59.
     Found 5-bit adder for signal <n0232> created at line 87.
     Found 5-bit adder for signal <n0235> created at line 87.
     Found 5-bit adder for signal <n0238> created at line 87.
@@ -1709,16 +1321,16 @@ WARNING:Xst:647 - Input <RST_I> is never used. This port will be preserved and l
     Found 5-bit adder for signal <n0253> created at line 122.
     Found 5-bit adder for signal <cnt_t_1[4]_dc_bias[4]_add_41_OUT> created at line 122.
     Found 5-bit adder for signal <cnt_t_1[4]_dc_bias[4]_add_45_OUT> created at line 120.
-    Found 5-bit subtractor for signal <GND_1134_o_int_n1_q_m[4]_sub_22_OUT<4:0>> created at line 92.
+    Found 5-bit subtractor for signal <GND_1110_o_int_n1_q_m[4]_sub_22_OUT<4:0>> created at line 92.
     Found 5-bit subtractor for signal <dc_bias> created at line 45.
-    Found 5-bit subtractor for signal <cnt_t_1[4]_GND_1134_o_sub_39_OUT<4:0>> created at line 123.
+    Found 5-bit subtractor for signal <cnt_t_1[4]_GND_1110_o_sub_39_OUT<4:0>> created at line 123.
     Found 5-bit subtractor for signal <cnt_t_1[4]_dc_bias[4]_sub_40_OUT<4:0>> created at line 123.
     Found 5-bit subtractor for signal <cnt_t_1[4]_dc_bias[4]_sub_44_OUT<4:0>> created at line 121.
-    Found 5-bit comparator greater for signal <n1_d[4]_GND_1134_o_LessThan_11_o> created at line 81
+    Found 5-bit comparator greater for signal <n1_d[4]_GND_1110_o_LessThan_11_o> created at line 81
     Found 5-bit comparator equal for signal <n1_q_m[4]_n0_q_m[4]_equal_27_o> created at line 100
-    Found 5-bit comparator greater for signal <cnt_t_1[4]_GND_1134_o_LessThan_28_o> created at line 102
+    Found 5-bit comparator greater for signal <cnt_t_1[4]_GND_1110_o_LessThan_28_o> created at line 102
     Found 5-bit comparator greater for signal <n1_q_m[4]_n0_q_m[4]_LessThan_29_o> created at line 102
-    Found 5-bit comparator greater for signal <GND_1134_o_cnt_t_1[4]_LessThan_30_o> created at line 103
+    Found 5-bit comparator greater for signal <GND_1110_o_cnt_t_1[4]_LessThan_30_o> created at line 103
     Found 5-bit comparator greater for signal <n0_q_m[4]_n1_q_m[4]_LessThan_31_o> created at line 103
     Summary:
 	inferred  22 Adder/Subtractor(s).
@@ -1772,11 +1384,11 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <CamInit
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 22-bit adder for signal <rstCnt[21]_GND_1173_o_add_5_OUT> created at line 251.
-    Found 5-bit adder for signal <initA[4]_GND_1173_o_add_20_OUT> created at line 333.
-    Found 15-bit subtractor for signal <GND_1173_o_GND_1173_o_sub_25_OUT<14:0>> created at line 344.
+    Found 22-bit adder for signal <rstCnt[21]_GND_1149_o_add_5_OUT> created at line 251.
+    Found 5-bit adder for signal <initA[4]_GND_1149_o_add_20_OUT> created at line 333.
+    Found 15-bit subtractor for signal <GND_1149_o_GND_1149_o_sub_25_OUT<14:0>> created at line 344.
     Found 8-bit 4-to-1 multiplexer for signal <twiDi> created at line 194.
-    Found 22-bit comparator greater for signal <rstCnt[21]_PWR_183_o_LessThan_5_o> created at line 249
+    Found 22-bit comparator greater for signal <rstCnt[21]_PWR_156_o_LessThan_5_o> created at line 249
     Summary:
 	inferred   1 RAM(s).
 	inferred   3 Adder/Subtractor(s).
@@ -1821,10 +1433,10 @@ INFO:Xst:1799 - State ststoperror is never reached in FSM <state>.
     | Encoding           | gray                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 2-bit adder for signal <subState[1]_GND_1177_o_add_36_OUT> created at line 298.
-    Found 6-bit subtractor for signal <GND_1177_o_GND_1177_o_sub_6_OUT<5:0>> created at line 184.
-    Found 6-bit subtractor for signal <GND_1177_o_GND_1177_o_sub_13_OUT<5:0>> created at line 224.
-    Found 3-bit subtractor for signal <GND_1177_o_GND_1177_o_sub_24_OUT<2:0>> created at line 262.
+    Found 2-bit adder for signal <subState[1]_GND_1153_o_add_36_OUT> created at line 298.
+    Found 6-bit subtractor for signal <GND_1153_o_GND_1153_o_sub_6_OUT<5:0>> created at line 184.
+    Found 6-bit subtractor for signal <GND_1153_o_GND_1153_o_sub_13_OUT<5:0>> created at line 224.
+    Found 3-bit subtractor for signal <GND_1153_o_GND_1153_o_sub_24_OUT<2:0>> created at line 262.
     Found 1-bit tristate buffer for signal <SDA> created at line 565
     Found 1-bit tristate buffer for signal <SCL> created at line 567
     Found 8-bit comparator not equal for signal <n0133> created at line 505
@@ -1843,17 +1455,11 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 2
  30x33-bit single-port RAM                             : 2
-# Multipliers                                          : 5
- 7x7-bit multiplier                                    : 3
- 8x8-bit multiplier                                    : 2
-# Adders/Subtractors                                   : 156
- 10-bit adder                                          : 9
- 11-bit adder                                          : 5
- 11-bit subtractor                                     : 1
- 12-bit adder                                          : 1
- 13-bit adder                                          : 12
- 15-bit adder                                          : 9
- 15-bit subtractor                                     : 5
+# Adders/Subtractors                                   : 123
+ 10-bit adder                                          : 3
+ 11-bit adder                                          : 2
+ 15-bit adder                                          : 6
+ 15-bit subtractor                                     : 2
  16-bit adder                                          : 1
  2-bit adder                                           : 2
  22-bit adder                                          : 2
@@ -1867,39 +1473,32 @@ Macro Statistics
  4-bit adder                                           : 1
  5-bit adder                                           : 53
  5-bit subtractor                                      : 15
- 6-bit adder                                           : 3
+ 6-bit adder                                           : 2
  6-bit subtractor                                      : 6
- 7-bit adder                                           : 2
+ 7-bit adder                                           : 1
  8-bit adder                                           : 2
  8-bit addsub                                          : 1
  8-bit subtractor                                      : 3
- 9-bit subtractor                                      : 2
-# Registers                                            : 349
+# Registers                                            : 333
  1-bit register                                        : 222
- 10-bit register                                       : 9
+ 10-bit register                                       : 7
  100-bit register                                      : 1
  11-bit register                                       : 2
- 13-bit register                                       : 3
- 15-bit register                                       : 5
+ 15-bit register                                       : 2
  16-bit register                                       : 3
- 160-bit register                                      : 1
  2-bit register                                        : 17
  22-bit register                                       : 2
  23-bit register                                       : 2
- 27-bit register                                       : 1
  3-bit register                                        : 6
- 30-bit register                                       : 1
  31-bit register                                       : 4
  4-bit register                                        : 2
- 48-bit register                                       : 2
+ 48-bit register                                       : 1
  5-bit register                                        : 19
  6-bit register                                        : 8
  64-bit register                                       : 1
- 65-bit register                                       : 3
  7-bit register                                        : 2
  8-bit register                                        : 29
  9-bit register                                        : 3
- 96-bit register                                       : 1
 # Comparators                                          : 54
  10-bit comparator greater                             : 2
  11-bit comparator greater                             : 1
@@ -1918,25 +1517,23 @@ Macro Statistics
  8-bit comparator greater                              : 8
  8-bit comparator lessequal                            : 3
  8-bit comparator not equal                            : 2
-# Multiplexers                                         : 321
+# Multiplexers                                         : 302
  1-bit 2-to-1 multiplexer                              : 196
  1-bit 3-to-1 multiplexer                              : 1
  10-bit 2-to-1 multiplexer                             : 13
  11-bit 2-to-1 multiplexer                             : 3
  15-bit 2-to-1 multiplexer                             : 2
  16-bit 2-to-1 multiplexer                             : 7
- 19-bit 2-to-1 multiplexer                             : 1
  23-bit 2-to-1 multiplexer                             : 2
  30-bit 2-to-1 multiplexer                             : 1
  31-bit 2-to-1 multiplexer                             : 3
- 32-bit 2-to-1 multiplexer                             : 16
  5-bit 2-to-1 multiplexer                              : 13
  6-bit 2-to-1 multiplexer                              : 12
  7-bit 2-to-1 multiplexer                              : 6
  8-bit 2-to-1 multiplexer                              : 33
  8-bit 4-to-1 multiplexer                              : 2
  8-bit 8-to-1 multiplexer                              : 1
- 9-bit 2-to-1 multiplexer                              : 9
+ 9-bit 2-to-1 multiplexer                              : 7
 # Tristates                                            : 5
  1-bit tristate buffer                                 : 5
 # FSMs                                                 : 12
@@ -1967,9 +1564,41 @@ WARNING:Xst:638 - in unit CamCtl Conflict on KEEP property on signal _n0130<16> 
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1710 - FF/Latch <MCB_UICMD> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <SELFREFRESH_MCB_REQ> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <SELFREFRESH_REQ_R1> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SELFREFRESH_MCB_REQ> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MCB_UICMD> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_0> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_1> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_3> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_4> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_5> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_6> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c1_d> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_red>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d_d_0> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_red>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d_d_1> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_red>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d_d_2> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_red>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c0_d> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_red>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c1_d> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_green>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d_d_0> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_green>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d_d_1> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_green>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c0_d> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_green>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d_d_0> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_blue>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d_d_1> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_blue>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d_d_2> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_blue>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <prevRes_1> has a constant value of 0 in block <Inst_SysCon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <currAddr_1> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <currAddr_2> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <currAddr_3> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <currAddr_4> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <currAddr_5> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <currAddr_6> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <currAddr_7> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <currAddr_1> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <currAddr_2> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <currAddr_3> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <currAddr_4> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_6> (without init value) has a constant value of 0 in block <iodrp_mcb_controller_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_5> (without init value) has a constant value of 0 in block <iodrp_mcb_controller_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_4> (without init value) has a constant value of 0 in block <iodrp_mcb_controller_inst>. This FF/Latch will be trimmed during the optimization process.
@@ -1981,70 +1610,6 @@ WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_2> (without init value) has a cons
 WARNING:Xst:1710 - FF/Latch <currAddr_7> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <currAddr_6> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <currAddr_5> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <currAddr_4> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <currAddr_3> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <currAddr_2> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <currAddr_1> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <currAddr_7> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <d_d_2> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_blue>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <d_d_1> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_blue>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <d_d_0> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_blue>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <c0_d> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_green>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <d_d_1> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_green>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <d_d_0> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_green>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <c1_d> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_green>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <c0_d> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_red>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <d_d_2> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_red>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <d_d_1> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_red>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <d_d_0> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_red>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <c1_d> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_red>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_6> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_5> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_4> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_3> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_1> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_0> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_27> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_26> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_25> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_24> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_23> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_22> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_21> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_20> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_19> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_18> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_17> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_16> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_15> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_14> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_13> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_12> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_11> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_10> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_9> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_8> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <currAddr_6> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <currAddr_5> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <currAddr_4> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <currAddr_3> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <currAddr_2> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <currAddr_1> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <prevRes_1> has a constant value of 0 in block <Inst_SysCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_31> (without init value) has a constant value of 0 in block <cornorWindow>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_30> (without init value) has a constant value of 0 in block <cornorWindow>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_29> (without init value) has a constant value of 0 in block <cornorWindow>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_28> (without init value) has a constant value of 0 in block <cornorWindow>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_27> (without init value) has a constant value of 0 in block <cornorWindow>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_26> (without init value) has a constant value of 0 in block <cornorWindow>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_25> (without init value) has a constant value of 0 in block <cornorWindow>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_24> (without init value) has a constant value of 0 in block <cornorWindow>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_31> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_30> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_29> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Window_28> (without init value) has a constant value of 0 in block <win1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <c0_dd> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_red>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <c1_dd> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_red>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <c0_dd> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_green>. This FF/Latch will be trimmed during the optimization process.
@@ -2052,38 +1617,6 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <c1_dd> (without ini
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SELFREFRESH_REQ_R2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SELFREFRESH_REQ_R3> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <RSReg_7> of sequential type is unconnected in block <SPI_S1>.
-WARNING:Xst:2677 - Node <Window_72> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_73> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_74> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_75> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_76> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_77> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_78> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_79> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_80> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_81> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_82> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_83> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_84> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_85> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_86> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_87> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_88> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_89> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_90> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_91> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_92> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_93> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_94> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_95> of sequential type is unconnected in block <win1>.
-WARNING:Xst:2677 - Node <Window_152> of sequential type is unconnected in block <cornorWindow>.
-WARNING:Xst:2677 - Node <Window_153> of sequential type is unconnected in block <cornorWindow>.
-WARNING:Xst:2677 - Node <Window_154> of sequential type is unconnected in block <cornorWindow>.
-WARNING:Xst:2677 - Node <Window_155> of sequential type is unconnected in block <cornorWindow>.
-WARNING:Xst:2677 - Node <Window_156> of sequential type is unconnected in block <cornorWindow>.
-WARNING:Xst:2677 - Node <Window_157> of sequential type is unconnected in block <cornorWindow>.
-WARNING:Xst:2677 - Node <Window_158> of sequential type is unconnected in block <cornorWindow>.
-WARNING:Xst:2677 - Node <Window_159> of sequential type is unconnected in block <cornorWindow>.
 WARNING:Xst:2677 - Node <dataG_16> of sequential type is unconnected in block <hijacker1>.
 WARNING:Xst:2677 - Node <dataG_17> of sequential type is unconnected in block <hijacker1>.
 WARNING:Xst:2677 - Node <dataG_18> of sequential type is unconnected in block <hijacker1>.
@@ -2116,35 +1649,6 @@ WARNING:Xst:2677 - Node <dataG_44> of sequential type is unconnected in block <h
 WARNING:Xst:2677 - Node <dataG_45> of sequential type is unconnected in block <hijacker1>.
 WARNING:Xst:2677 - Node <dataG_46> of sequential type is unconnected in block <hijacker1>.
 WARNING:Xst:2677 - Node <dataG_47> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_8> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_9> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_16> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_17> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_18> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_24> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_25> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_26> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_27> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_28> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_29> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_30> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_31> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_32> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_33> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_34> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_35> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_36> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_37> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_38> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_39> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_40> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_41> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_42> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_43> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_44> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_45> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_46> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <dat_PixK_47> of sequential type is unconnected in block <hijacker1>.
 WARNING:Xst - No OFN property associated with block gen_bits[7].gen_bit
 WARNING:Xst - No OFN property associated with block gen_bits[6].gen_bit
 WARNING:Xst - No OFN property associated with block gen_bits[5].gen_bit
@@ -2190,14 +1694,6 @@ The following registers are absorbed into counter <Y>: 1 register on signal <Y>.
 The following registers are absorbed into counter <X>: 1 register on signal <X>.
 Unit <PixCoordinator> synthesized (advanced).
 
-Synthesizing (advanced) Unit <ScanLWindow_blkRAM_1>.
-The following registers are absorbed into counter <addra_bramR>: 1 register on signal <addra_bramR>.
-Unit <ScanLWindow_blkRAM_1> synthesized (advanced).
-
-Synthesizing (advanced) Unit <ScanLWindow_blkRAM_2>.
-The following registers are absorbed into counter <addra_bramR>: 1 register on signal <addra_bramR>.
-Unit <ScanLWindow_blkRAM_2> synthesized (advanced).
-
 Synthesizing (advanced) Unit <SysCon>.
 The following registers are absorbed into counter <bitCount>: 1 register on signal <bitCount>.
 Unit <SysCon> synthesized (advanced).
@@ -2206,8 +1702,8 @@ Synthesizing (advanced) Unit <TMDSEncoder>.
 The following registers are absorbed into accumulator <cnt_t_1>: 1 register on signal <cnt_t_1>.
 	The following adders/subtractors are grouped into adder tree <Madd_int_n1_q_m_Madd1> :
  	<Madd_n0238_Madd> in block <TMDSEncoder>, 	<Madd_n0244_Madd> in block <TMDSEncoder>, 	<Madd_int_n1_q_m_Madd> in block <TMDSEncoder>.
-	The following adders/subtractors are grouped into adder tree <Madd_GND_1134_o_GND_1134_o_add_7_OUT_Madd1> :
- 	<Madd_n0216_Madd> in block <TMDSEncoder>, 	<Madd_n0222_Madd> in block <TMDSEncoder>, 	<Madd_GND_1134_o_GND_1134_o_add_7_OUT_Madd> in block <TMDSEncoder>.
+	The following adders/subtractors are grouped into adder tree <Madd_GND_1110_o_GND_1110_o_add_7_OUT_Madd1> :
+ 	<Madd_n0216_Madd> in block <TMDSEncoder>, 	<Madd_n0222_Madd> in block <TMDSEncoder>, 	<Madd_GND_1110_o_GND_1110_o_add_7_OUT_Madd> in block <TMDSEncoder>.
 Unit <TMDSEncoder> synthesized (advanced).
 
 Synthesizing (advanced) Unit <TWICtl>.
@@ -2269,35 +1765,6 @@ WARNING:Xst:2677 - Node <dataG_44> of sequential type is unconnected in block <h
 WARNING:Xst:2677 - Node <dataG_45> of sequential type is unconnected in block <hijacker>.
 WARNING:Xst:2677 - Node <dataG_46> of sequential type is unconnected in block <hijacker>.
 WARNING:Xst:2677 - Node <dataG_47> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_8> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_9> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_16> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_17> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_18> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_24> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_25> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_26> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_27> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_28> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_29> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_30> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_31> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_32> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_33> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_34> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_35> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_36> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_37> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_38> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_39> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_40> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_41> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_42> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_43> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_44> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_45> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_46> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_47> of sequential type is unconnected in block <hijacker>.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -2305,31 +1772,22 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 2
  30x33-bit single-port distributed RAM                 : 2
-# Multipliers                                          : 5
- 7x7-bit multiplier                                    : 3
- 8x8-bit multiplier                                    : 2
-# Adders/Subtractors                                   : 82
- 10-bit adder                                          : 7
- 11-bit adder                                          : 3
- 11-bit subtractor                                     : 1
- 13-bit adder                                          : 12
- 15-bit adder                                          : 3
- 15-bit subtractor                                     : 3
+# Adders/Subtractors                                   : 52
+ 10-bit adder                                          : 3
+ 11-bit adder                                          : 1
  30-bit adder                                          : 5
  32-bit subtractor                                     : 6
  5-bit adder                                           : 12
  5-bit subtractor                                      : 15
- 6-bit adder                                           : 2
+ 6-bit adder                                           : 1
  6-bit subtractor                                      : 2
- 7-bit adder                                           : 2
+ 7-bit adder                                           : 1
  8-bit subtractor                                      : 3
- 9-bit adder                                           : 4
- 9-bit subtractor                                      : 1
- 9-bit subtractor borrow in                            : 1
+ 9-bit adder                                           : 3
 # Adder Trees                                          : 6
  5-bit / 4-inputs adder tree                           : 6
-# Counters                                             : 34
- 10-bit up counter                                     : 4
+# Counters                                             : 32
+ 10-bit up counter                                     : 2
  11-bit up counter                                     : 2
  15-bit down counter                                   : 2
  16-bit up counter                                     : 1
@@ -2347,8 +1805,8 @@ Macro Statistics
  8-bit updown counter                                  : 1
 # Accumulators                                         : 3
  5-bit up loadable accumulator                         : 3
-# Registers                                            : 1472
- Flip-Flops                                            : 1472
+# Registers                                            : 861
+ Flip-Flops                                            : 861
 # Comparators                                          : 54
  10-bit comparator greater                             : 2
  11-bit comparator greater                             : 1
@@ -2367,22 +1825,20 @@ Macro Statistics
  8-bit comparator greater                              : 8
  8-bit comparator lessequal                            : 3
  8-bit comparator not equal                            : 2
-# Multiplexers                                         : 387
+# Multiplexers                                         : 368
  1-bit 2-to-1 multiplexer                              : 288
  1-bit 3-to-1 multiplexer                              : 1
  1-bit 8-to-1 multiplexer                              : 8
  10-bit 2-to-1 multiplexer                             : 12
  11-bit 2-to-1 multiplexer                             : 1
  16-bit 2-to-1 multiplexer                             : 7
- 19-bit 2-to-1 multiplexer                             : 1
  30-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 16
  5-bit 2-to-1 multiplexer                              : 10
  6-bit 2-to-1 multiplexer                              : 7
  7-bit 2-to-1 multiplexer                              : 4
  8-bit 2-to-1 multiplexer                              : 21
  8-bit 4-to-1 multiplexer                              : 2
- 9-bit 2-to-1 multiplexer                              : 8
+ 9-bit 2-to-1 multiplexer                              : 6
 # FSMs                                                 : 12
 # Xors                                                 : 46
  1-bit xor2                                            : 46
@@ -2577,17 +2033,6 @@ WARNING:Xst:1710 - FF/Latch <DcmProgReg_6> (without init value) has a constant v
 WARNING:Xst:1710 - FF/Latch <DcmProgReg_7> (without init value) has a constant value of 0 in block <SysCon>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <DcmProgReg_8> (without init value) has a constant value of 0 in block <SysCon>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <DcmProgReg_9> (without init value) has a constant value of 0 in block <SysCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <dat_PixK_10> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_11> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_12> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_13> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_14> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_15> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_19> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_20> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_21> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_22> of sequential type is unconnected in block <hijacker>.
-WARNING:Xst:2677 - Node <dat_PixK_23> of sequential type is unconnected in block <hijacker>.
 WARNING:Xst:1293 - FF/Latch <DQS_DELAY_INITIAL_7> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TARGET_DQS_DELAY_7> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IODRPCTRLR_WRITE_DATA_7> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
@@ -2630,38 +2075,6 @@ WARNING:Xst:3002 - This design contains one or more registers/latches that are d
     WSReg_5 in unit <SPI_slave>
 
 
-Optimizing unit <sobelEdge> ...
-
-Optimizing unit <MFP_AdderTree_1> ...
-
-Optimizing unit <MFP_RegOWire_1> ...
-
-Optimizing unit <MFP_AdderTree_2> ...
-
-Optimizing unit <MFP_RegOWire_2> ...
-
-Optimizing unit <MFP_Adder> ...
-
-Optimizing unit <MFP_AdderTree_3> ...
-
-Optimizing unit <MFP_AdderTree_4> ...
-
-Optimizing unit <MFP_RegOWire_3> ...
-
-Optimizing unit <groupArrReOrderBABA2BBAA_1> ...
-
-Optimizing unit <groupArrReOrderBABA2BBAA_2> ...
-
-Optimizing unit <MFP_Round_2> ...
-
-Optimizing unit <MFP_Multi_2> ...
-
-Optimizing unit <MFP_Round_3> ...
-
-Optimizing unit <MFP_Multi_1> ...
-
-Optimizing unit <MFP_Round_1> ...
-
 Optimizing unit <InputSyncV_1> ...
 
 Optimizing unit <InputSync> ...
@@ -2677,16 +2090,6 @@ Optimizing unit <hijacker> ...
 Optimizing unit <SPI_slave> ...
 
 Optimizing unit <PixCoordinator> ...
-
-Optimizing unit <harrisCornerResponse> ...
-
-Optimizing unit <ScanLWindow_blkRAM_1> ...
-
-Optimizing unit <ScanLWindow_blkRAM_2> ...
-
-Optimizing unit <MFP_Saturate_2> ...
-
-Optimizing unit <MFP_Saturate_1> ...
 
 Optimizing unit <ColorTranse> ...
 
@@ -2712,13 +2115,32 @@ WARNING:Xst:1293 - FF/Latch <cnt_t_1_0> has a constant value of 0 in block <TMDS
 Optimizing unit <SerializerN_1> ...
 WARNING:Xst:1303 - From in and out of unit Inst_SysCon/MODE_SYNC/gen_bits[7].gen_bit, both signals n0003<0> and Inst_SysCon/SYNC_SW/gen_bits[7].gen_bit/n0003<0> have a KEEP attribute, signal n0003<0> will be lost.
 WARNING:Xst:1303 - From in and out of unit Inst_SysCon/MODE_SYNC/gen_bits[6].gen_bit, both signals n0003<0> and Inst_SysCon/SYNC_SW/gen_bits[6].gen_bit/n0003<0> have a KEEP attribute, signal n0003<0> will be lost.
-WARNING:Xst:1710 - FF/Latch <iodrp_controller_inst/data_reg_7> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <iodrp_controller_inst/memcell_addr_reg_6> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/c0_d> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/d_d_2> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/d_d_1> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/d_d_0> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/c1_d> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/n0_q_m_4> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/n1_q_m_3> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/n1_d_3> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/c0_d> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/d_d_1> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/d_d_0> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/c1_d> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/n0_q_m_4> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/n1_q_m_3> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/q_m_d_2> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/n1_d_3> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/d_d_2> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/d_d_1> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/d_d_0> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <iodrp_controller_inst/memcell_addr_reg_5> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <iodrp_controller_inst/memcell_addr_reg_4> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <iodrp_controller_inst/memcell_addr_reg_2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <iodrp_mcb_controller_inst/data_reg_7> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <iodrp_mcb_controller_inst/memcell_addr_reg_6> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <iodrp_controller_inst/memcell_addr_reg_6> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <iodrp_controller_inst/data_reg_7> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <iodrp_mcb_controller_inst/memcell_addr_reg_5> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <iodrp_mcb_controller_inst/memcell_addr_reg_4> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <iodrp_mcb_controller_inst/memcell_addr_reg_2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
@@ -2726,102 +2148,19 @@ WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/n0_q_m_4> 
 WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/n1_q_m_3> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/q_m_d_2> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/n1_d_3> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/c0_d> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/d_d_2> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/d_d_0> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/d_d_1> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/d_d_2> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/n1_d_3> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/q_m_d_2> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/n1_q_m_3> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/n0_q_m_4> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/c1_d> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/d_d_0> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/d_d_1> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/c0_d> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/n1_d_3> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/n1_q_m_3> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/n0_q_m_4> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/c1_d> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/d_d_0> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/d_d_1> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_13> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_14> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_15> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_16> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_17> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_18> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_19> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_20> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_21> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_22> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_23> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_24> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_25> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_26> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_27> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_28> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_29> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_30> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_31> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <SELFREFRESH_MCB_REQ> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <SELFREFRESH_REQ_R1> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/cornorWindow/Window_24> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/cornorWindow/Window_25> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/cornorWindow/Window_26> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/cornorWindow/Window_27> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/cornorWindow/Window_28> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/cornorWindow/Window_29> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/cornorWindow/Window_30> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/cornorWindow/Window_31> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_8> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_9> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_10> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_11> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <hCornor/win1/Window_12> (without init value) has a constant value of 0 in block <hijacker1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/c1_dd> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/q_m_d_0> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SELFREFRESH_REQ_R2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/c0_dd> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/c1_dd> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_green/q_m_d_0> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/q_m_d_0> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/q_m_d_0> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/c1_dd> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SELFREFRESH_REQ_R2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/c0_dd> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/c1_dd> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SELFREFRESH_REQ_R3> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <SPI_S1/RSReg_7> of sequential type is unconnected in block <hijacker1>.
 WARNING:Xst:2677 - Node <SPI_S1/startF> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_95> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_94> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_93> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_92> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_91> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_90> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_89> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_88> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_87> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_86> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_85> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_84> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_83> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_82> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_81> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_80> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_79> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_78> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_77> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_76> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_75> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_74> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_73> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/win1/Window_72> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/cornorWindow/Window_159> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/cornorWindow/Window_158> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/cornorWindow/Window_157> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/cornorWindow/Window_156> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/cornorWindow/Window_155> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/cornorWindow/Window_154> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/cornorWindow/Window_153> of sequential type is unconnected in block <hijacker1>.
-WARNING:Xst:2677 - Node <hCornor/cornorWindow/Window_152> of sequential type is unconnected in block <hijacker1>.
 WARNING:Xst:2677 - Node <Inst_SysCon/RSEL_O> of sequential type is unconnected in block <VmodCAM_Ref>.
 WARNING:Xst:2677 - Node <Inst_SysCon/SYNC_SW/gen_bits[0].gen_bit/D_O> of sequential type is unconnected in block <VmodCAM_Ref>.
 WARNING:Xst:2677 - Node <Inst_SysCon/SYNC_SW/gen_bits[1].gen_bit/D_O> of sequential type is unconnected in block <VmodCAM_Ref>.
@@ -2917,47 +2256,25 @@ INFO:Xst:2261 - The FF/Latch <Inst_camctlB/rstCnt_17> in Unit <VmodCAM_Ref> is e
 INFO:Xst:2261 - The FF/Latch <Inst_camctlB/rstCnt_18> in Unit <VmodCAM_Ref> is equivalent to the following FF/Latch, which will be removed : <Inst_camctlA/rstCnt_18> 
 INFO:Xst:2261 - The FF/Latch <Inst_camctlB/rstCnt_19> in Unit <VmodCAM_Ref> is equivalent to the following FF/Latch, which will be removed : <Inst_camctlA/rstCnt_19> 
 INFO:Xst:2261 - The FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/de_dd> in Unit <VmodCAM_Ref> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_DVITransmitter/Inst_TMDSEncoder_green/de_dd> <Inst_DVITransmitter/Inst_TMDSEncoder_blue/de_dd> 
-INFO:Xst:2261 - The FF/Latch <hCornor/win1/addra_bramR_0> in Unit <hijacker1> is equivalent to the following FF/Latch, which will be removed : <hCornor/cornorWindow/addra_bramR_0> 
-INFO:Xst:2261 - The FF/Latch <hCornor/win1/addra_bramR_1> in Unit <hijacker1> is equivalent to the following FF/Latch, which will be removed : <hCornor/cornorWindow/addra_bramR_1> 
-INFO:Xst:2261 - The FF/Latch <hCornor/win1/addra_bramR_2> in Unit <hijacker1> is equivalent to the following FF/Latch, which will be removed : <hCornor/cornorWindow/addra_bramR_2> 
-INFO:Xst:2261 - The FF/Latch <hCornor/win1/addra_bramR_3> in Unit <hijacker1> is equivalent to the following FF/Latch, which will be removed : <hCornor/cornorWindow/addra_bramR_3> 
-INFO:Xst:2261 - The FF/Latch <hCornor/win1/addra_bramR_4> in Unit <hijacker1> is equivalent to the following FF/Latch, which will be removed : <hCornor/cornorWindow/addra_bramR_4> 
-INFO:Xst:2261 - The FF/Latch <hCornor/win1/addra_bramR_5> in Unit <hijacker1> is equivalent to the following FF/Latch, which will be removed : <hCornor/cornorWindow/addra_bramR_5> 
-INFO:Xst:2261 - The FF/Latch <hCornor/win1/addra_bramR_6> in Unit <hijacker1> is equivalent to the following FF/Latch, which will be removed : <hCornor/cornorWindow/addra_bramR_6> 
-INFO:Xst:2261 - The FF/Latch <hCornor/win1/addra_bramR_7> in Unit <hijacker1> is equivalent to the following FF/Latch, which will be removed : <hCornor/cornorWindow/addra_bramR_7> 
-INFO:Xst:2261 - The FF/Latch <hCornor/win1/addra_bramR_8> in Unit <hijacker1> is equivalent to the following FF/Latch, which will be removed : <hCornor/cornorWindow/addra_bramR_8> 
-INFO:Xst:2261 - The FF/Latch <hCornor/win1/addra_bramR_9> in Unit <hijacker1> is equivalent to the following FF/Latch, which will be removed : <hCornor/cornorWindow/addra_bramR_9> 
-INFO:Xst:2261 - The FF/Latch <hCornor/_i000001/DY_ShiftReg_10> in Unit <hijacker1> is equivalent to the following FF/Latch, which will be removed : <hCornor/_i000001/DX_ShiftReg_9> 
-INFO:Xst:2261 - The FF/Latch <hCornor/AdderTree_cij/RoW/in_reg_12> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/AdderTree_cij/RoW/in_reg_11> <hCornor/AdderTree_cij/RoW/in_reg_10> 
-INFO:Xst:2261 - The FF/Latch <hCornor/_i000001/DY_ShiftReg_20> in Unit <hijacker1> is equivalent to the following FF/Latch, which will be removed : <hCornor/_i000001/DX_ShiftReg_18> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IxIy_col_sum_SR_12> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIy_col_sum_SR_11> <hCornor/IxIy_col_sum_SR_10> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IxIy_col_sum_SR_25> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIy_col_sum_SR_24> <hCornor/IxIy_col_sum_SR_23> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IxIy_col_sum_SR_38> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIy_col_sum_SR_37> <hCornor/IxIy_col_sum_SR_36> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IxIy_col_sum_SR_51> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIy_col_sum_SR_50> <hCornor/IxIy_col_sum_SR_49> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IyIy_col_sum_SR_12> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IyIy_col_sum_SR_11> <hCornor/IyIy_col_sum_SR_10> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IxIy_col_sum_SR_62> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIy_col_sum_SR_64> <hCornor/IxIy_col_sum_SR_63> 
-INFO:Xst:2261 - The FF/Latch <hCornor/_i000001/DY_ShiftReg_0> in Unit <hijacker1> is equivalent to the following FF/Latch, which will be removed : <hCornor/_i000001/DX_ShiftReg_0> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IyIy_col_sum_SR_25> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IyIy_col_sum_SR_24> <hCornor/IyIy_col_sum_SR_23> 
-INFO:Xst:2261 - The FF/Latch <hCornor/AdderTree_aij/RoW/in_reg_12> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/AdderTree_aij/RoW/in_reg_11> <hCornor/AdderTree_aij/RoW/in_reg_10> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IyIy_col_sum_SR_38> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IyIy_col_sum_SR_37> <hCornor/IyIy_col_sum_SR_36> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IyIy_col_sum_SR_51> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IyIy_col_sum_SR_50> <hCornor/IyIy_col_sum_SR_49> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IyIy_col_sum_SR_62> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IyIy_col_sum_SR_64> <hCornor/IyIy_col_sum_SR_63> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IxIx_col_sum_SR_12> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIx_col_sum_SR_11> <hCornor/IxIx_col_sum_SR_10> 
-INFO:Xst:2261 - The FF/Latch <hCornor/AdderTree_bij/RoW/in_reg_12> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/AdderTree_bij/RoW/in_reg_11> <hCornor/AdderTree_bij/RoW/in_reg_10> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IxIx_col_sum_SR_25> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIx_col_sum_SR_24> <hCornor/IxIx_col_sum_SR_23> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IxIx_col_sum_SR_38> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIx_col_sum_SR_37> <hCornor/IxIx_col_sum_SR_36> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IxIx_col_sum_SR_51> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIx_col_sum_SR_50> <hCornor/IxIx_col_sum_SR_49> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IxIx_col_sum_SR_62> in Unit <hijacker1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIx_col_sum_SR_64> <hCornor/IxIx_col_sum_SR_63> 
 
 Mapping all equations...
 Annotating constraints using XCF file 'D:/Program/MYPRJ~1/HG_Sync/FPGA/SIFT/source/TOP.XCF'
 XCF parsing done.
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <Inst_DVITransmitter/Inst_clk_serializer_10_1/gear_s> in Unit <VmodCAM_Ref> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_DVITransmitter/Inst_d2_serializer_10_1/gear_s> <Inst_DVITransmitter/Inst_d1_serializer_10_1/gear_s> <Inst_DVITransmitter/Inst_d0_serializer_10_1/gear_s> 
-Found area constraint ratio of 100 (+ 5) on block VmodCAM_Ref, actual ratio is 6.
-FlipFlop hijacker1/hCornor/IxIx_win_sum_14 has been replicated 1 time(s)
-FlipFlop hijacker1/hCornor/IxIy_win_sum_14 has been replicated 1 time(s)
-FlipFlop hijacker1/hCornor/IyIy_win_sum_14 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block VmodCAM_Ref, actual ratio is 5.
+FlipFlop Inst_DVITransmitter/Inst_TMDSEncoder_blue/n0_q_m_1 has been replicated 1 time(s)
+FlipFlop Inst_DVITransmitter/Inst_TMDSEncoder_blue/n1_q_m_1 has been replicated 1 time(s)
+FlipFlop Inst_DVITransmitter/Inst_TMDSEncoder_green/n0_q_m_1 has been replicated 1 time(s)
+FlipFlop Inst_DVITransmitter/Inst_TMDSEncoder_green/n1_q_m_1 has been replicated 1 time(s)
+FlipFlop Inst_DVITransmitter/Inst_TMDSEncoder_red/n0_q_m_1 has been replicated 1 time(s)
+FlipFlop Inst_DVITransmitter/Inst_TMDSEncoder_red/n1_q_m_1 has been replicated 1 time(s)
+FlipFlop Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd1 has been replicated 3 time(s)
+FlipFlop Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd2 has been replicated 2 time(s)
+FlipFlop Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd3 has been replicated 3 time(s)
+FlipFlop Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd4 has been replicated 3 time(s)
+FlipFlop Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5 has been replicated 2 time(s)
+FlipFlop Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd6 has been replicated 2 time(s)
 
 Final Macro Processing ...
 
@@ -2980,48 +2297,6 @@ INFO:Xst:741 - HDL ADVISOR - A 4-bit shift register was found for signal <Inst_V
 Unit <VmodCAM_Ref> processed.
 
 Processing Unit <hijacker1> :
-	Found 5-bit shift register for signal <hCornor/IxIx_col_sum_SR_62>.
-	Found 5-bit shift register for signal <hCornor/IxIx_col_sum_SR_61>.
-	Found 5-bit shift register for signal <hCornor/IxIx_col_sum_SR_60>.
-	Found 5-bit shift register for signal <hCornor/IxIx_col_sum_SR_59>.
-	Found 5-bit shift register for signal <hCornor/IxIx_col_sum_SR_58>.
-	Found 5-bit shift register for signal <hCornor/IxIx_col_sum_SR_57>.
-	Found 5-bit shift register for signal <hCornor/IxIx_col_sum_SR_56>.
-	Found 5-bit shift register for signal <hCornor/IxIx_col_sum_SR_55>.
-	Found 5-bit shift register for signal <hCornor/IxIx_col_sum_SR_54>.
-	Found 5-bit shift register for signal <hCornor/IxIx_col_sum_SR_53>.
-	Found 5-bit shift register for signal <hCornor/IxIx_col_sum_SR_52>.
-	Found 5-bit shift register for signal <hCornor/IyIy_col_sum_SR_62>.
-	Found 5-bit shift register for signal <hCornor/IyIy_col_sum_SR_61>.
-	Found 5-bit shift register for signal <hCornor/IyIy_col_sum_SR_60>.
-	Found 5-bit shift register for signal <hCornor/IyIy_col_sum_SR_59>.
-	Found 5-bit shift register for signal <hCornor/IyIy_col_sum_SR_58>.
-	Found 5-bit shift register for signal <hCornor/IyIy_col_sum_SR_57>.
-	Found 5-bit shift register for signal <hCornor/IyIy_col_sum_SR_56>.
-	Found 5-bit shift register for signal <hCornor/IyIy_col_sum_SR_55>.
-	Found 5-bit shift register for signal <hCornor/IyIy_col_sum_SR_54>.
-	Found 5-bit shift register for signal <hCornor/IyIy_col_sum_SR_53>.
-	Found 5-bit shift register for signal <hCornor/IyIy_col_sum_SR_52>.
-	Found 5-bit shift register for signal <hCornor/IxIy_col_sum_SR_62>.
-	Found 5-bit shift register for signal <hCornor/IxIy_col_sum_SR_61>.
-	Found 5-bit shift register for signal <hCornor/IxIy_col_sum_SR_60>.
-	Found 5-bit shift register for signal <hCornor/IxIy_col_sum_SR_59>.
-	Found 5-bit shift register for signal <hCornor/IxIy_col_sum_SR_58>.
-	Found 5-bit shift register for signal <hCornor/IxIy_col_sum_SR_57>.
-	Found 5-bit shift register for signal <hCornor/IxIy_col_sum_SR_56>.
-	Found 5-bit shift register for signal <hCornor/IxIy_col_sum_SR_55>.
-	Found 5-bit shift register for signal <hCornor/IxIy_col_sum_SR_54>.
-	Found 5-bit shift register for signal <hCornor/IxIy_col_sum_SR_53>.
-	Found 5-bit shift register for signal <hCornor/IxIy_col_sum_SR_52>.
-	Found 2-bit shift register for signal <hCornor/_i000001/DY_ShiftReg_29>.
-	Found 2-bit shift register for signal <hCornor/_i000001/DY_ShiftReg_28>.
-	Found 2-bit shift register for signal <hCornor/_i000001/DY_ShiftReg_27>.
-	Found 2-bit shift register for signal <hCornor/_i000001/DY_ShiftReg_26>.
-	Found 2-bit shift register for signal <hCornor/_i000001/DY_ShiftReg_25>.
-	Found 2-bit shift register for signal <hCornor/_i000001/DY_ShiftReg_24>.
-	Found 2-bit shift register for signal <hCornor/_i000001/DY_ShiftReg_23>.
-	Found 2-bit shift register for signal <hCornor/_i000001/DY_ShiftReg_22>.
-	Found 2-bit shift register for signal <hCornor/_i000001/DY_ShiftReg_21>.
 INFO:Xst:741 - HDL ADVISOR - A 7-bit shift register was found for signal <SPI_S1/spiDataCount_7> and currently occupies 7 logic cells (3 slices). Removing the set/reset logic would take advantage of SRL32 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
 Unit <hijacker1> processed.
 
@@ -3034,11 +2309,10 @@ Unit <mcb_soft_calibration_inst> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1317
- Flip-Flops                                            : 1317
-# Shift Registers                                      : 48
- 2-bit shift register                                  : 14
- 5-bit shift register                                  : 33
+# Registers                                            : 1035
+ Flip-Flops                                            : 1035
+# Shift Registers                                      : 6
+ 2-bit shift register                                  : 5
  97-bit shift register                                 : 1
 
 =========================================================================
@@ -3062,38 +2336,38 @@ Top Level Output File Name         : VmodCAM_Ref.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 3101
-#      GND                         : 8
-#      INV                         : 36
-#      LUT1                        : 125
-#      LUT2                        : 381
-#      LUT3                        : 367
-#      LUT4                        : 263
-#      LUT5                        : 239
-#      LUT6                        : 572
+# BELS                             : 2211
+#      GND                         : 7
+#      INV                         : 35
+#      LUT1                        : 116
+#      LUT2                        : 169
+#      LUT3                        : 284
+#      LUT4                        : 212
+#      LUT5                        : 219
+#      LUT6                        : 547
 #      MULT_AND                    : 6
-#      MUXCY                       : 533
-#      MUXF7                       : 19
+#      MUXCY                       : 294
+#      MUXF7                       : 24
 #      VCC                         : 8
-#      XORCY                       : 544
-# FlipFlops/Latches                : 1411
-#      FD                          : 223
+#      XORCY                       : 290
+# FlipFlops/Latches                : 1050
+#      FD                          : 229
 #      FDC                         : 15
-#      FDCE                        : 146
-#      FDE                         : 590
+#      FDCE                        : 61
+#      FDE                         : 303
 #      FDP                         : 44
 #      FDPE                        : 3
-#      FDR                         : 113
-#      FDRE                        : 236
+#      FDR                         : 128
+#      FDRE                        : 226
 #      FDS                         : 18
 #      FDSE                        : 14
 #      LDC                         : 7
 #      ODDR2                       : 2
 # RAMS                             : 66
 #      RAM32X1S                    : 66
-# Shift Registers                  : 51
+# Shift Registers                  : 9
 #      SRL16                       : 1
-#      SRLC16E                     : 47
+#      SRLC16E                     : 5
 #      SRLC32E                     : 3
 # Clock Buffers                    : 10
 #      BUFG                        : 10
@@ -3109,10 +2383,7 @@ Primitive and Black Box Usage:
 # DCMs                             : 2
 #      DCM_CLKGEN                  : 1
 #      DCM_SP                      : 1
-# DSPs                             : 5
-#      DSP48A1                     : 5
-# Others                           : 91
-#      blkRAM_W32D640_SP           : 6
+# Others                           : 85
 #      BUFPLL                      : 1
 #      BUFPLL_MCB                  : 1
 #      IODRP2                      : 2
@@ -3130,19 +2401,19 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1411  out of  54576     2%  
- Number of Slice LUTs:                 2100  out of  27288     7%  
-    Number used as Logic:              1983  out of  27288     7%  
-    Number used as Memory:              117  out of   6408     1%  
+ Number of Slice Registers:            1050  out of  54576     1%  
+ Number of Slice LUTs:                 1657  out of  27288     6%  
+    Number used as Logic:              1582  out of  27288     5%  
+    Number used as Memory:               75  out of   6408     1%  
        Number used as RAM:               66
-       Number used as SRL:               51
+       Number used as SRL:                9
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2609
-   Number with an unused Flip Flop:    1198  out of   2609    45%  
-   Number with an unused LUT:           509  out of   2609    19%  
-   Number of fully used LUT-FF pairs:   902  out of   2609    34%  
-   Number of unique control sets:       124
+ Number of LUT Flip Flop pairs used:   1923
+   Number with an unused Flip Flop:     873  out of   1923    45%  
+   Number with an unused LUT:           266  out of   1923    13%  
+   Number of fully used LUT-FF pairs:   784  out of   1923    40%  
+   Number of unique control sets:       120
 
 IO Utilization: 
  Number of IOs:                         120
@@ -3150,7 +2421,6 @@ IO Utilization:
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:               10  out of     16    62%  
- Number of DSP48A1s:                      5  out of     58     8%  
  Number of PLL_ADVs:                      2  out of      4    50%  
 
 ---------------------------
@@ -3176,7 +2446,7 @@ Clock Signal                                                                    
 ---------------------------------------------------------------------------------+--------------------------------------+-------+
 CLK_I                                                                            | DCM_SP:CLKFX                         | 241   |
 CLK_I                                                                            | DCM_SP:CLKFX180                      | 2     |
-CAMB_PCLK_I                                                                      | IBUF+BUFG                            | 682   |
+CAMB_PCLK_I                                                                      | IBUF+BUFG                            | 255   |
 CAMA_PCLK_I                                                                      | IBUF+BUFG                            | 124   |
 hijacker1/SPI_S1/css_dat_o[6]_AND_3_o(hijacker1/SPI_S1/css_dat_o[6]_AND_3_o1:O)  | NONE(*)(hijacker1/SPI_S1/WSReg_6_LDC)| 1     |
 hijacker1/SPI_S1/css_dat_o[0]_AND_15_o(hijacker1/SPI_S1/css_dat_o[0]_AND_15_o1:O)| NONE(*)(hijacker1/SPI_S1/WSReg_0_LDC)| 1     |
@@ -3186,8 +2456,8 @@ hijacker1/SPI_S1/css_dat_o[3]_AND_9_o(hijacker1/SPI_S1/css_dat_o[3]_AND_9_o1:O) 
 hijacker1/SPI_S1/css_dat_o[4]_AND_7_o(hijacker1/SPI_S1/css_dat_o[4]_AND_7_o1:O)  | NONE(*)(hijacker1/SPI_S1/WSReg_4_LDC)| 1     |
 hijacker1/SPI_S1/css_dat_o[5]_AND_5_o(hijacker1/SPI_S1/css_dat_o[5]_AND_5_o1:O)  | NONE(*)(hijacker1/SPI_S1/WSReg_5_LDC)| 1     |
 CLK_I                                                                            | IBUFG                                | 59    |
-Inst_SysCon/Inst_10_1_pll/CLKOUT2                                                | BUFG                                 | 159   |
-Inst_SysCon/Inst_pll_mcb/CLKOUT2                                                 | BUFG                                 | 242   |
+Inst_SysCon/Inst_10_1_pll/CLKOUT2                                                | BUFG                                 | 165   |
+Inst_SysCon/Inst_pll_mcb/CLKOUT2                                                 | BUFG                                 | 257   |
 Inst_SysCon/Inst_10_1_pll/CLKOUT3                                                | BUFG                                 | 17    |
 ---------------------------------------------------------------------------------+--------------------------------------+-------+
 (*) These 7 clock signal(s) are generated by combinatorial logic,
@@ -3203,9 +2473,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 10.913ns (Maximum Frequency: 91.637MHz)
+   Minimum period: 5.840ns (Maximum Frequency: 171.226MHz)
    Minimum input arrival time before clock: 5.731ns
-   Maximum output required time after clock: 11.427ns
+   Maximum output required time after clock: 5.277ns
    Maximum combinational path delay: 3.726ns
 
 Timing Details:
@@ -3214,71 +2484,59 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK_I'
-  Clock period: 5.143ns (frequency: 194.448MHz)
+  Clock period: 4.012ns (frequency: 249.274MHz)
   Total number of paths / destination ports: 6554 / 844
 -------------------------------------------------------------------------
-Delay:               5.143ns (Levels of Logic = 4)
+Delay:               4.012ns (Levels of Logic = 2)
   Source:            Inst_SysCon/state_FSM_FFd7 (FF)
-  Destination:       Inst_SysCon/DcmProgReg_1 (FF)
+  Destination:       Inst_SysCon/bitCount_3 (FF)
   Source Clock:      CLK_I rising
   Destination Clock: CLK_I rising
 
-  Data Path: Inst_SysCon/state_FSM_FFd7 to Inst_SysCon/DcmProgReg_1
+  Data Path: Inst_SysCon/state_FSM_FFd7 to Inst_SysCon/bitCount_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q              3   0.447   0.879  Inst_SysCon/state_FSM_FFd7 (Inst_SysCon/state_FSM_FFd7)
-     LUT5:I2->O            5   0.205   1.079  Inst_SysCon/DcmProgReg[9]_loadReg[9]_mux_16_OUT<4>11 (Inst_SysCon/DcmProgReg[9]_loadReg[9]_mux_16_OUT<4>1)
-     LUT6:I0->O            7   0.203   0.878  Inst_SysCon/state_loadRegEn1 (Inst_SysCon/loadRegEn)
-     LUT4:I2->O            1   0.203   0.944  Inst_SysCon/DcmProgReg_1_rstpot (Inst_SysCon/DcmProgReg_1_rstpot)
-     LUT6:I0->O            1   0.203   0.000  Inst_SysCon/DcmProgReg_1_rstpot1 (Inst_SysCon/DcmProgReg_1_rstpot1)
-     FD:D                      0.102          Inst_SysCon/DcmProgReg_1
+     FDS:C->Q              2   0.447   0.845  Inst_SysCon/state_FSM_FFd7 (Inst_SysCon/state_FSM_FFd7)
+     LUT5:I2->O            6   0.205   1.109  Inst_SysCon/DcmProgReg[9]_loadReg[9]_mux_16_OUT<4>11 (Inst_SysCon/DcmProgReg[9]_loadReg[9]_mux_16_OUT<4>1)
+     LUT6:I0->O            7   0.203   0.773  Inst_SysCon/state_loadRegEn1 (Inst_SysCon/loadRegEn)
+     FDRE:R                    0.430          Inst_SysCon/bitCount_0
     ----------------------------------------
-    Total                      5.143ns (1.363ns logic, 3.780ns route)
-                                       (26.5% logic, 73.5% route)
+    Total                      4.012ns (1.285ns logic, 2.727ns route)
+                                       (32.0% logic, 68.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CAMB_PCLK_I'
-  Clock period: 10.913ns (frequency: 91.637MHz)
-  Total number of paths / destination ports: 741236 / 1422
+  Clock period: 5.259ns (frequency: 190.142MHz)
+  Total number of paths / destination ports: 8378 / 530
 -------------------------------------------------------------------------
-Delay:               10.913ns (Levels of Logic = 14)
-  Source:            hijacker1/hCornor/IxIx_win_sum_13 (FF)
-  Destination:       Inst_FBCtl/p2_wr_data_10 (FF)
+Delay:               5.259ns (Levels of Logic = 4)
+  Source:            hijacker1/SaData_0_18 (FF)
+  Destination:       Inst_FBCtl/pb_wr_cnt_0 (FF)
   Source Clock:      CAMB_PCLK_I rising
   Destination Clock: CAMB_PCLK_I rising
 
-  Data Path: hijacker1/hCornor/IxIx_win_sum_13 to Inst_FBCtl/p2_wr_data_10
+  Data Path: hijacker1/SaData_0_18 to Inst_FBCtl/pb_wr_cnt_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             9   0.447   1.077  hCornor/IxIx_win_sum_13 (hCornor/IxIx_win_sum_13)
-     LUT5:I1->O            1   0.203   0.579  hCornor/winSumIxxSat/n0014<10>1 (hCornor/IxIx_win_sum_sat<10>)
-     DSP48A1:B6->M6       17   3.364   1.028  hCornor/m_ac/Mmult_n0010 (hCornor/m_ac/n0010<6>)
-     LUT4:I3->O           12   0.205   0.909  hCornor/Madd_n0171_Madd_lut<0>1 (hCornor/Madd_n0171_Madd_lut<0>)
-     LUT5:I4->O            1   0.205   0.000  hCornor/Msub_acSbb_Madd_lut<2> (hCornor/Msub_acSbb_Madd_lut<2>)
-     MUXCY:S->O            1   0.172   0.000  hCornor/Msub_acSbb_Madd_cy<2> (hCornor/Msub_acSbb_Madd_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  hCornor/Msub_acSbb_Madd_cy<3> (hCornor/Msub_acSbb_Madd_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  hCornor/Msub_acSbb_Madd_cy<4> (hCornor/Msub_acSbb_Madd_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  hCornor/Msub_acSbb_Madd_cy<5> (hCornor/Msub_acSbb_Madd_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  hCornor/Msub_acSbb_Madd_cy<6> (hCornor/Msub_acSbb_Madd_cy<6>)
-     MUXCY:CI->O           0   0.019   0.000  hCornor/Msub_acSbb_Madd_cy<7> (hCornor/Msub_acSbb_Madd_cy<7>)
-     XORCY:CI->O          25   0.180   1.193  hCornor/Msub_acSbb_Madd_xor<8> (hCornor/acSbb<8>)
-     LUT6:I5->O            6   0.205   0.745  Mmux_spiRet8 (spiRet<7>)
-     LUT4:I3->O            2   0.205   0.000  Mmux_DO2161 (DO2<9>)
-     end scope: 'hijacker1:DO2<9>'
-     begin scope: 'Inst_FBCtl:DIB<9>'
-     FDE:D                     0.102          p2_wr_data_9
+     FDE:C->Q              4   0.447   0.912  SaData_0_18 (SaData_0_18)
+     LUT3:I0->O            1   0.205   0.684  GND_9_o_GND_9_o_equal_3_o<23>_SW1 (N10)
+     LUT6:I4->O           16   0.203   1.005  Mmux_en_p11 (spi_DatRdy)
+     end scope: 'hijacker1:spi_DatRdy'
+     begin scope: 'Inst_FBCtl:ENB'
+     LUT5:I4->O           31   0.205   1.277  _n0468_inv21 (_n0468_inv)
+     FDE:CE                    0.322          pb_wr_cnt_0
     ----------------------------------------
-    Total                     10.913ns (5.383ns logic, 5.530ns route)
-                                       (49.3% logic, 50.7% route)
+    Total                      5.259ns (1.382ns logic, 3.877ns route)
+                                       (26.3% logic, 73.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CAMA_PCLK_I'
-  Clock period: 4.828ns (frequency: 207.145MHz)
+  Clock period: 4.384ns (frequency: 228.126MHz)
   Total number of paths / destination ports: 3260 / 252
 -------------------------------------------------------------------------
-Delay:               4.828ns (Levels of Logic = 2)
+Delay:               4.384ns (Levels of Logic = 2)
   Source:            Inst_FBCtl/stateWrA_FSM_FFd2 (FF)
   Destination:       Inst_FBCtl/pa_wr_addr_0 (FF)
   Source Clock:      CAMA_PCLK_I rising
@@ -3288,69 +2546,67 @@ Delay:               4.828ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             37   0.447   1.467  stateWrA_FSM_FFd2 (stateWrA_FSM_FFd2)
-     LUT6:I4->O            1   0.203   0.924  Reset_OR_DriverANDClockEnable232 (Reset_OR_DriverANDClockEnable232)
-     LUT6:I1->O           23   0.203   1.153  Reset_OR_DriverANDClockEnable236 (Reset_OR_DriverANDClockEnable23)
+     FDR:C->Q             37   0.447   1.363  stateWrA_FSM_FFd2 (stateWrA_FSM_FFd2)
+     LUT6:I5->O            1   0.205   0.580  Reset_OR_DriverANDClockEnable232 (Reset_OR_DriverANDClockEnable232)
+     LUT6:I5->O           23   0.205   1.153  Reset_OR_DriverANDClockEnable236 (Reset_OR_DriverANDClockEnable23)
      FDRE:R                    0.430          pa_wr_addr_0
     ----------------------------------------
-    Total                      4.828ns (1.283ns logic, 3.545ns route)
-                                       (26.6% logic, 73.4% route)
+    Total                      4.384ns (1.287ns logic, 3.097ns route)
+                                       (29.4% logic, 70.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Inst_SysCon/Inst_10_1_pll/CLKOUT2'
-  Clock period: 7.530ns (frequency: 132.798MHz)
-  Total number of paths / destination ports: 3774 / 237
+  Clock period: 5.840ns (frequency: 171.226MHz)
+  Total number of paths / destination ports: 3911 / 243
 -------------------------------------------------------------------------
-Delay:               7.530ns (Levels of Logic = 6)
-  Source:            Inst_DVITransmitter/Inst_TMDSEncoder_green/n0_q_m_1 (FF)
+Delay:               5.840ns (Levels of Logic = 5)
+  Source:            Inst_DVITransmitter/Inst_TMDSEncoder_green/n0_q_m_2 (FF)
   Destination:       Inst_DVITransmitter/Inst_TMDSEncoder_green/cnt_t_1_4 (FF)
   Source Clock:      Inst_SysCon/Inst_10_1_pll/CLKOUT2 rising
   Destination Clock: Inst_SysCon/Inst_10_1_pll/CLKOUT2 rising
 
-  Data Path: Inst_DVITransmitter/Inst_TMDSEncoder_green/n0_q_m_1 to Inst_DVITransmitter/Inst_TMDSEncoder_green/cnt_t_1_4
+  Data Path: Inst_DVITransmitter/Inst_TMDSEncoder_green/n0_q_m_2 to Inst_DVITransmitter/Inst_TMDSEncoder_green/cnt_t_1_4
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              16   0.447   1.109  Inst_DVITransmitter/Inst_TMDSEncoder_green/n0_q_m_1 (Inst_DVITransmitter/Inst_TMDSEncoder_green/n0_q_m_1)
-     LUT2:I0->O            4   0.203   1.028  Inst_DVITransmitter/Inst_TMDSEncoder_green/Msub_dc_bias_lut<1>11 (Inst_DVITransmitter/Inst_TMDSEncoder_green/Msub_dc_bias_lut<1>)
-     LUT6:I1->O           15   0.203   1.086  Inst_DVITransmitter/Inst_TMDSEncoder_green/cond_balanced (Inst_DVITransmitter/Inst_TMDSEncoder_green/cond_balanced)
-     LUT2:I0->O            3   0.203   1.015  Inst_DVITransmitter/Inst_TMDSEncoder_green/cond_balanced_q_m_d[8]_AND_291_o1 (Inst_DVITransmitter/Inst_TMDSEncoder_green/cond_balanced_q_m_d[8]_AND_291_o)
-     LUT6:I0->O            1   0.203   0.580  Inst_DVITransmitter/Inst_TMDSEncoder_green/Maccum_cnt_t_1_lut<4>2 (Inst_DVITransmitter/Inst_TMDSEncoder_green/Maccum_cnt_t_1_lut<4>2)
-     LUT6:I5->O            1   0.205   0.944  Inst_DVITransmitter/Inst_TMDSEncoder_green/Maccum_cnt_t_1_lut<4>3 (Inst_DVITransmitter/Inst_TMDSEncoder_green/Maccum_cnt_t_1_lut<4>)
-     LUT6:I0->O            1   0.203   0.000  Inst_DVITransmitter/Inst_TMDSEncoder_green/Maccum_cnt_t_1_xor<4>11 (Inst_DVITransmitter/Inst_TMDSEncoder_green/Result<4>)
+     FD:C->Q              14   0.447   1.062  Inst_DVITransmitter/Inst_TMDSEncoder_green/n0_q_m_2 (Inst_DVITransmitter/Inst_TMDSEncoder_green/n0_q_m_2)
+     LUT2:I0->O            3   0.203   0.755  Inst_DVITransmitter/Inst_TMDSEncoder_green/Msub_dc_bias_lut<2>1 (Inst_DVITransmitter/Inst_TMDSEncoder_green/Msub_dc_bias_lut<2>)
+     LUT6:I4->O           17   0.203   1.028  Inst_DVITransmitter/Inst_TMDSEncoder_green/cond_balanced (Inst_DVITransmitter/Inst_TMDSEncoder_green/cond_balanced)
+     LUT6:I5->O            2   0.205   0.617  Inst_DVITransmitter/Inst_TMDSEncoder_green/Maccum_cnt_t_1_lut<4>1 (Inst_DVITransmitter/Inst_TMDSEncoder_green/Maccum_cnt_t_1_lut<4>1)
+     LUT6:I5->O            1   0.205   0.808  Inst_DVITransmitter/Inst_TMDSEncoder_green/Maccum_cnt_t_1_lut<4>3_SW0 (N194)
+     LUT6:I3->O            1   0.205   0.000  Inst_DVITransmitter/Inst_TMDSEncoder_green/Maccum_cnt_t_1_xor<4>11 (Inst_DVITransmitter/Inst_TMDSEncoder_green/Result<4>)
      FDR:D                     0.102          Inst_DVITransmitter/Inst_TMDSEncoder_green/cnt_t_1_4
     ----------------------------------------
-    Total                      7.530ns (1.769ns logic, 5.761ns route)
-                                       (23.5% logic, 76.5% route)
+    Total                      5.840ns (1.570ns logic, 4.270ns route)
+                                       (26.9% logic, 73.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Inst_SysCon/Inst_pll_mcb/CLKOUT2'
-  Clock period: 8.600ns (frequency: 116.285MHz)
-  Total number of paths / destination ports: 12653 / 587
+  Clock period: 5.797ns (frequency: 172.500MHz)
+  Total number of paths / destination ports: 16234 / 617
 -------------------------------------------------------------------------
-Delay:               8.600ns (Levels of Logic = 8)
-  Source:            Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_int_3 (FF)
-  Destination:       Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd1 (FF)
+Delay:               5.797ns (Levels of Logic = 7)
+  Source:            Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_int_0 (FF)
+  Destination:       Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_int_0 (FF)
   Source Clock:      Inst_SysCon/Inst_pll_mcb/CLKOUT2 rising
   Destination Clock: Inst_SysCon/Inst_pll_mcb/CLKOUT2 rising
 
-  Data Path: Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_int_3 to Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd1
+  Data Path: Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_int_0 to Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_int_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            12   0.447   1.253  Max_Value_int_3 (Max_Value_int_3)
-     LUT6:I1->O            1   0.203   0.808  DQS_DELAY[7]_DQS_DELAY_UPPER_LIMIT[7]_LessThan_200_o3 (DQS_DELAY[7]_DQS_DELAY_UPPER_LIMIT[7]_LessThan_200_o1)
-     LUT3:I0->O            1   0.205   0.580  DQS_DELAY[7]_DQS_DELAY_UPPER_LIMIT[7]_LessThan_200_o11 (DQS_DELAY[7]_DQS_DELAY_UPPER_LIMIT[7]_LessThan_200_o11)
-     LUT5:I4->O            2   0.205   0.845  DQS_DELAY[7]_DQS_DELAY_UPPER_LIMIT[7]_LessThan_200_o12 (DQS_DELAY[7]_DQS_DELAY_UPPER_LIMIT[7]_LessThan_200_o2)
-     LUT3:I0->O            2   0.205   0.845  DQS_DELAY[7]_DQS_DELAY_UPPER_LIMIT[7]_LessThan_200_o21 (DQS_DELAY[7]_DQS_DELAY_UPPER_LIMIT[7]_LessThan_200_o)
-     LUT6:I3->O            1   0.205   0.580  STATE_FSM_FFd1-In2 (STATE_FSM_FFd1-In2)
-     LUT6:I5->O            1   0.205   0.580  STATE_FSM_FFd1-In3 (STATE_FSM_FFd1-In3)
-     LUT6:I5->O            1   0.205   0.924  STATE_FSM_FFd1-In4 (STATE_FSM_FFd1-In4)
-     LUT6:I1->O            1   0.203   0.000  STATE_FSM_FFd1-In7 (STATE_FSM_FFd1-In)
-     FDR:D                     0.102          STATE_FSM_FFd1
+     FDRE:C->Q            11   0.447   0.883  Max_Value_int_0 (Max_Value_int_0)
+     LUT2:I1->O            1   0.205   0.000  Msub_Max_Value_Delta_Dn_lut<0> (Msub_Max_Value_Delta_Dn_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Msub_Max_Value_Delta_Dn_cy<0> (Msub_Max_Value_Delta_Dn_cy<0>)
+     XORCY:CI->O           1   0.180   0.924  Msub_Max_Value_Delta_Dn_xor<1> (Max_Value_Delta_Dn<1>)
+     LUT6:I1->O            1   0.203   0.580  _n1308_inv122 (_n1308_inv122)
+     LUT6:I5->O            4   0.205   0.684  _n1308_inv123 (_n1308_inv12)
+     LUT6:I5->O            8   0.205   0.803  _n1308_inv4_rstpot (_n1308_inv4_rstpot)
+     LUT5:I4->O            1   0.205   0.000  Max_Value_int_0_dpot (Max_Value_int_0_dpot)
+     FDRE:D                    0.102          Max_Value_int_0
     ----------------------------------------
-    Total                      8.600ns (2.185ns logic, 6.415ns route)
-                                       (25.4% logic, 74.6% route)
+    Total                      5.797ns (1.924ns logic, 3.873ns route)
+                                       (33.2% logic, 66.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Inst_SysCon/Inst_10_1_pll/CLKOUT3'
@@ -3376,7 +2632,7 @@ Delay:               1.861ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CAMB_PCLK_I'
-  Total number of paths / destination ports: 382 / 357
+  Total number of paths / destination ports: 207 / 196
 -------------------------------------------------------------------------
 Offset:              5.731ns (Levels of Logic = 4)
   Source:            css (PAD)
@@ -3389,8 +2645,8 @@ Offset:              5.731ns (Levels of Logic = 4)
     ----------------------------------------  ------------
      IBUF:I->O            21   1.222   1.458  css_IBUF (css_IBUF)
      begin scope: 'hijacker1:css'
-     LUT6:I1->O            1   0.203   0.684  _n0336_inv21 (_n0336_inv2)
-     LUT6:I4->O           64   0.203   1.639  _n0336_inv23 (_n0336_inv)
+     LUT6:I1->O            1   0.203   0.684  _n0295_inv21 (_n0295_inv2)
+     LUT6:I4->O           64   0.203   1.639  _n0295_inv23 (_n0295_inv)
      FDE:CE                    0.322          SaData_0_0
     ----------------------------------------
     Total                      5.731ns (1.950ns logic, 3.781ns route)
@@ -3400,7 +2656,7 @@ Offset:              5.731ns (Levels of Logic = 4)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CAMA_PCLK_I'
   Total number of paths / destination ports: 75 / 64
 -------------------------------------------------------------------------
-Offset:              3.619ns (Levels of Logic = 3)
+Offset:              3.599ns (Levels of Logic = 3)
   Source:            Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0:P1WREMPTY (PAD)
   Destination:       Inst_FBCtl/pa_wr_addr_0 (FF)
   Destination Clock: CAMA_PCLK_I rising
@@ -3412,35 +2668,33 @@ Offset:              3.619ns (Levels of Logic = 3)
     MCB:P1WREMPTY          4   0.000   0.000  samc_0 (p1_wr_empty)
      end scope: 'Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst:p1_wr_empty'
      end scope: 'Inst_FBCtl/mcb_ddr2:p1_wr_empty'
-     LUT2:I1->O            1   0.205   0.944  Reset_OR_DriverANDClockEnable231 (Reset_OR_DriverANDClockEnable231)
-     LUT6:I0->O           23   0.203   1.153  Reset_OR_DriverANDClockEnable236 (Reset_OR_DriverANDClockEnable23)
+     LUT2:I1->O            1   0.205   0.924  Reset_OR_DriverANDClockEnable231 (Reset_OR_DriverANDClockEnable231)
+     LUT6:I1->O           23   0.203   1.153  Reset_OR_DriverANDClockEnable236 (Reset_OR_DriverANDClockEnable23)
      FDRE:R                    0.430          pa_wr_addr_0
     ----------------------------------------
-    Total                      3.619ns (1.522ns logic, 2.097ns route)
-                                       (42.0% logic, 58.0% route)
+    Total                      3.599ns (1.522ns logic, 2.077ns route)
+                                       (42.3% logic, 57.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_I'
   Total number of paths / destination ports: 81 / 46
 -------------------------------------------------------------------------
-Offset:              4.874ns (Levels of Logic = 4)
-  Source:            Inst_SysCon/Inst_dcm_recfg/dcm_clkgen_inst:LOCKED (PAD)
-  Destination:       Inst_SysCon/DcmProgReg_1 (FF)
+Offset:              4.286ns (Levels of Logic = 3)
+  Source:            RESET_I (PAD)
+  Destination:       Inst_SysCon/RstQ_99 (FF)
   Destination Clock: CLK_I rising
 
-  Data Path: Inst_SysCon/Inst_dcm_recfg/dcm_clkgen_inst:LOCKED to Inst_SysCon/DcmProgReg_1
+  Data Path: RESET_I to Inst_SysCon/RstQ_99
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    DCM_CLKGEN:LOCKED      5   0.000   1.059  Inst_SysCon/Inst_dcm_recfg/dcm_clkgen_inst (Inst_SysCon/DcmLckd)
-     LUT5:I0->O            5   0.203   1.079  Inst_SysCon/DcmProgReg[9]_loadReg[9]_mux_16_OUT<4>11 (Inst_SysCon/DcmProgReg[9]_loadReg[9]_mux_16_OUT<4>1)
-     LUT6:I0->O            7   0.203   0.878  Inst_SysCon/state_loadRegEn1 (Inst_SysCon/loadRegEn)
-     LUT4:I2->O            1   0.203   0.944  Inst_SysCon/DcmProgReg_1_rstpot (Inst_SysCon/DcmProgReg_1_rstpot)
-     LUT6:I0->O            1   0.203   0.000  Inst_SysCon/DcmProgReg_1_rstpot1 (Inst_SysCon/DcmProgReg_1_rstpot1)
-     FD:D                      0.102          Inst_SysCon/DcmProgReg_1
+     IBUF:I->O             2   1.222   0.981  RESET_I_IBUF (RESET_I_IBUF)
+     LUT6:I0->O            1   0.203   0.580  Inst_SysCon/RstDbnc_RstQ[99]_OR_82_o_SW0 (N78)
+     LUT6:I5->O            7   0.205   0.773  Inst_SysCon/RstDbnc_RstQ[99]_OR_82_o (Inst_SysCon/RstDbnc_RstQ[99]_OR_82_o)
+     FDE:CE                    0.322          Inst_SysCon/RstQ_97
     ----------------------------------------
-    Total                      4.874ns (0.914ns logic, 3.960ns route)
-                                       (18.8% logic, 81.2% route)
+    Total                      4.286ns (1.952ns logic, 2.334ns route)
+                                       (45.5% logic, 54.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'hijacker1/SPI_S1/css_dat_o[6]_AND_3_o'
@@ -3610,55 +2864,49 @@ Offset:              2.644ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_SysCon/Inst_pll_mcb/CLKOUT2'
-  Total number of paths / destination ports: 58 / 53
+  Total number of paths / destination ports: 77 / 65
 -------------------------------------------------------------------------
-Offset:              4.014ns (Levels of Logic = 5)
-  Source:            Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0:UOREFRSHFLAG (PAD)
-  Destination:       Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd1 (FF)
+Offset:              3.754ns (Levels of Logic = 4)
+  Source:            Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0:UODONECAL (PAD)
+  Destination:       Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DQS_DELAY_INITIAL_0 (FF)
   Destination Clock: Inst_SysCon/Inst_pll_mcb/CLKOUT2 rising
 
-  Data Path: Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0:UOREFRSHFLAG to Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd1
+  Data Path: Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0:UODONECAL to Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DQS_DELAY_INITIAL_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    MCB:UOREFRSHFLAG      12   0.000   0.000  samc_0 (uo_refrsh_flag)
-     begin scope: 'Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst:MCB_UOREFRSHFLAG'
-     begin scope: 'Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst:MCB_UOREFRSHFLAG'
-     LUT6:I4->O            1   0.203   0.580  STATE_FSM_FFd1-In2 (STATE_FSM_FFd1-In2)
-     LUT6:I5->O            1   0.205   0.580  STATE_FSM_FFd1-In3 (STATE_FSM_FFd1-In3)
-     LUT6:I5->O            1   0.205   0.924  STATE_FSM_FFd1-In4 (STATE_FSM_FFd1-In4)
-     LUT6:I1->O            1   0.203   0.000  STATE_FSM_FFd1-In7 (STATE_FSM_FFd1-In)
-     FDR:D                     0.102          STATE_FSM_FFd1
+    MCB:UODONECAL          6   0.000   0.000  samc_0 (hard_done_cal)
+     begin scope: 'Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst:MCB_UODONECAL'
+     begin scope: 'Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst:MCB_UODONECAL'
+     LUT2:I0->O            1   0.203   0.580  CKE_Train_GND_248_o_MUX_443_o_SW0 (N63)
+     LUT6:I5->O            2   0.205   0.617  CKE_Train_GND_248_o_MUX_443_o (CKE_Train_GND_248_o_MUX_443_o)
+     LUT2:I1->O            7   0.205   0.773  _n1391_inv1 (_n1391_inv)
+     FDRE:CE                   0.322          DQS_DELAY_INITIAL_0
     ----------------------------------------
-    Total                      4.014ns (1.931ns logic, 2.084ns route)
-                                       (48.1% logic, 51.9% route)
+    Total                      3.754ns (1.784ns logic, 1.970ns route)
+                                       (47.5% logic, 52.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CAMB_PCLK_I'
-  Total number of paths / destination ports: 501308 / 311
+  Total number of paths / destination ports: 1240 / 85
 -------------------------------------------------------------------------
-Offset:              11.427ns (Levels of Logic = 15)
-  Source:            hijacker1/hCornor/IxIx_win_sum_13 (FF)
+Offset:              5.277ns (Levels of Logic = 10)
+  Source:            hijacker1/Pc1/Y_3 (FF)
   Destination:       Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0:P2WRDATA26 (PAD)
   Source Clock:      CAMB_PCLK_I rising
 
-  Data Path: hijacker1/hCornor/IxIx_win_sum_13 to Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0:P2WRDATA26
+  Data Path: hijacker1/Pc1/Y_3 to Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0:P2WRDATA26
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             9   0.447   1.077  hCornor/IxIx_win_sum_13 (hCornor/IxIx_win_sum_13)
-     LUT5:I1->O            1   0.203   0.579  hCornor/winSumIxxSat/n0014<10>1 (hCornor/IxIx_win_sum_sat<10>)
-     DSP48A1:B6->M6       17   3.364   1.028  hCornor/m_ac/Mmult_n0010 (hCornor/m_ac/n0010<6>)
-     LUT4:I3->O           12   0.205   0.909  hCornor/Madd_n0171_Madd_lut<0>1 (hCornor/Madd_n0171_Madd_lut<0>)
-     LUT5:I4->O            1   0.205   0.000  hCornor/Msub_acSbb_Madd_lut<2> (hCornor/Msub_acSbb_Madd_lut<2>)
-     MUXCY:S->O            1   0.172   0.000  hCornor/Msub_acSbb_Madd_cy<2> (hCornor/Msub_acSbb_Madd_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  hCornor/Msub_acSbb_Madd_cy<3> (hCornor/Msub_acSbb_Madd_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  hCornor/Msub_acSbb_Madd_cy<4> (hCornor/Msub_acSbb_Madd_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  hCornor/Msub_acSbb_Madd_cy<5> (hCornor/Msub_acSbb_Madd_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  hCornor/Msub_acSbb_Madd_cy<6> (hCornor/Msub_acSbb_Madd_cy<6>)
-     MUXCY:CI->O           0   0.019   0.000  hCornor/Msub_acSbb_Madd_cy<7> (hCornor/Msub_acSbb_Madd_cy<7>)
-     XORCY:CI->O          25   0.180   1.193  hCornor/Msub_acSbb_Madd_xor<8> (hCornor/acSbb<8>)
-     LUT6:I5->O            6   0.205   0.745  Mmux_spiRet8 (spiRet<7>)
+     FDCE:C->Q            22   0.447   1.381  Y_3 (Y_3)
+     end scope: 'hijacker1/Pc1:Y<3>'
+     LUT4:I0->O            0   0.203   0.000  Mcompar_pixY[10]_pixX[10]_LessThan_58_o_lutdi1 (Mcompar_pixY[10]_pixX[10]_LessThan_58_o_lutdi1)
+     MUXCY:DI->O           1   0.145   0.000  Mcompar_pixY[10]_pixX[10]_LessThan_58_o_cy<1> (Mcompar_pixY[10]_pixX[10]_LessThan_58_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_pixY[10]_pixX[10]_LessThan_58_o_cy<2> (Mcompar_pixY[10]_pixX[10]_LessThan_58_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_pixY[10]_pixX[10]_LessThan_58_o_cy<3> (Mcompar_pixY[10]_pixX[10]_LessThan_58_o_cy<3>)
+     MUXCY:CI->O          18   0.213   1.050  Mcompar_pixY[10]_pixX[10]_LessThan_58_o_cy<4> (Mcompar_pixY[10]_pixX[10]_LessThan_58_o_cy<4>)
+     LUT4:I3->O            7   0.205   0.774  Mmux_spiRet81 (spiRet<7>)
      LUT4:I3->O            2   0.205   0.616  Mmux_DO2161 (DO2<9>)
      end scope: 'hijacker1:DO2<9>'
      begin scope: 'Inst_FBCtl:DIB<9>'
@@ -3666,8 +2914,8 @@ Offset:              11.427ns (Levels of Logic = 15)
      begin scope: 'Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst:p2_wr_data<25>'
     MCB:P2WRDATA25             0.000          samc_0
     ----------------------------------------
-    Total                     11.427ns (5.281ns logic, 6.146ns route)
-                                       (46.2% logic, 53.8% route)
+    Total                      5.277ns (1.456ns logic, 3.821ns route)
+                                       (27.6% logic, 72.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'hijacker1/SPI_S1/css_dat_o[6]_AND_3_o'
@@ -3815,12 +3063,12 @@ Delay:               3.726ns (Levels of Logic = 5)
     ----------------------------------------  ------------
      IBUF:I->O            34   1.222   1.685  SW_I_7_IBUF (Inst_SysCon/SYNC_SW/gen_bits[7].gen_bit/n0003<0>)
      begin scope: 'hijacker1:SW_I<7>'
-     LUT6:I0->O            2   0.203   0.616  Mmux_DO231 (DO2<11>)
-     end scope: 'hijacker1:DO2<11>'
-     begin scope: 'Inst_FBCtl:DIB<11>'
-     begin scope: 'Inst_FBCtl/mcb_ddr2:p2_wr_data<27>'
-     begin scope: 'Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst:p2_wr_data<27>'
-    MCB:P2WRDATA27             0.000          samc_0
+     LUT6:I0->O            2   0.203   0.616  Mmux_DO2111 (DO2<4>)
+     end scope: 'hijacker1:DO2<4>'
+     begin scope: 'Inst_FBCtl:DIB<4>'
+     begin scope: 'Inst_FBCtl/mcb_ddr2:p2_wr_data<20>'
+     begin scope: 'Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst:p2_wr_data<20>'
+    MCB:P2WRDATA20             0.000          samc_0
     ----------------------------------------
     Total                      3.726ns (1.425ns logic, 2.301ns route)
                                        (38.2% logic, 61.8% route)
@@ -3835,8 +3083,8 @@ Clock to Setup on destination clock CAMA_PCLK_I
                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------------------+---------+---------+---------+---------+
-CAMA_PCLK_I                     |    4.828|         |         |         |
-CAMB_PCLK_I                     |    2.096|         |         |         |
+CAMA_PCLK_I                     |    4.384|         |         |         |
+CAMB_PCLK_I                     |    2.116|         |         |         |
 CLK_I                           |    4.414|         |         |         |
 Inst_SysCon/Inst_pll_mcb/CLKOUT2|    2.775|         |         |         |
 --------------------------------+---------+---------+---------+---------+
@@ -3846,9 +3094,8 @@ Clock to Setup on destination clock CAMB_PCLK_I
                                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------------------------+---------+---------+---------+---------+
-CAMA_PCLK_I                           |    5.024|         |         |         |
-CAMB_PCLK_I                           |   10.913|         |         |         |
-CLK_I                                 |    5.621|         |         |         |
+CAMB_PCLK_I                           |    5.259|         |         |         |
+CLK_I                                 |    4.926|         |         |         |
 Inst_SysCon/Inst_pll_mcb/CLKOUT2      |    2.775|         |         |         |
 hijacker1/SPI_S1/css_dat_o[0]_AND_15_o|         |    2.777|         |         |
 hijacker1/SPI_S1/css_dat_o[1]_AND_13_o|         |    2.537|         |         |
@@ -3873,7 +3120,7 @@ Clock to Setup on destination clock Inst_SysCon/Inst_10_1_pll/CLKOUT2
 Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------+---------+---------+---------+---------+
 CLK_I                            |    3.629|         |         |         |
-Inst_SysCon/Inst_10_1_pll/CLKOUT2|    7.530|         |         |         |
+Inst_SysCon/Inst_10_1_pll/CLKOUT2|    5.840|         |         |         |
 Inst_SysCon/Inst_pll_mcb/CLKOUT2 |    2.775|         |         |         |
 ---------------------------------+---------+---------+---------+---------+
 
@@ -3892,7 +3139,7 @@ Clock to Setup on destination clock Inst_SysCon/Inst_pll_mcb/CLKOUT2
 Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------------------+---------+---------+---------+---------+
 CLK_I                           |    5.558|         |         |         |
-Inst_SysCon/Inst_pll_mcb/CLKOUT2|    8.600|         |         |         |
+Inst_SysCon/Inst_pll_mcb/CLKOUT2|    5.797|         |         |         |
 --------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock hijacker1/SPI_S1/css_dat_o[0]_AND_15_o
@@ -3954,14 +3201,14 @@ CAMB_PCLK_I    |         |         |    2.350|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 45.00 secs
-Total CPU time to Xst completion: 45.00 secs
+Total REAL time to Xst completion: 42.00 secs
+Total CPU time to Xst completion: 41.67 secs
  
 --> 
 
-Total memory usage is 353572 kilobytes
+Total memory usage is 340004 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  681 (   0 filtered)
-Number of infos    :  184 (   0 filtered)
+Number of warnings :  453 (   0 filtered)
+Number of infos    :  153 (   0 filtered)
 

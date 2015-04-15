@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Apr 09 05:06:35 2015
+// Written by: Map P.20131013 on Wed Apr 15 01:07:41 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -115,127 +115,6 @@ PIN Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0_pins<261> = BEL
 PIN Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0_pins<283> = BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0" PINNAME
         P2CMDCLK;
-PIN
-        hijacker1/hCornor/win1/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<26>
-        = BEL
-        "hijacker1/hCornor/win1/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN
-        hijacker1/hCornor/win1/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<27>
-        = BEL
-        "hijacker1/hCornor/win1/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram"
-        PINNAME CLKBRDCLK;
-PIN
-        hijacker1/hCornor/win1/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>
-        = BEL
-        "hijacker1/hCornor/win1/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN
-        hijacker1/hCornor/win1/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>
-        = BEL
-        "hijacker1/hCornor/win1/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN
-        hijacker1/hCornor/win1/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<26>
-        = BEL
-        "hijacker1/hCornor/win1/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN
-        hijacker1/hCornor/win1/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<27>
-        = BEL
-        "hijacker1/hCornor/win1/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram"
-        PINNAME CLKBRDCLK;
-PIN
-        hijacker1/hCornor/win1/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>
-        = BEL
-        "hijacker1/hCornor/win1/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN
-        hijacker1/hCornor/cornorWindow/RAMFEED[3].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>
-        = BEL
-        "hijacker1/hCornor/cornorWindow/RAMFEED[3].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN
-        hijacker1/hCornor/cornorWindow/RAMFEED[3].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<26>
-        = BEL
-        "hijacker1/hCornor/cornorWindow/RAMFEED[3].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN
-        hijacker1/hCornor/cornorWindow/RAMFEED[3].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<27>
-        = BEL
-        "hijacker1/hCornor/cornorWindow/RAMFEED[3].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram"
-        PINNAME CLKBRDCLK;
-PIN
-        hijacker1/hCornor/cornorWindow/RAMFEED[3].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>
-        = BEL
-        "hijacker1/hCornor/cornorWindow/RAMFEED[3].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN
-        hijacker1/hCornor/cornorWindow/RAMFEED[2].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>
-        = BEL
-        "hijacker1/hCornor/cornorWindow/RAMFEED[2].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN
-        hijacker1/hCornor/cornorWindow/RAMFEED[2].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<26>
-        = BEL
-        "hijacker1/hCornor/cornorWindow/RAMFEED[2].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN
-        hijacker1/hCornor/cornorWindow/RAMFEED[2].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<27>
-        = BEL
-        "hijacker1/hCornor/cornorWindow/RAMFEED[2].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram"
-        PINNAME CLKBRDCLK;
-PIN
-        hijacker1/hCornor/cornorWindow/RAMFEED[2].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>
-        = BEL
-        "hijacker1/hCornor/cornorWindow/RAMFEED[2].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN
-        hijacker1/hCornor/cornorWindow/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>
-        = BEL
-        "hijacker1/hCornor/cornorWindow/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN
-        hijacker1/hCornor/cornorWindow/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<26>
-        = BEL
-        "hijacker1/hCornor/cornorWindow/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN
-        hijacker1/hCornor/cornorWindow/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<27>
-        = BEL
-        "hijacker1/hCornor/cornorWindow/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram"
-        PINNAME CLKBRDCLK;
-PIN
-        hijacker1/hCornor/cornorWindow/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>
-        = BEL
-        "hijacker1/hCornor/cornorWindow/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN
-        hijacker1/hCornor/cornorWindow/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>
-        = BEL
-        "hijacker1/hCornor/cornorWindow/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN
-        hijacker1/hCornor/cornorWindow/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<26>
-        = BEL
-        "hijacker1/hCornor/cornorWindow/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN
-        hijacker1/hCornor/cornorWindow/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<27>
-        = BEL
-        "hijacker1/hCornor/cornorWindow/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram"
-        PINNAME CLKBRDCLK;
-PIN
-        hijacker1/hCornor/cornorWindow/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>
-        = BEL
-        "hijacker1/hCornor/cornorWindow/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram"
-        PINNAME CLKAWRCLK;
-PIN hijacker1/hCornor/m_a/Mmult_n0010_pins<92> = BEL
-        "hijacker1/hCornor/m_a/Mmult_n0010" PINNAME CLK;
-PIN hijacker1/hCornor/m_b/Mmult_n0010_pins<92> = BEL
-        "hijacker1/hCornor/m_b/Mmult_n0010" PINNAME CLK;
-PIN hijacker1/hCornor/m_c/Mmult_n0010_pins<92> = BEL
-        "hijacker1/hCornor/m_c/Mmult_n0010" PINNAME CLK;
 TIMEGRP CAMB_PCLK_I = BEL "Inst_camctlB/BUFG_inst" BEL "Inst_camctlB/DV_O" BEL
         "Inst_camctlB/D_O_15" BEL "Inst_camctlB/D_O_14" BEL
         "Inst_camctlB/D_O_13" BEL "Inst_camctlB/D_O_12" BEL
@@ -302,393 +181,15 @@ TIMEGRP CAMB_PCLK_I = BEL "Inst_camctlB/BUFG_inst" BEL "Inst_camctlB/DV_O" BEL
         "hijacker1/Pc1/Y_1" BEL "hijacker1/Pc1/Y_2" BEL "hijacker1/Pc1/Y_3"
         BEL "hijacker1/Pc1/Y_4" BEL "hijacker1/Pc1/Y_5" BEL
         "hijacker1/Pc1/Y_6" BEL "hijacker1/Pc1/Y_7" BEL "hijacker1/Pc1/Y_8"
-        BEL "hijacker1/Pc1/Y_9" BEL
-        "hijacker1/hCornor/win1/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_0"
-        BEL
-        "hijacker1/hCornor/win1/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_1"
-        PIN
-        "hijacker1/hCornor/win1/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<26>"
-        PIN
-        "hijacker1/hCornor/win1/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<27>"
-        PIN
-        "hijacker1/hCornor/win1/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>"
-        PIN
-        "hijacker1/hCornor/win1/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>"
-        PIN
-        "hijacker1/hCornor/win1/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<26>"
-        PIN
-        "hijacker1/hCornor/win1/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<27>"
-        PIN
-        "hijacker1/hCornor/win1/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>"
-        PIN
-        "hijacker1/hCornor/cornorWindow/RAMFEED[3].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>"
-        PIN
-        "hijacker1/hCornor/cornorWindow/RAMFEED[3].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<26>"
-        PIN
-        "hijacker1/hCornor/cornorWindow/RAMFEED[3].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<27>"
-        PIN
-        "hijacker1/hCornor/cornorWindow/RAMFEED[3].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>"
-        PIN
-        "hijacker1/hCornor/cornorWindow/RAMFEED[2].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>"
-        PIN
-        "hijacker1/hCornor/cornorWindow/RAMFEED[2].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<26>"
-        PIN
-        "hijacker1/hCornor/cornorWindow/RAMFEED[2].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<27>"
-        PIN
-        "hijacker1/hCornor/cornorWindow/RAMFEED[2].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>"
-        PIN
-        "hijacker1/hCornor/cornorWindow/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>"
-        PIN
-        "hijacker1/hCornor/cornorWindow/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<26>"
-        PIN
-        "hijacker1/hCornor/cornorWindow/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<27>"
-        PIN
-        "hijacker1/hCornor/cornorWindow/RAMFEED[1].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>"
-        PIN
-        "hijacker1/hCornor/cornorWindow/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>"
-        PIN
-        "hijacker1/hCornor/cornorWindow/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<26>"
-        PIN
-        "hijacker1/hCornor/cornorWindow/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<27>"
-        PIN
-        "hijacker1/hCornor/cornorWindow/RAMFEED[0].RAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM9.ram_pins<26>"
-        BEL "hijacker1/hCornor/IyIy_col_sum_SR_62" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_61" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_60" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_59" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_58" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_57" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_56" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_55" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_54" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_53" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_52" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_62" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_61" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_60" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_59" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_58" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_57" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_56" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_55" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_54" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_53" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_52" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_62" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_61" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_60" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_59" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_58" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_57" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_56" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_55" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_54" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_53" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_52" BEL "hijacker1/rst_p_shift4"
-        BEL "hijacker1/rst_p_shift3" BEL "hijacker1/rst_p_shift2" BEL
-        "hijacker1/rst_p_shift1" BEL "hijacker1/hCornor/IyIy_win_sum_14_1" BEL
-        "hijacker1/hCornor/IxIx_win_sum_14_1" BEL
-        "hijacker1/hCornor/IxIy_win_sum_14_1" BEL
-        "hijacker1/SPI_S1/WSReg_5_P_5" BEL "hijacker1/SPI_S1/WSReg_5_C_5" BEL
-        "hijacker1/SPI_S1/WSReg_4_P_4" BEL "hijacker1/SPI_S1/WSReg_4_C_4" BEL
-        "hijacker1/SPI_S1/WSReg_3_P_3" BEL "hijacker1/SPI_S1/WSReg_3_C_3" BEL
-        "hijacker1/SPI_S1/WSReg_2_P_2" BEL "hijacker1/SPI_S1/WSReg_2_C_2" BEL
-        "hijacker1/SPI_S1/WSReg_1_P_1" BEL "hijacker1/SPI_S1/WSReg_1_C_1" BEL
-        "hijacker1/SPI_S1/WSReg_0_P_0" BEL "hijacker1/SPI_S1/WSReg_0_C_0" BEL
-        "hijacker1/SPI_S1/WSReg_6_P_6" BEL "hijacker1/SPI_S1/WSReg_6_C_6" BEL
-        "hijacker1/enD" BEL "hijacker1/spi_ScreenRst" PIN
-        "hijacker1/hCornor/m_a/Mmult_n0010_pins<92>" PIN
-        "hijacker1/hCornor/m_b/Mmult_n0010_pins<92>" PIN
-        "hijacker1/hCornor/m_c/Mmult_n0010_pins<92>" BEL
-        "hijacker1/hCornor/AdderTree_bij/RoW/in_reg_0" BEL
-        "hijacker1/hCornor/AdderTree_bij/RoW/in_reg_1" BEL
-        "hijacker1/hCornor/AdderTree_bij/RoW/in_reg_2" BEL
-        "hijacker1/hCornor/AdderTree_bij/RoW/in_reg_3" BEL
-        "hijacker1/hCornor/AdderTree_bij/RoW/in_reg_4" BEL
-        "hijacker1/hCornor/AdderTree_bij/RoW/in_reg_5" BEL
-        "hijacker1/hCornor/AdderTree_bij/RoW/in_reg_6" BEL
-        "hijacker1/hCornor/AdderTree_bij/RoW/in_reg_7" BEL
-        "hijacker1/hCornor/AdderTree_bij/RoW/in_reg_8" BEL
-        "hijacker1/hCornor/AdderTree_bij/RoW/in_reg_9" BEL
-        "hijacker1/hCornor/AdderTree_bij/RoW/in_reg_12" BEL
-        "hijacker1/hCornor/AdderTree_cij/RoW/in_reg_0" BEL
-        "hijacker1/hCornor/AdderTree_cij/RoW/in_reg_1" BEL
-        "hijacker1/hCornor/AdderTree_cij/RoW/in_reg_2" BEL
-        "hijacker1/hCornor/AdderTree_cij/RoW/in_reg_3" BEL
-        "hijacker1/hCornor/AdderTree_cij/RoW/in_reg_4" BEL
-        "hijacker1/hCornor/AdderTree_cij/RoW/in_reg_5" BEL
-        "hijacker1/hCornor/AdderTree_cij/RoW/in_reg_6" BEL
-        "hijacker1/hCornor/AdderTree_cij/RoW/in_reg_7" BEL
-        "hijacker1/hCornor/AdderTree_cij/RoW/in_reg_8" BEL
-        "hijacker1/hCornor/AdderTree_cij/RoW/in_reg_9" BEL
-        "hijacker1/hCornor/AdderTree_cij/RoW/in_reg_12" BEL
-        "hijacker1/hCornor/AdderTree_aij/RoW/in_reg_0" BEL
-        "hijacker1/hCornor/AdderTree_aij/RoW/in_reg_1" BEL
-        "hijacker1/hCornor/AdderTree_aij/RoW/in_reg_2" BEL
-        "hijacker1/hCornor/AdderTree_aij/RoW/in_reg_3" BEL
-        "hijacker1/hCornor/AdderTree_aij/RoW/in_reg_4" BEL
-        "hijacker1/hCornor/AdderTree_aij/RoW/in_reg_5" BEL
-        "hijacker1/hCornor/AdderTree_aij/RoW/in_reg_6" BEL
-        "hijacker1/hCornor/AdderTree_aij/RoW/in_reg_7" BEL
-        "hijacker1/hCornor/AdderTree_aij/RoW/in_reg_8" BEL
-        "hijacker1/hCornor/AdderTree_aij/RoW/in_reg_9" BEL
-        "hijacker1/hCornor/AdderTree_aij/RoW/in_reg_12" BEL
-        "hijacker1/hCornor/cornorWindow/Window_32" BEL
-        "hijacker1/hCornor/cornorWindow/Window_33" BEL
-        "hijacker1/hCornor/cornorWindow/Window_34" BEL
-        "hijacker1/hCornor/cornorWindow/Window_35" BEL
-        "hijacker1/hCornor/cornorWindow/Window_36" BEL
-        "hijacker1/hCornor/cornorWindow/Window_37" BEL
-        "hijacker1/hCornor/cornorWindow/Window_38" BEL
-        "hijacker1/hCornor/cornorWindow/Window_39" BEL
-        "hijacker1/hCornor/cornorWindow/Window_40" BEL
-        "hijacker1/hCornor/cornorWindow/Window_41" BEL
-        "hijacker1/hCornor/cornorWindow/Window_42" BEL
-        "hijacker1/hCornor/cornorWindow/Window_43" BEL
-        "hijacker1/hCornor/cornorWindow/Window_44" BEL
-        "hijacker1/hCornor/cornorWindow/Window_45" BEL
-        "hijacker1/hCornor/cornorWindow/Window_46" BEL
-        "hijacker1/hCornor/cornorWindow/Window_47" BEL
-        "hijacker1/hCornor/cornorWindow/Window_48" BEL
-        "hijacker1/hCornor/cornorWindow/Window_49" BEL
-        "hijacker1/hCornor/cornorWindow/Window_50" BEL
-        "hijacker1/hCornor/cornorWindow/Window_51" BEL
-        "hijacker1/hCornor/cornorWindow/Window_52" BEL
-        "hijacker1/hCornor/cornorWindow/Window_53" BEL
-        "hijacker1/hCornor/cornorWindow/Window_54" BEL
-        "hijacker1/hCornor/cornorWindow/Window_55" BEL
-        "hijacker1/hCornor/cornorWindow/Window_56" BEL
-        "hijacker1/hCornor/cornorWindow/Window_57" BEL
-        "hijacker1/hCornor/cornorWindow/Window_58" BEL
-        "hijacker1/hCornor/cornorWindow/Window_59" BEL
-        "hijacker1/hCornor/cornorWindow/Window_60" BEL
-        "hijacker1/hCornor/cornorWindow/Window_61" BEL
-        "hijacker1/hCornor/cornorWindow/Window_62" BEL
-        "hijacker1/hCornor/cornorWindow/Window_63" BEL
-        "hijacker1/hCornor/cornorWindow/Window_64" BEL
-        "hijacker1/hCornor/cornorWindow/Window_65" BEL
-        "hijacker1/hCornor/cornorWindow/Window_66" BEL
-        "hijacker1/hCornor/cornorWindow/Window_67" BEL
-        "hijacker1/hCornor/cornorWindow/Window_68" BEL
-        "hijacker1/hCornor/cornorWindow/Window_69" BEL
-        "hijacker1/hCornor/cornorWindow/Window_70" BEL
-        "hijacker1/hCornor/cornorWindow/Window_71" BEL
-        "hijacker1/hCornor/cornorWindow/Window_72" BEL
-        "hijacker1/hCornor/cornorWindow/Window_73" BEL
-        "hijacker1/hCornor/cornorWindow/Window_74" BEL
-        "hijacker1/hCornor/cornorWindow/Window_75" BEL
-        "hijacker1/hCornor/cornorWindow/Window_76" BEL
-        "hijacker1/hCornor/cornorWindow/Window_77" BEL
-        "hijacker1/hCornor/cornorWindow/Window_78" BEL
-        "hijacker1/hCornor/cornorWindow/Window_79" BEL
-        "hijacker1/hCornor/cornorWindow/Window_80" BEL
-        "hijacker1/hCornor/cornorWindow/Window_81" BEL
-        "hijacker1/hCornor/cornorWindow/Window_82" BEL
-        "hijacker1/hCornor/cornorWindow/Window_83" BEL
-        "hijacker1/hCornor/cornorWindow/Window_84" BEL
-        "hijacker1/hCornor/cornorWindow/Window_85" BEL
-        "hijacker1/hCornor/cornorWindow/Window_86" BEL
-        "hijacker1/hCornor/cornorWindow/Window_87" BEL
-        "hijacker1/hCornor/cornorWindow/Window_88" BEL
-        "hijacker1/hCornor/cornorWindow/Window_89" BEL
-        "hijacker1/hCornor/cornorWindow/Window_90" BEL
-        "hijacker1/hCornor/cornorWindow/Window_91" BEL
-        "hijacker1/hCornor/cornorWindow/Window_92" BEL
-        "hijacker1/hCornor/cornorWindow/Window_93" BEL
-        "hijacker1/hCornor/cornorWindow/Window_94" BEL
-        "hijacker1/hCornor/cornorWindow/Window_95" BEL
-        "hijacker1/hCornor/cornorWindow/Window_96" BEL
-        "hijacker1/hCornor/cornorWindow/Window_97" BEL
-        "hijacker1/hCornor/cornorWindow/Window_98" BEL
-        "hijacker1/hCornor/cornorWindow/Window_99" BEL
-        "hijacker1/hCornor/cornorWindow/Window_100" BEL
-        "hijacker1/hCornor/cornorWindow/Window_101" BEL
-        "hijacker1/hCornor/cornorWindow/Window_102" BEL
-        "hijacker1/hCornor/cornorWindow/Window_103" BEL
-        "hijacker1/hCornor/cornorWindow/Window_104" BEL
-        "hijacker1/hCornor/cornorWindow/Window_105" BEL
-        "hijacker1/hCornor/cornorWindow/Window_106" BEL
-        "hijacker1/hCornor/cornorWindow/Window_107" BEL
-        "hijacker1/hCornor/cornorWindow/Window_108" BEL
-        "hijacker1/hCornor/cornorWindow/Window_109" BEL
-        "hijacker1/hCornor/cornorWindow/Window_110" BEL
-        "hijacker1/hCornor/cornorWindow/Window_111" BEL
-        "hijacker1/hCornor/cornorWindow/Window_112" BEL
-        "hijacker1/hCornor/cornorWindow/Window_113" BEL
-        "hijacker1/hCornor/cornorWindow/Window_114" BEL
-        "hijacker1/hCornor/cornorWindow/Window_115" BEL
-        "hijacker1/hCornor/cornorWindow/Window_116" BEL
-        "hijacker1/hCornor/cornorWindow/Window_117" BEL
-        "hijacker1/hCornor/cornorWindow/Window_118" BEL
-        "hijacker1/hCornor/cornorWindow/Window_119" BEL
-        "hijacker1/hCornor/cornorWindow/Window_120" BEL
-        "hijacker1/hCornor/cornorWindow/Window_121" BEL
-        "hijacker1/hCornor/cornorWindow/Window_122" BEL
-        "hijacker1/hCornor/cornorWindow/Window_123" BEL
-        "hijacker1/hCornor/cornorWindow/Window_124" BEL
-        "hijacker1/hCornor/cornorWindow/Window_125" BEL
-        "hijacker1/hCornor/cornorWindow/Window_126" BEL
-        "hijacker1/hCornor/cornorWindow/Window_127" BEL
-        "hijacker1/hCornor/cornorWindow/Window_128" BEL
-        "hijacker1/hCornor/cornorWindow/Window_129" BEL
-        "hijacker1/hCornor/cornorWindow/Window_130" BEL
-        "hijacker1/hCornor/cornorWindow/Window_131" BEL
-        "hijacker1/hCornor/cornorWindow/Window_132" BEL
-        "hijacker1/hCornor/cornorWindow/Window_133" BEL
-        "hijacker1/hCornor/cornorWindow/Window_134" BEL
-        "hijacker1/hCornor/cornorWindow/Window_135" BEL
-        "hijacker1/hCornor/cornorWindow/Window_136" BEL
-        "hijacker1/hCornor/cornorWindow/Window_137" BEL
-        "hijacker1/hCornor/cornorWindow/Window_138" BEL
-        "hijacker1/hCornor/cornorWindow/Window_139" BEL
-        "hijacker1/hCornor/cornorWindow/Window_140" BEL
-        "hijacker1/hCornor/cornorWindow/Window_141" BEL
-        "hijacker1/hCornor/cornorWindow/Window_142" BEL
-        "hijacker1/hCornor/cornorWindow/Window_143" BEL
-        "hijacker1/hCornor/cornorWindow/Window_144" BEL
-        "hijacker1/hCornor/cornorWindow/Window_145" BEL
-        "hijacker1/hCornor/cornorWindow/Window_146" BEL
-        "hijacker1/hCornor/cornorWindow/Window_147" BEL
-        "hijacker1/hCornor/cornorWindow/Window_148" BEL
-        "hijacker1/hCornor/cornorWindow/Window_149" BEL
-        "hijacker1/hCornor/cornorWindow/Window_150" BEL
-        "hijacker1/hCornor/cornorWindow/Window_151" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_1" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_2" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_3" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_4" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_5" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_6" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_7" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_8" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_10" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_11" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_12" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_13" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_14" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_15" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_16" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_17" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_19" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_20" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_21" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_22" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_23" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_24" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_25" BEL
-        "hijacker1/hCornor/_i000001/DX_ShiftReg_26" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_0" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_1" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_2" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_3" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_4" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_5" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_6" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_7" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_8" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_9" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_10" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_20" BEL
-        "hijacker1/hCornor/win1/Window_0" BEL
-        "hijacker1/hCornor/win1/Window_1" BEL
-        "hijacker1/hCornor/win1/Window_2" BEL
-        "hijacker1/hCornor/win1/Window_3" BEL
-        "hijacker1/hCornor/win1/Window_4" BEL
-        "hijacker1/hCornor/win1/Window_5" BEL
-        "hijacker1/hCornor/win1/Window_6" BEL
-        "hijacker1/hCornor/win1/Window_7" BEL
-        "hijacker1/hCornor/win1/Window_32" BEL
-        "hijacker1/hCornor/win1/Window_33" BEL
-        "hijacker1/hCornor/win1/Window_34" BEL
-        "hijacker1/hCornor/win1/Window_35" BEL
-        "hijacker1/hCornor/win1/Window_36" BEL
-        "hijacker1/hCornor/win1/Window_37" BEL
-        "hijacker1/hCornor/win1/Window_38" BEL
-        "hijacker1/hCornor/win1/Window_39" BEL
-        "hijacker1/hCornor/win1/Window_40" BEL
-        "hijacker1/hCornor/win1/Window_41" BEL
-        "hijacker1/hCornor/win1/Window_42" BEL
-        "hijacker1/hCornor/win1/Window_43" BEL
-        "hijacker1/hCornor/win1/Window_44" BEL
-        "hijacker1/hCornor/win1/Window_45" BEL
-        "hijacker1/hCornor/win1/Window_46" BEL
-        "hijacker1/hCornor/win1/Window_47" BEL
-        "hijacker1/hCornor/win1/Window_48" BEL
-        "hijacker1/hCornor/win1/Window_49" BEL
-        "hijacker1/hCornor/win1/Window_50" BEL
-        "hijacker1/hCornor/win1/Window_51" BEL
-        "hijacker1/hCornor/win1/Window_52" BEL
-        "hijacker1/hCornor/win1/Window_53" BEL
-        "hijacker1/hCornor/win1/Window_54" BEL
-        "hijacker1/hCornor/win1/Window_55" BEL
-        "hijacker1/hCornor/win1/Window_56" BEL
-        "hijacker1/hCornor/win1/Window_57" BEL
-        "hijacker1/hCornor/win1/Window_58" BEL
-        "hijacker1/hCornor/win1/Window_59" BEL
-        "hijacker1/hCornor/win1/Window_60" BEL
-        "hijacker1/hCornor/win1/Window_61" BEL
-        "hijacker1/hCornor/win1/Window_62" BEL
-        "hijacker1/hCornor/win1/Window_63" BEL
-        "hijacker1/hCornor/win1/Window_64" BEL
-        "hijacker1/hCornor/win1/Window_65" BEL
-        "hijacker1/hCornor/win1/Window_66" BEL
-        "hijacker1/hCornor/win1/Window_67" BEL
-        "hijacker1/hCornor/win1/Window_68" BEL
-        "hijacker1/hCornor/win1/Window_69" BEL
-        "hijacker1/hCornor/win1/Window_70" BEL
-        "hijacker1/hCornor/win1/Window_71" BEL
-        "hijacker1/hCornor/win1/addra_bramR_0" BEL
-        "hijacker1/hCornor/win1/addra_bramR_1" BEL
-        "hijacker1/hCornor/win1/addra_bramR_2" BEL
-        "hijacker1/hCornor/win1/addra_bramR_3" BEL
-        "hijacker1/hCornor/win1/addra_bramR_4" BEL
-        "hijacker1/hCornor/win1/addra_bramR_5" BEL
-        "hijacker1/hCornor/win1/addra_bramR_6" BEL
-        "hijacker1/hCornor/win1/addra_bramR_7" BEL
-        "hijacker1/hCornor/win1/addra_bramR_8" BEL
-        "hijacker1/hCornor/win1/addra_bramR_9" BEL
-        "hijacker1/hCornor/IxIx_win_sum_0" BEL
-        "hijacker1/hCornor/IxIx_win_sum_1" BEL
-        "hijacker1/hCornor/IxIx_win_sum_2" BEL
-        "hijacker1/hCornor/IxIx_win_sum_3" BEL
-        "hijacker1/hCornor/IxIx_win_sum_4" BEL
-        "hijacker1/hCornor/IxIx_win_sum_5" BEL
-        "hijacker1/hCornor/IxIx_win_sum_6" BEL
-        "hijacker1/hCornor/IxIx_win_sum_7" BEL
-        "hijacker1/hCornor/IxIx_win_sum_8" BEL
-        "hijacker1/hCornor/IxIx_win_sum_9" BEL
-        "hijacker1/hCornor/IxIx_win_sum_10" BEL
-        "hijacker1/hCornor/IxIx_win_sum_11" BEL
-        "hijacker1/hCornor/IxIx_win_sum_12" BEL
-        "hijacker1/hCornor/IxIx_win_sum_13" BEL
-        "hijacker1/hCornor/IyIy_win_sum_0" BEL
-        "hijacker1/hCornor/IyIy_win_sum_1" BEL
-        "hijacker1/hCornor/IyIy_win_sum_2" BEL
-        "hijacker1/hCornor/IyIy_win_sum_3" BEL
-        "hijacker1/hCornor/IyIy_win_sum_4" BEL
-        "hijacker1/hCornor/IyIy_win_sum_5" BEL
-        "hijacker1/hCornor/IyIy_win_sum_6" BEL
-        "hijacker1/hCornor/IyIy_win_sum_7" BEL
-        "hijacker1/hCornor/IyIy_win_sum_8" BEL
-        "hijacker1/hCornor/IyIy_win_sum_9" BEL
-        "hijacker1/hCornor/IyIy_win_sum_10" BEL
-        "hijacker1/hCornor/IyIy_win_sum_11" BEL
-        "hijacker1/hCornor/IyIy_win_sum_12" BEL
-        "hijacker1/hCornor/IyIy_win_sum_13" BEL
-        "hijacker1/hCornor/IxIy_win_sum_0" BEL
-        "hijacker1/hCornor/IxIy_win_sum_1" BEL
-        "hijacker1/hCornor/IxIy_win_sum_2" BEL
-        "hijacker1/hCornor/IxIy_win_sum_3" BEL
-        "hijacker1/hCornor/IxIy_win_sum_4" BEL
-        "hijacker1/hCornor/IxIy_win_sum_5" BEL
-        "hijacker1/hCornor/IxIy_win_sum_6" BEL
-        "hijacker1/hCornor/IxIy_win_sum_7" BEL
-        "hijacker1/hCornor/IxIy_win_sum_8" BEL
-        "hijacker1/hCornor/IxIy_win_sum_9" BEL
-        "hijacker1/hCornor/IxIy_win_sum_10" BEL
-        "hijacker1/hCornor/IxIy_win_sum_11" BEL
-        "hijacker1/hCornor/IxIy_win_sum_12" BEL
-        "hijacker1/hCornor/IxIy_win_sum_13" BEL "hijacker1/SPI_S1/presck" BEL
+        BEL "hijacker1/Pc1/Y_9" BEL "hijacker1/SPI_S1/WSReg_5_P_5" BEL
+        "hijacker1/SPI_S1/WSReg_5_C_5" BEL "hijacker1/SPI_S1/WSReg_4_P_4" BEL
+        "hijacker1/SPI_S1/WSReg_4_C_4" BEL "hijacker1/SPI_S1/WSReg_3_P_3" BEL
+        "hijacker1/SPI_S1/WSReg_3_C_3" BEL "hijacker1/SPI_S1/WSReg_2_P_2" BEL
+        "hijacker1/SPI_S1/WSReg_2_C_2" BEL "hijacker1/SPI_S1/WSReg_1_P_1" BEL
+        "hijacker1/SPI_S1/WSReg_1_C_1" BEL "hijacker1/SPI_S1/WSReg_0_P_0" BEL
+        "hijacker1/SPI_S1/WSReg_0_C_0" BEL "hijacker1/SPI_S1/WSReg_6_P_6" BEL
+        "hijacker1/SPI_S1/WSReg_6_C_6" BEL "hijacker1/enD" BEL
+        "hijacker1/spi_ScreenRst" BEL "hijacker1/SPI_S1/presck" BEL
         "hijacker1/SPI_S1/spiDataCount_0" BEL
         "hijacker1/SPI_S1/spiDataCount_1" BEL
         "hijacker1/SPI_S1/spiDataCount_2" BEL
@@ -700,11 +201,7 @@ TIMEGRP CAMB_PCLK_I = BEL "Inst_camctlB/BUFG_inst" BEL "Inst_camctlB/DV_O" BEL
         "hijacker1/SPI_S1/RSReg_1" BEL "hijacker1/SPI_S1/RSReg_2" BEL
         "hijacker1/SPI_S1/RSReg_3" BEL "hijacker1/SPI_S1/RSReg_4" BEL
         "hijacker1/SPI_S1/RSReg_5" BEL "hijacker1/SPI_S1/RSReg_6" BEL
-        "hijacker1/SPI_S1/prepresck" BEL "hijacker1/dat_PixK_7" BEL
-        "hijacker1/dat_PixK_6" BEL "hijacker1/dat_PixK_5" BEL
-        "hijacker1/dat_PixK_4" BEL "hijacker1/dat_PixK_3" BEL
-        "hijacker1/dat_PixK_2" BEL "hijacker1/dat_PixK_1" BEL
-        "hijacker1/dat_PixK_0" BEL "hijacker1/dataG_15" BEL
+        "hijacker1/SPI_S1/prepresck" BEL "hijacker1/dataG_15" BEL
         "hijacker1/dataG_14" BEL "hijacker1/dataG_13" BEL "hijacker1/dataG_12"
         BEL "hijacker1/dataG_11" BEL "hijacker1/dataG_10" BEL
         "hijacker1/dataG_9" BEL "hijacker1/dataG_8" BEL "hijacker1/dataG_7"
@@ -750,91 +247,8 @@ TIMEGRP CAMB_PCLK_I = BEL "Inst_camctlB/BUFG_inst" BEL "Inst_camctlB/DV_O" BEL
         "hijacker1/Pix_C_5" BEL "hijacker1/Pix_C_4" BEL "hijacker1/Pix_C_3"
         BEL "hijacker1/Pix_C_2" BEL "hijacker1/Pix_C_1" BEL
         "hijacker1/Pix_C_0" BEL "hijacker1/SPI_C_2" BEL "hijacker1/SPI_C_1"
-        BEL "hijacker1/SPI_C_0" BEL "hijacker1/misoGate" BEL "hijacker1/KGate"
-        BEL "hijacker1/hCornor/_i000001/Mshreg_DY_ShiftReg_22" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_22" BEL
-        "hijacker1/hCornor/_i000001/Mshreg_DY_ShiftReg_21" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_21" BEL
-        "hijacker1/hCornor/_i000001/Mshreg_DY_ShiftReg_23" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_23" BEL
-        "hijacker1/hCornor/_i000001/Mshreg_DY_ShiftReg_24" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_24" BEL
-        "hijacker1/hCornor/_i000001/Mshreg_DY_ShiftReg_25" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_25" BEL
-        "hijacker1/hCornor/_i000001/Mshreg_DY_ShiftReg_29" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_29" BEL
-        "hijacker1/hCornor/_i000001/Mshreg_DY_ShiftReg_26" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_26" BEL
-        "hijacker1/hCornor/_i000001/Mshreg_DY_ShiftReg_27" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_27" BEL
-        "hijacker1/hCornor/Mshreg_IxIy_col_sum_SR_531" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_531" BEL
-        "hijacker1/hCornor/Mshreg_IxIy_col_sum_SR_521" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_521" BEL
-        "hijacker1/hCornor/_i000001/Mshreg_DY_ShiftReg_28" BEL
-        "hijacker1/hCornor/_i000001/DY_ShiftReg_28" BEL
-        "hijacker1/hCornor/Mshreg_IxIy_col_sum_SR_571" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_571" BEL
-        "hijacker1/hCornor/Mshreg_IxIy_col_sum_SR_541" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_541" BEL
-        "hijacker1/hCornor/Mshreg_IxIy_col_sum_SR_561" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_561" BEL
-        "hijacker1/hCornor/Mshreg_IxIy_col_sum_SR_601" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_601" BEL
-        "hijacker1/hCornor/Mshreg_IxIy_col_sum_SR_551" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_551" BEL
-        "hijacker1/hCornor/Mshreg_IxIy_col_sum_SR_591" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_591" BEL
-        "hijacker1/hCornor/Mshreg_IyIy_col_sum_SR_521" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_521" BEL
-        "hijacker1/hCornor/Mshreg_IxIy_col_sum_SR_581" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_581" BEL
-        "hijacker1/hCornor/Mshreg_IxIy_col_sum_SR_621" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_621" BEL
-        "hijacker1/hCornor/Mshreg_IyIy_col_sum_SR_541" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_541" BEL
-        "hijacker1/hCornor/Mshreg_IxIy_col_sum_SR_611" BEL
-        "hijacker1/hCornor/IxIy_col_sum_SR_611" BEL
-        "hijacker1/hCornor/Mshreg_IyIy_col_sum_SR_531" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_531" BEL
-        "hijacker1/hCornor/Mshreg_IyIy_col_sum_SR_551" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_551" BEL
-        "hijacker1/hCornor/Mshreg_IyIy_col_sum_SR_561" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_561" BEL
-        "hijacker1/hCornor/Mshreg_IyIy_col_sum_SR_571" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_571" BEL
-        "hijacker1/hCornor/Mshreg_IyIy_col_sum_SR_611" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_611" BEL
-        "hijacker1/hCornor/Mshreg_IyIy_col_sum_SR_581" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_581" BEL
-        "hijacker1/hCornor/Mshreg_IyIy_col_sum_SR_591" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_591" BEL
-        "hijacker1/hCornor/Mshreg_IxIx_col_sum_SR_521" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_521" BEL
-        "hijacker1/hCornor/Mshreg_IyIy_col_sum_SR_621" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_621" BEL
-        "hijacker1/hCornor/Mshreg_IyIy_col_sum_SR_601" BEL
-        "hijacker1/hCornor/IyIy_col_sum_SR_601" BEL
-        "hijacker1/hCornor/Mshreg_IxIx_col_sum_SR_561" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_561" BEL
-        "hijacker1/hCornor/Mshreg_IxIx_col_sum_SR_531" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_531" BEL
-        "hijacker1/hCornor/Mshreg_IxIx_col_sum_SR_551" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_551" BEL
-        "hijacker1/hCornor/Mshreg_IxIx_col_sum_SR_591" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_591" BEL
-        "hijacker1/hCornor/Mshreg_IxIx_col_sum_SR_541" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_541" BEL
-        "hijacker1/hCornor/Mshreg_IxIx_col_sum_SR_581" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_581" BEL
-        "hijacker1/hCornor/Mshreg_IxIx_col_sum_SR_621" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_621" BEL
-        "hijacker1/hCornor/Mshreg_IxIx_col_sum_SR_571" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_571" BEL
-        "hijacker1/hCornor/Mshreg_IxIx_col_sum_SR_611" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_611" BEL
-        "hijacker1/hCornor/Mshreg_IxIx_col_sum_SR_601" BEL
-        "hijacker1/hCornor/IxIx_col_sum_SR_601" BEL "CAMB_PCLK_I";
+        BEL "hijacker1/SPI_C_0" BEL "hijacker1/KGate" BEL "hijacker1/misoGate"
+        BEL "CAMB_PCLK_I";
 PIN Inst_camctlA/Inst_ODDR2_MCLK_FORWARD_pins<1> = BEL
         "Inst_camctlA/Inst_ODDR2_MCLK_FORWARD" PINNAME CK0;
 PIN Inst_camctlB/Inst_ODDR2_MCLK_FORWARD_pins<1> = BEL
@@ -1349,13 +763,13 @@ TIMEGRP Inst_SysCon_pllout_x1 = BEL "Inst_SysCon/BUFG_inst1" BEL
         "Inst_FBCtl/pc_rd_addr2_4" BEL "Inst_FBCtl/pc_rd_addr2_6" BEL
         "Inst_FBCtl/pc_rd_addr2_3" BEL "Inst_FBCtl/pc_rd_addr2_2" BEL
         "Inst_FBCtl/pc_rd_addr2_1" BEL
-        "Inst_DVITransmitter/Inst_TMDSEncoder_blue/Mshreg_c0_dd" BEL
-        "Inst_DVITransmitter/Inst_TMDSEncoder_blue/c0_dd" BEL
         "Inst_DVITransmitter/Inst_TMDSEncoder_red/Mshreg_de_dd" BEL
         "Inst_DVITransmitter/Inst_TMDSEncoder_red/de_dd" BEL
         "Inst_DVITransmitter/Inst_TMDSEncoder_blue/Mshreg_c1_dd" BEL
-        "Inst_DVITransmitter/Inst_TMDSEncoder_blue/c1_dd";
-PIN Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0_pins<642> = BEL
+        "Inst_DVITransmitter/Inst_TMDSEncoder_blue/c1_dd" BEL
+        "Inst_DVITransmitter/Inst_TMDSEncoder_blue/Mshreg_c0_dd" BEL
+        "Inst_DVITransmitter/Inst_TMDSEncoder_blue/c0_dd";
+PIN Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0_pins<641> = BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0" PINNAME UICLK;
 TIMEGRP Inst_SysCon_mcb_drp_clk_bfg = BEL "Inst_SysCon/BUFG_inst3" BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/IODRP2_RZQ"
@@ -1364,6 +778,18 @@ TIMEGRP Inst_SysCon_mcb_drp_clk_bfg = BEL "Inst_SysCon/BUFG_inst3" BEL
         BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/PLL_LOCK_R2"
         BEL
+        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd2_2"
+        BEL
+        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd4_3"
+        BEL
+        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd3_3"
+        BEL
+        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd1_3"
+        BEL
+        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5_2"
+        BEL
+        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd6_2"
+        BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/MCB_UIREAD"
         BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/state_FSM_FFd6"
@@ -1371,8 +797,6 @@ TIMEGRP Inst_SysCon_mcb_drp_clk_bfg = BEL "Inst_SysCon/BUFG_inst3" BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/state_FSM_FFd4"
         BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Rst_condition1"
-        BEL
-        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/PERFORM_START_DYN_CAL_AFTER_SELFREFRESH_R1"
         BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DONE_SOFTANDHARD_CAL"
         BEL
@@ -1389,12 +813,6 @@ TIMEGRP Inst_SysCon_mcb_drp_clk_bfg = BEL "Inst_SysCon/BUFG_inst3" BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/First_Dyn_Cal_Done"
         BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/CKE_Train"
-        BEL
-        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/SELFREFRESH_MODE_xilinx11"
-        BEL
-        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/PERFORM_START_DYN_CAL_AFTER_SELFREFRESH"
-        BEL
-        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/WAIT_SELFREFRESH_EXIT_DQS_CAL"
         BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/rd_not_write_reg"
         BEL
@@ -1614,16 +1032,6 @@ TIMEGRP Inst_SysCon_mcb_drp_clk_bfg = BEL "Inst_SysCon/BUFG_inst3" BEL
         BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/counter_inc_0"
         BEL
-        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd1"
-        BEL
-        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd2"
-        BEL
-        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd3"
-        BEL
-        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd4"
-        BEL
-        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd6"
-        BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DQS_DELAY_6"
         BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DQS_DELAY_5"
@@ -1637,8 +1045,6 @@ TIMEGRP Inst_SysCon_mcb_drp_clk_bfg = BEL "Inst_SysCon/BUFG_inst3" BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DQS_DELAY_1"
         BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DQS_DELAY_0"
-        BEL
-        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5"
         BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/count_5"
         BEL
@@ -1665,8 +1071,6 @@ TIMEGRP Inst_SysCon_mcb_drp_clk_bfg = BEL "Inst_SysCon/BUFG_inst3" BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/IODRPCTRLR_MEMCELL_ADDR_0"
         BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/IODRPCTRLR_CMD_VALID"
-        BEL
-        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/START_DYN_CAL_STATE_R1"
         BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/IODRPCTRLR_WRITE_DATA_6"
         BEL
@@ -1835,15 +1239,9 @@ TIMEGRP Inst_SysCon_mcb_drp_clk_bfg = BEL "Inst_SysCon/BUFG_inst3" BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_CMD_VALID"
         BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RST_reg"
+        PIN "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0_pins<641>"
         BEL
-        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/SELFREFRESH_MCB_MODE_R3"
-        PIN "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0_pins<642>"
-        BEL
-        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/syn_uiclk_pll_lock"
-        BEL
-        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Mshreg_SELFREFRESH_MCB_MODE_R2"
-        BEL
-        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/SELFREFRESH_MCB_MODE_R2";
+        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/syn_uiclk_pll_lock";
 PIN Inst_DVITransmitter/Inst_clk_serializer_10_1/oserdes_s_pins<0> = BEL
         "Inst_DVITransmitter/Inst_clk_serializer_10_1/oserdes_s" PINNAME CLK0;
 PIN Inst_DVITransmitter/Inst_clk_serializer_10_1/oserdes_m_pins<0> = BEL
@@ -2191,15 +1589,11 @@ PIN
         = BEL
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/CKE_Train"
         PINNAME Q;
-PIN Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0_pins<629> = BEL
-        "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0" PINNAME
-        SELFREFRESHMODE;
 PIN "Inst_SysCon/BUFPLL_MCB_INST_pins<3>" TIG;
 PIN "Inst_SysCon/ASYNC_RST1_pins<3>" TIG;
 PIN
         "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/CKE_Train_pins<2>"
         TIG;
-PIN "Inst_FBCtl/mcb_ddr2/memc3_mcb_raw_wrapper_inst/samc_0_pins<629>" TIG;
 OFFSET = IN 1.25 ns VALID 7.5 ns BEFORE COMP "CAMA_PCLK_I" "RISING";
 OFFSET = IN 1.25 ns VALID 7.5 ns BEFORE COMP "CAMB_PCLK_I" "RISING";
 SCHEMATIC END;

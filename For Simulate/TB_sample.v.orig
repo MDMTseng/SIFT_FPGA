@@ -1,0 +1,28 @@
+`include"BMPIO.v"
+
+`include"ShiftReg_window.v"
+`include"downSamplePixMem.v"
+
+
+`include "MFixPoint_ToolBox/MFixPointBasic.v"
+`include "MFixPoint_ToolBox/MFixPointMAC.v"
+`include "MFixPoint_ToolBox/MFixPointTables.v"
+//This example shows how to load 2 image(imL.bmp & imR.bmp) and process the image
+//then output the result to an image (Mix.bmp)
+module test;
+integer file1_R,file1_L;
+reg rst,reload,pixClk,wsrst;
+
+        always
+        begin
+            #10 pixClk=~pixClk;
+        end
+        initial begin
+          
+            #50
+			$finish;
+        end
+
+
+endmodule
+

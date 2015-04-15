@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
-[*] Thu Apr 09 07:30:08 2015
+[*] Wed Apr 15 07:09:58 2015
 [*]
 [dumpfile] "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\For Simulate\MFixPoint_ToolBox\wave.vcd"
-[dumpfile_mtime] "Thu Apr 09 07:29:44 2015"
-[dumpfile_size] 37594
+[dumpfile_mtime] "Wed Apr 15 07:09:51 2015"
+[dumpfile_size] 37601
 [savefile] "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\For Simulate\MFixPoint_ToolBox\_Save1.gtk"
-[timestart] 356
+[timestart] 387
 [size] 944 1002
-[pos] 909 -1
-*-5.000000 380 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] -1 -1
+*-4.000000 378 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] TB1.
 [treeopen] TB1.sat.
 [sst_width] 197
@@ -32,7 +32,6 @@ TB1.CC[8:0]
 -
 @200
 -
-@201
 -
 @20000
 -

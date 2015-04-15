@@ -1,0 +1,21 @@
+
+
+`include "MFixPoint_ToolBox/MFixPointTables.v"
+
+module TB1();
+		reg clk,en;
+     always #3 clk=~clk;
+		
+
+initial
+begin
+   $dumpfile("wave.vcd");$dumpvars;
+	//GaussTable_=GaussTable;
+	#5
+    en=1;
+    clk=0;
+    #1024 $finish;
+end
+
+
+endmodule

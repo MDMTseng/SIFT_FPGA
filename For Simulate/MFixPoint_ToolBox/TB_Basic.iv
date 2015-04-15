@@ -4,1851 +4,1851 @@
 :vpi_module "system";
 :vpi_module "v2005_math";
 :vpi_module "va_math";
-S_0062F830 .scope module, "MFP_Abs" "MFP_Abs" 2 232;
+S_0062F950 .scope module, "MFP_Abs" "MFP_Abs" 2 232;
  .timescale 0 0;
-P_005DBEBC .param/l "InW" 2 234, +C4<01000>;
-P_005DBED0 .param/l "OutW" 2 235, +C4<0100>;
-v00635170_0 .net *"_s1", 0 0, L_00C92EC8; 1 drivers
-v006351C8_0 .net *"_s2", 7 0, C4<00000000>; 1 drivers
-v00635220_0 .net *"_s5", 7 0, L_00C92F20; 1 drivers
-v00635278_0 .net *"_s6", 7 0, L_00C92F78; 1 drivers
-v006352D0_0 .net/s "dataIn", 7 0, C4<zzzzzzzz>; 0 drivers
-v00635328_0 .net/s "dataOut", 3 0, L_00C92FD0; 1 drivers
-L_00C92EC8 .part C4<zzzzzzzz>, 7, 1;
-L_00C92F20 .arith/sub 8, C4<00000000>, C4<zzzzzzzz>;
-L_00C92F78 .functor MUXZ 8, C4<zzzzzzzz>, L_00C92F20, L_00C92EC8, C4<>;
-L_00C92FD0 .part L_00C92F78, 0, 4;
-S_0062F7A8 .scope module, "MFP_Adder_Arr" "MFP_Adder_Arr" 2 67;
+P_005DBEF4 .param/l "InW" 2 234, +C4<01000>;
+P_005DBF08 .param/l "OutW" 2 235, +C4<0100>;
+v00635290_0 .net *"_s1", 0 0, L_00EC3028; 1 drivers
+v006352E8_0 .net *"_s2", 7 0, C4<00000000>; 1 drivers
+v00635340_0 .net *"_s5", 7 0, L_00EC3080; 1 drivers
+v00635398_0 .net *"_s6", 7 0, L_00EC30D8; 1 drivers
+v006353F0_0 .net/s "dataIn", 7 0, C4<zzzzzzzz>; 0 drivers
+v00635448_0 .net/s "dataOut", 3 0, L_00EC3130; 1 drivers
+L_00EC3028 .part C4<zzzzzzzz>, 7, 1;
+L_00EC3080 .arith/sub 8, C4<00000000>, C4<zzzzzzzz>;
+L_00EC30D8 .functor MUXZ 8, C4<zzzzzzzz>, L_00EC3080, L_00EC3028, C4<>;
+L_00EC3130 .part L_00EC30D8, 0, 4;
+S_0062F8C8 .scope module, "MFP_Adder_Arr" "MFP_Adder_Arr" 2 67;
  .timescale 0 0;
-P_0063804C .param/l "ArrL" 2 69, +C4<0100>;
-P_00638060 .param/l "In1W" 2 70, +C4<010000>;
-P_00638074 .param/l "In2W" 2 71, +C4<010000>;
-P_00638088 .param/l "OutW" 2 72, +C4<010000>;
-P_0063809C .param/l "Saturate" 2 74, +C4<0>;
-P_006380B0 .param/l "isUnsigned" 2 77, +C4<0>;
-P_006380C4 .param/l "prescale1" 2 75, +C4<01>;
-P_006380D8 .param/l "prescale2" 2 76, +C4<01>;
-P_006380EC .param/l "unsignedAddIn2" 2 73, +C4<0>;
-v0066A420_0 .net "In1Arr", 63 0, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; 0 drivers
-v0066A478_0 .net "In2Arr", 63 0, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; 0 drivers
-RS_006390BC .resolv tri, L_00C93398, L_00C93760, L_00C93B28, L_00C93EF0;
-v0066A4D0_0 .net8 "OutArr", 63 0, RS_006390BC; 4 drivers
-L_00C93238 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 0, 16;
-L_00C932E8 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 0, 16;
-L_00C93398 .part/pv L_00C8B488, 0, 16, 64;
-L_00C93600 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 16, 16;
-L_00C936B0 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 16, 16;
-L_00C93760 .part/pv L_00C8B7D0, 16, 16, 64;
-L_00C939C8 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 32, 16;
-L_00C93A78 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 32, 16;
-L_00C93B28 .part/pv L_00C95900, 32, 16, 64;
-L_00C93D90 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 48, 16;
-L_00C93E40 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 48, 16;
-L_00C93EF0 .part/pv L_00C95C48, 48, 16, 64;
-S_0062EBF8 .scope generate, "oparr[0]" "oparr[0]" 2 82, 2 82, S_0062F7A8;
+P_0063816C .param/l "ArrL" 2 69, +C4<0100>;
+P_00638180 .param/l "In1W" 2 70, +C4<010000>;
+P_00638194 .param/l "In2W" 2 71, +C4<010000>;
+P_006381A8 .param/l "OutW" 2 72, +C4<010000>;
+P_006381BC .param/l "Saturate" 2 74, +C4<0>;
+P_006381D0 .param/l "isUnsigned" 2 77, +C4<0>;
+P_006381E4 .param/l "prescale1" 2 75, +C4<01>;
+P_006381F8 .param/l "prescale2" 2 76, +C4<01>;
+P_0063820C .param/l "unsignedAddIn2" 2 73, +C4<0>;
+v0066A540_0 .net "In1Arr", 63 0, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; 0 drivers
+v0066A598_0 .net "In2Arr", 63 0, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; 0 drivers
+RS_006391DC .resolv tri, L_00EC34F8, L_00EC38C0, L_00EC3C88, L_00EC4050;
+v0066A5F0_0 .net8 "OutArr", 63 0, RS_006391DC; 4 drivers
+L_00EC3398 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 0, 16;
+L_00EC3448 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 0, 16;
+L_00EC34F8 .part/pv L_00EBB488, 0, 16, 64;
+L_00EC3760 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 16, 16;
+L_00EC3810 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 16, 16;
+L_00EC38C0 .part/pv L_00EBB7D0, 16, 16, 64;
+L_00EC3B28 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 32, 16;
+L_00EC3BD8 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 32, 16;
+L_00EC3C88 .part/pv L_00EC5A60, 32, 16, 64;
+L_00EC3EF0 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 48, 16;
+L_00EC3FA0 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 48, 16;
+L_00EC4050 .part/pv L_00EC5DA8, 48, 16, 64;
+S_0062ED18 .scope generate, "oparr[0]" "oparr[0]" 2 82, 2 82, S_0062F8C8;
  .timescale 0 0;
-P_0062A76C .param/l "gi" 2 82, +C4<00>;
-v0066A2C0_0 .net *"_s0", 15 0, L_00C93238; 1 drivers
-v0066A318_0 .net *"_s1", 15 0, C4<0000000000000001>; 1 drivers
-v0066A370_0 .net *"_s5", 15 0, L_00C932E8; 1 drivers
-v0066A3C8_0 .net *"_s6", 15 0, C4<0000000000000001>; 1 drivers
-L_00C93290 .arith/mult 16, L_00C93238, C4<0000000000000001>;
-L_00C93340 .arith/mult 16, L_00C932E8, C4<0000000000000001>;
-S_0062F500 .scope module, "a0" "MFP_Adder" 2 83, 2 89, S_0062EBF8;
+P_0062A88C .param/l "gi" 2 82, +C4<00>;
+v0066A3E0_0 .net *"_s0", 15 0, L_00EC3398; 1 drivers
+v0066A438_0 .net *"_s1", 15 0, C4<0000000000000001>; 1 drivers
+v0066A490_0 .net *"_s5", 15 0, L_00EC3448; 1 drivers
+v0066A4E8_0 .net *"_s6", 15 0, C4<0000000000000001>; 1 drivers
+L_00EC33F0 .arith/mult 16, L_00EC3398, C4<0000000000000001>;
+L_00EC34A0 .arith/mult 16, L_00EC3448, C4<0000000000000001>;
+S_0062F620 .scope module, "a0" "MFP_Adder" 2 83, 2 89, S_0062ED18;
  .timescale 0 0;
-P_005C4B94 .param/l "In1W" 2 91, +C4<010000>;
-P_005C4BA8 .param/l "In2W" 2 92, +C4<010000>;
-P_005C4BBC .param/l "OutW" 2 93, +C4<010000>;
-P_005C4BD0 .param/l "Saturate" 2 95, +C4<0>;
-P_005C4BE4 .param/l "isUnsigned" 2 96, +C4<0>;
-P_005C4BF8 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
-P_005C4C0C .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00C8B568 .functor XOR 1, L_00C93080, L_00C930D8, C4<0>, C4<0>;
-L_00C8B648 .functor XOR 1, L_00C93188, L_00C931E0, C4<0>, C4<0>;
-v00669EF8_0 .net "In1", 15 0, L_00C93290; 1 drivers
-v00669F50_0 .net "In2", 15 0, L_00C93340; 1 drivers
-v00669FA8_0 .net "IsSameSign", 0 0, L_00C93130; 1 drivers
-v0066A000_0 .net "IsSignChanged", 0 0, L_00C8B648; 1 drivers
-v0066A058_0 .net "Out", 15 0, L_00C8B488; 1 drivers
-v0066A0B0_0 .net "TestAdd", 15 0, L_00C93028; 1 drivers
-v0066A108_0 .net *"_s11", 0 0, L_00C93188; 1 drivers
-v0066A160_0 .net *"_s13", 0 0, L_00C931E0; 1 drivers
-v0066A1B8_0 .net *"_s3", 0 0, L_00C93080; 1 drivers
-v0066A210_0 .net *"_s5", 0 0, L_00C930D8; 1 drivers
-v0066A268_0 .net *"_s6", 0 0, L_00C8B568; 1 drivers
-L_00C93028 .arith/sum 16, L_00C93290, L_00C93340;
-L_00C93080 .part L_00C93290, 15, 1;
-L_00C930D8 .part L_00C93340, 15, 1;
-L_00C93130 .reduce/nor L_00C8B568;
-L_00C93188 .part L_00C93290, 15, 1;
-L_00C931E0 .part L_00C93028, 15, 1;
-S_0062F698 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_0062F500;
+P_005C4BCC .param/l "In1W" 2 91, +C4<010000>;
+P_005C4BE0 .param/l "In2W" 2 92, +C4<010000>;
+P_005C4BF4 .param/l "OutW" 2 93, +C4<010000>;
+P_005C4C08 .param/l "Saturate" 2 95, +C4<0>;
+P_005C4C1C .param/l "isUnsigned" 2 96, +C4<0>;
+P_005C4C30 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
+P_005C4C44 .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00EBB568 .functor XOR 1, L_00EC31E0, L_00EC3238, C4<0>, C4<0>;
+L_00EBB648 .functor XOR 1, L_00EC32E8, L_00EC3340, C4<0>, C4<0>;
+v0066A018_0 .net "In1", 15 0, L_00EC33F0; 1 drivers
+v0066A070_0 .net "In2", 15 0, L_00EC34A0; 1 drivers
+v0066A0C8_0 .net "IsSameSign", 0 0, L_00EC3290; 1 drivers
+v0066A120_0 .net "IsSignChanged", 0 0, L_00EBB648; 1 drivers
+v0066A178_0 .net "Out", 15 0, L_00EBB488; 1 drivers
+v0066A1D0_0 .net "TestAdd", 15 0, L_00EC3188; 1 drivers
+v0066A228_0 .net *"_s11", 0 0, L_00EC32E8; 1 drivers
+v0066A280_0 .net *"_s13", 0 0, L_00EC3340; 1 drivers
+v0066A2D8_0 .net *"_s3", 0 0, L_00EC31E0; 1 drivers
+v0066A330_0 .net *"_s5", 0 0, L_00EC3238; 1 drivers
+v0066A388_0 .net *"_s6", 0 0, L_00EBB568; 1 drivers
+L_00EC3188 .arith/sum 16, L_00EC33F0, L_00EC34A0;
+L_00EC31E0 .part L_00EC33F0, 15, 1;
+L_00EC3238 .part L_00EC34A0, 15, 1;
+L_00EC3290 .reduce/nor L_00EBB568;
+L_00EC32E8 .part L_00EC33F0, 15, 1;
+L_00EC3340 .part L_00EC3188, 15, 1;
+S_0062F7B8 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_0062F620;
  .timescale 0 0;
-S_0062F258 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_0062F698;
+S_0062F378 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_0062F7B8;
  .timescale 0 0;
-L_00C8B488 .functor BUFZ 16, L_00C93028, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_0062E8C8 .scope generate, "oparr[1]" "oparr[1]" 2 82, 2 82, S_0062F7A8;
+L_00EBB488 .functor BUFZ 16, L_00EC3188, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_0062E9E8 .scope generate, "oparr[1]" "oparr[1]" 2 82, 2 82, S_0062F8C8;
  .timescale 0 0;
-P_0062A7EC .param/l "gi" 2 82, +C4<01>;
-v00669D98_0 .net *"_s0", 15 0, L_00C93600; 1 drivers
-v00669DF0_0 .net *"_s1", 15 0, C4<0000000000000001>; 1 drivers
-v00669E48_0 .net *"_s5", 15 0, L_00C936B0; 1 drivers
-v00669EA0_0 .net *"_s6", 15 0, C4<0000000000000001>; 1 drivers
-L_00C93658 .arith/mult 16, L_00C93600, C4<0000000000000001>;
-L_00C93708 .arith/mult 16, L_00C936B0, C4<0000000000000001>;
-S_0062EE18 .scope module, "a0" "MFP_Adder" 2 83, 2 89, S_0062E8C8;
+P_0062A90C .param/l "gi" 2 82, +C4<01>;
+v00669EB8_0 .net *"_s0", 15 0, L_00EC3760; 1 drivers
+v00669F10_0 .net *"_s1", 15 0, C4<0000000000000001>; 1 drivers
+v00669F68_0 .net *"_s5", 15 0, L_00EC3810; 1 drivers
+v00669FC0_0 .net *"_s6", 15 0, C4<0000000000000001>; 1 drivers
+L_00EC37B8 .arith/mult 16, L_00EC3760, C4<0000000000000001>;
+L_00EC3868 .arith/mult 16, L_00EC3810, C4<0000000000000001>;
+S_0062EF38 .scope module, "a0" "MFP_Adder" 2 83, 2 89, S_0062E9E8;
  .timescale 0 0;
-P_005C4AFC .param/l "In1W" 2 91, +C4<010000>;
-P_005C4B10 .param/l "In2W" 2 92, +C4<010000>;
-P_005C4B24 .param/l "OutW" 2 93, +C4<010000>;
-P_005C4B38 .param/l "Saturate" 2 95, +C4<0>;
-P_005C4B4C .param/l "isUnsigned" 2 96, +C4<0>;
-P_005C4B60 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
-P_005C4B74 .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00C955F0 .functor XOR 1, L_00C93448, L_00C934A0, C4<0>, C4<0>;
-L_00C956D0 .functor XOR 1, L_00C93550, L_00C935A8, C4<0>, C4<0>;
-v00635DD0_0 .net "In1", 15 0, L_00C93658; 1 drivers
-v00635E28_0 .net "In2", 15 0, L_00C93708; 1 drivers
-v00669A80_0 .net "IsSameSign", 0 0, L_00C934F8; 1 drivers
-v00669AD8_0 .net "IsSignChanged", 0 0, L_00C956D0; 1 drivers
-v00669B30_0 .net "Out", 15 0, L_00C8B7D0; 1 drivers
-v00669B88_0 .net "TestAdd", 15 0, L_00C933F0; 1 drivers
-v00669BE0_0 .net *"_s11", 0 0, L_00C93550; 1 drivers
-v00669C38_0 .net *"_s13", 0 0, L_00C935A8; 1 drivers
-v00669C90_0 .net *"_s3", 0 0, L_00C93448; 1 drivers
-v00669CE8_0 .net *"_s5", 0 0, L_00C934A0; 1 drivers
-v00669D40_0 .net *"_s6", 0 0, L_00C955F0; 1 drivers
-L_00C933F0 .arith/sum 16, L_00C93658, L_00C93708;
-L_00C93448 .part L_00C93658, 15, 1;
-L_00C934A0 .part L_00C93708, 15, 1;
-L_00C934F8 .reduce/nor L_00C955F0;
-L_00C93550 .part L_00C93658, 15, 1;
-L_00C935A8 .part L_00C933F0, 15, 1;
-S_0062EFB0 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_0062EE18;
+P_005C4B34 .param/l "In1W" 2 91, +C4<010000>;
+P_005C4B48 .param/l "In2W" 2 92, +C4<010000>;
+P_005C4B5C .param/l "OutW" 2 93, +C4<010000>;
+P_005C4B70 .param/l "Saturate" 2 95, +C4<0>;
+P_005C4B84 .param/l "isUnsigned" 2 96, +C4<0>;
+P_005C4B98 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
+P_005C4BAC .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00EC5750 .functor XOR 1, L_00EC35A8, L_00EC3600, C4<0>, C4<0>;
+L_00EC5830 .functor XOR 1, L_00EC36B0, L_00EC3708, C4<0>, C4<0>;
+v00635EF0_0 .net "In1", 15 0, L_00EC37B8; 1 drivers
+v00635F48_0 .net "In2", 15 0, L_00EC3868; 1 drivers
+v00669BA0_0 .net "IsSameSign", 0 0, L_00EC3658; 1 drivers
+v00669BF8_0 .net "IsSignChanged", 0 0, L_00EC5830; 1 drivers
+v00669C50_0 .net "Out", 15 0, L_00EBB7D0; 1 drivers
+v00669CA8_0 .net "TestAdd", 15 0, L_00EC3550; 1 drivers
+v00669D00_0 .net *"_s11", 0 0, L_00EC36B0; 1 drivers
+v00669D58_0 .net *"_s13", 0 0, L_00EC3708; 1 drivers
+v00669DB0_0 .net *"_s3", 0 0, L_00EC35A8; 1 drivers
+v00669E08_0 .net *"_s5", 0 0, L_00EC3600; 1 drivers
+v00669E60_0 .net *"_s6", 0 0, L_00EC5750; 1 drivers
+L_00EC3550 .arith/sum 16, L_00EC37B8, L_00EC3868;
+L_00EC35A8 .part L_00EC37B8, 15, 1;
+L_00EC3600 .part L_00EC3868, 15, 1;
+L_00EC3658 .reduce/nor L_00EC5750;
+L_00EC36B0 .part L_00EC37B8, 15, 1;
+L_00EC3708 .part L_00EC3550, 15, 1;
+S_0062F0D0 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_0062EF38;
  .timescale 0 0;
-S_0062EB70 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_0062EFB0;
+S_0062EC90 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_0062F0D0;
  .timescale 0 0;
-L_00C8B7D0 .functor BUFZ 16, L_00C933F0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_0062E7B8 .scope generate, "oparr[2]" "oparr[2]" 2 82, 2 82, S_0062F7A8;
+L_00EBB7D0 .functor BUFZ 16, L_00EC3550, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_0062E8D8 .scope generate, "oparr[2]" "oparr[2]" 2 82, 2 82, S_0062F8C8;
  .timescale 0 0;
-P_0062A7CC .param/l "gi" 2 82, +C4<010>;
-v00635C70_0 .net *"_s0", 15 0, L_00C939C8; 1 drivers
-v00635CC8_0 .net *"_s1", 15 0, C4<0000000000000001>; 1 drivers
-v00635D20_0 .net *"_s5", 15 0, L_00C93A78; 1 drivers
-v00635D78_0 .net *"_s6", 15 0, C4<0000000000000001>; 1 drivers
-L_00C93A20 .arith/mult 16, L_00C939C8, C4<0000000000000001>;
-L_00C93AD0 .arith/mult 16, L_00C93A78, C4<0000000000000001>;
-S_0062E730 .scope module, "a0" "MFP_Adder" 2 83, 2 89, S_0062E7B8;
+P_0062A8EC .param/l "gi" 2 82, +C4<010>;
+v00635D90_0 .net *"_s0", 15 0, L_00EC3B28; 1 drivers
+v00635DE8_0 .net *"_s1", 15 0, C4<0000000000000001>; 1 drivers
+v00635E40_0 .net *"_s5", 15 0, L_00EC3BD8; 1 drivers
+v00635E98_0 .net *"_s6", 15 0, C4<0000000000000001>; 1 drivers
+L_00EC3B80 .arith/mult 16, L_00EC3B28, C4<0000000000000001>;
+L_00EC3C30 .arith/mult 16, L_00EC3BD8, C4<0000000000000001>;
+S_0062E850 .scope module, "a0" "MFP_Adder" 2 83, 2 89, S_0062E8D8;
  .timescale 0 0;
-P_005C84FC .param/l "In1W" 2 91, +C4<010000>;
-P_005C8510 .param/l "In2W" 2 92, +C4<010000>;
-P_005C8524 .param/l "OutW" 2 93, +C4<010000>;
-P_005C8538 .param/l "Saturate" 2 95, +C4<0>;
-P_005C854C .param/l "isUnsigned" 2 96, +C4<0>;
-P_005C8560 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
-P_005C8574 .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00C959E0 .functor XOR 1, L_00C93810, L_00C93868, C4<0>, C4<0>;
-L_00C95AC0 .functor XOR 1, L_00C93918, L_00C93970, C4<0>, C4<0>;
-v006358A8_0 .net "In1", 15 0, L_00C93A20; 1 drivers
-v00635900_0 .net "In2", 15 0, L_00C93AD0; 1 drivers
-v00635958_0 .net "IsSameSign", 0 0, L_00C938C0; 1 drivers
-v006359B0_0 .net "IsSignChanged", 0 0, L_00C95AC0; 1 drivers
-v00635A08_0 .net "Out", 15 0, L_00C95900; 1 drivers
-v00635A60_0 .net "TestAdd", 15 0, L_00C937B8; 1 drivers
-v00635AB8_0 .net *"_s11", 0 0, L_00C93918; 1 drivers
-v00635B10_0 .net *"_s13", 0 0, L_00C93970; 1 drivers
-v00635B68_0 .net *"_s3", 0 0, L_00C93810; 1 drivers
-v00635BC0_0 .net *"_s5", 0 0, L_00C93868; 1 drivers
-v00635C18_0 .net *"_s6", 0 0, L_00C959E0; 1 drivers
-L_00C937B8 .arith/sum 16, L_00C93A20, L_00C93AD0;
-L_00C93810 .part L_00C93A20, 15, 1;
-L_00C93868 .part L_00C93AD0, 15, 1;
-L_00C938C0 .reduce/nor L_00C959E0;
-L_00C93918 .part L_00C93A20, 15, 1;
-L_00C93970 .part L_00C937B8, 15, 1;
-S_0062E6A8 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_0062E730;
+P_005C8534 .param/l "In1W" 2 91, +C4<010000>;
+P_005C8548 .param/l "In2W" 2 92, +C4<010000>;
+P_005C855C .param/l "OutW" 2 93, +C4<010000>;
+P_005C8570 .param/l "Saturate" 2 95, +C4<0>;
+P_005C8584 .param/l "isUnsigned" 2 96, +C4<0>;
+P_005C8598 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
+P_005C85AC .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00EC5B40 .functor XOR 1, L_00EC3970, L_00EC39C8, C4<0>, C4<0>;
+L_00EC5C20 .functor XOR 1, L_00EC3A78, L_00EC3AD0, C4<0>, C4<0>;
+v006359C8_0 .net "In1", 15 0, L_00EC3B80; 1 drivers
+v00635A20_0 .net "In2", 15 0, L_00EC3C30; 1 drivers
+v00635A78_0 .net "IsSameSign", 0 0, L_00EC3A20; 1 drivers
+v00635AD0_0 .net "IsSignChanged", 0 0, L_00EC5C20; 1 drivers
+v00635B28_0 .net "Out", 15 0, L_00EC5A60; 1 drivers
+v00635B80_0 .net "TestAdd", 15 0, L_00EC3918; 1 drivers
+v00635BD8_0 .net *"_s11", 0 0, L_00EC3A78; 1 drivers
+v00635C30_0 .net *"_s13", 0 0, L_00EC3AD0; 1 drivers
+v00635C88_0 .net *"_s3", 0 0, L_00EC3970; 1 drivers
+v00635CE0_0 .net *"_s5", 0 0, L_00EC39C8; 1 drivers
+v00635D38_0 .net *"_s6", 0 0, L_00EC5B40; 1 drivers
+L_00EC3918 .arith/sum 16, L_00EC3B80, L_00EC3C30;
+L_00EC3970 .part L_00EC3B80, 15, 1;
+L_00EC39C8 .part L_00EC3C30, 15, 1;
+L_00EC3A20 .reduce/nor L_00EC5B40;
+L_00EC3A78 .part L_00EC3B80, 15, 1;
+L_00EC3AD0 .part L_00EC3918, 15, 1;
+S_0062E7C8 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_0062E850;
  .timescale 0 0;
-S_0062E9D8 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_0062E6A8;
+S_0062EAF8 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_0062E7C8;
  .timescale 0 0;
-L_00C95900 .functor BUFZ 16, L_00C937B8, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_0062EA60 .scope generate, "oparr[3]" "oparr[3]" 2 82, 2 82, S_0062F7A8;
+L_00EC5A60 .functor BUFZ 16, L_00EC3918, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_0062EB80 .scope generate, "oparr[3]" "oparr[3]" 2 82, 2 82, S_0062F8C8;
  .timescale 0 0;
-P_0062AFCC .param/l "gi" 2 82, +C4<011>;
-v00635748_0 .net *"_s0", 15 0, L_00C93D90; 1 drivers
-v006357A0_0 .net *"_s1", 15 0, C4<0000000000000001>; 1 drivers
-v006357F8_0 .net *"_s5", 15 0, L_00C93E40; 1 drivers
-v00635850_0 .net *"_s6", 15 0, C4<0000000000000001>; 1 drivers
-L_00C93DE8 .arith/mult 16, L_00C93D90, C4<0000000000000001>;
-L_00C93E98 .arith/mult 16, L_00C93E40, C4<0000000000000001>;
-S_0062EAE8 .scope module, "a0" "MFP_Adder" 2 83, 2 89, S_0062EA60;
+P_0062B0EC .param/l "gi" 2 82, +C4<011>;
+v00635868_0 .net *"_s0", 15 0, L_00EC3EF0; 1 drivers
+v006358C0_0 .net *"_s1", 15 0, C4<0000000000000001>; 1 drivers
+v00635918_0 .net *"_s5", 15 0, L_00EC3FA0; 1 drivers
+v00635970_0 .net *"_s6", 15 0, C4<0000000000000001>; 1 drivers
+L_00EC3F48 .arith/mult 16, L_00EC3EF0, C4<0000000000000001>;
+L_00EC3FF8 .arith/mult 16, L_00EC3FA0, C4<0000000000000001>;
+S_0062EC08 .scope module, "a0" "MFP_Adder" 2 83, 2 89, S_0062EB80;
  .timescale 0 0;
-P_005C8464 .param/l "In1W" 2 91, +C4<010000>;
-P_005C8478 .param/l "In2W" 2 92, +C4<010000>;
-P_005C848C .param/l "OutW" 2 93, +C4<010000>;
-P_005C84A0 .param/l "Saturate" 2 95, +C4<0>;
-P_005C84B4 .param/l "isUnsigned" 2 96, +C4<0>;
-P_005C84C8 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
-P_005C84DC .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00C95D28 .functor XOR 1, L_00C93BD8, L_00C93C30, C4<0>, C4<0>;
-L_00C95E28 .functor XOR 1, L_00C93CE0, L_00C93D38, C4<0>, C4<0>;
-v00635380_0 .net "In1", 15 0, L_00C93DE8; 1 drivers
-v006353D8_0 .net "In2", 15 0, L_00C93E98; 1 drivers
-v00635430_0 .net "IsSameSign", 0 0, L_00C93C88; 1 drivers
-v00635488_0 .net "IsSignChanged", 0 0, L_00C95E28; 1 drivers
-v006354E0_0 .net "Out", 15 0, L_00C95C48; 1 drivers
-v00635538_0 .net "TestAdd", 15 0, L_00C93B80; 1 drivers
-v00635590_0 .net *"_s11", 0 0, L_00C93CE0; 1 drivers
-v006355E8_0 .net *"_s13", 0 0, L_00C93D38; 1 drivers
-v00635640_0 .net *"_s3", 0 0, L_00C93BD8; 1 drivers
-v00635698_0 .net *"_s5", 0 0, L_00C93C30; 1 drivers
-v006356F0_0 .net *"_s6", 0 0, L_00C95D28; 1 drivers
-L_00C93B80 .arith/sum 16, L_00C93DE8, L_00C93E98;
-L_00C93BD8 .part L_00C93DE8, 15, 1;
-L_00C93C30 .part L_00C93E98, 15, 1;
-L_00C93C88 .reduce/nor L_00C95D28;
-L_00C93CE0 .part L_00C93DE8, 15, 1;
-L_00C93D38 .part L_00C93B80, 15, 1;
-S_0062E950 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_0062EAE8;
+P_005C849C .param/l "In1W" 2 91, +C4<010000>;
+P_005C84B0 .param/l "In2W" 2 92, +C4<010000>;
+P_005C84C4 .param/l "OutW" 2 93, +C4<010000>;
+P_005C84D8 .param/l "Saturate" 2 95, +C4<0>;
+P_005C84EC .param/l "isUnsigned" 2 96, +C4<0>;
+P_005C8500 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
+P_005C8514 .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00EC5E88 .functor XOR 1, L_00EC3D38, L_00EC3D90, C4<0>, C4<0>;
+L_00EC5F88 .functor XOR 1, L_00EC3E40, L_00EC3E98, C4<0>, C4<0>;
+v006354A0_0 .net "In1", 15 0, L_00EC3F48; 1 drivers
+v006354F8_0 .net "In2", 15 0, L_00EC3FF8; 1 drivers
+v00635550_0 .net "IsSameSign", 0 0, L_00EC3DE8; 1 drivers
+v006355A8_0 .net "IsSignChanged", 0 0, L_00EC5F88; 1 drivers
+v00635600_0 .net "Out", 15 0, L_00EC5DA8; 1 drivers
+v00635658_0 .net "TestAdd", 15 0, L_00EC3CE0; 1 drivers
+v006356B0_0 .net *"_s11", 0 0, L_00EC3E40; 1 drivers
+v00635708_0 .net *"_s13", 0 0, L_00EC3E98; 1 drivers
+v00635760_0 .net *"_s3", 0 0, L_00EC3D38; 1 drivers
+v006357B8_0 .net *"_s5", 0 0, L_00EC3D90; 1 drivers
+v00635810_0 .net *"_s6", 0 0, L_00EC5E88; 1 drivers
+L_00EC3CE0 .arith/sum 16, L_00EC3F48, L_00EC3FF8;
+L_00EC3D38 .part L_00EC3F48, 15, 1;
+L_00EC3D90 .part L_00EC3FF8, 15, 1;
+L_00EC3DE8 .reduce/nor L_00EC5E88;
+L_00EC3E40 .part L_00EC3F48, 15, 1;
+L_00EC3E98 .part L_00EC3CE0, 15, 1;
+S_0062EA70 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_0062EC08;
  .timescale 0 0;
-S_0062E840 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_0062E950;
+S_0062E960 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_0062EA70;
  .timescale 0 0;
-L_00C95C48 .functor BUFZ 16, L_00C93B80, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_0062F720 .scope module, "MFP_MAC_Seq" "MFP_MAC_Seq" 3 149;
+L_00EC5DA8 .functor BUFZ 16, L_00EC3CE0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_0062F840 .scope module, "MFP_MAC_Seq" "MFP_MAC_Seq" 3 149;
  .timescale 0 0;
-P_0062F14C .param/l "AccW" 3 162, +C4<01111>;
-P_0062F160 .param/l "AccW_ROUND" 3 157, +C4<01111>;
-P_0062F174 .param/l "In1W" 3 152, +C4<01000>;
-P_0062F188 .param/l "In2W" 3 153, +C4<01000>;
-P_0062F19C .param/l "PordW" 3 161, +C4<01111>;
-P_0062F1B0 .param/l "PordW_ROUND" 3 155, +C4<01111>;
-v0066BE48_0 .net "In1", 7 0, C4<zzzzzzzz>; 0 drivers
-v0066BEA0_0 .net "In2", 7 0, C4<zzzzzzzz>; 0 drivers
-v0066BEF8_0 .var "acc_sum", 14 0;
-v0066BF50_0 .net "acc_sum_pre", 14 0, L_005DC0B0; 1 drivers
-v0066BFA8_0 .net "acc_sum_rounded", 14 0, L_00C94310; 1 drivers
-v0066C000_0 .net "aclr", 0 0, C4<z>; 0 drivers
-v0066C058_0 .net "clock", 0 0, C4<z>; 0 drivers
-v0066C0B0_0 .net "product", 14 0, L_00C94050; 1 drivers
-v0066C108_0 .net "product_rounded", 14 0, L_00C940A8; 1 drivers
-E_0062A788 .event posedge, v0066C058_0;
-S_00635FC8 .scope module, "m1" "MFP_Multi" 3 172, 2 26, S_0062F720;
+P_0062F26C .param/l "AccW" 3 162, +C4<01111>;
+P_0062F280 .param/l "AccW_ROUND" 3 157, +C4<01111>;
+P_0062F294 .param/l "In1W" 3 152, +C4<01000>;
+P_0062F2A8 .param/l "In2W" 3 153, +C4<01000>;
+P_0062F2BC .param/l "PordW" 3 161, +C4<01111>;
+P_0062F2D0 .param/l "PordW_ROUND" 3 155, +C4<01111>;
+v0066BF68_0 .net "In1", 7 0, C4<zzzzzzzz>; 0 drivers
+v0066BFC0_0 .net "In2", 7 0, C4<zzzzzzzz>; 0 drivers
+v0066C018_0 .var "acc_sum", 14 0;
+v0066C070_0 .net "acc_sum_pre", 14 0, L_005DC0E8; 1 drivers
+v0066C0C8_0 .net "acc_sum_rounded", 14 0, L_00EC4470; 1 drivers
+v0066C120_0 .net "aclr", 0 0, C4<z>; 0 drivers
+v0066C178_0 .net "clock", 0 0, C4<z>; 0 drivers
+v0066C1D0_0 .net "product", 14 0, L_00EC41B0; 1 drivers
+v0066C228_0 .net "product_rounded", 14 0, L_00EC4208; 1 drivers
+E_0062A8A8 .event posedge, v0066C178_0;
+S_006360E8 .scope module, "m1" "MFP_Multi" 3 172, 2 26, S_0062F840;
  .timescale 0 0;
-P_005C630C .param/l "In1W" 2 28, +C4<01000>;
-P_005C6320 .param/l "In2EQW" 2 30, +C4<01000>;
-P_005C6334 .param/l "In2W" 2 29, +C4<01000>;
-P_005C6348 .param/l "OutW" 2 35, +C4<01111>;
-P_005C635C .param/l "RealOutW" 2 45, +C4<01111>;
-P_005C6370 .param/l "Saturate" 2 37, +C4<0>;
-P_005C6384 .param/l "isFloor" 2 36, +C4<01>;
-P_005C6398 .param/l "isUnsigned" 2 38, +C4<0>;
-v0066BCE8_0 .alias "In1", 7 0, v0066BE48_0;
-v0066BD40_0 .alias "In2", 7 0, v0066BEA0_0;
-v0066BD98_0 .alias "Out", 14 0, v0066C0B0_0;
-v0066BDF0_0 .net "Out_", 14 0, L_00C96100; 1 drivers
-S_00635F40 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_00635FC8;
+P_005C6344 .param/l "In1W" 2 28, +C4<01000>;
+P_005C6358 .param/l "In2EQW" 2 30, +C4<01000>;
+P_005C636C .param/l "In2W" 2 29, +C4<01000>;
+P_005C6380 .param/l "OutW" 2 35, +C4<01111>;
+P_005C6394 .param/l "RealOutW" 2 45, +C4<01111>;
+P_005C63A8 .param/l "Saturate" 2 37, +C4<0>;
+P_005C63BC .param/l "isFloor" 2 36, +C4<01>;
+P_005C63D0 .param/l "isUnsigned" 2 38, +C4<0>;
+v0066BE08_0 .alias "In1", 7 0, v0066BF68_0;
+v0066BE60_0 .alias "In2", 7 0, v0066BFC0_0;
+v0066BEB8_0 .alias "Out", 14 0, v0066C1D0_0;
+v0066BF10_0 .net "Out_", 14 0, L_00EC6260; 1 drivers
+S_00636060 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_006360E8;
  .timescale 0 0;
-P_005D9294 .param/l "InW" 2 138, +C4<01111>;
-P_005D92A8 .param/l "OutW" 2 139, +C4<01111>;
-P_005D92BC .param/l "Saturate" 2 140, +C4<0>;
-P_005D92D0 .param/l "isFloor" 2 141, +C4<01>;
-P_005D92E4 .param/l "isUnsigned" 2 142, +C4<0>;
-v0066BC38_0 .alias "in", 14 0, v0066BDF0_0;
-v0066BC90_0 .alias "out", 14 0, v0066C0B0_0;
-S_00636160 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_00635F40;
+P_005D92CC .param/l "InW" 2 138, +C4<01111>;
+P_005D92E0 .param/l "OutW" 2 139, +C4<01111>;
+P_005D92F4 .param/l "Saturate" 2 140, +C4<0>;
+P_005D9308 .param/l "isFloor" 2 141, +C4<01>;
+P_005D931C .param/l "isUnsigned" 2 142, +C4<0>;
+v0066BD58_0 .alias "in", 14 0, v0066BF10_0;
+v0066BDB0_0 .alias "out", 14 0, v0066C1D0_0;
+S_00636280 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_00636060;
  .timescale 0 0;
-L_00C94050 .concat [ 15 0 0 0], L_00C96100;
-S_00636050 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_00635FC8;
+L_00EC41B0 .concat [ 15 0 0 0], L_00EC6260;
+S_00636170 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_006360E8;
  .timescale 0 0;
-L_00C957E8 .functor BUFZ 8, C4<zzzzzzzz>, C4<00000000>, C4<00000000>, C4<00000000>;
-L_00C95FB0 .functor BUFZ 8, C4<zzzzzzzz>, C4<00000000>, C4<00000000>, C4<00000000>;
-L_00C96100 .functor BUFZ 15, L_00C93FF8, C4<000000000000000>, C4<000000000000000>, C4<000000000000000>;
-v0066BA80_0 .net/s "In1_s", 7 0, L_00C957E8; 1 drivers
-v0066BAD8_0 .net/s "In2_s", 7 0, L_00C95FB0; 1 drivers
-v0066BB30_0 .net/s "Out_s", 14 0, L_00C93FF8; 1 drivers
-v0066BB88_0 .net/s *"_s4", 14 0, L_00C93F48; 1 drivers
-v0066BBE0_0 .net/s *"_s6", 14 0, L_00C93FA0; 1 drivers
-L_00C93F48 .extend/s 15, L_00C957E8;
-L_00C93FA0 .extend/s 15, L_00C95FB0;
-L_00C93FF8 .arith/mult 15, L_00C93F48, L_00C93FA0;
-S_006303E0 .scope module, "round_prod" "MFP_Round" 3 173, 2 135, S_0062F720;
+L_00EC5948 .functor BUFZ 8, C4<zzzzzzzz>, C4<00000000>, C4<00000000>, C4<00000000>;
+L_00EC6110 .functor BUFZ 8, C4<zzzzzzzz>, C4<00000000>, C4<00000000>, C4<00000000>;
+L_00EC6260 .functor BUFZ 15, L_00EC4158, C4<000000000000000>, C4<000000000000000>, C4<000000000000000>;
+v0066BBA0_0 .net/s "In1_s", 7 0, L_00EC5948; 1 drivers
+v0066BBF8_0 .net/s "In2_s", 7 0, L_00EC6110; 1 drivers
+v0066BC50_0 .net/s "Out_s", 14 0, L_00EC4158; 1 drivers
+v0066BCA8_0 .net/s *"_s4", 14 0, L_00EC40A8; 1 drivers
+v0066BD00_0 .net/s *"_s6", 14 0, L_00EC4100; 1 drivers
+L_00EC40A8 .extend/s 15, L_00EC5948;
+L_00EC4100 .extend/s 15, L_00EC6110;
+L_00EC4158 .arith/mult 15, L_00EC40A8, L_00EC4100;
+S_00630500 .scope module, "round_prod" "MFP_Round" 3 173, 2 135, S_0062F840;
  .timescale 0 0;
-P_005D9224 .param/l "InW" 2 138, +C4<01111>;
-P_005D9238 .param/l "OutW" 2 139, +C4<01111>;
-P_005D924C .param/l "Saturate" 2 140, +C4<0>;
-P_005D9260 .param/l "isFloor" 2 141, +C4<01>;
-P_005D9274 .param/l "isUnsigned" 2 142, +C4<0>;
-v0066A9A0_0 .alias "in", 14 0, v0066C0B0_0;
-v0066A9F8_0 .alias "out", 14 0, v0066C108_0;
-S_00630600 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_006303E0;
+P_005D925C .param/l "InW" 2 138, +C4<01111>;
+P_005D9270 .param/l "OutW" 2 139, +C4<01111>;
+P_005D9284 .param/l "Saturate" 2 140, +C4<0>;
+P_005D9298 .param/l "isFloor" 2 141, +C4<01>;
+P_005D92AC .param/l "isUnsigned" 2 142, +C4<0>;
+v0066AAC0_0 .alias "in", 14 0, v0066C1D0_0;
+v0066AB18_0 .alias "out", 14 0, v0066C228_0;
+S_00630720 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_00630500;
  .timescale 0 0;
-L_00C940A8 .concat [ 15 0 0 0], L_00C94050;
-S_00630578 .scope module, "aS" "MFP_Adder" 3 174, 2 89, S_0062F720;
+L_00EC4208 .concat [ 15 0 0 0], L_00EC41B0;
+S_00630698 .scope module, "aS" "MFP_Adder" 3 174, 2 89, S_0062F840;
  .timescale 0 0;
-P_005C6274 .param/l "In1W" 2 91, +C4<01111>;
-P_005C6288 .param/l "In2W" 2 92, +C4<01111>;
-P_005C629C .param/l "OutW" 2 93, +C4<01111>;
-P_005C62B0 .param/l "Saturate" 2 95, +C4<0>;
-P_005C62C4 .param/l "isUnsigned" 2 96, +C4<0>;
-P_005C62D8 .param/l "maxPosOut" 2 106, +C4<011111111111111>;
-P_005C62EC .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_005DC078 .functor XOR 1, L_00C94158, L_00C941B0, C4<0>, C4<0>;
-L_00C96288 .functor XOR 1, L_00C94260, L_00C942B8, C4<0>, C4<0>;
-v0066A5D8_0 .net "In1", 14 0, v0066BEF8_0; 1 drivers
-v0066A630_0 .alias "In2", 14 0, v0066C108_0;
-v0066A688_0 .net "IsSameSign", 0 0, L_00C94208; 1 drivers
-v0066A6E0_0 .net "IsSignChanged", 0 0, L_00C96288; 1 drivers
-v0066A738_0 .alias "Out", 14 0, v0066BF50_0;
-v0066A790_0 .net "TestAdd", 14 0, L_00C94100; 1 drivers
-v0066A7E8_0 .net *"_s11", 0 0, L_00C94260; 1 drivers
-v0066A840_0 .net *"_s13", 0 0, L_00C942B8; 1 drivers
-v0066A898_0 .net *"_s3", 0 0, L_00C94158; 1 drivers
-v0066A8F0_0 .net *"_s5", 0 0, L_00C941B0; 1 drivers
-v0066A948_0 .net *"_s6", 0 0, L_005DC078; 1 drivers
-L_00C94100 .arith/sum 15, v0066BEF8_0, L_00C940A8;
-L_00C94158 .part v0066BEF8_0, 14, 1;
-L_00C941B0 .part L_00C940A8, 14, 1;
-L_00C94208 .reduce/nor L_005DC078;
-L_00C94260 .part v0066BEF8_0, 14, 1;
-L_00C942B8 .part L_00C94100, 14, 1;
-S_00630358 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00630578;
+P_005C62AC .param/l "In1W" 2 91, +C4<01111>;
+P_005C62C0 .param/l "In2W" 2 92, +C4<01111>;
+P_005C62D4 .param/l "OutW" 2 93, +C4<01111>;
+P_005C62E8 .param/l "Saturate" 2 95, +C4<0>;
+P_005C62FC .param/l "isUnsigned" 2 96, +C4<0>;
+P_005C6310 .param/l "maxPosOut" 2 106, +C4<011111111111111>;
+P_005C6324 .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_005DC0B0 .functor XOR 1, L_00EC42B8, L_00EC4310, C4<0>, C4<0>;
+L_00EC63E8 .functor XOR 1, L_00EC43C0, L_00EC4418, C4<0>, C4<0>;
+v0066A6F8_0 .net "In1", 14 0, v0066C018_0; 1 drivers
+v0066A750_0 .alias "In2", 14 0, v0066C228_0;
+v0066A7A8_0 .net "IsSameSign", 0 0, L_00EC4368; 1 drivers
+v0066A800_0 .net "IsSignChanged", 0 0, L_00EC63E8; 1 drivers
+v0066A858_0 .alias "Out", 14 0, v0066C070_0;
+v0066A8B0_0 .net "TestAdd", 14 0, L_00EC4260; 1 drivers
+v0066A908_0 .net *"_s11", 0 0, L_00EC43C0; 1 drivers
+v0066A960_0 .net *"_s13", 0 0, L_00EC4418; 1 drivers
+v0066A9B8_0 .net *"_s3", 0 0, L_00EC42B8; 1 drivers
+v0066AA10_0 .net *"_s5", 0 0, L_00EC4310; 1 drivers
+v0066AA68_0 .net *"_s6", 0 0, L_005DC0B0; 1 drivers
+L_00EC4260 .arith/sum 15, v0066C018_0, L_00EC4208;
+L_00EC42B8 .part v0066C018_0, 14, 1;
+L_00EC4310 .part L_00EC4208, 14, 1;
+L_00EC4368 .reduce/nor L_005DC0B0;
+L_00EC43C0 .part v0066C018_0, 14, 1;
+L_00EC4418 .part L_00EC4260, 14, 1;
+S_00630478 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00630698;
  .timescale 0 0;
-S_00630468 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00630358;
+S_00630588 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00630478;
  .timescale 0 0;
-L_005DC0B0 .functor BUFZ 15, L_00C94100, C4<000000000000000>, C4<000000000000000>, C4<000000000000000>;
-S_0062F1D0 .scope module, "round_acc" "MFP_Round" 3 180, 2 135, S_0062F720;
+L_005DC0E8 .functor BUFZ 15, L_00EC4260, C4<000000000000000>, C4<000000000000000>, C4<000000000000000>;
+S_0062F2F0 .scope module, "round_acc" "MFP_Round" 3 180, 2 135, S_0062F840;
  .timescale 0 0;
-P_005D91B4 .param/l "InW" 2 138, +C4<01111>;
-P_005D91C8 .param/l "OutW" 2 139, +C4<01111>;
-P_005D91DC .param/l "Saturate" 2 140, +C4<0>;
-P_005D91F0 .param/l "isFloor" 2 141, +C4<01>;
-P_005D9204 .param/l "isUnsigned" 2 142, +C4<0>;
-v0066A528_0 .alias "in", 14 0, v0066A5D8_0;
-v0066A580_0 .alias "out", 14 0, v0066BFA8_0;
-S_0062F2E0 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_0062F1D0;
+P_005D91EC .param/l "InW" 2 138, +C4<01111>;
+P_005D9200 .param/l "OutW" 2 139, +C4<01111>;
+P_005D9214 .param/l "Saturate" 2 140, +C4<0>;
+P_005D9228 .param/l "isFloor" 2 141, +C4<01>;
+P_005D923C .param/l "isUnsigned" 2 142, +C4<0>;
+v0066A648_0 .alias "in", 14 0, v0066A6F8_0;
+v0066A6A0_0 .alias "out", 14 0, v0066C0C8_0;
+S_0062F400 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_0062F2F0;
  .timescale 0 0;
-L_00C94310 .concat [ 15 0 0 0], v0066BEF8_0;
-S_0062F0C0 .scope module, "MFP_MAC_symmetric_par" "MFP_MAC_symmetric_par" 3 9;
+L_00EC4470 .concat [ 15 0 0 0], v0066C018_0;
+S_0062F1E0 .scope module, "MFP_MAC_symmetric_par" "MFP_MAC_symmetric_par" 3 9;
  .timescale 0 0;
-P_005D9F44 .param/l "AccW_ROUND" 3 19, +C4<01111>;
-P_005D9F58 .param/l "ArrL" 3 16, +C4<010000>;
-P_005D9F6C .param/l "CoeffL" 3 33, +C4<00000000000000000000000000001000>;
-P_005D9F80 .param/l "In1FW" 3 34, +C4<01001>;
-P_005D9F94 .param/l "In1W" 3 13, +C4<01000>;
-P_005D9FA8 .param/l "In2EQW" 3 15, +C4<01000>;
-P_005D9FBC .param/l "In2W" 3 14, +C4<01000>;
-P_005D9FD0 .param/l "PordW" 3 32, +C4<01111>;
-P_005D9FE4 .param/l "PordW_ROUND" 3 17, +C4<01111>;
-P_005D9FF8 .param/l "isFloor" 3 20, +C4<01>;
-P_005DA00C .param/l "isUnsigned" 3 23, +C4<0>;
-P_005DA020 .param/l "levelIdx" 3 21, +C4<0>;
-P_005DA034 .param/l "pipeInterval" 3 22, +C4<0>;
-v00C905C8_0 .net "Coeff", 63 0, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; 0 drivers
-v00C90620_0 .net "In1Arr", 127 0, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; 0 drivers
-RS_0063AD84/0/0 .resolv tri, L_00C96F38, L_00C97300, L_00C976C8, L_00C97A90;
-RS_0063AD84/0/4 .resolv tri, L_00C97EB0, L_00C98220, L_00C98590, L_00C989B0;
-RS_0063AD84 .resolv tri, RS_0063AD84/0/0, RS_0063AD84/0/4, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>;
-v00C90678_0 .net8 "In1ArrFold", 71 0, RS_0063AD84; 8 drivers
-v00C906D0_0 .net "In1ArrFold_stage", 71 0, L_00C9A7B8; 1 drivers
-v00C90728_0 .net "acc_sum_rounded", 14 0, L_00CA06A0; 1 drivers
-v00C90780_0 .net "clk", 0 0, C4<z>; 0 drivers
-v00C907D8_0 .net "en", 0 0, C4<z>; 0 drivers
-v00C90830_0 .net "extrasum_roundedBit", 0 0, L_00CA0648; 1 drivers
-L_00C96E88 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 0, 8;
-L_00C96EE0 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 120, 8;
-L_00C96F38 .part/pv L_00C96480, 0, 9, 72;
-L_00C97250 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 8, 8;
-L_00C972A8 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 112, 8;
-L_00C97300 .part/pv L_00C96820, 9, 9, 72;
-L_00C97618 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 16, 8;
-L_00C97670 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 104, 8;
-L_00C976C8 .part/pv L_00C96B30, 18, 9, 72;
-L_00C979E0 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 24, 8;
-L_00C97A38 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 96, 8;
-L_00C97A90 .part/pv L_00C98E60, 27, 9, 72;
-L_00C97E00 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 32, 8;
-L_00C97E58 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 88, 8;
-L_00C97EB0 .part/pv L_00C991E0, 36, 9, 72;
-L_00C98170 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 40, 8;
-L_00C981C8 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 80, 8;
-L_00C98220 .part/pv L_00C994F0, 45, 9, 72;
-L_00C98538 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 48, 8;
-L_00C985E8 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 72, 8;
-L_00C98590 .part/pv L_00C99920, 54, 9, 72;
-L_00C98900 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 56, 8;
-L_00C98958 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 64, 8;
-L_00C989B0 .part/pv L_00C99C68, 63, 9, 72;
-L_00CA0648 .part L_00CA05F0, 15, 1;
-L_00CA06A0 .part L_00CA05F0, 0, 15;
-S_00621318 .scope module, "RoW" "MFP_RegOWire" 3 50, 2 169, S_0062F0C0;
+P_005D9F7C .param/l "AccW_ROUND" 3 19, +C4<01111>;
+P_005D9F90 .param/l "ArrL" 3 16, +C4<010000>;
+P_005D9FA4 .param/l "CoeffL" 3 33, +C4<00000000000000000000000000001000>;
+P_005D9FB8 .param/l "In1FW" 3 34, +C4<01001>;
+P_005D9FCC .param/l "In1W" 3 13, +C4<01000>;
+P_005D9FE0 .param/l "In2EQW" 3 15, +C4<01000>;
+P_005D9FF4 .param/l "In2W" 3 14, +C4<01000>;
+P_005DA008 .param/l "PordW" 3 32, +C4<01111>;
+P_005DA01C .param/l "PordW_ROUND" 3 17, +C4<01111>;
+P_005DA030 .param/l "isFloor" 3 20, +C4<01>;
+P_005DA044 .param/l "isUnsigned" 3 23, +C4<0>;
+P_005DA058 .param/l "levelIdx" 3 21, +C4<0>;
+P_005DA06C .param/l "pipeInterval" 3 22, +C4<0>;
+v00EC0728_0 .net "Coeff", 63 0, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; 0 drivers
+v00EC0780_0 .net "In1Arr", 127 0, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; 0 drivers
+RS_0063AEA4/0/0 .resolv tri, L_00EC7098, L_00EC7460, L_00EC7828, L_00EC7BF0;
+RS_0063AEA4/0/4 .resolv tri, L_00EC8010, L_00EC8380, L_00EC86F0, L_00EC8B10;
+RS_0063AEA4 .resolv tri, RS_0063AEA4/0/0, RS_0063AEA4/0/4, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>;
+v00EC07D8_0 .net8 "In1ArrFold", 71 0, RS_0063AEA4; 8 drivers
+v00EC0830_0 .net "In1ArrFold_stage", 71 0, L_00ECA918; 1 drivers
+v00EC0888_0 .net "acc_sum_rounded", 14 0, L_00ED0800; 1 drivers
+v00EC08E0_0 .net "clk", 0 0, C4<z>; 0 drivers
+v00EC0938_0 .net "en", 0 0, C4<z>; 0 drivers
+v00EC0990_0 .net "extrasum_roundedBit", 0 0, L_00ED07A8; 1 drivers
+L_00EC6FE8 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 0, 8;
+L_00EC7040 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 120, 8;
+L_00EC7098 .part/pv L_00EC65E0, 0, 9, 72;
+L_00EC73B0 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 8, 8;
+L_00EC7408 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 112, 8;
+L_00EC7460 .part/pv L_00EC6980, 9, 9, 72;
+L_00EC7778 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 16, 8;
+L_00EC77D0 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 104, 8;
+L_00EC7828 .part/pv L_00EC6C90, 18, 9, 72;
+L_00EC7B40 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 24, 8;
+L_00EC7B98 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 96, 8;
+L_00EC7BF0 .part/pv L_00EC8FC0, 27, 9, 72;
+L_00EC7F60 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 32, 8;
+L_00EC7FB8 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 88, 8;
+L_00EC8010 .part/pv L_00EC9340, 36, 9, 72;
+L_00EC82D0 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 40, 8;
+L_00EC8328 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 80, 8;
+L_00EC8380 .part/pv L_00EC9650, 45, 9, 72;
+L_00EC8698 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 48, 8;
+L_00EC8748 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 72, 8;
+L_00EC86F0 .part/pv L_00EC9A80, 54, 9, 72;
+L_00EC8A60 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 56, 8;
+L_00EC8AB8 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 64, 8;
+L_00EC8B10 .part/pv L_00EC9DC8, 63, 9, 72;
+L_00ED07A8 .part L_00ED0750, 15, 1;
+L_00ED0800 .part L_00ED0750, 0, 15;
+S_00621438 .scope module, "RoW" "MFP_RegOWire" 3 50, 2 169, S_0062F1E0;
  .timescale 0 0;
-P_006328D4 .param/l "dataW" 2 172, +C4<01001000>;
+P_006329F4 .param/l "dataW" 2 172, +C4<01001000>;
+P_00632A08 .param/l "isWire" 2 175, +C4<01>;
+P_00632A1C .param/l "levelIdx" 2 173, +C4<0>;
+P_00632A30 .param/l "regInterval" 2 174, +C4<0>;
+v00EC05C8_0 .alias "clk", 0 0, v00EC08E0_0;
+v00EC0620_0 .alias "en", 0 0, v00EC0938_0;
+v00EC0678_0 .alias "in", 71 0, v00EC07D8_0;
+v00EC06D0_0 .alias "out", 71 0, v00EC0830_0;
+S_00621190 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_00621438;
+ .timescale 0 0;
+L_00ECA918 .functor BUFZ 72, RS_0063AEA4, C4<000000000000000000000000000000000000000000000000000000000000000000000000>, C4<000000000000000000000000000000000000000000000000000000000000000000000000>, C4<000000000000000000000000000000000000000000000000000000000000000000000000>;
+S_00637408 .scope module, "MACpH" "MFP_MAC_par" 3 56, 3 61, S_0062F1E0;
+ .timescale 0 0;
+P_005D2904 .param/l "AccW_ROUND" 3 70, +C4<010000>;
+P_005D2918 .param/l "ArrL" 3 67, C4<01000>;
+P_005D292C .param/l "In1W" 3 64, +C4<01001>;
+P_005D2940 .param/l "In2EQW" 3 66, +C4<01000>;
+P_005D2954 .param/l "In2W" 3 65, +C4<01000>;
+P_005D2968 .param/l "PordW" 3 84, +C4<010000>;
+P_005D297C .param/l "PordW_ROUND" 3 68, +C4<010000>;
+P_005D2990 .param/l "isFloor" 3 71, +C4<01>;
+P_005D29A4 .param/l "isUnsigned" 3 74, +C4<0>;
+P_005D29B8 .param/l "levelIdx" 3 72, +C4<01>;
+P_005D29CC .param/l "pipeInterval" 3 73, +C4<0>;
+v00EC0308_0 .alias "In1Arr", 71 0, v00EC0830_0;
+v00EC0360_0 .alias "In2Arr", 63 0, v00EC0728_0;
+v00EC03B8_0 .net "acc_sum_rounded", 15 0, L_00ED0750; 1 drivers
+v00EC0410_0 .alias "clk", 0 0, v00EC08E0_0;
+v00EC0468_0 .alias "en", 0 0, v00EC0938_0;
+RS_0063A784/0/0 .resolv tri, L_00EC8D78, L_00ECB358, L_00ECB5C0, L_00ECB828;
+RS_0063A784/0/4 .resolv tri, L_00ECBA90, L_00ECBCF8, L_00ECBF08, L_00ECC1C8;
+RS_0063A784 .resolv tri, RS_0063A784/0/0, RS_0063A784/0/4, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>;
+v00EC04C0_0 .net8 "productArr_rounded", 127 0, RS_0063A784; 8 drivers
+v00EC0518_0 .net "productArr_roundedSum", 15 0, L_00ECFFB0; 1 drivers
+v00EC0570_0 .net "productArr_rounded_stage", 127 0, L_00ECE038; 1 drivers
+S_0061A190 .scope module, "AMFP" "MFP_Multi_Arr" 3 92, 2 4, S_00637408;
+ .timescale 0 0;
+P_00BD3814 .param/l "ArrL" 2 8, C4<01000>;
+P_00BD3828 .param/l "In1W" 2 6, +C4<01001>;
+P_00BD383C .param/l "In2EQW" 2 9, +C4<01000>;
+P_00BD3850 .param/l "In2W" 2 7, +C4<01000>;
+P_00BD3864 .param/l "OutW" 2 10, +C4<010000>;
+P_00BD3878 .param/l "Saturate" 2 12, +C4<0>;
+P_00BD388C .param/l "isFloor" 2 11, +C4<01>;
+P_00BD38A0 .param/l "isUnsigned" 2 13, +C4<0>;
+v00EC0200_0 .alias "In1Arr", 71 0, v00EC0830_0;
+v00EC0258_0 .alias "In2Arr", 63 0, v00EC0728_0;
+v00EC02B0_0 .alias "OutArr", 127 0, v00EC04C0_0;
+L_00EC8CC8 .part L_00ECA918, 0, 9;
+L_00EC8D20 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 0, 8;
+L_00EC8D78 .part/pv L_00EC8C70, 0, 16, 128;
+L_00ECB2A8 .part L_00ECA918, 9, 9;
+L_00ECB300 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 8, 8;
+L_00ECB358 .part/pv L_00ECB250, 16, 16, 128;
+L_00ECB510 .part L_00ECA918, 18, 9;
+L_00ECB568 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 16, 8;
+L_00ECB5C0 .part/pv L_00ECB4B8, 32, 16, 128;
+L_00ECB778 .part L_00ECA918, 27, 9;
+L_00ECB7D0 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 24, 8;
+L_00ECB828 .part/pv L_00ECB720, 48, 16, 128;
+L_00ECB9E0 .part L_00ECA918, 36, 9;
+L_00ECBA38 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 32, 8;
+L_00ECBA90 .part/pv L_00ECB988, 64, 16, 128;
+L_00ECBC48 .part L_00ECA918, 45, 9;
+L_00ECBCA0 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 40, 8;
+L_00ECBCF8 .part/pv L_00ECBBF0, 80, 16, 128;
+L_00ECBEB0 .part L_00ECA918, 54, 9;
+L_00ECBF60 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 48, 8;
+L_00ECBF08 .part/pv L_00ECBE58, 96, 16, 128;
+L_00ECC118 .part L_00ECA918, 63, 9;
+L_00ECC170 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 56, 8;
+L_00ECC1C8 .part/pv L_00ECC0C0, 112, 16, 128;
+S_00620800 .scope generate, "oparr[0]" "oparr[0]" 2 18, 2 18, S_0061A190;
+ .timescale 0 0;
+P_0062A62C .param/l "gi" 2 18, +C4<00>;
+S_00620888 .scope module, "m0" "MFP_Multi" 2 19, 2 26, S_00620800;
+ .timescale 0 0;
+P_00EC130C .param/l "In1W" 2 28, +C4<01001>;
+P_00EC1320 .param/l "In2EQW" 2 30, +C4<01000>;
+P_00EC1334 .param/l "In2W" 2 29, +C4<01000>;
+P_00EC1348 .param/l "OutW" 2 35, +C4<010000>;
+P_00EC135C .param/l "RealOutW" 2 45, +C4<010000>;
+P_00EC1370 .param/l "Saturate" 2 37, +C4<0>;
+P_00EC1384 .param/l "isFloor" 2 36, +C4<01>;
+P_00EC1398 .param/l "isUnsigned" 2 38, +C4<0>;
+v00EC00A0_0 .net "In1", 8 0, L_00EC8CC8; 1 drivers
+v00EC00F8_0 .net "In2", 7 0, L_00EC8D20; 1 drivers
+v00EC0150_0 .net "Out", 15 0, L_00EC8C70; 1 drivers
+v00EC01A8_0 .net "Out_", 15 0, L_00ECAA68; 1 drivers
+S_006206F0 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_00620888;
+ .timescale 0 0;
+P_005D96BC .param/l "InW" 2 138, +C4<010000>;
+P_005D96D0 .param/l "OutW" 2 139, +C4<010000>;
+P_005D96E4 .param/l "Saturate" 2 140, +C4<0>;
+P_005D96F8 .param/l "isFloor" 2 141, +C4<01>;
+P_005D970C .param/l "isUnsigned" 2 142, +C4<0>;
+v00EBFFF0_0 .alias "in", 15 0, v00EC01A8_0;
+v00EC0048_0 .alias "out", 15 0, v00EC0150_0;
+S_00620778 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_006206F0;
+ .timescale 0 0;
+L_00EC8C70 .concat [ 16 0 0 0], L_00ECAA68;
+S_00620CC8 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_00620888;
+ .timescale 0 0;
+L_00EBB258 .functor BUFZ 9, L_00EC8CC8, C4<000000000>, C4<000000000>, C4<000000000>;
+L_00ECA950 .functor BUFZ 8, L_00EC8D20, C4<00000000>, C4<00000000>, C4<00000000>;
+L_00ECAA68 .functor BUFZ 16, L_00EC8C18, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v00EBFE38_0 .net/s "In1_s", 8 0, L_00EBB258; 1 drivers
+v00EBFE90_0 .net/s "In2_s", 7 0, L_00ECA950; 1 drivers
+v00EBFEE8_0 .net/s "Out_s", 15 0, L_00EC8C18; 1 drivers
+v00EBFF40_0 .net/s *"_s4", 15 0, L_00EC8B68; 1 drivers
+v00EBFF98_0 .net/s *"_s6", 15 0, L_00EC8BC0; 1 drivers
+L_00EC8B68 .extend/s 16, L_00EBB258;
+L_00EC8BC0 .extend/s 16, L_00ECA950;
+L_00EC8C18 .arith/mult 16, L_00EC8B68, L_00EC8BC0;
+S_00621548 .scope generate, "oparr[1]" "oparr[1]" 2 18, 2 18, S_0061A190;
+ .timescale 0 0;
+P_0062A7AC .param/l "gi" 2 18, +C4<01>;
+S_00621988 .scope module, "m0" "MFP_Multi" 2 19, 2 26, S_00621548;
+ .timescale 0 0;
+P_00EBFA5C .param/l "In1W" 2 28, +C4<01001>;
+P_00EBFA70 .param/l "In2EQW" 2 30, +C4<01000>;
+P_00EBFA84 .param/l "In2W" 2 29, +C4<01000>;
+P_00EBFA98 .param/l "OutW" 2 35, +C4<010000>;
+P_00EBFAAC .param/l "RealOutW" 2 45, +C4<010000>;
+P_00EBFAC0 .param/l "Saturate" 2 37, +C4<0>;
+P_00EBFAD4 .param/l "isFloor" 2 36, +C4<01>;
+P_00EBFAE8 .param/l "isUnsigned" 2 38, +C4<0>;
+v00EBFCD8_0 .net "In1", 8 0, L_00ECB2A8; 1 drivers
+v00EBFD30_0 .net "In2", 7 0, L_00ECB300; 1 drivers
+v00EBFD88_0 .net "Out", 15 0, L_00ECB250; 1 drivers
+v00EBFDE0_0 .net "Out_", 15 0, L_00ECACD0; 1 drivers
+S_00620AA8 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_00621988;
+ .timescale 0 0;
+P_005D964C .param/l "InW" 2 138, +C4<010000>;
+P_005D9660 .param/l "OutW" 2 139, +C4<010000>;
+P_005D9674 .param/l "Saturate" 2 140, +C4<0>;
+P_005D9688 .param/l "isFloor" 2 141, +C4<01>;
+P_005D969C .param/l "isUnsigned" 2 142, +C4<0>;
+v00EBFC28_0 .alias "in", 15 0, v00EBFDE0_0;
+v00EBFC80_0 .alias "out", 15 0, v00EBFD88_0;
+S_00620C40 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_00620AA8;
+ .timescale 0 0;
+L_00ECB250 .concat [ 16 0 0 0], L_00ECACD0;
+S_00620D50 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_00621988;
+ .timescale 0 0;
+L_00EBB220 .functor BUFZ 9, L_00ECB2A8, C4<000000000>, C4<000000000>, C4<000000000>;
+L_00ECABB8 .functor BUFZ 8, L_00ECB300, C4<00000000>, C4<00000000>, C4<00000000>;
+L_00ECACD0 .functor BUFZ 16, L_00ECB1F8, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v00EBE780_0 .net/s "In1_s", 8 0, L_00EBB220; 1 drivers
+v00EBE7D8_0 .net/s "In2_s", 7 0, L_00ECABB8; 1 drivers
+v00EBFB20_0 .net/s "Out_s", 15 0, L_00ECB1F8; 1 drivers
+v00EBFB78_0 .net/s *"_s4", 15 0, L_00EC8DD0; 1 drivers
+v00EBFBD0_0 .net/s *"_s6", 15 0, L_00EC8E28; 1 drivers
+L_00EC8DD0 .extend/s 16, L_00EBB220;
+L_00EC8E28 .extend/s 16, L_00ECABB8;
+L_00ECB1F8 .arith/mult 16, L_00EC8DD0, L_00EC8E28;
+S_00620668 .scope generate, "oparr[2]" "oparr[2]" 2 18, 2 18, S_0061A190;
+ .timescale 0 0;
+P_0062A26C .param/l "gi" 2 18, +C4<010>;
+S_00621A10 .scope module, "m0" "MFP_Multi" 2 19, 2 26, S_00620668;
+ .timescale 0 0;
+P_00EBE9AC .param/l "In1W" 2 28, +C4<01001>;
+P_00EBE9C0 .param/l "In2EQW" 2 30, +C4<01000>;
+P_00EBE9D4 .param/l "In2W" 2 29, +C4<01000>;
+P_00EBE9E8 .param/l "OutW" 2 35, +C4<010000>;
+P_00EBE9FC .param/l "RealOutW" 2 45, +C4<010000>;
+P_00EBEA10 .param/l "Saturate" 2 37, +C4<0>;
+P_00EBEA24 .param/l "isFloor" 2 36, +C4<01>;
+P_00EBEA38 .param/l "isUnsigned" 2 38, +C4<0>;
+v00EBE620_0 .net "In1", 8 0, L_00ECB510; 1 drivers
+v00EBE678_0 .net "In2", 7 0, L_00ECB568; 1 drivers
+v00EBE6D0_0 .net "Out", 15 0, L_00ECB4B8; 1 drivers
+v00EBE728_0 .net "Out_", 15 0, L_00ECAF38; 1 drivers
+S_00621900 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_00621A10;
+ .timescale 0 0;
+P_005D95DC .param/l "InW" 2 138, +C4<010000>;
+P_005D95F0 .param/l "OutW" 2 139, +C4<010000>;
+P_005D9604 .param/l "Saturate" 2 140, +C4<0>;
+P_005D9618 .param/l "isFloor" 2 141, +C4<01>;
+P_005D962C .param/l "isUnsigned" 2 142, +C4<0>;
+v00EBE570_0 .alias "in", 15 0, v00EBE728_0;
+v00EBE5C8_0 .alias "out", 15 0, v00EBE6D0_0;
+S_006214C0 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_00621900;
+ .timescale 0 0;
+L_00ECB4B8 .concat [ 16 0 0 0], L_00ECAF38;
+S_00621768 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_00621A10;
+ .timescale 0 0;
+L_00EBB290 .functor BUFZ 9, L_00ECB510, C4<000000000>, C4<000000000>, C4<000000000>;
+L_00ECAE20 .functor BUFZ 8, L_00ECB568, C4<00000000>, C4<00000000>, C4<00000000>;
+L_00ECAF38 .functor BUFZ 16, L_00ECB460, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v00EBE3B8_0 .net/s "In1_s", 8 0, L_00EBB290; 1 drivers
+v00EBE410_0 .net/s "In2_s", 7 0, L_00ECAE20; 1 drivers
+v00EBE468_0 .net/s "Out_s", 15 0, L_00ECB460; 1 drivers
+v00EBE4C0_0 .net/s *"_s4", 15 0, L_00ECB3B0; 1 drivers
+v00EBE518_0 .net/s *"_s6", 15 0, L_00ECB408; 1 drivers
+L_00ECB3B0 .extend/s 16, L_00EBB290;
+L_00ECB408 .extend/s 16, L_00ECAE20;
+L_00ECB460 .arith/mult 16, L_00ECB3B0, L_00ECB408;
+S_00620448 .scope generate, "oparr[3]" "oparr[3]" 2 18, 2 18, S_0061A190;
+ .timescale 0 0;
+P_0062A3EC .param/l "gi" 2 18, +C4<011>;
+S_00620338 .scope module, "m0" "MFP_Multi" 2 19, 2 26, S_00620448;
+ .timescale 0 0;
+P_00EBE8FC .param/l "In1W" 2 28, +C4<01001>;
+P_00EBE910 .param/l "In2EQW" 2 30, +C4<01000>;
+P_00EBE924 .param/l "In2W" 2 29, +C4<01000>;
+P_00EBE938 .param/l "OutW" 2 35, +C4<010000>;
+P_00EBE94C .param/l "RealOutW" 2 45, +C4<010000>;
+P_00EBE960 .param/l "Saturate" 2 37, +C4<0>;
+P_00EBE974 .param/l "isFloor" 2 36, +C4<01>;
+P_00EBE988 .param/l "isUnsigned" 2 38, +C4<0>;
+v00EBE258_0 .net "In1", 8 0, L_00ECB778; 1 drivers
+v00EBE2B0_0 .net "In2", 7 0, L_00ECB7D0; 1 drivers
+v00EBE308_0 .net "Out", 15 0, L_00ECB720; 1 drivers
+v00EBE360_0 .net "Out_", 15 0, L_00ECD380; 1 drivers
+S_006203C0 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_00620338;
+ .timescale 0 0;
+P_005D956C .param/l "InW" 2 138, +C4<010000>;
+P_005D9580 .param/l "OutW" 2 139, +C4<010000>;
+P_005D9594 .param/l "Saturate" 2 140, +C4<0>;
+P_005D95A8 .param/l "isFloor" 2 141, +C4<01>;
+P_005D95BC .param/l "isUnsigned" 2 142, +C4<0>;
+v00EBE1A8_0 .alias "in", 15 0, v00EBE360_0;
+v00EBE200_0 .alias "out", 15 0, v00EBE308_0;
+S_00620118 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_006203C0;
+ .timescale 0 0;
+L_00ECB720 .concat [ 16 0 0 0], L_00ECD380;
+S_006201A0 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_00620338;
+ .timescale 0 0;
+L_00ECD230 .functor BUFZ 9, L_00ECB778, C4<000000000>, C4<000000000>, C4<000000000>;
+L_00ECD268 .functor BUFZ 8, L_00ECB7D0, C4<00000000>, C4<00000000>, C4<00000000>;
+L_00ECD380 .functor BUFZ 16, L_00ECB6C8, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v00EBDFF0_0 .net/s "In1_s", 8 0, L_00ECD230; 1 drivers
+v00EBE048_0 .net/s "In2_s", 7 0, L_00ECD268; 1 drivers
+v00EBE0A0_0 .net/s "Out_s", 15 0, L_00ECB6C8; 1 drivers
+v00EBE0F8_0 .net/s *"_s4", 15 0, L_00ECB618; 1 drivers
+v00EBE150_0 .net/s *"_s6", 15 0, L_00ECB670; 1 drivers
+L_00ECB618 .extend/s 16, L_00ECD230;
+L_00ECB670 .extend/s 16, L_00ECD268;
+L_00ECB6C8 .arith/mult 16, L_00ECB618, L_00ECB670;
+S_0061FC50 .scope generate, "oparr[4]" "oparr[4]" 2 18, 2 18, S_0061A190;
+ .timescale 0 0;
+P_0062A12C .param/l "gi" 2 18, +C4<0100>;
+S_0061FE70 .scope module, "m0" "MFP_Multi" 2 19, 2 26, S_0061FC50;
+ .timescale 0 0;
+P_00EBE84C .param/l "In1W" 2 28, +C4<01001>;
+P_00EBE860 .param/l "In2EQW" 2 30, +C4<01000>;
+P_00EBE874 .param/l "In2W" 2 29, +C4<01000>;
+P_00EBE888 .param/l "OutW" 2 35, +C4<010000>;
+P_00EBE89C .param/l "RealOutW" 2 45, +C4<010000>;
+P_00EBE8B0 .param/l "Saturate" 2 37, +C4<0>;
+P_00EBE8C4 .param/l "isFloor" 2 36, +C4<01>;
+P_00EBE8D8 .param/l "isUnsigned" 2 38, +C4<0>;
+v00EBDE90_0 .net "In1", 8 0, L_00ECB9E0; 1 drivers
+v00EBDEE8_0 .net "In2", 7 0, L_00ECBA38; 1 drivers
+v00EBDF40_0 .net "Out", 15 0, L_00ECB988; 1 drivers
+v00EBDF98_0 .net "Out_", 15 0, L_00ECD658; 1 drivers
+S_00620558 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_0061FE70;
+ .timescale 0 0;
+P_005D94FC .param/l "InW" 2 138, +C4<010000>;
+P_005D9510 .param/l "OutW" 2 139, +C4<010000>;
+P_005D9524 .param/l "Saturate" 2 140, +C4<0>;
+P_005D9538 .param/l "isFloor" 2 141, +C4<01>;
+P_005D954C .param/l "isUnsigned" 2 142, +C4<0>;
+v00EBDDE0_0 .alias "in", 15 0, v00EBDF98_0;
+v00EBDE38_0 .alias "out", 15 0, v00EBDF40_0;
+S_006204D0 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_00620558;
+ .timescale 0 0;
+L_00ECB988 .concat [ 16 0 0 0], L_00ECD658;
+S_0061FBC8 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_0061FE70;
+ .timescale 0 0;
+L_00ECD4D0 .functor BUFZ 9, L_00ECB9E0, C4<000000000>, C4<000000000>, C4<000000000>;
+L_00ECD540 .functor BUFZ 8, L_00ECBA38, C4<00000000>, C4<00000000>, C4<00000000>;
+L_00ECD658 .functor BUFZ 16, L_00ECB930, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v00EBDC28_0 .net/s "In1_s", 8 0, L_00ECD4D0; 1 drivers
+v00EBDC80_0 .net/s "In2_s", 7 0, L_00ECD540; 1 drivers
+v00EBDCD8_0 .net/s "Out_s", 15 0, L_00ECB930; 1 drivers
+v00EBDD30_0 .net/s *"_s4", 15 0, L_00ECB880; 1 drivers
+v00EBDD88_0 .net/s *"_s6", 15 0, L_00ECB8D8; 1 drivers
+L_00ECB880 .extend/s 16, L_00ECD4D0;
+L_00ECB8D8 .extend/s 16, L_00ECD540;
+L_00ECB930 .arith/mult 16, L_00ECB880, L_00ECB8D8;
+S_00620090 .scope generate, "oparr[5]" "oparr[5]" 2 18, 2 18, S_0061A190;
+ .timescale 0 0;
+P_00629F4C .param/l "gi" 2 18, +C4<0101>;
+S_00620008 .scope module, "m0" "MFP_Multi" 2 19, 2 26, S_00620090;
+ .timescale 0 0;
+P_00BD3A24 .param/l "In1W" 2 28, +C4<01001>;
+P_00BD3A38 .param/l "In2EQW" 2 30, +C4<01000>;
+P_00BD3A4C .param/l "In2W" 2 29, +C4<01000>;
+P_00BD3A60 .param/l "OutW" 2 35, +C4<010000>;
+P_00BD3A74 .param/l "RealOutW" 2 45, +C4<010000>;
+P_00BD3A88 .param/l "Saturate" 2 37, +C4<0>;
+P_00BD3A9C .param/l "isFloor" 2 36, +C4<01>;
+P_00BD3AB0 .param/l "isUnsigned" 2 38, +C4<0>;
+v00EBDAC8_0 .net "In1", 8 0, L_00ECBC48; 1 drivers
+v00EBDB20_0 .net "In2", 7 0, L_00ECBCA0; 1 drivers
+v00EBDB78_0 .net "Out", 15 0, L_00ECBBF0; 1 drivers
+v00EBDBD0_0 .net "Out_", 15 0, L_00ECD8C0; 1 drivers
+S_0061FEF8 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_00620008;
+ .timescale 0 0;
+P_005D948C .param/l "InW" 2 138, +C4<010000>;
+P_005D94A0 .param/l "OutW" 2 139, +C4<010000>;
+P_005D94B4 .param/l "Saturate" 2 140, +C4<0>;
+P_005D94C8 .param/l "isFloor" 2 141, +C4<01>;
+P_005D94DC .param/l "isUnsigned" 2 142, +C4<0>;
+v00EBDA18_0 .alias "in", 15 0, v00EBDBD0_0;
+v00EBDA70_0 .alias "out", 15 0, v00EBDB78_0;
+S_0061FDE8 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_0061FEF8;
+ .timescale 0 0;
+L_00ECBBF0 .concat [ 16 0 0 0], L_00ECD8C0;
+S_0061FF80 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_00620008;
+ .timescale 0 0;
+L_00ECD770 .functor BUFZ 9, L_00ECBC48, C4<000000000>, C4<000000000>, C4<000000000>;
+L_00ECD7A8 .functor BUFZ 8, L_00ECBCA0, C4<00000000>, C4<00000000>, C4<00000000>;
+L_00ECD8C0 .functor BUFZ 16, L_00ECBB98, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v00EBD860_0 .net/s "In1_s", 8 0, L_00ECD770; 1 drivers
+v00EBD8B8_0 .net/s "In2_s", 7 0, L_00ECD7A8; 1 drivers
+v00EBD910_0 .net/s "Out_s", 15 0, L_00ECBB98; 1 drivers
+v00EBD968_0 .net/s *"_s4", 15 0, L_00ECBAE8; 1 drivers
+v00EBD9C0_0 .net/s *"_s6", 15 0, L_00ECBB40; 1 drivers
+L_00ECBAE8 .extend/s 16, L_00ECD770;
+L_00ECBB40 .extend/s 16, L_00ECD7A8;
+L_00ECBB98 .arith/mult 16, L_00ECBAE8, L_00ECBB40;
+S_0061A878 .scope generate, "oparr[6]" "oparr[6]" 2 18, 2 18, S_0061A190;
+ .timescale 0 0;
+P_00629F0C .param/l "gi" 2 18, +C4<0110>;
+S_0061A6E0 .scope module, "m0" "MFP_Multi" 2 19, 2 26, S_0061A878;
+ .timescale 0 0;
+P_00BD3974 .param/l "In1W" 2 28, +C4<01001>;
+P_00BD3988 .param/l "In2EQW" 2 30, +C4<01000>;
+P_00BD399C .param/l "In2W" 2 29, +C4<01000>;
+P_00BD39B0 .param/l "OutW" 2 35, +C4<010000>;
+P_00BD39C4 .param/l "RealOutW" 2 45, +C4<010000>;
+P_00BD39D8 .param/l "Saturate" 2 37, +C4<0>;
+P_00BD39EC .param/l "isFloor" 2 36, +C4<01>;
+P_00BD3A00 .param/l "isUnsigned" 2 38, +C4<0>;
+v00EBC6D0_0 .net "In1", 8 0, L_00ECBEB0; 1 drivers
+v00EBC728_0 .net "In2", 7 0, L_00ECBF60; 1 drivers
+v00EBC780_0 .net "Out", 15 0, L_00ECBE58; 1 drivers
+v00EBC7D8_0 .net "Out_", 15 0, L_00ECDC48; 1 drivers
+S_0061A658 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_0061A6E0;
+ .timescale 0 0;
+P_005D941C .param/l "InW" 2 138, +C4<010000>;
+P_005D9430 .param/l "OutW" 2 139, +C4<010000>;
+P_005D9444 .param/l "Saturate" 2 140, +C4<0>;
+P_005D9458 .param/l "isFloor" 2 141, +C4<01>;
+P_005D946C .param/l "isUnsigned" 2 142, +C4<0>;
+v00EBC620_0 .alias "in", 15 0, v00EBC7D8_0;
+v00EBC678_0 .alias "out", 15 0, v00EBC780_0;
+S_006205E0 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_0061A658;
+ .timescale 0 0;
+L_00ECBE58 .concat [ 16 0 0 0], L_00ECDC48;
+S_0061A900 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_0061A6E0;
+ .timescale 0 0;
+L_00ECDAF8 .functor BUFZ 9, L_00ECBEB0, C4<000000000>, C4<000000000>, C4<000000000>;
+L_00ECDB30 .functor BUFZ 8, L_00ECBF60, C4<00000000>, C4<00000000>, C4<00000000>;
+L_00ECDC48 .functor BUFZ 16, L_00ECBE00, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v00EBC468_0 .net/s "In1_s", 8 0, L_00ECDAF8; 1 drivers
+v00EBC4C0_0 .net/s "In2_s", 7 0, L_00ECDB30; 1 drivers
+v00EBC518_0 .net/s "Out_s", 15 0, L_00ECBE00; 1 drivers
+v00EBC570_0 .net/s *"_s4", 15 0, L_00ECBD50; 1 drivers
+v00EBC5C8_0 .net/s *"_s6", 15 0, L_00ECBDA8; 1 drivers
+L_00ECBD50 .extend/s 16, L_00ECDAF8;
+L_00ECBDA8 .extend/s 16, L_00ECDB30;
+L_00ECBE00 .arith/mult 16, L_00ECBD50, L_00ECBDA8;
+S_0061A3B0 .scope generate, "oparr[7]" "oparr[7]" 2 18, 2 18, S_0061A190;
+ .timescale 0 0;
+P_00629F8C .param/l "gi" 2 18, +C4<0111>;
+S_0061A108 .scope module, "m0" "MFP_Multi" 2 19, 2 26, S_0061A3B0;
+ .timescale 0 0;
+P_00BD38C4 .param/l "In1W" 2 28, +C4<01001>;
+P_00BD38D8 .param/l "In2EQW" 2 30, +C4<01000>;
+P_00BD38EC .param/l "In2W" 2 29, +C4<01000>;
+P_00BD3900 .param/l "OutW" 2 35, +C4<010000>;
+P_00BD3914 .param/l "RealOutW" 2 45, +C4<010000>;
+P_00BD3928 .param/l "Saturate" 2 37, +C4<0>;
+P_00BD393C .param/l "isFloor" 2 36, +C4<01>;
+P_00BD3950 .param/l "isUnsigned" 2 38, +C4<0>;
+v00EBC308_0 .net "In1", 8 0, L_00ECC118; 1 drivers
+v00EBC360_0 .net "In2", 7 0, L_00ECC170; 1 drivers
+v00EBC3B8_0 .net "Out", 15 0, L_00ECC0C0; 1 drivers
+v00EBC410_0 .net "Out_", 15 0, L_00ECDEE8; 1 drivers
+S_0061AA10 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_0061A108;
+ .timescale 0 0;
+P_005D93AC .param/l "InW" 2 138, +C4<010000>;
+P_005D93C0 .param/l "OutW" 2 139, +C4<010000>;
+P_005D93D4 .param/l "Saturate" 2 140, +C4<0>;
+P_005D93E8 .param/l "isFloor" 2 141, +C4<01>;
+P_005D93FC .param/l "isUnsigned" 2 142, +C4<0>;
+v00EBC258_0 .alias "in", 15 0, v00EBC410_0;
+v00EBC2B0_0 .alias "out", 15 0, v00EBC3B8_0;
+S_0061A988 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_0061AA10;
+ .timescale 0 0;
+L_00ECC0C0 .concat [ 16 0 0 0], L_00ECDEE8;
+S_0061AA98 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_0061A108;
+ .timescale 0 0;
+L_00ECDD98 .functor BUFZ 9, L_00ECC118, C4<000000000>, C4<000000000>, C4<000000000>;
+L_00ECDDD0 .functor BUFZ 8, L_00ECC170, C4<00000000>, C4<00000000>, C4<00000000>;
+L_00ECDEE8 .functor BUFZ 16, L_00ECC068, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v00EBC0A0_0 .net/s "In1_s", 8 0, L_00ECDD98; 1 drivers
+v00EBC0F8_0 .net/s "In2_s", 7 0, L_00ECDDD0; 1 drivers
+v00EBC150_0 .net/s "Out_s", 15 0, L_00ECC068; 1 drivers
+v00EBC1A8_0 .net/s *"_s4", 15 0, L_00ECBFB8; 1 drivers
+v00EBC200_0 .net/s *"_s6", 15 0, L_00ECC010; 1 drivers
+L_00ECBFB8 .extend/s 16, L_00ECDD98;
+L_00ECC010 .extend/s 16, L_00ECDDD0;
+L_00ECC068 .arith/mult 16, L_00ECBFB8, L_00ECC010;
+S_0061A438 .scope module, "RoW" "MFP_RegOWire" 3 95, 2 169, S_00637408;
+ .timescale 0 0;
+P_00632994 .param/l "dataW" 2 172, +C4<010000000>;
+P_006329A8 .param/l "isWire" 2 175, +C4<01>;
+P_006329BC .param/l "levelIdx" 2 173, +C4<01>;
+P_006329D0 .param/l "regInterval" 2 174, +C4<0>;
+v00EBBF40_0 .alias "clk", 0 0, v00EC08E0_0;
+v00EBBF98_0 .alias "en", 0 0, v00EC0938_0;
+v00EBBFF0_0 .alias "in", 127 0, v00EC04C0_0;
+v00EBC048_0 .alias "out", 127 0, v00EC0570_0;
+S_0061A328 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_0061A438;
+ .timescale 0 0;
+L_00ECE038 .functor BUFZ 128, RS_0063A784, C4<00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000>, C4<00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000>, C4<00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000>;
+S_006375A0 .scope module, "ATFP" "MFP_AdderTree" 3 97, 3 105, S_00637408;
+ .timescale 0 0;
+P_005C061C .param/l "ArrL" 3 108, C4<01000>;
+P_005C0630 .param/l "Sp1" 3 117, C4<0100>;
+P_005C0644 .param/l "Sp2" 3 118, C4<0100>;
+P_005C0658 .param/l "data_depth" 3 107, +C4<010000>;
+P_005C066C .param/l "isUnsigned" 3 111, +C4<0>;
+P_005C0680 .param/l "levelIdx" 3 109, +C4<010>;
+P_005C0694 .param/l "pipeInterval" 3 110, +C4<0>;
+v00EBBCD8_0 .alias "DIn", 127 0, v00EC04C0_0;
+v00EBBD30_0 .alias "Sum", 15 0, v00EC0518_0;
+v00EBBD88_0 .net "Sum_", 15 0, L_005DC468; 1 drivers
+v00EBBDE0_0 .alias "clk", 0 0, v00EC08E0_0;
+v00EBBE38_0 .alias "en", 0 0, v00EC0938_0;
+v00EBBE90_0 .net "subLevelSum1", 15 0, L_00ECE7E8; 1 drivers
+v00EBBEE8_0 .net "subLevelSum2", 15 0, L_00ECFDB8; 1 drivers
+L_00ECCA60 .part RS_0063A784, 0, 64;
+L_00ED04E8 .part RS_0063A784, 64, 64;
+S_00619BB8 .scope module, "aS" "MFP_Adder" 3 124, 2 89, S_006375A0;
+ .timescale 0 0;
+P_00EB1DBC .param/l "In1W" 2 91, +C4<010000>;
+P_00EB1DD0 .param/l "In2W" 2 92, +C4<010000>;
+P_00EB1DE4 .param/l "OutW" 2 93, +C4<010000>;
+P_00EB1DF8 .param/l "Saturate" 2 95, +C4<0>;
+P_00EB1E0C .param/l "isUnsigned" 2 96, +C4<0>;
+P_00EB1E20 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
+P_00EB1E34 .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00ECFE28 .functor XOR 1, L_00ED0598, L_00ED05F0, C4<0>, C4<0>;
+L_00ECFF08 .functor XOR 1, L_00ED06A0, L_00ED06F8, C4<0>, C4<0>;
+v00EBB910_0 .alias "In1", 15 0, v00EBBE90_0;
+v00EBB968_0 .alias "In2", 15 0, v00EBBEE8_0;
+v00EBB9C0_0 .net "IsSameSign", 0 0, L_00ED0648; 1 drivers
+v00EBBA18_0 .net "IsSignChanged", 0 0, L_00ECFF08; 1 drivers
+v00EBBA70_0 .alias "Out", 15 0, v00EBBD88_0;
+v00EBBAC8_0 .net "TestAdd", 15 0, L_00ED0540; 1 drivers
+v00EBBB20_0 .net *"_s11", 0 0, L_00ED06A0; 1 drivers
+v00EBBB78_0 .net *"_s13", 0 0, L_00ED06F8; 1 drivers
+v00EBBBD0_0 .net *"_s3", 0 0, L_00ED0598; 1 drivers
+v00EBBC28_0 .net *"_s5", 0 0, L_00ED05F0; 1 drivers
+v00EBBC80_0 .net *"_s6", 0 0, L_00ECFE28; 1 drivers
+L_00ED0540 .arith/sum 16, L_00ECE7E8, L_00ECFDB8;
+L_00ED0598 .part L_00ECE7E8, 15, 1;
+L_00ED05F0 .part L_00ECFDB8, 15, 1;
+L_00ED0648 .reduce/nor L_00ECFE28;
+L_00ED06A0 .part L_00ECE7E8, 15, 1;
+L_00ED06F8 .part L_00ED0540, 15, 1;
+S_0061A548 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00619BB8;
+ .timescale 0 0;
+S_0061A4C0 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_0061A548;
+ .timescale 0 0;
+L_005DC468 .functor BUFZ 16, L_00ED0540, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_00619C40 .scope module, "RoW" "MFP_RegOWire" 3 126, 2 169, S_006375A0;
+ .timescale 0 0;
+P_00632934 .param/l "dataW" 2 172, +C4<010000>;
+P_00632948 .param/l "isWire" 2 175, +C4<01>;
+P_0063295C .param/l "levelIdx" 2 173, +C4<010>;
+P_00632970 .param/l "regInterval" 2 174, +C4<0>;
+v00EB6780_0 .alias "clk", 0 0, v00EC08E0_0;
+v00EB67D8_0 .alias "en", 0 0, v00EC0938_0;
+v00EBB860_0 .alias "in", 15 0, v00EBBD88_0;
+v00EBB8B8_0 .alias "out", 15 0, v00EC0518_0;
+S_00619E60 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_00619C40;
+ .timescale 0 0;
+L_00ECFFB0 .functor BUFZ 16, L_005DC468, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_00619008 .scope generate, "genblk2" "genblk2" 3 130, 3 130, S_006375A0;
+ .timescale 0 0;
+S_00618F80 .scope module, "ATI1" "MFP_AdderTree" 3 135, 3 105, S_00619008;
+ .timescale 0 0;
+P_00EB1A2C .param/l "ArrL" 3 108, C4<0100>;
+P_00EB1A40 .param/l "Sp1" 3 117, C4<010>;
+P_00EB1A54 .param/l "Sp2" 3 118, C4<010>;
+P_00EB1A68 .param/l "data_depth" 3 107, +C4<010000>;
+P_00EB1A7C .param/l "isUnsigned" 3 111, +C4<0>;
+P_00EB1A90 .param/l "levelIdx" 3 109, +C4<011>;
+P_00EB1AA4 .param/l "pipeInterval" 3 110, +C4<0>;
+v00EB6518_0 .net "DIn", 63 0, L_00ECCA60; 1 drivers
+v00EB6570_0 .alias "Sum", 15 0, v00EBBE90_0;
+v00EB65C8_0 .net "Sum_", 15 0, L_00ECE5F0; 1 drivers
+v00EB6620_0 .alias "clk", 0 0, v00EC08E0_0;
+v00EB6678_0 .alias "en", 0 0, v00EC0938_0;
+v00EB66D0_0 .net "subLevelSum1", 15 0, L_00ECE3C0; 1 drivers
+v00EB6728_0 .net "subLevelSum2", 15 0, L_00ECE5B8; 1 drivers
+L_00ECC4E0 .part L_00ECCA60, 0, 32;
+L_00ECC7F8 .part L_00ECCA60, 32, 32;
+S_00619F70 .scope module, "aS" "MFP_Adder" 3 124, 2 89, S_00618F80;
+ .timescale 0 0;
+P_00EB1D24 .param/l "In1W" 2 91, +C4<010000>;
+P_00EB1D38 .param/l "In2W" 2 92, +C4<010000>;
+P_00EB1D4C .param/l "OutW" 2 93, +C4<010000>;
+P_00EB1D60 .param/l "Saturate" 2 95, +C4<0>;
+P_00EB1D74 .param/l "isUnsigned" 2 96, +C4<0>;
+P_00EB1D88 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
+P_00EB1D9C .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00ECE660 .functor XOR 1, L_00ECC8A8, L_00ECC900, C4<0>, C4<0>;
+L_00ECE740 .functor XOR 1, L_00ECC9B0, L_00ECCA08, C4<0>, C4<0>;
+v00EB6150_0 .alias "In1", 15 0, v00EB66D0_0;
+v00EB61A8_0 .alias "In2", 15 0, v00EB6728_0;
+v00EB6200_0 .net "IsSameSign", 0 0, L_00ECC958; 1 drivers
+v00EB6258_0 .net "IsSignChanged", 0 0, L_00ECE740; 1 drivers
+v00EB62B0_0 .alias "Out", 15 0, v00EB65C8_0;
+v00EB6308_0 .net "TestAdd", 15 0, L_00ECC850; 1 drivers
+v00EB6360_0 .net *"_s11", 0 0, L_00ECC9B0; 1 drivers
+v00EB63B8_0 .net *"_s13", 0 0, L_00ECCA08; 1 drivers
+v00EB6410_0 .net *"_s3", 0 0, L_00ECC8A8; 1 drivers
+v00EB6468_0 .net *"_s5", 0 0, L_00ECC900; 1 drivers
+v00EB64C0_0 .net *"_s6", 0 0, L_00ECE660; 1 drivers
+L_00ECC850 .arith/sum 16, L_00ECE3C0, L_00ECE5B8;
+L_00ECC8A8 .part L_00ECE3C0, 15, 1;
+L_00ECC900 .part L_00ECE5B8, 15, 1;
+L_00ECC958 .reduce/nor L_00ECE660;
+L_00ECC9B0 .part L_00ECE3C0, 15, 1;
+L_00ECCA08 .part L_00ECC850, 15, 1;
+S_00619EE8 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00619F70;
+ .timescale 0 0;
+S_00619DD8 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00619EE8;
+ .timescale 0 0;
+L_00ECE5F0 .functor BUFZ 16, L_00ECC850, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_00619668 .scope module, "RoW" "MFP_RegOWire" 3 126, 2 169, S_00618F80;
+ .timescale 0 0;
+P_006328D4 .param/l "dataW" 2 172, +C4<010000>;
 P_006328E8 .param/l "isWire" 2 175, +C4<01>;
-P_006328FC .param/l "levelIdx" 2 173, +C4<0>;
+P_006328FC .param/l "levelIdx" 2 173, +C4<011>;
 P_00632910 .param/l "regInterval" 2 174, +C4<0>;
-v00C90468_0 .alias "clk", 0 0, v00C90780_0;
-v00C904C0_0 .alias "en", 0 0, v00C907D8_0;
-v00C90518_0 .alias "in", 71 0, v00C90678_0;
-v00C90570_0 .alias "out", 71 0, v00C906D0_0;
-S_00621070 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_00621318;
+v00EB5FF0_0 .alias "clk", 0 0, v00EC08E0_0;
+v00EB6048_0 .alias "en", 0 0, v00EC0938_0;
+v00EB60A0_0 .alias "in", 15 0, v00EB65C8_0;
+v00EB60F8_0 .alias "out", 15 0, v00EBBE90_0;
+S_00619FF8 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_00619668;
  .timescale 0 0;
-L_00C9A7B8 .functor BUFZ 72, RS_0063AD84, C4<000000000000000000000000000000000000000000000000000000000000000000000000>, C4<000000000000000000000000000000000000000000000000000000000000000000000000>, C4<000000000000000000000000000000000000000000000000000000000000000000000000>;
-S_006372E8 .scope module, "MACpH" "MFP_MAC_par" 3 56, 3 61, S_0062F0C0;
+L_00ECE7E8 .functor BUFZ 16, L_00ECE5F0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_006191A0 .scope generate, "genblk2" "genblk2" 3 130, 3 130, S_00618F80;
  .timescale 0 0;
-P_005C05E4 .param/l "AccW_ROUND" 3 70, +C4<010000>;
-P_005C05F8 .param/l "ArrL" 3 67, C4<01000>;
-P_005C060C .param/l "In1W" 3 64, +C4<01001>;
-P_005C0620 .param/l "In2EQW" 3 66, +C4<01000>;
-P_005C0634 .param/l "In2W" 3 65, +C4<01000>;
-P_005C0648 .param/l "PordW" 3 84, +C4<010000>;
-P_005C065C .param/l "PordW_ROUND" 3 68, +C4<010000>;
-P_005C0670 .param/l "isFloor" 3 71, +C4<01>;
-P_005C0684 .param/l "isUnsigned" 3 74, +C4<0>;
-P_005C0698 .param/l "levelIdx" 3 72, +C4<01>;
-P_005C06AC .param/l "pipeInterval" 3 73, +C4<0>;
-v00C901A8_0 .alias "In1Arr", 71 0, v00C906D0_0;
-v00C90200_0 .alias "In2Arr", 63 0, v00C905C8_0;
-v00C90258_0 .net "acc_sum_rounded", 15 0, L_00CA05F0; 1 drivers
-v00C902B0_0 .alias "clk", 0 0, v00C90780_0;
-v00C90308_0 .alias "en", 0 0, v00C907D8_0;
-RS_0063A664/0/0 .resolv tri, L_00C98C18, L_00C9B1F8, L_00C9B460, L_00C9B6C8;
-RS_0063A664/0/4 .resolv tri, L_00C9B930, L_00C9BB98, L_00C9BDA8, L_00C9C068;
-RS_0063A664 .resolv tri, RS_0063A664/0/0, RS_0063A664/0/4, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>;
-v00C90360_0 .net8 "productArr_rounded", 127 0, RS_0063A664; 8 drivers
-v00C903B8_0 .net "productArr_roundedSum", 15 0, L_00C9FE50; 1 drivers
-v00C90410_0 .net "productArr_rounded_stage", 127 0, L_00C9DED8; 1 drivers
-S_0061A070 .scope module, "AMFP" "MFP_Multi_Arr" 3 92, 2 4, S_006372E8;
+S_006193C0 .scope module, "ATI1" "MFP_AdderTree" 3 135, 3 105, S_006191A0;
  .timescale 0 0;
-P_0066FF34 .param/l "ArrL" 2 8, C4<01000>;
-P_0066FF48 .param/l "In1W" 2 6, +C4<01001>;
-P_0066FF5C .param/l "In2EQW" 2 9, +C4<01000>;
-P_0066FF70 .param/l "In2W" 2 7, +C4<01000>;
-P_0066FF84 .param/l "OutW" 2 10, +C4<010000>;
-P_0066FF98 .param/l "Saturate" 2 12, +C4<0>;
-P_0066FFAC .param/l "isFloor" 2 11, +C4<01>;
-P_0066FFC0 .param/l "isUnsigned" 2 13, +C4<0>;
-v00C900A0_0 .alias "In1Arr", 71 0, v00C906D0_0;
-v00C900F8_0 .alias "In2Arr", 63 0, v00C905C8_0;
-v00C90150_0 .alias "OutArr", 127 0, v00C90360_0;
-L_00C98B68 .part L_00C9A7B8, 0, 9;
-L_00C98BC0 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 0, 8;
-L_00C98C18 .part/pv L_00C98B10, 0, 16, 128;
-L_00C9B148 .part L_00C9A7B8, 9, 9;
-L_00C9B1A0 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 8, 8;
-L_00C9B1F8 .part/pv L_00C9B0F0, 16, 16, 128;
-L_00C9B3B0 .part L_00C9A7B8, 18, 9;
-L_00C9B408 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 16, 8;
-L_00C9B460 .part/pv L_00C9B358, 32, 16, 128;
-L_00C9B618 .part L_00C9A7B8, 27, 9;
-L_00C9B670 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 24, 8;
-L_00C9B6C8 .part/pv L_00C9B5C0, 48, 16, 128;
-L_00C9B880 .part L_00C9A7B8, 36, 9;
-L_00C9B8D8 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 32, 8;
-L_00C9B930 .part/pv L_00C9B828, 64, 16, 128;
-L_00C9BAE8 .part L_00C9A7B8, 45, 9;
-L_00C9BB40 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 40, 8;
-L_00C9BB98 .part/pv L_00C9BA90, 80, 16, 128;
-L_00C9BD50 .part L_00C9A7B8, 54, 9;
-L_00C9BE00 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 48, 8;
-L_00C9BDA8 .part/pv L_00C9BCF8, 96, 16, 128;
-L_00C9BFB8 .part L_00C9A7B8, 63, 9;
-L_00C9C010 .part C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>, 56, 8;
-L_00C9C068 .part/pv L_00C9BF60, 112, 16, 128;
-S_006206E0 .scope generate, "oparr[0]" "oparr[0]" 2 18, 2 18, S_0061A070;
+P_00EB1BF4 .param/l "ArrL" 3 108, C4<010>;
+P_00EB1C08 .param/l "Sp1" 3 117, C4<01>;
+P_00EB1C1C .param/l "Sp2" 3 118, C4<01>;
+P_00EB1C30 .param/l "data_depth" 3 107, +C4<010000>;
+P_00EB1C44 .param/l "isUnsigned" 3 111, +C4<0>;
+P_00EB1C58 .param/l "levelIdx" 3 109, +C4<0100>;
+P_00EB1C6C .param/l "pipeInterval" 3 110, +C4<0>;
+v00EB5D88_0 .net "DIn", 31 0, L_00ECC4E0; 1 drivers
+v00EB5DE0_0 .alias "Sum", 15 0, v00EB66D0_0;
+v00EB5E38_0 .net "Sum_", 15 0, L_00ECE150; 1 drivers
+v00EB5E90_0 .alias "clk", 0 0, v00EC08E0_0;
+v00EB5EE8_0 .alias "en", 0 0, v00EC0938_0;
+v00EB5F40_0 .net "subLevelSum1", 15 0, L_00ECC220; 1 drivers
+v00EB5F98_0 .net "subLevelSum2", 15 0, L_00ECC278; 1 drivers
+L_00ECC220 .part L_00ECC4E0, 0, 16;
+L_00ECC278 .part L_00ECC4E0, 16, 16;
+S_00619888 .scope module, "aS" "MFP_Adder" 3 124, 2 89, S_006193C0;
  .timescale 0 0;
-P_0062A50C .param/l "gi" 2 18, +C4<00>;
-S_00620768 .scope module, "m0" "MFP_Multi" 2 19, 2 26, S_006206E0;
+P_00EB1C8C .param/l "In1W" 2 91, +C4<010000>;
+P_00EB1CA0 .param/l "In2W" 2 92, +C4<010000>;
+P_00EB1CB4 .param/l "OutW" 2 93, +C4<010000>;
+P_00EB1CC8 .param/l "Saturate" 2 95, +C4<0>;
+P_00EB1CDC .param/l "isUnsigned" 2 96, +C4<0>;
+P_00EB1CF0 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
+P_00EB1D04 .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00ECE0E0 .functor XOR 1, L_00ECC328, L_00ECC380, C4<0>, C4<0>;
+L_00ECE230 .functor XOR 1, L_00ECC430, L_00ECC488, C4<0>, C4<0>;
+v00EB59C0_0 .alias "In1", 15 0, v00EB5F40_0;
+v00EB5A18_0 .alias "In2", 15 0, v00EB5F98_0;
+v00EB5A70_0 .net "IsSameSign", 0 0, L_00ECC3D8; 1 drivers
+v00EB5AC8_0 .net "IsSignChanged", 0 0, L_00ECE230; 1 drivers
+v00EB5B20_0 .alias "Out", 15 0, v00EB5E38_0;
+v00EB5B78_0 .net "TestAdd", 15 0, L_00ECC2D0; 1 drivers
+v00EB5BD0_0 .net *"_s11", 0 0, L_00ECC430; 1 drivers
+v00EB5C28_0 .net *"_s13", 0 0, L_00ECC488; 1 drivers
+v00EB5C80_0 .net *"_s3", 0 0, L_00ECC328; 1 drivers
+v00EB5CD8_0 .net *"_s5", 0 0, L_00ECC380; 1 drivers
+v00EB5D30_0 .net *"_s6", 0 0, L_00ECE0E0; 1 drivers
+L_00ECC2D0 .arith/sum 16, L_00ECC220, L_00ECC278;
+L_00ECC328 .part L_00ECC220, 15, 1;
+L_00ECC380 .part L_00ECC278, 15, 1;
+L_00ECC3D8 .reduce/nor L_00ECE0E0;
+L_00ECC430 .part L_00ECC220, 15, 1;
+L_00ECC488 .part L_00ECC2D0, 15, 1;
+S_006196F0 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00619888;
  .timescale 0 0;
-P_00C911AC .param/l "In1W" 2 28, +C4<01001>;
-P_00C911C0 .param/l "In2EQW" 2 30, +C4<01000>;
-P_00C911D4 .param/l "In2W" 2 29, +C4<01000>;
-P_00C911E8 .param/l "OutW" 2 35, +C4<010000>;
-P_00C911FC .param/l "RealOutW" 2 45, +C4<010000>;
-P_00C91210 .param/l "Saturate" 2 37, +C4<0>;
-P_00C91224 .param/l "isFloor" 2 36, +C4<01>;
-P_00C91238 .param/l "isUnsigned" 2 38, +C4<0>;
-v00C8FF40_0 .net "In1", 8 0, L_00C98B68; 1 drivers
-v00C8FF98_0 .net "In2", 7 0, L_00C98BC0; 1 drivers
-v00C8FFF0_0 .net "Out", 15 0, L_00C98B10; 1 drivers
-v00C90048_0 .net "Out_", 15 0, L_00C9A908; 1 drivers
-S_006205D0 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_00620768;
+S_00619910 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_006196F0;
  .timescale 0 0;
-P_005D9684 .param/l "InW" 2 138, +C4<010000>;
-P_005D9698 .param/l "OutW" 2 139, +C4<010000>;
-P_005D96AC .param/l "Saturate" 2 140, +C4<0>;
-P_005D96C0 .param/l "isFloor" 2 141, +C4<01>;
-P_005D96D4 .param/l "isUnsigned" 2 142, +C4<0>;
-v00C8FE90_0 .alias "in", 15 0, v00C90048_0;
-v00C8FEE8_0 .alias "out", 15 0, v00C8FFF0_0;
-S_00620658 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_006205D0;
+L_00ECE150 .functor BUFZ 16, L_00ECC2D0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_00619A20 .scope module, "RoW" "MFP_RegOWire" 3 126, 2 169, S_006193C0;
  .timescale 0 0;
-L_00C98B10 .concat [ 16 0 0 0], L_00C9A908;
-S_00620BA8 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_00620768;
- .timescale 0 0;
-L_00C8B258 .functor BUFZ 9, L_00C98B68, C4<000000000>, C4<000000000>, C4<000000000>;
-L_00C9A7F0 .functor BUFZ 8, L_00C98BC0, C4<00000000>, C4<00000000>, C4<00000000>;
-L_00C9A908 .functor BUFZ 16, L_00C98AB8, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-v00C8FCD8_0 .net/s "In1_s", 8 0, L_00C8B258; 1 drivers
-v00C8FD30_0 .net/s "In2_s", 7 0, L_00C9A7F0; 1 drivers
-v00C8FD88_0 .net/s "Out_s", 15 0, L_00C98AB8; 1 drivers
-v00C8FDE0_0 .net/s *"_s4", 15 0, L_00C98A08; 1 drivers
-v00C8FE38_0 .net/s *"_s6", 15 0, L_00C98A60; 1 drivers
-L_00C98A08 .extend/s 16, L_00C8B258;
-L_00C98A60 .extend/s 16, L_00C9A7F0;
-L_00C98AB8 .arith/mult 16, L_00C98A08, L_00C98A60;
-S_00621428 .scope generate, "oparr[1]" "oparr[1]" 2 18, 2 18, S_0061A070;
- .timescale 0 0;
-P_0062A68C .param/l "gi" 2 18, +C4<01>;
-S_00621868 .scope module, "m0" "MFP_Multi" 2 19, 2 26, S_00621428;
- .timescale 0 0;
-P_00C8F8FC .param/l "In1W" 2 28, +C4<01001>;
-P_00C8F910 .param/l "In2EQW" 2 30, +C4<01000>;
-P_00C8F924 .param/l "In2W" 2 29, +C4<01000>;
-P_00C8F938 .param/l "OutW" 2 35, +C4<010000>;
-P_00C8F94C .param/l "RealOutW" 2 45, +C4<010000>;
-P_00C8F960 .param/l "Saturate" 2 37, +C4<0>;
-P_00C8F974 .param/l "isFloor" 2 36, +C4<01>;
-P_00C8F988 .param/l "isUnsigned" 2 38, +C4<0>;
-v00C8FB78_0 .net "In1", 8 0, L_00C9B148; 1 drivers
-v00C8FBD0_0 .net "In2", 7 0, L_00C9B1A0; 1 drivers
-v00C8FC28_0 .net "Out", 15 0, L_00C9B0F0; 1 drivers
-v00C8FC80_0 .net "Out_", 15 0, L_00C9AB70; 1 drivers
-S_00620988 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_00621868;
- .timescale 0 0;
-P_005D9614 .param/l "InW" 2 138, +C4<010000>;
-P_005D9628 .param/l "OutW" 2 139, +C4<010000>;
-P_005D963C .param/l "Saturate" 2 140, +C4<0>;
-P_005D9650 .param/l "isFloor" 2 141, +C4<01>;
-P_005D9664 .param/l "isUnsigned" 2 142, +C4<0>;
-v00C8FAC8_0 .alias "in", 15 0, v00C8FC80_0;
-v00C8FB20_0 .alias "out", 15 0, v00C8FC28_0;
-S_00620B20 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_00620988;
- .timescale 0 0;
-L_00C9B0F0 .concat [ 16 0 0 0], L_00C9AB70;
-S_00620C30 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_00621868;
- .timescale 0 0;
-L_00C8B220 .functor BUFZ 9, L_00C9B148, C4<000000000>, C4<000000000>, C4<000000000>;
-L_00C9AA58 .functor BUFZ 8, L_00C9B1A0, C4<00000000>, C4<00000000>, C4<00000000>;
-L_00C9AB70 .functor BUFZ 16, L_00C9B098, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-v00C8E780_0 .net/s "In1_s", 8 0, L_00C8B220; 1 drivers
-v00C8E7D8_0 .net/s "In2_s", 7 0, L_00C9AA58; 1 drivers
-v00C8F9C0_0 .net/s "Out_s", 15 0, L_00C9B098; 1 drivers
-v00C8FA18_0 .net/s *"_s4", 15 0, L_00C98C70; 1 drivers
-v00C8FA70_0 .net/s *"_s6", 15 0, L_00C98CC8; 1 drivers
-L_00C98C70 .extend/s 16, L_00C8B220;
-L_00C98CC8 .extend/s 16, L_00C9AA58;
-L_00C9B098 .arith/mult 16, L_00C98C70, L_00C98CC8;
-S_00620548 .scope generate, "oparr[2]" "oparr[2]" 2 18, 2 18, S_0061A070;
- .timescale 0 0;
-P_0062A14C .param/l "gi" 2 18, +C4<010>;
-S_006218F0 .scope module, "m0" "MFP_Multi" 2 19, 2 26, S_00620548;
- .timescale 0 0;
-P_00C8E84C .param/l "In1W" 2 28, +C4<01001>;
-P_00C8E860 .param/l "In2EQW" 2 30, +C4<01000>;
-P_00C8E874 .param/l "In2W" 2 29, +C4<01000>;
-P_00C8E888 .param/l "OutW" 2 35, +C4<010000>;
-P_00C8E89C .param/l "RealOutW" 2 45, +C4<010000>;
-P_00C8E8B0 .param/l "Saturate" 2 37, +C4<0>;
-P_00C8E8C4 .param/l "isFloor" 2 36, +C4<01>;
-P_00C8E8D8 .param/l "isUnsigned" 2 38, +C4<0>;
-v00C8E620_0 .net "In1", 8 0, L_00C9B3B0; 1 drivers
-v00C8E678_0 .net "In2", 7 0, L_00C9B408; 1 drivers
-v00C8E6D0_0 .net "Out", 15 0, L_00C9B358; 1 drivers
-v00C8E728_0 .net "Out_", 15 0, L_00C9ADD8; 1 drivers
-S_006217E0 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_006218F0;
- .timescale 0 0;
-P_005D95A4 .param/l "InW" 2 138, +C4<010000>;
-P_005D95B8 .param/l "OutW" 2 139, +C4<010000>;
-P_005D95CC .param/l "Saturate" 2 140, +C4<0>;
-P_005D95E0 .param/l "isFloor" 2 141, +C4<01>;
-P_005D95F4 .param/l "isUnsigned" 2 142, +C4<0>;
-v00C8E570_0 .alias "in", 15 0, v00C8E728_0;
-v00C8E5C8_0 .alias "out", 15 0, v00C8E6D0_0;
-S_006213A0 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_006217E0;
- .timescale 0 0;
-L_00C9B358 .concat [ 16 0 0 0], L_00C9ADD8;
-S_00621648 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_006218F0;
- .timescale 0 0;
-L_00C8B290 .functor BUFZ 9, L_00C9B3B0, C4<000000000>, C4<000000000>, C4<000000000>;
-L_00C9ACC0 .functor BUFZ 8, L_00C9B408, C4<00000000>, C4<00000000>, C4<00000000>;
-L_00C9ADD8 .functor BUFZ 16, L_00C9B300, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-v00C8E3B8_0 .net/s "In1_s", 8 0, L_00C8B290; 1 drivers
-v00C8E410_0 .net/s "In2_s", 7 0, L_00C9ACC0; 1 drivers
-v00C8E468_0 .net/s "Out_s", 15 0, L_00C9B300; 1 drivers
-v00C8E4C0_0 .net/s *"_s4", 15 0, L_00C9B250; 1 drivers
-v00C8E518_0 .net/s *"_s6", 15 0, L_00C9B2A8; 1 drivers
-L_00C9B250 .extend/s 16, L_00C8B290;
-L_00C9B2A8 .extend/s 16, L_00C9ACC0;
-L_00C9B300 .arith/mult 16, L_00C9B250, L_00C9B2A8;
-S_00620328 .scope generate, "oparr[3]" "oparr[3]" 2 18, 2 18, S_0061A070;
- .timescale 0 0;
-P_0062A2CC .param/l "gi" 2 18, +C4<011>;
-S_00620218 .scope module, "m0" "MFP_Multi" 2 19, 2 26, S_00620328;
- .timescale 0 0;
-P_003F3A2C .param/l "In1W" 2 28, +C4<01001>;
-P_003F3A40 .param/l "In2EQW" 2 30, +C4<01000>;
-P_003F3A54 .param/l "In2W" 2 29, +C4<01000>;
-P_003F3A68 .param/l "OutW" 2 35, +C4<010000>;
-P_003F3A7C .param/l "RealOutW" 2 45, +C4<010000>;
-P_003F3A90 .param/l "Saturate" 2 37, +C4<0>;
-P_003F3AA4 .param/l "isFloor" 2 36, +C4<01>;
-P_003F3AB8 .param/l "isUnsigned" 2 38, +C4<0>;
-v00C8E258_0 .net "In1", 8 0, L_00C9B618; 1 drivers
-v00C8E2B0_0 .net "In2", 7 0, L_00C9B670; 1 drivers
-v00C8E308_0 .net "Out", 15 0, L_00C9B5C0; 1 drivers
-v00C8E360_0 .net "Out_", 15 0, L_00C9D220; 1 drivers
-S_006202A0 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_00620218;
- .timescale 0 0;
-P_005D9534 .param/l "InW" 2 138, +C4<010000>;
-P_005D9548 .param/l "OutW" 2 139, +C4<010000>;
-P_005D955C .param/l "Saturate" 2 140, +C4<0>;
-P_005D9570 .param/l "isFloor" 2 141, +C4<01>;
-P_005D9584 .param/l "isUnsigned" 2 142, +C4<0>;
-v00C8E1A8_0 .alias "in", 15 0, v00C8E360_0;
-v00C8E200_0 .alias "out", 15 0, v00C8E308_0;
-S_0061FFF8 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_006202A0;
- .timescale 0 0;
-L_00C9B5C0 .concat [ 16 0 0 0], L_00C9D220;
-S_00620080 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_00620218;
- .timescale 0 0;
-L_00C9D0D0 .functor BUFZ 9, L_00C9B618, C4<000000000>, C4<000000000>, C4<000000000>;
-L_00C9D108 .functor BUFZ 8, L_00C9B670, C4<00000000>, C4<00000000>, C4<00000000>;
-L_00C9D220 .functor BUFZ 16, L_00C9B568, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-v00C8DFF0_0 .net/s "In1_s", 8 0, L_00C9D0D0; 1 drivers
-v00C8E048_0 .net/s "In2_s", 7 0, L_00C9D108; 1 drivers
-v00C8E0A0_0 .net/s "Out_s", 15 0, L_00C9B568; 1 drivers
-v00C8E0F8_0 .net/s *"_s4", 15 0, L_00C9B4B8; 1 drivers
-v00C8E150_0 .net/s *"_s6", 15 0, L_00C9B510; 1 drivers
-L_00C9B4B8 .extend/s 16, L_00C9D0D0;
-L_00C9B510 .extend/s 16, L_00C9D108;
-L_00C9B568 .arith/mult 16, L_00C9B4B8, L_00C9B510;
-S_0061FB30 .scope generate, "oparr[4]" "oparr[4]" 2 18, 2 18, S_0061A070;
- .timescale 0 0;
-P_0062A00C .param/l "gi" 2 18, +C4<0100>;
-S_0061FD50 .scope module, "m0" "MFP_Multi" 2 19, 2 26, S_0061FB30;
- .timescale 0 0;
-P_003F397C .param/l "In1W" 2 28, +C4<01001>;
-P_003F3990 .param/l "In2EQW" 2 30, +C4<01000>;
-P_003F39A4 .param/l "In2W" 2 29, +C4<01000>;
-P_003F39B8 .param/l "OutW" 2 35, +C4<010000>;
-P_003F39CC .param/l "RealOutW" 2 45, +C4<010000>;
-P_003F39E0 .param/l "Saturate" 2 37, +C4<0>;
-P_003F39F4 .param/l "isFloor" 2 36, +C4<01>;
-P_003F3A08 .param/l "isUnsigned" 2 38, +C4<0>;
-v00C8DE90_0 .net "In1", 8 0, L_00C9B880; 1 drivers
-v00C8DEE8_0 .net "In2", 7 0, L_00C9B8D8; 1 drivers
-v00C8DF40_0 .net "Out", 15 0, L_00C9B828; 1 drivers
-v00C8DF98_0 .net "Out_", 15 0, L_00C9D4F8; 1 drivers
-S_00620438 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_0061FD50;
- .timescale 0 0;
-P_005D94C4 .param/l "InW" 2 138, +C4<010000>;
-P_005D94D8 .param/l "OutW" 2 139, +C4<010000>;
-P_005D94EC .param/l "Saturate" 2 140, +C4<0>;
-P_005D9500 .param/l "isFloor" 2 141, +C4<01>;
-P_005D9514 .param/l "isUnsigned" 2 142, +C4<0>;
-v00C8DDE0_0 .alias "in", 15 0, v00C8DF98_0;
-v00C8DE38_0 .alias "out", 15 0, v00C8DF40_0;
-S_006203B0 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_00620438;
- .timescale 0 0;
-L_00C9B828 .concat [ 16 0 0 0], L_00C9D4F8;
-S_0061FAA8 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_0061FD50;
- .timescale 0 0;
-L_00C9D370 .functor BUFZ 9, L_00C9B880, C4<000000000>, C4<000000000>, C4<000000000>;
-L_00C9D3E0 .functor BUFZ 8, L_00C9B8D8, C4<00000000>, C4<00000000>, C4<00000000>;
-L_00C9D4F8 .functor BUFZ 16, L_00C9B7D0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-v00C8DC28_0 .net/s "In1_s", 8 0, L_00C9D370; 1 drivers
-v00C8DC80_0 .net/s "In2_s", 7 0, L_00C9D3E0; 1 drivers
-v00C8DCD8_0 .net/s "Out_s", 15 0, L_00C9B7D0; 1 drivers
-v00C8DD30_0 .net/s *"_s4", 15 0, L_00C9B720; 1 drivers
-v00C8DD88_0 .net/s *"_s6", 15 0, L_00C9B778; 1 drivers
-L_00C9B720 .extend/s 16, L_00C9D370;
-L_00C9B778 .extend/s 16, L_00C9D3E0;
-L_00C9B7D0 .arith/mult 16, L_00C9B720, L_00C9B778;
-S_0061FF70 .scope generate, "oparr[5]" "oparr[5]" 2 18, 2 18, S_0061A070;
- .timescale 0 0;
-P_00629E2C .param/l "gi" 2 18, +C4<0101>;
-S_0061FEE8 .scope module, "m0" "MFP_Multi" 2 19, 2 26, S_0061FF70;
- .timescale 0 0;
-P_003F38CC .param/l "In1W" 2 28, +C4<01001>;
-P_003F38E0 .param/l "In2EQW" 2 30, +C4<01000>;
-P_003F38F4 .param/l "In2W" 2 29, +C4<01000>;
-P_003F3908 .param/l "OutW" 2 35, +C4<010000>;
-P_003F391C .param/l "RealOutW" 2 45, +C4<010000>;
-P_003F3930 .param/l "Saturate" 2 37, +C4<0>;
-P_003F3944 .param/l "isFloor" 2 36, +C4<01>;
-P_003F3958 .param/l "isUnsigned" 2 38, +C4<0>;
-v00C8DAC8_0 .net "In1", 8 0, L_00C9BAE8; 1 drivers
-v00C8DB20_0 .net "In2", 7 0, L_00C9BB40; 1 drivers
-v00C8DB78_0 .net "Out", 15 0, L_00C9BA90; 1 drivers
-v00C8DBD0_0 .net "Out_", 15 0, L_00C9D760; 1 drivers
-S_0061FDD8 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_0061FEE8;
- .timescale 0 0;
-P_005D9454 .param/l "InW" 2 138, +C4<010000>;
-P_005D9468 .param/l "OutW" 2 139, +C4<010000>;
-P_005D947C .param/l "Saturate" 2 140, +C4<0>;
-P_005D9490 .param/l "isFloor" 2 141, +C4<01>;
-P_005D94A4 .param/l "isUnsigned" 2 142, +C4<0>;
-v00C8DA18_0 .alias "in", 15 0, v00C8DBD0_0;
-v00C8DA70_0 .alias "out", 15 0, v00C8DB78_0;
-S_0061FCC8 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_0061FDD8;
- .timescale 0 0;
-L_00C9BA90 .concat [ 16 0 0 0], L_00C9D760;
-S_0061FE60 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_0061FEE8;
- .timescale 0 0;
-L_00C9D610 .functor BUFZ 9, L_00C9BAE8, C4<000000000>, C4<000000000>, C4<000000000>;
-L_00C9D648 .functor BUFZ 8, L_00C9BB40, C4<00000000>, C4<00000000>, C4<00000000>;
-L_00C9D760 .functor BUFZ 16, L_00C9BA38, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-v00C8D860_0 .net/s "In1_s", 8 0, L_00C9D610; 1 drivers
-v00C8D8B8_0 .net/s "In2_s", 7 0, L_00C9D648; 1 drivers
-v00C8D910_0 .net/s "Out_s", 15 0, L_00C9BA38; 1 drivers
-v00C8D968_0 .net/s *"_s4", 15 0, L_00C9B988; 1 drivers
-v00C8D9C0_0 .net/s *"_s6", 15 0, L_00C9B9E0; 1 drivers
-L_00C9B988 .extend/s 16, L_00C9D610;
-L_00C9B9E0 .extend/s 16, L_00C9D648;
-L_00C9BA38 .arith/mult 16, L_00C9B988, L_00C9B9E0;
-S_0061A758 .scope generate, "oparr[6]" "oparr[6]" 2 18, 2 18, S_0061A070;
- .timescale 0 0;
-P_00629DEC .param/l "gi" 2 18, +C4<0110>;
-S_0061A5C0 .scope module, "m0" "MFP_Multi" 2 19, 2 26, S_0061A758;
- .timescale 0 0;
-P_003F381C .param/l "In1W" 2 28, +C4<01001>;
-P_003F3830 .param/l "In2EQW" 2 30, +C4<01000>;
-P_003F3844 .param/l "In2W" 2 29, +C4<01000>;
-P_003F3858 .param/l "OutW" 2 35, +C4<010000>;
-P_003F386C .param/l "RealOutW" 2 45, +C4<010000>;
-P_003F3880 .param/l "Saturate" 2 37, +C4<0>;
-P_003F3894 .param/l "isFloor" 2 36, +C4<01>;
-P_003F38A8 .param/l "isUnsigned" 2 38, +C4<0>;
-v00C8C6D0_0 .net "In1", 8 0, L_00C9BD50; 1 drivers
-v00C8C728_0 .net "In2", 7 0, L_00C9BE00; 1 drivers
-v00C8C780_0 .net "Out", 15 0, L_00C9BCF8; 1 drivers
-v00C8C7D8_0 .net "Out_", 15 0, L_00C9DAE8; 1 drivers
-S_0061A538 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_0061A5C0;
- .timescale 0 0;
-P_005D93E4 .param/l "InW" 2 138, +C4<010000>;
-P_005D93F8 .param/l "OutW" 2 139, +C4<010000>;
-P_005D940C .param/l "Saturate" 2 140, +C4<0>;
-P_005D9420 .param/l "isFloor" 2 141, +C4<01>;
-P_005D9434 .param/l "isUnsigned" 2 142, +C4<0>;
-v00C8C620_0 .alias "in", 15 0, v00C8C7D8_0;
-v00C8C678_0 .alias "out", 15 0, v00C8C780_0;
-S_006204C0 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_0061A538;
- .timescale 0 0;
-L_00C9BCF8 .concat [ 16 0 0 0], L_00C9DAE8;
-S_0061A7E0 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_0061A5C0;
- .timescale 0 0;
-L_00C9D998 .functor BUFZ 9, L_00C9BD50, C4<000000000>, C4<000000000>, C4<000000000>;
-L_00C9D9D0 .functor BUFZ 8, L_00C9BE00, C4<00000000>, C4<00000000>, C4<00000000>;
-L_00C9DAE8 .functor BUFZ 16, L_00C9BCA0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-v00C8C468_0 .net/s "In1_s", 8 0, L_00C9D998; 1 drivers
-v00C8C4C0_0 .net/s "In2_s", 7 0, L_00C9D9D0; 1 drivers
-v00C8C518_0 .net/s "Out_s", 15 0, L_00C9BCA0; 1 drivers
-v00C8C570_0 .net/s *"_s4", 15 0, L_00C9BBF0; 1 drivers
-v00C8C5C8_0 .net/s *"_s6", 15 0, L_00C9BC48; 1 drivers
-L_00C9BBF0 .extend/s 16, L_00C9D998;
-L_00C9BC48 .extend/s 16, L_00C9D9D0;
-L_00C9BCA0 .arith/mult 16, L_00C9BBF0, L_00C9BC48;
-S_0061A290 .scope generate, "oparr[7]" "oparr[7]" 2 18, 2 18, S_0061A070;
- .timescale 0 0;
-P_00629E6C .param/l "gi" 2 18, +C4<0111>;
-S_00619FE8 .scope module, "m0" "MFP_Multi" 2 19, 2 26, S_0061A290;
- .timescale 0 0;
-P_005BDDE4 .param/l "In1W" 2 28, +C4<01001>;
-P_005BDDF8 .param/l "In2EQW" 2 30, +C4<01000>;
-P_005BDE0C .param/l "In2W" 2 29, +C4<01000>;
-P_005BDE20 .param/l "OutW" 2 35, +C4<010000>;
-P_005BDE34 .param/l "RealOutW" 2 45, +C4<010000>;
-P_005BDE48 .param/l "Saturate" 2 37, +C4<0>;
-P_005BDE5C .param/l "isFloor" 2 36, +C4<01>;
-P_005BDE70 .param/l "isUnsigned" 2 38, +C4<0>;
-v00C8C308_0 .net "In1", 8 0, L_00C9BFB8; 1 drivers
-v00C8C360_0 .net "In2", 7 0, L_00C9C010; 1 drivers
-v00C8C3B8_0 .net "Out", 15 0, L_00C9BF60; 1 drivers
-v00C8C410_0 .net "Out_", 15 0, L_00C9DD88; 1 drivers
-S_0061A8F0 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_00619FE8;
- .timescale 0 0;
-P_005D9374 .param/l "InW" 2 138, +C4<010000>;
-P_005D9388 .param/l "OutW" 2 139, +C4<010000>;
-P_005D939C .param/l "Saturate" 2 140, +C4<0>;
-P_005D93B0 .param/l "isFloor" 2 141, +C4<01>;
-P_005D93C4 .param/l "isUnsigned" 2 142, +C4<0>;
-v00C8C258_0 .alias "in", 15 0, v00C8C410_0;
-v00C8C2B0_0 .alias "out", 15 0, v00C8C3B8_0;
-S_0061A868 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_0061A8F0;
- .timescale 0 0;
-L_00C9BF60 .concat [ 16 0 0 0], L_00C9DD88;
-S_0061A978 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_00619FE8;
- .timescale 0 0;
-L_00C9DC38 .functor BUFZ 9, L_00C9BFB8, C4<000000000>, C4<000000000>, C4<000000000>;
-L_00C9DC70 .functor BUFZ 8, L_00C9C010, C4<00000000>, C4<00000000>, C4<00000000>;
-L_00C9DD88 .functor BUFZ 16, L_00C9BF08, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-v00C8C0A0_0 .net/s "In1_s", 8 0, L_00C9DC38; 1 drivers
-v00C8C0F8_0 .net/s "In2_s", 7 0, L_00C9DC70; 1 drivers
-v00C8C150_0 .net/s "Out_s", 15 0, L_00C9BF08; 1 drivers
-v00C8C1A8_0 .net/s *"_s4", 15 0, L_00C9BE58; 1 drivers
-v00C8C200_0 .net/s *"_s6", 15 0, L_00C9BEB0; 1 drivers
-L_00C9BE58 .extend/s 16, L_00C9DC38;
-L_00C9BEB0 .extend/s 16, L_00C9DC70;
-L_00C9BF08 .arith/mult 16, L_00C9BE58, L_00C9BEB0;
-S_0061A318 .scope module, "RoW" "MFP_RegOWire" 3 95, 2 169, S_006372E8;
- .timescale 0 0;
-P_00632874 .param/l "dataW" 2 172, +C4<010000000>;
+P_00632874 .param/l "dataW" 2 172, +C4<010000>;
 P_00632888 .param/l "isWire" 2 175, +C4<01>;
-P_0063289C .param/l "levelIdx" 2 173, +C4<01>;
+P_0063289C .param/l "levelIdx" 2 173, +C4<0100>;
 P_006328B0 .param/l "regInterval" 2 174, +C4<0>;
-v00C8BF40_0 .alias "clk", 0 0, v00C90780_0;
-v00C8BF98_0 .alias "en", 0 0, v00C907D8_0;
-v00C8BFF0_0 .alias "in", 127 0, v00C90360_0;
-v00C8C048_0 .alias "out", 127 0, v00C90410_0;
-S_0061A208 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_0061A318;
+v00EB5860_0 .alias "clk", 0 0, v00EC08E0_0;
+v00EB58B8_0 .alias "en", 0 0, v00EC0938_0;
+v00EB5910_0 .alias "in", 15 0, v00EB5E38_0;
+v00EB5968_0 .alias "out", 15 0, v00EB66D0_0;
+S_00619998 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_00619A20;
  .timescale 0 0;
-L_00C9DED8 .functor BUFZ 128, RS_0063A664, C4<00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000>, C4<00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000>, C4<00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000>;
-S_00637480 .scope module, "ATFP" "MFP_AdderTree" 3 97, 3 105, S_006372E8;
+L_00ECE3C0 .functor BUFZ 16, L_00ECE150, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_00619AA8 .scope generate, "genblk1" "genblk1" 3 130, 3 130, S_006193C0;
  .timescale 0 0;
-P_005CBFCC .param/l "ArrL" 3 108, C4<01000>;
-P_005CBFE0 .param/l "Sp1" 3 117, C4<0100>;
-P_005CBFF4 .param/l "Sp2" 3 118, C4<0100>;
-P_005CC008 .param/l "data_depth" 3 107, +C4<010000>;
-P_005CC01C .param/l "isUnsigned" 3 111, +C4<0>;
-P_005CC030 .param/l "levelIdx" 3 109, +C4<010>;
-P_005CC044 .param/l "pipeInterval" 3 110, +C4<0>;
-v00C8BCD8_0 .alias "DIn", 127 0, v00C90360_0;
-v00C8BD30_0 .alias "Sum", 15 0, v00C903B8_0;
-v00C8BD88_0 .net "Sum_", 15 0, L_005DC430; 1 drivers
-v00C8BDE0_0 .alias "clk", 0 0, v00C90780_0;
-v00C8BE38_0 .alias "en", 0 0, v00C907D8_0;
-v00C8BE90_0 .net "subLevelSum1", 15 0, L_00C9E688; 1 drivers
-v00C8BEE8_0 .net "subLevelSum2", 15 0, L_00C9FC58; 1 drivers
-L_00C9C900 .part RS_0063A664, 0, 64;
-L_00CA0388 .part RS_0063A664, 64, 64;
-S_00619A98 .scope module, "aS" "MFP_Adder" 3 124, 2 89, S_00637480;
+S_00619118 .scope generate, "genblk3" "genblk3" 3 137, 3 137, S_006193C0;
  .timescale 0 0;
-P_00C81DBC .param/l "In1W" 2 91, +C4<010000>;
-P_00C81DD0 .param/l "In2W" 2 92, +C4<010000>;
-P_00C81DE4 .param/l "OutW" 2 93, +C4<010000>;
-P_00C81DF8 .param/l "Saturate" 2 95, +C4<0>;
-P_00C81E0C .param/l "isUnsigned" 2 96, +C4<0>;
-P_00C81E20 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
-P_00C81E34 .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00C9FCC8 .functor XOR 1, L_00CA0438, L_00CA0490, C4<0>, C4<0>;
-L_00C9FDA8 .functor XOR 1, L_00CA0540, L_00CA0598, C4<0>, C4<0>;
-v00C8B910_0 .alias "In1", 15 0, v00C8BE90_0;
-v00C8B968_0 .alias "In2", 15 0, v00C8BEE8_0;
-v00C8B9C0_0 .net "IsSameSign", 0 0, L_00CA04E8; 1 drivers
-v00C8BA18_0 .net "IsSignChanged", 0 0, L_00C9FDA8; 1 drivers
-v00C8BA70_0 .alias "Out", 15 0, v00C8BD88_0;
-v00C8BAC8_0 .net "TestAdd", 15 0, L_00CA03E0; 1 drivers
-v00C8BB20_0 .net *"_s11", 0 0, L_00CA0540; 1 drivers
-v00C8BB78_0 .net *"_s13", 0 0, L_00CA0598; 1 drivers
-v00C8BBD0_0 .net *"_s3", 0 0, L_00CA0438; 1 drivers
-v00C8BC28_0 .net *"_s5", 0 0, L_00CA0490; 1 drivers
-v00C8BC80_0 .net *"_s6", 0 0, L_00C9FCC8; 1 drivers
-L_00CA03E0 .arith/sum 16, L_00C9E688, L_00C9FC58;
-L_00CA0438 .part L_00C9E688, 15, 1;
-L_00CA0490 .part L_00C9FC58, 15, 1;
-L_00CA04E8 .reduce/nor L_00C9FCC8;
-L_00CA0540 .part L_00C9E688, 15, 1;
-L_00CA0598 .part L_00CA03E0, 15, 1;
-S_0061A428 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00619A98;
+S_00618EF8 .scope generate, "genblk4" "genblk4" 3 137, 3 137, S_00618F80;
  .timescale 0 0;
-S_0061A3A0 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_0061A428;
+S_00618DE8 .scope module, "ATI1" "MFP_AdderTree" 3 141, 3 105, S_00618EF8;
  .timescale 0 0;
-L_005DC430 .functor BUFZ 16, L_00CA03E0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_00619B20 .scope module, "RoW" "MFP_RegOWire" 3 126, 2 169, S_00637480;
+P_00EB1AC4 .param/l "ArrL" 3 108, C4<010>;
+P_00EB1AD8 .param/l "Sp1" 3 117, C4<01>;
+P_00EB1AEC .param/l "Sp2" 3 118, C4<01>;
+P_00EB1B00 .param/l "data_depth" 3 107, +C4<010000>;
+P_00EB1B14 .param/l "isUnsigned" 3 111, +C4<0>;
+P_00EB1B28 .param/l "levelIdx" 3 109, +C4<0100>;
+P_00EB1B3C .param/l "pipeInterval" 3 110, +C4<0>;
+v00EB45C8_0 .net "DIn", 31 0, L_00ECC7F8; 1 drivers
+v00EB4620_0 .alias "Sum", 15 0, v00EB6728_0;
+v00EB4678_0 .net "Sum_", 15 0, L_00ECE430; 1 drivers
+v00EB46D0_0 .alias "clk", 0 0, v00EC08E0_0;
+v00EB4728_0 .alias "en", 0 0, v00EC0938_0;
+v00EB4780_0 .net "subLevelSum1", 15 0, L_00ECC538; 1 drivers
+v00EB47D8_0 .net "subLevelSum2", 15 0, L_00ECC590; 1 drivers
+L_00ECC538 .part L_00ECC7F8, 0, 16;
+L_00ECC590 .part L_00ECC7F8, 16, 16;
+S_006194D0 .scope module, "aS" "MFP_Adder" 3 124, 2 89, S_00618DE8;
+ .timescale 0 0;
+P_00EB1B5C .param/l "In1W" 2 91, +C4<010000>;
+P_00EB1B70 .param/l "In2W" 2 92, +C4<010000>;
+P_00EB1B84 .param/l "OutW" 2 93, +C4<010000>;
+P_00EB1B98 .param/l "Saturate" 2 95, +C4<0>;
+P_00EB1BAC .param/l "isUnsigned" 2 96, +C4<0>;
+P_00EB1BC0 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
+P_00EB1BD4 .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_005DC580 .functor XOR 1, L_00ECC640, L_00ECC698, C4<0>, C4<0>;
+L_00ECE510 .functor XOR 1, L_00ECC748, L_00ECC7A0, C4<0>, C4<0>;
+v00EB4200_0 .alias "In1", 15 0, v00EB4780_0;
+v00EB4258_0 .alias "In2", 15 0, v00EB47D8_0;
+v00EB42B0_0 .net "IsSameSign", 0 0, L_00ECC6F0; 1 drivers
+v00EB4308_0 .net "IsSignChanged", 0 0, L_00ECE510; 1 drivers
+v00EB4360_0 .alias "Out", 15 0, v00EB4678_0;
+v00EB43B8_0 .net "TestAdd", 15 0, L_00ECC5E8; 1 drivers
+v00EB4410_0 .net *"_s11", 0 0, L_00ECC748; 1 drivers
+v00EB4468_0 .net *"_s13", 0 0, L_00ECC7A0; 1 drivers
+v00EB44C0_0 .net *"_s3", 0 0, L_00ECC640; 1 drivers
+v00EB4518_0 .net *"_s5", 0 0, L_00ECC698; 1 drivers
+v00EB4570_0 .net *"_s6", 0 0, L_005DC580; 1 drivers
+L_00ECC5E8 .arith/sum 16, L_00ECC538, L_00ECC590;
+L_00ECC640 .part L_00ECC538, 15, 1;
+L_00ECC698 .part L_00ECC590, 15, 1;
+L_00ECC6F0 .reduce/nor L_005DC580;
+L_00ECC748 .part L_00ECC538, 15, 1;
+L_00ECC7A0 .part L_00ECC5E8, 15, 1;
+S_00619448 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_006194D0;
+ .timescale 0 0;
+S_00619338 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00619448;
+ .timescale 0 0;
+L_00ECE430 .functor BUFZ 16, L_00ECC5E8, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_00618BC8 .scope module, "RoW" "MFP_RegOWire" 3 126, 2 169, S_00618DE8;
  .timescale 0 0;
 P_00632814 .param/l "dataW" 2 172, +C4<010000>;
 P_00632828 .param/l "isWire" 2 175, +C4<01>;
-P_0063283C .param/l "levelIdx" 2 173, +C4<010>;
+P_0063283C .param/l "levelIdx" 2 173, +C4<0100>;
 P_00632850 .param/l "regInterval" 2 174, +C4<0>;
-v00C86780_0 .alias "clk", 0 0, v00C90780_0;
-v00C867D8_0 .alias "en", 0 0, v00C907D8_0;
-v00C8B860_0 .alias "in", 15 0, v00C8BD88_0;
-v00C8B8B8_0 .alias "out", 15 0, v00C903B8_0;
-S_00619D40 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_00619B20;
+v00EB40A0_0 .alias "clk", 0 0, v00EC08E0_0;
+v00EB40F8_0 .alias "en", 0 0, v00EC0938_0;
+v00EB4150_0 .alias "in", 15 0, v00EB4678_0;
+v00EB41A8_0 .alias "out", 15 0, v00EB6728_0;
+S_00619558 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_00618BC8;
  .timescale 0 0;
-L_00C9FE50 .functor BUFZ 16, L_005DC430, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_00618EE8 .scope generate, "genblk2" "genblk2" 3 130, 3 130, S_00637480;
+L_00ECE5B8 .functor BUFZ 16, L_00ECE430, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_00618E70 .scope generate, "genblk1" "genblk1" 3 130, 3 130, S_00618DE8;
  .timescale 0 0;
-S_00618E60 .scope module, "ATI1" "MFP_AdderTree" 3 135, 3 105, S_00618EE8;
+S_00618C50 .scope generate, "genblk3" "genblk3" 3 137, 3 137, S_00618DE8;
  .timescale 0 0;
-P_00C81A2C .param/l "ArrL" 3 108, C4<0100>;
-P_00C81A40 .param/l "Sp1" 3 117, C4<010>;
-P_00C81A54 .param/l "Sp2" 3 118, C4<010>;
-P_00C81A68 .param/l "data_depth" 3 107, +C4<010000>;
-P_00C81A7C .param/l "isUnsigned" 3 111, +C4<0>;
-P_00C81A90 .param/l "levelIdx" 3 109, +C4<011>;
-P_00C81AA4 .param/l "pipeInterval" 3 110, +C4<0>;
-v00C86518_0 .net "DIn", 63 0, L_00C9C900; 1 drivers
-v00C86570_0 .alias "Sum", 15 0, v00C8BE90_0;
-v00C865C8_0 .net "Sum_", 15 0, L_00C9E490; 1 drivers
-v00C86620_0 .alias "clk", 0 0, v00C90780_0;
-v00C86678_0 .alias "en", 0 0, v00C907D8_0;
-v00C866D0_0 .net "subLevelSum1", 15 0, L_00C9E260; 1 drivers
-v00C86728_0 .net "subLevelSum2", 15 0, L_00C9E458; 1 drivers
-L_00C9C380 .part L_00C9C900, 0, 32;
-L_00C9C698 .part L_00C9C900, 32, 32;
-S_00619E50 .scope module, "aS" "MFP_Adder" 3 124, 2 89, S_00618E60;
+S_00637628 .scope generate, "genblk4" "genblk4" 3 137, 3 137, S_006375A0;
  .timescale 0 0;
-P_00C81D24 .param/l "In1W" 2 91, +C4<010000>;
-P_00C81D38 .param/l "In2W" 2 92, +C4<010000>;
-P_00C81D4C .param/l "OutW" 2 93, +C4<010000>;
-P_00C81D60 .param/l "Saturate" 2 95, +C4<0>;
-P_00C81D74 .param/l "isUnsigned" 2 96, +C4<0>;
-P_00C81D88 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
-P_00C81D9C .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00C9E500 .functor XOR 1, L_00C9C748, L_00C9C7A0, C4<0>, C4<0>;
-L_00C9E5E0 .functor XOR 1, L_00C9C850, L_00C9C8A8, C4<0>, C4<0>;
-v00C86150_0 .alias "In1", 15 0, v00C866D0_0;
-v00C861A8_0 .alias "In2", 15 0, v00C86728_0;
-v00C86200_0 .net "IsSameSign", 0 0, L_00C9C7F8; 1 drivers
-v00C86258_0 .net "IsSignChanged", 0 0, L_00C9E5E0; 1 drivers
-v00C862B0_0 .alias "Out", 15 0, v00C865C8_0;
-v00C86308_0 .net "TestAdd", 15 0, L_00C9C6F0; 1 drivers
-v00C86360_0 .net *"_s11", 0 0, L_00C9C850; 1 drivers
-v00C863B8_0 .net *"_s13", 0 0, L_00C9C8A8; 1 drivers
-v00C86410_0 .net *"_s3", 0 0, L_00C9C748; 1 drivers
-v00C86468_0 .net *"_s5", 0 0, L_00C9C7A0; 1 drivers
-v00C864C0_0 .net *"_s6", 0 0, L_00C9E500; 1 drivers
-L_00C9C6F0 .arith/sum 16, L_00C9E260, L_00C9E458;
-L_00C9C748 .part L_00C9E260, 15, 1;
-L_00C9C7A0 .part L_00C9E458, 15, 1;
-L_00C9C7F8 .reduce/nor L_00C9E500;
-L_00C9C850 .part L_00C9E260, 15, 1;
-L_00C9C8A8 .part L_00C9C6F0, 15, 1;
-S_00619DC8 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00619E50;
+S_006376B0 .scope module, "ATI1" "MFP_AdderTree" 3 141, 3 105, S_00637628;
  .timescale 0 0;
-S_00619CB8 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00619DC8;
+P_005C06B4 .param/l "ArrL" 3 108, C4<0100>;
+P_005C06C8 .param/l "Sp1" 3 117, C4<010>;
+P_005C06DC .param/l "Sp2" 3 118, C4<010>;
+P_005C06F0 .param/l "data_depth" 3 107, +C4<010000>;
+P_005C0704 .param/l "isUnsigned" 3 111, +C4<0>;
+P_005C0718 .param/l "levelIdx" 3 109, +C4<011>;
+P_005C072C .param/l "pipeInterval" 3 110, +C4<0>;
+v00EB3E38_0 .net "DIn", 63 0, L_00ED04E8; 1 drivers
+v00EB3E90_0 .alias "Sum", 15 0, v00EBBEE8_0;
+v00EB3EE8_0 .net "Sum_", 15 0, L_005DC350; 1 drivers
+v00EB3F40_0 .alias "clk", 0 0, v00EC08E0_0;
+v00EB3F98_0 .alias "en", 0 0, v00EC0938_0;
+v00EB3FF0_0 .net "subLevelSum1", 15 0, L_00ECE9A8; 1 drivers
+v00EB4048_0 .net "subLevelSum2", 15 0, L_00ECFBC0; 1 drivers
+L_00ECCD78 .part L_00ED04E8, 0, 32;
+L_00ECD090 .part L_00ED04E8, 32, 32;
+S_0061A5D0 .scope module, "aS" "MFP_Adder" 3 124, 2 89, S_006376B0;
  .timescale 0 0;
-L_00C9E490 .functor BUFZ 16, L_00C9C6F0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_00619548 .scope module, "RoW" "MFP_RegOWire" 3 126, 2 169, S_00618E60;
+P_00EB1994 .param/l "In1W" 2 91, +C4<010000>;
+P_00EB19A8 .param/l "In2W" 2 92, +C4<010000>;
+P_00EB19BC .param/l "OutW" 2 93, +C4<010000>;
+P_00EB19D0 .param/l "Saturate" 2 95, +C4<0>;
+P_00EB19E4 .param/l "isUnsigned" 2 96, +C4<0>;
+P_00EB19F8 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
+P_00EB1A0C .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00ECFC30 .functor XOR 1, L_00ECD140, L_00ED0388, C4<0>, C4<0>;
+L_00ECFD10 .functor XOR 1, L_00ED0438, L_00ED0490, C4<0>, C4<0>;
+v00EB3A70_0 .alias "In1", 15 0, v00EB3FF0_0;
+v00EB3AC8_0 .alias "In2", 15 0, v00EB4048_0;
+v00EB3B20_0 .net "IsSameSign", 0 0, L_00ED03E0; 1 drivers
+v00EB3B78_0 .net "IsSignChanged", 0 0, L_00ECFD10; 1 drivers
+v00EB3BD0_0 .alias "Out", 15 0, v00EB3EE8_0;
+v00EB3C28_0 .net "TestAdd", 15 0, L_00ECD0E8; 1 drivers
+v00EB3C80_0 .net *"_s11", 0 0, L_00ED0438; 1 drivers
+v00EB3CD8_0 .net *"_s13", 0 0, L_00ED0490; 1 drivers
+v00EB3D30_0 .net *"_s3", 0 0, L_00ECD140; 1 drivers
+v00EB3D88_0 .net *"_s5", 0 0, L_00ED0388; 1 drivers
+v00EB3DE0_0 .net *"_s6", 0 0, L_00ECFC30; 1 drivers
+L_00ECD0E8 .arith/sum 16, L_00ECE9A8, L_00ECFBC0;
+L_00ECD140 .part L_00ECE9A8, 15, 1;
+L_00ED0388 .part L_00ECFBC0, 15, 1;
+L_00ED03E0 .reduce/nor L_00ECFC30;
+L_00ED0438 .part L_00ECE9A8, 15, 1;
+L_00ED0490 .part L_00ECD0E8, 15, 1;
+S_0061A080 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_0061A5D0;
+ .timescale 0 0;
+S_00619B30 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_0061A080;
+ .timescale 0 0;
+L_005DC350 .functor BUFZ 16, L_00ECD0E8, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_0061AB20 .scope module, "RoW" "MFP_RegOWire" 3 126, 2 169, S_006376B0;
  .timescale 0 0;
 P_006327B4 .param/l "dataW" 2 172, +C4<010000>;
 P_006327C8 .param/l "isWire" 2 175, +C4<01>;
 P_006327DC .param/l "levelIdx" 2 173, +C4<011>;
 P_006327F0 .param/l "regInterval" 2 174, +C4<0>;
-v00C85FF0_0 .alias "clk", 0 0, v00C90780_0;
-v00C86048_0 .alias "en", 0 0, v00C907D8_0;
-v00C860A0_0 .alias "in", 15 0, v00C865C8_0;
-v00C860F8_0 .alias "out", 15 0, v00C8BE90_0;
-S_00619ED8 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_00619548;
+v00EB3910_0 .alias "clk", 0 0, v00EC08E0_0;
+v00EB3968_0 .alias "en", 0 0, v00EC0938_0;
+v00EB39C0_0 .alias "in", 15 0, v00EB3EE8_0;
+v00EB3A18_0 .alias "out", 15 0, v00EBBEE8_0;
+S_00619090 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_0061AB20;
  .timescale 0 0;
-L_00C9E688 .functor BUFZ 16, L_00C9E490, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_00619080 .scope generate, "genblk2" "genblk2" 3 130, 3 130, S_00618E60;
+L_00ECFDB8 .functor BUFZ 16, L_005DC350, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_00637C00 .scope generate, "genblk2" "genblk2" 3 130, 3 130, S_006376B0;
  .timescale 0 0;
-S_006192A0 .scope module, "ATI1" "MFP_AdderTree" 3 135, 3 105, S_00619080;
+S_00637C88 .scope module, "ATI1" "MFP_AdderTree" 3 135, 3 105, S_00637C00;
  .timescale 0 0;
-P_00C81BF4 .param/l "ArrL" 3 108, C4<010>;
-P_00C81C08 .param/l "Sp1" 3 117, C4<01>;
-P_00C81C1C .param/l "Sp2" 3 118, C4<01>;
-P_00C81C30 .param/l "data_depth" 3 107, +C4<010000>;
-P_00C81C44 .param/l "isUnsigned" 3 111, +C4<0>;
-P_00C81C58 .param/l "levelIdx" 3 109, +C4<0100>;
-P_00C81C6C .param/l "pipeInterval" 3 110, +C4<0>;
-v00C85D88_0 .net "DIn", 31 0, L_00C9C380; 1 drivers
-v00C85DE0_0 .alias "Sum", 15 0, v00C866D0_0;
-v00C85E38_0 .net "Sum_", 15 0, L_00C9DFF0; 1 drivers
-v00C85E90_0 .alias "clk", 0 0, v00C90780_0;
-v00C85EE8_0 .alias "en", 0 0, v00C907D8_0;
-v00C85F40_0 .net "subLevelSum1", 15 0, L_00C9C0C0; 1 drivers
-v00C85F98_0 .net "subLevelSum2", 15 0, L_00C9C118; 1 drivers
-L_00C9C0C0 .part L_00C9C380, 0, 16;
-L_00C9C118 .part L_00C9C380, 16, 16;
-S_00619768 .scope module, "aS" "MFP_Adder" 3 124, 2 89, S_006192A0;
+P_00EB1864 .param/l "ArrL" 3 108, C4<010>;
+P_00EB1878 .param/l "Sp1" 3 117, C4<01>;
+P_00EB188C .param/l "Sp2" 3 118, C4<01>;
+P_00EB18A0 .param/l "data_depth" 3 107, +C4<010000>;
+P_00EB18B4 .param/l "isUnsigned" 3 111, +C4<0>;
+P_00EB18C8 .param/l "levelIdx" 3 109, +C4<0100>;
+P_00EB18DC .param/l "pipeInterval" 3 110, +C4<0>;
+v00EB1678_0 .net "DIn", 31 0, L_00ECCD78; 1 drivers
+v00EB16D0_0 .alias "Sum", 15 0, v00EB3FF0_0;
+v00EB1728_0 .net "Sum_", 15 0, L_00ECE820; 1 drivers
+v00EB1780_0 .alias "clk", 0 0, v00EC08E0_0;
+v00EB17D8_0 .alias "en", 0 0, v00EC0938_0;
+v00EB3860_0 .net "subLevelSum1", 15 0, L_00ECCAB8; 1 drivers
+v00EB38B8_0 .net "subLevelSum2", 15 0, L_00ECCB10; 1 drivers
+L_00ECCAB8 .part L_00ECCD78, 0, 16;
+L_00ECCB10 .part L_00ECCD78, 16, 16;
+S_00637F30 .scope module, "aS" "MFP_Adder" 3 124, 2 89, S_00637C88;
  .timescale 0 0;
-P_00C81C8C .param/l "In1W" 2 91, +C4<010000>;
-P_00C81CA0 .param/l "In2W" 2 92, +C4<010000>;
-P_00C81CB4 .param/l "OutW" 2 93, +C4<010000>;
-P_00C81CC8 .param/l "Saturate" 2 95, +C4<0>;
-P_00C81CDC .param/l "isUnsigned" 2 96, +C4<0>;
-P_00C81CF0 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
-P_00C81D04 .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00C9DF80 .functor XOR 1, L_00C9C1C8, L_00C9C220, C4<0>, C4<0>;
-L_00C9E0D0 .functor XOR 1, L_00C9C2D0, L_00C9C328, C4<0>, C4<0>;
-v00C859C0_0 .alias "In1", 15 0, v00C85F40_0;
-v00C85A18_0 .alias "In2", 15 0, v00C85F98_0;
-v00C85A70_0 .net "IsSameSign", 0 0, L_00C9C278; 1 drivers
-v00C85AC8_0 .net "IsSignChanged", 0 0, L_00C9E0D0; 1 drivers
-v00C85B20_0 .alias "Out", 15 0, v00C85E38_0;
-v00C85B78_0 .net "TestAdd", 15 0, L_00C9C170; 1 drivers
-v00C85BD0_0 .net *"_s11", 0 0, L_00C9C2D0; 1 drivers
-v00C85C28_0 .net *"_s13", 0 0, L_00C9C328; 1 drivers
-v00C85C80_0 .net *"_s3", 0 0, L_00C9C1C8; 1 drivers
-v00C85CD8_0 .net *"_s5", 0 0, L_00C9C220; 1 drivers
-v00C85D30_0 .net *"_s6", 0 0, L_00C9DF80; 1 drivers
-L_00C9C170 .arith/sum 16, L_00C9C0C0, L_00C9C118;
-L_00C9C1C8 .part L_00C9C0C0, 15, 1;
-L_00C9C220 .part L_00C9C118, 15, 1;
-L_00C9C278 .reduce/nor L_00C9DF80;
-L_00C9C2D0 .part L_00C9C0C0, 15, 1;
-L_00C9C328 .part L_00C9C170, 15, 1;
-S_006195D0 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00619768;
+P_00EB18FC .param/l "In1W" 2 91, +C4<010000>;
+P_00EB1910 .param/l "In2W" 2 92, +C4<010000>;
+P_00EB1924 .param/l "OutW" 2 93, +C4<010000>;
+P_00EB1938 .param/l "Saturate" 2 95, +C4<0>;
+P_00EB194C .param/l "isUnsigned" 2 96, +C4<0>;
+P_00EB1960 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
+P_00EB1974 .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00EBB108 .functor XOR 1, L_00ECCBC0, L_00ECCC18, C4<0>, C4<0>;
+L_00ECE900 .functor XOR 1, L_00ECCCC8, L_00ECCD20, C4<0>, C4<0>;
+v00EB12B0_0 .alias "In1", 15 0, v00EB3860_0;
+v00EB1308_0 .alias "In2", 15 0, v00EB38B8_0;
+v00EB1360_0 .net "IsSameSign", 0 0, L_00ECCC70; 1 drivers
+v00EB13B8_0 .net "IsSignChanged", 0 0, L_00ECE900; 1 drivers
+v00EB1410_0 .alias "Out", 15 0, v00EB1728_0;
+v00EB1468_0 .net "TestAdd", 15 0, L_00ECCB68; 1 drivers
+v00EB14C0_0 .net *"_s11", 0 0, L_00ECCCC8; 1 drivers
+v00EB1518_0 .net *"_s13", 0 0, L_00ECCD20; 1 drivers
+v00EB1570_0 .net *"_s3", 0 0, L_00ECCBC0; 1 drivers
+v00EB15C8_0 .net *"_s5", 0 0, L_00ECCC18; 1 drivers
+v00EB1620_0 .net *"_s6", 0 0, L_00EBB108; 1 drivers
+L_00ECCB68 .arith/sum 16, L_00ECCAB8, L_00ECCB10;
+L_00ECCBC0 .part L_00ECCAB8, 15, 1;
+L_00ECCC18 .part L_00ECCB10, 15, 1;
+L_00ECCC70 .reduce/nor L_00EBB108;
+L_00ECCCC8 .part L_00ECCAB8, 15, 1;
+L_00ECCD20 .part L_00ECCB68, 15, 1;
+S_00637FB8 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00637F30;
  .timescale 0 0;
-S_006197F0 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_006195D0;
+S_006195E0 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00637FB8;
  .timescale 0 0;
-L_00C9DFF0 .functor BUFZ 16, L_00C9C170, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_00619900 .scope module, "RoW" "MFP_RegOWire" 3 126, 2 169, S_006192A0;
+L_00ECE820 .functor BUFZ 16, L_00ECCB68, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_00637E20 .scope module, "RoW" "MFP_RegOWire" 3 126, 2 169, S_00637C88;
  .timescale 0 0;
 P_00632754 .param/l "dataW" 2 172, +C4<010000>;
 P_00632768 .param/l "isWire" 2 175, +C4<01>;
 P_0063277C .param/l "levelIdx" 2 173, +C4<0100>;
 P_00632790 .param/l "regInterval" 2 174, +C4<0>;
-v00C85860_0 .alias "clk", 0 0, v00C90780_0;
-v00C858B8_0 .alias "en", 0 0, v00C907D8_0;
-v00C85910_0 .alias "in", 15 0, v00C85E38_0;
-v00C85968_0 .alias "out", 15 0, v00C866D0_0;
-S_00619878 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_00619900;
+v00EB1150_0 .alias "clk", 0 0, v00EC08E0_0;
+v00EB11A8_0 .alias "en", 0 0, v00EC0938_0;
+v00EB1200_0 .alias "in", 15 0, v00EB1728_0;
+v00EB1258_0 .alias "out", 15 0, v00EB3FF0_0;
+S_00637EA8 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_00637E20;
  .timescale 0 0;
-L_00C9E260 .functor BUFZ 16, L_00C9DFF0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_00619988 .scope generate, "genblk1" "genblk1" 3 130, 3 130, S_006192A0;
+L_00ECE9A8 .functor BUFZ 16, L_00ECE820, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_00637D98 .scope generate, "genblk1" "genblk1" 3 130, 3 130, S_00637C88;
  .timescale 0 0;
-S_00618FF8 .scope generate, "genblk3" "genblk3" 3 137, 3 137, S_006192A0;
+S_00637D10 .scope generate, "genblk3" "genblk3" 3 137, 3 137, S_00637C88;
  .timescale 0 0;
-S_00618DD8 .scope generate, "genblk4" "genblk4" 3 137, 3 137, S_00618E60;
+S_00637738 .scope generate, "genblk4" "genblk4" 3 137, 3 137, S_006376B0;
  .timescale 0 0;
-S_00618CC8 .scope module, "ATI1" "MFP_AdderTree" 3 141, 3 105, S_00618DD8;
+S_006377C0 .scope module, "ATI1" "MFP_AdderTree" 3 141, 3 105, S_00637738;
  .timescale 0 0;
-P_00C81AC4 .param/l "ArrL" 3 108, C4<010>;
-P_00C81AD8 .param/l "Sp1" 3 117, C4<01>;
-P_00C81AEC .param/l "Sp2" 3 118, C4<01>;
-P_00C81B00 .param/l "data_depth" 3 107, +C4<010000>;
-P_00C81B14 .param/l "isUnsigned" 3 111, +C4<0>;
-P_00C81B28 .param/l "levelIdx" 3 109, +C4<0100>;
-P_00C81B3C .param/l "pipeInterval" 3 110, +C4<0>;
-v00C845C8_0 .net "DIn", 31 0, L_00C9C698; 1 drivers
-v00C84620_0 .alias "Sum", 15 0, v00C86728_0;
-v00C84678_0 .net "Sum_", 15 0, L_00C9E2D0; 1 drivers
-v00C846D0_0 .alias "clk", 0 0, v00C90780_0;
-v00C84728_0 .alias "en", 0 0, v00C907D8_0;
-v00C84780_0 .net "subLevelSum1", 15 0, L_00C9C3D8; 1 drivers
-v00C847D8_0 .net "subLevelSum2", 15 0, L_00C9C430; 1 drivers
-L_00C9C3D8 .part L_00C9C698, 0, 16;
-L_00C9C430 .part L_00C9C698, 16, 16;
-S_006193B0 .scope module, "aS" "MFP_Adder" 3 124, 2 89, S_00618CC8;
+P_005CC004 .param/l "ArrL" 3 108, C4<010>;
+P_005CC018 .param/l "Sp1" 3 117, C4<01>;
+P_005CC02C .param/l "Sp2" 3 118, C4<01>;
+P_005CC040 .param/l "data_depth" 3 107, +C4<010000>;
+P_005CC054 .param/l "isUnsigned" 3 111, +C4<0>;
+P_005CC068 .param/l "levelIdx" 3 109, +C4<0100>;
+P_005CC07C .param/l "pipeInterval" 3 110, +C4<0>;
+v00EB0EE8_0 .net "DIn", 31 0, L_00ECD090; 1 drivers
+v00EB0F40_0 .alias "Sum", 15 0, v00EB4048_0;
+v00EB0F98_0 .net "Sum_", 15 0, L_00ECEA18; 1 drivers
+v00EB0FF0_0 .alias "clk", 0 0, v00EC08E0_0;
+v00EB1048_0 .alias "en", 0 0, v00EC0938_0;
+v00EB10A0_0 .net "subLevelSum1", 15 0, L_00ECCDD0; 1 drivers
+v00EB10F8_0 .net "subLevelSum2", 15 0, L_00ECCE28; 1 drivers
+L_00ECCDD0 .part L_00ECD090, 0, 16;
+L_00ECCE28 .part L_00ECD090, 16, 16;
+S_00637A68 .scope module, "aS" "MFP_Adder" 3 124, 2 89, S_006377C0;
  .timescale 0 0;
-P_00C81B5C .param/l "In1W" 2 91, +C4<010000>;
-P_00C81B70 .param/l "In2W" 2 92, +C4<010000>;
-P_00C81B84 .param/l "OutW" 2 93, +C4<010000>;
-P_00C81B98 .param/l "Saturate" 2 95, +C4<0>;
-P_00C81BAC .param/l "isUnsigned" 2 96, +C4<0>;
-P_00C81BC0 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
-P_00C81BD4 .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_005DC548 .functor XOR 1, L_00C9C4E0, L_00C9C538, C4<0>, C4<0>;
-L_00C9E3B0 .functor XOR 1, L_00C9C5E8, L_00C9C640, C4<0>, C4<0>;
-v00C84200_0 .alias "In1", 15 0, v00C84780_0;
-v00C84258_0 .alias "In2", 15 0, v00C847D8_0;
-v00C842B0_0 .net "IsSameSign", 0 0, L_00C9C590; 1 drivers
-v00C84308_0 .net "IsSignChanged", 0 0, L_00C9E3B0; 1 drivers
-v00C84360_0 .alias "Out", 15 0, v00C84678_0;
-v00C843B8_0 .net "TestAdd", 15 0, L_00C9C488; 1 drivers
-v00C84410_0 .net *"_s11", 0 0, L_00C9C5E8; 1 drivers
-v00C84468_0 .net *"_s13", 0 0, L_00C9C640; 1 drivers
-v00C844C0_0 .net *"_s3", 0 0, L_00C9C4E0; 1 drivers
-v00C84518_0 .net *"_s5", 0 0, L_00C9C538; 1 drivers
-v00C84570_0 .net *"_s6", 0 0, L_005DC548; 1 drivers
-L_00C9C488 .arith/sum 16, L_00C9C3D8, L_00C9C430;
-L_00C9C4E0 .part L_00C9C3D8, 15, 1;
-L_00C9C538 .part L_00C9C430, 15, 1;
-L_00C9C590 .reduce/nor L_005DC548;
-L_00C9C5E8 .part L_00C9C3D8, 15, 1;
-L_00C9C640 .part L_00C9C488, 15, 1;
-S_00619328 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_006193B0;
+P_005CC09C .param/l "In1W" 2 91, +C4<010000>;
+P_005CC0B0 .param/l "In2W" 2 92, +C4<010000>;
+P_005CC0C4 .param/l "OutW" 2 93, +C4<010000>;
+P_005CC0D8 .param/l "Saturate" 2 95, +C4<0>;
+P_005CC0EC .param/l "isUnsigned" 2 96, +C4<0>;
+P_005CC100 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
+P_005CC114 .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_005DC388 .functor XOR 1, L_00ECCED8, L_00ECCF30, C4<0>, C4<0>;
+L_00ECEAF8 .functor XOR 1, L_00ECCFE0, L_00ECD038, C4<0>, C4<0>;
+v00EB0B20_0 .alias "In1", 15 0, v00EB10A0_0;
+v00EB0B78_0 .alias "In2", 15 0, v00EB10F8_0;
+v00EB0BD0_0 .net "IsSameSign", 0 0, L_00ECCF88; 1 drivers
+v00EB0C28_0 .net "IsSignChanged", 0 0, L_00ECEAF8; 1 drivers
+v00EB0C80_0 .alias "Out", 15 0, v00EB0F98_0;
+v00EB0CD8_0 .net "TestAdd", 15 0, L_00ECCE80; 1 drivers
+v00EB0D30_0 .net *"_s11", 0 0, L_00ECCFE0; 1 drivers
+v00EB0D88_0 .net *"_s13", 0 0, L_00ECD038; 1 drivers
+v00EB0DE0_0 .net *"_s3", 0 0, L_00ECCED8; 1 drivers
+v00EB0E38_0 .net *"_s5", 0 0, L_00ECCF30; 1 drivers
+v00EB0E90_0 .net *"_s6", 0 0, L_005DC388; 1 drivers
+L_00ECCE80 .arith/sum 16, L_00ECCDD0, L_00ECCE28;
+L_00ECCED8 .part L_00ECCDD0, 15, 1;
+L_00ECCF30 .part L_00ECCE28, 15, 1;
+L_00ECCF88 .reduce/nor L_005DC388;
+L_00ECCFE0 .part L_00ECCDD0, 15, 1;
+L_00ECD038 .part L_00ECCE80, 15, 1;
+S_00637AF0 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00637A68;
  .timescale 0 0;
-S_00619218 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00619328;
+S_00637B78 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00637AF0;
  .timescale 0 0;
-L_00C9E2D0 .functor BUFZ 16, L_00C9C488, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_00618AA8 .scope module, "RoW" "MFP_RegOWire" 3 126, 2 169, S_00618CC8;
+L_00ECEA18 .functor BUFZ 16, L_00ECCE80, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_00637958 .scope module, "RoW" "MFP_RegOWire" 3 126, 2 169, S_006377C0;
  .timescale 0 0;
 P_006326F4 .param/l "dataW" 2 172, +C4<010000>;
 P_00632708 .param/l "isWire" 2 175, +C4<01>;
 P_0063271C .param/l "levelIdx" 2 173, +C4<0100>;
 P_00632730 .param/l "regInterval" 2 174, +C4<0>;
-v00C840A0_0 .alias "clk", 0 0, v00C90780_0;
-v00C840F8_0 .alias "en", 0 0, v00C907D8_0;
-v00C84150_0 .alias "in", 15 0, v00C84678_0;
-v00C841A8_0 .alias "out", 15 0, v00C86728_0;
-S_00619438 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_00618AA8;
- .timescale 0 0;
-L_00C9E458 .functor BUFZ 16, L_00C9E2D0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_00618D50 .scope generate, "genblk1" "genblk1" 3 130, 3 130, S_00618CC8;
- .timescale 0 0;
-S_00618B30 .scope generate, "genblk3" "genblk3" 3 137, 3 137, S_00618CC8;
- .timescale 0 0;
-S_00637508 .scope generate, "genblk4" "genblk4" 3 137, 3 137, S_00637480;
- .timescale 0 0;
-S_00637590 .scope module, "ATI1" "MFP_AdderTree" 3 141, 3 105, S_00637508;
- .timescale 0 0;
-P_005CC064 .param/l "ArrL" 3 108, C4<0100>;
-P_005CC078 .param/l "Sp1" 3 117, C4<010>;
-P_005CC08C .param/l "Sp2" 3 118, C4<010>;
-P_005CC0A0 .param/l "data_depth" 3 107, +C4<010000>;
-P_005CC0B4 .param/l "isUnsigned" 3 111, +C4<0>;
-P_005CC0C8 .param/l "levelIdx" 3 109, +C4<011>;
-P_005CC0DC .param/l "pipeInterval" 3 110, +C4<0>;
-v00C83E38_0 .net "DIn", 63 0, L_00CA0388; 1 drivers
-v00C83E90_0 .alias "Sum", 15 0, v00C8BEE8_0;
-v00C83EE8_0 .net "Sum_", 15 0, L_005DC318; 1 drivers
-v00C83F40_0 .alias "clk", 0 0, v00C90780_0;
-v00C83F98_0 .alias "en", 0 0, v00C907D8_0;
-v00C83FF0_0 .net "subLevelSum1", 15 0, L_00C9E848; 1 drivers
-v00C84048_0 .net "subLevelSum2", 15 0, L_00C9FA60; 1 drivers
-L_00C9CC18 .part L_00CA0388, 0, 32;
-L_00C9CF30 .part L_00CA0388, 32, 32;
-S_0061A4B0 .scope module, "aS" "MFP_Adder" 3 124, 2 89, S_00637590;
- .timescale 0 0;
-P_00C81994 .param/l "In1W" 2 91, +C4<010000>;
-P_00C819A8 .param/l "In2W" 2 92, +C4<010000>;
-P_00C819BC .param/l "OutW" 2 93, +C4<010000>;
-P_00C819D0 .param/l "Saturate" 2 95, +C4<0>;
-P_00C819E4 .param/l "isUnsigned" 2 96, +C4<0>;
-P_00C819F8 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
-P_00C81A0C .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00C9FAD0 .functor XOR 1, L_00C9CFE0, L_00CA0228, C4<0>, C4<0>;
-L_00C9FBB0 .functor XOR 1, L_00CA02D8, L_00CA0330, C4<0>, C4<0>;
-v00C83A70_0 .alias "In1", 15 0, v00C83FF0_0;
-v00C83AC8_0 .alias "In2", 15 0, v00C84048_0;
-v00C83B20_0 .net "IsSameSign", 0 0, L_00CA0280; 1 drivers
-v00C83B78_0 .net "IsSignChanged", 0 0, L_00C9FBB0; 1 drivers
-v00C83BD0_0 .alias "Out", 15 0, v00C83EE8_0;
-v00C83C28_0 .net "TestAdd", 15 0, L_00C9CF88; 1 drivers
-v00C83C80_0 .net *"_s11", 0 0, L_00CA02D8; 1 drivers
-v00C83CD8_0 .net *"_s13", 0 0, L_00CA0330; 1 drivers
-v00C83D30_0 .net *"_s3", 0 0, L_00C9CFE0; 1 drivers
-v00C83D88_0 .net *"_s5", 0 0, L_00CA0228; 1 drivers
-v00C83DE0_0 .net *"_s6", 0 0, L_00C9FAD0; 1 drivers
-L_00C9CF88 .arith/sum 16, L_00C9E848, L_00C9FA60;
-L_00C9CFE0 .part L_00C9E848, 15, 1;
-L_00CA0228 .part L_00C9FA60, 15, 1;
-L_00CA0280 .reduce/nor L_00C9FAD0;
-L_00CA02D8 .part L_00C9E848, 15, 1;
-L_00CA0330 .part L_00C9CF88, 15, 1;
-S_00619F60 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_0061A4B0;
- .timescale 0 0;
-S_00619A10 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00619F60;
- .timescale 0 0;
-L_005DC318 .functor BUFZ 16, L_00C9CF88, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_0061AA00 .scope module, "RoW" "MFP_RegOWire" 3 126, 2 169, S_00637590;
- .timescale 0 0;
-P_00632694 .param/l "dataW" 2 172, +C4<010000>;
-P_006326A8 .param/l "isWire" 2 175, +C4<01>;
-P_006326BC .param/l "levelIdx" 2 173, +C4<011>;
-P_006326D0 .param/l "regInterval" 2 174, +C4<0>;
-v00C83910_0 .alias "clk", 0 0, v00C90780_0;
-v00C83968_0 .alias "en", 0 0, v00C907D8_0;
-v00C839C0_0 .alias "in", 15 0, v00C83EE8_0;
-v00C83A18_0 .alias "out", 15 0, v00C8BEE8_0;
-S_00618F70 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_0061AA00;
- .timescale 0 0;
-L_00C9FC58 .functor BUFZ 16, L_005DC318, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_00637AE0 .scope generate, "genblk2" "genblk2" 3 130, 3 130, S_00637590;
- .timescale 0 0;
-S_00637B68 .scope module, "ATI1" "MFP_AdderTree" 3 135, 3 105, S_00637AE0;
- .timescale 0 0;
-P_00C81864 .param/l "ArrL" 3 108, C4<010>;
-P_00C81878 .param/l "Sp1" 3 117, C4<01>;
-P_00C8188C .param/l "Sp2" 3 118, C4<01>;
-P_00C818A0 .param/l "data_depth" 3 107, +C4<010000>;
-P_00C818B4 .param/l "isUnsigned" 3 111, +C4<0>;
-P_00C818C8 .param/l "levelIdx" 3 109, +C4<0100>;
-P_00C818DC .param/l "pipeInterval" 3 110, +C4<0>;
-v00C81678_0 .net "DIn", 31 0, L_00C9CC18; 1 drivers
-v00C816D0_0 .alias "Sum", 15 0, v00C83FF0_0;
-v00C81728_0 .net "Sum_", 15 0, L_00C9E6C0; 1 drivers
-v00C81780_0 .alias "clk", 0 0, v00C90780_0;
-v00C817D8_0 .alias "en", 0 0, v00C907D8_0;
-v00C83860_0 .net "subLevelSum1", 15 0, L_00C9C958; 1 drivers
-v00C838B8_0 .net "subLevelSum2", 15 0, L_00C9C9B0; 1 drivers
-L_00C9C958 .part L_00C9CC18, 0, 16;
-L_00C9C9B0 .part L_00C9CC18, 16, 16;
-S_00637E10 .scope module, "aS" "MFP_Adder" 3 124, 2 89, S_00637B68;
- .timescale 0 0;
-P_00C818FC .param/l "In1W" 2 91, +C4<010000>;
-P_00C81910 .param/l "In2W" 2 92, +C4<010000>;
-P_00C81924 .param/l "OutW" 2 93, +C4<010000>;
-P_00C81938 .param/l "Saturate" 2 95, +C4<0>;
-P_00C8194C .param/l "isUnsigned" 2 96, +C4<0>;
-P_00C81960 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
-P_00C81974 .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00C8B108 .functor XOR 1, L_00C9CA60, L_00C9CAB8, C4<0>, C4<0>;
-L_00C9E7A0 .functor XOR 1, L_00C9CB68, L_00C9CBC0, C4<0>, C4<0>;
-v00C812B0_0 .alias "In1", 15 0, v00C83860_0;
-v00C81308_0 .alias "In2", 15 0, v00C838B8_0;
-v00C81360_0 .net "IsSameSign", 0 0, L_00C9CB10; 1 drivers
-v00C813B8_0 .net "IsSignChanged", 0 0, L_00C9E7A0; 1 drivers
-v00C81410_0 .alias "Out", 15 0, v00C81728_0;
-v00C81468_0 .net "TestAdd", 15 0, L_00C9CA08; 1 drivers
-v00C814C0_0 .net *"_s11", 0 0, L_00C9CB68; 1 drivers
-v00C81518_0 .net *"_s13", 0 0, L_00C9CBC0; 1 drivers
-v00C81570_0 .net *"_s3", 0 0, L_00C9CA60; 1 drivers
-v00C815C8_0 .net *"_s5", 0 0, L_00C9CAB8; 1 drivers
-v00C81620_0 .net *"_s6", 0 0, L_00C8B108; 1 drivers
-L_00C9CA08 .arith/sum 16, L_00C9C958, L_00C9C9B0;
-L_00C9CA60 .part L_00C9C958, 15, 1;
-L_00C9CAB8 .part L_00C9C9B0, 15, 1;
-L_00C9CB10 .reduce/nor L_00C8B108;
-L_00C9CB68 .part L_00C9C958, 15, 1;
-L_00C9CBC0 .part L_00C9CA08, 15, 1;
-S_00637E98 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00637E10;
- .timescale 0 0;
-S_006194C0 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00637E98;
- .timescale 0 0;
-L_00C9E6C0 .functor BUFZ 16, L_00C9CA08, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_00637D00 .scope module, "RoW" "MFP_RegOWire" 3 126, 2 169, S_00637B68;
- .timescale 0 0;
-P_00632634 .param/l "dataW" 2 172, +C4<010000>;
-P_00632648 .param/l "isWire" 2 175, +C4<01>;
-P_0063265C .param/l "levelIdx" 2 173, +C4<0100>;
-P_00632670 .param/l "regInterval" 2 174, +C4<0>;
-v00C81150_0 .alias "clk", 0 0, v00C90780_0;
-v00C811A8_0 .alias "en", 0 0, v00C907D8_0;
-v00C81200_0 .alias "in", 15 0, v00C81728_0;
-v00C81258_0 .alias "out", 15 0, v00C83FF0_0;
-S_00637D88 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_00637D00;
- .timescale 0 0;
-L_00C9E848 .functor BUFZ 16, L_00C9E6C0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_00637C78 .scope generate, "genblk1" "genblk1" 3 130, 3 130, S_00637B68;
- .timescale 0 0;
-S_00637BF0 .scope generate, "genblk3" "genblk3" 3 137, 3 137, S_00637B68;
- .timescale 0 0;
-S_00637618 .scope generate, "genblk4" "genblk4" 3 137, 3 137, S_00637590;
- .timescale 0 0;
-S_006376A0 .scope module, "ATI1" "MFP_AdderTree" 3 141, 3 105, S_00637618;
- .timescale 0 0;
-P_003FDFDC .param/l "ArrL" 3 108, C4<010>;
-P_003FDFF0 .param/l "Sp1" 3 117, C4<01>;
-P_003FE004 .param/l "Sp2" 3 118, C4<01>;
-P_003FE018 .param/l "data_depth" 3 107, +C4<010000>;
-P_003FE02C .param/l "isUnsigned" 3 111, +C4<0>;
-P_003FE040 .param/l "levelIdx" 3 109, +C4<0100>;
-P_003FE054 .param/l "pipeInterval" 3 110, +C4<0>;
-v00C80EE8_0 .net "DIn", 31 0, L_00C9CF30; 1 drivers
-v00C80F40_0 .alias "Sum", 15 0, v00C84048_0;
-v00C80F98_0 .net "Sum_", 15 0, L_00C9E8B8; 1 drivers
-v00C80FF0_0 .alias "clk", 0 0, v00C90780_0;
-v00C81048_0 .alias "en", 0 0, v00C907D8_0;
-v00C810A0_0 .net "subLevelSum1", 15 0, L_00C9CC70; 1 drivers
-v00C810F8_0 .net "subLevelSum2", 15 0, L_00C9CCC8; 1 drivers
-L_00C9CC70 .part L_00C9CF30, 0, 16;
-L_00C9CCC8 .part L_00C9CF30, 16, 16;
-S_00637948 .scope module, "aS" "MFP_Adder" 3 124, 2 89, S_006376A0;
- .timescale 0 0;
-P_003FE074 .param/l "In1W" 2 91, +C4<010000>;
-P_003FE088 .param/l "In2W" 2 92, +C4<010000>;
-P_003FE09C .param/l "OutW" 2 93, +C4<010000>;
-P_003FE0B0 .param/l "Saturate" 2 95, +C4<0>;
-P_003FE0C4 .param/l "isUnsigned" 2 96, +C4<0>;
-P_003FE0D8 .param/l "maxPosOut" 2 106, +C4<0111111111111111>;
-P_003FE0EC .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_005DC350 .functor XOR 1, L_00C9CD78, L_00C9CDD0, C4<0>, C4<0>;
-L_00C9E998 .functor XOR 1, L_00C9CE80, L_00C9CED8, C4<0>, C4<0>;
-v00C80B20_0 .alias "In1", 15 0, v00C810A0_0;
-v00C80B78_0 .alias "In2", 15 0, v00C810F8_0;
-v00C80BD0_0 .net "IsSameSign", 0 0, L_00C9CE28; 1 drivers
-v00C80C28_0 .net "IsSignChanged", 0 0, L_00C9E998; 1 drivers
-v00C80C80_0 .alias "Out", 15 0, v00C80F98_0;
-v00C80CD8_0 .net "TestAdd", 15 0, L_00C9CD20; 1 drivers
-v00C80D30_0 .net *"_s11", 0 0, L_00C9CE80; 1 drivers
-v00C80D88_0 .net *"_s13", 0 0, L_00C9CED8; 1 drivers
-v00C80DE0_0 .net *"_s3", 0 0, L_00C9CD78; 1 drivers
-v00C80E38_0 .net *"_s5", 0 0, L_00C9CDD0; 1 drivers
-v00C80E90_0 .net *"_s6", 0 0, L_005DC350; 1 drivers
-L_00C9CD20 .arith/sum 16, L_00C9CC70, L_00C9CCC8;
-L_00C9CD78 .part L_00C9CC70, 15, 1;
-L_00C9CDD0 .part L_00C9CCC8, 15, 1;
-L_00C9CE28 .reduce/nor L_005DC350;
-L_00C9CE80 .part L_00C9CC70, 15, 1;
-L_00C9CED8 .part L_00C9CD20, 15, 1;
-S_006379D0 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00637948;
- .timescale 0 0;
-S_00637A58 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_006379D0;
- .timescale 0 0;
-L_00C9E8B8 .functor BUFZ 16, L_00C9CD20, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_00637838 .scope module, "RoW" "MFP_RegOWire" 3 126, 2 169, S_006376A0;
- .timescale 0 0;
-P_006325D4 .param/l "dataW" 2 172, +C4<010000>;
-P_006325E8 .param/l "isWire" 2 175, +C4<01>;
-P_006325FC .param/l "levelIdx" 2 173, +C4<0100>;
-P_00632610 .param/l "regInterval" 2 174, +C4<0>;
-v00C809C0_0 .alias "clk", 0 0, v00C90780_0;
-v00C80A18_0 .alias "en", 0 0, v00C907D8_0;
-v00C80A70_0 .alias "in", 15 0, v00C80F98_0;
-v00C80AC8_0 .alias "out", 15 0, v00C84048_0;
-S_006378C0 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_00637838;
- .timescale 0 0;
-L_00C9FA60 .functor BUFZ 16, L_00C9E8B8, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
-S_006377B0 .scope generate, "genblk1" "genblk1" 3 130, 3 130, S_006376A0;
- .timescale 0 0;
-S_00637728 .scope generate, "genblk3" "genblk3" 3 137, 3 137, S_006376A0;
- .timescale 0 0;
-S_00637370 .scope module, "round_acc" "MFP_Round" 3 98, 2 135, S_006372E8;
- .timescale 0 0;
-P_005D9304 .param/l "InW" 2 138, +C4<010000>;
-P_005D9318 .param/l "OutW" 2 139, +C4<010000>;
-P_005D932C .param/l "Saturate" 2 140, +C4<0>;
-P_005D9340 .param/l "isFloor" 2 141, +C4<01>;
-P_005D9354 .param/l "isUnsigned" 2 142, +C4<0>;
-v00C80910_0 .alias "in", 15 0, v00C903B8_0;
-v00C80968_0 .alias "out", 15 0, v00C90258_0;
-S_006373F8 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_00637370;
- .timescale 0 0;
-L_00CA05F0 .concat [ 16 0 0 0], L_00C9FE50;
-S_006370C8 .scope generate, "foldLoop[0]" "foldLoop[0]" 3 41, 3 41, S_0062F0C0;
- .timescale 0 0;
-P_00629AEC .param/l "gi" 3 41, +C4<00>;
-S_00637150 .scope module, "aS" "MFP_Adder" 3 44, 2 89, S_006370C8;
- .timescale 0 0;
-P_005D2964 .param/l "In1W" 2 91, +C4<01000>;
-P_005D2978 .param/l "In2W" 2 92, +C4<01000>;
-P_005D298C .param/l "OutW" 2 93, +C4<01001>;
-P_005D29A0 .param/l "Saturate" 2 95, +C4<0>;
-P_005D29B4 .param/l "isUnsigned" 2 96, +C4<0>;
-P_005D29C8 .param/l "maxPosOut" 2 106, +C4<011111111>;
-P_005D29DC .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00C96580 .functor XOR 1, L_00C94470, L_00C944C8, C4<0>, C4<0>;
-L_00C96660 .functor XOR 1, L_00C96DD8, L_00C96E30, C4<0>, C4<0>;
-v0066E738_0 .net "In1", 7 0, L_00C96E88; 1 drivers
-v0066E790_0 .net "In2", 7 0, L_00C96EE0; 1 drivers
-v0066E7E8_0 .net "IsSameSign", 0 0, L_00C96D80; 1 drivers
-v0066E840_0 .net "IsSignChanged", 0 0, L_00C96660; 1 drivers
-v0066E898_0 .net "Out", 8 0, L_00C96480; 1 drivers
-v0066E8F0_0 .net "TestAdd", 8 0, L_00C94418; 1 drivers
-v0066E948_0 .net *"_s1", 0 0, L_00C94470; 1 drivers
-v0066E9A0_0 .net *"_s11", 0 0, L_00C96E30; 1 drivers
-v0066E9F8_0 .net *"_s3", 0 0, L_00C944C8; 1 drivers
-v00C80860_0 .net *"_s4", 0 0, L_00C96580; 1 drivers
-v00C808B8_0 .net *"_s9", 0 0, L_00C96DD8; 1 drivers
-L_00C94470 .part L_00C96E88, 7, 1;
-L_00C944C8 .part L_00C96EE0, 7, 1;
-L_00C96D80 .reduce/nor L_00C96580;
-L_00C96DD8 .part L_00C96E88, 7, 1;
-L_00C96E30 .part L_00C94418, 8, 1;
-S_006371D8 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00637150;
- .timescale 0 0;
-v0066E5D8_0 .net *"_s0", 8 0, L_00C94368; 1 drivers
-v0066E630_0 .net *"_s3", 0 0, C4<0>; 1 drivers
-v0066E688_0 .net *"_s4", 8 0, L_00C943C0; 1 drivers
-v0066E6E0_0 .net *"_s7", 0 0, C4<0>; 1 drivers
-L_00C94368 .concat [ 8 1 0 0], L_00C96E88, C4<0>;
-L_00C943C0 .concat [ 8 1 0 0], L_00C96EE0, C4<0>;
-L_00C94418 .arith/sum 9, L_00C94368, L_00C943C0;
-S_00637260 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_006371D8;
- .timescale 0 0;
-L_00C96480 .functor BUFZ 9, L_00C94418, C4<000000000>, C4<000000000>, C4<000000000>;
-S_00636EA8 .scope generate, "foldLoop[1]" "foldLoop[1]" 3 41, 3 41, S_0062F0C0;
- .timescale 0 0;
-P_00629ACC .param/l "gi" 3 41, +C4<01>;
-S_00636F30 .scope module, "aS" "MFP_Adder" 3 44, 2 89, S_00636EA8;
- .timescale 0 0;
-P_005D28CC .param/l "In1W" 2 91, +C4<01000>;
-P_005D28E0 .param/l "In2W" 2 92, +C4<01000>;
-P_005D28F4 .param/l "OutW" 2 93, +C4<01001>;
-P_005D2908 .param/l "Saturate" 2 95, +C4<0>;
-P_005D291C .param/l "isUnsigned" 2 96, +C4<0>;
-P_005D2930 .param/l "maxPosOut" 2 106, +C4<011111111>;
-P_005D2944 .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00C96900 .functor XOR 1, L_00C97098, L_00C970F0, C4<0>, C4<0>;
-L_00C969E0 .functor XOR 1, L_00C971A0, L_00C971F8, C4<0>, C4<0>;
-v0066E210_0 .net "In1", 7 0, L_00C97250; 1 drivers
-v0066E268_0 .net "In2", 7 0, L_00C972A8; 1 drivers
-v0066E2C0_0 .net "IsSameSign", 0 0, L_00C97148; 1 drivers
-v0066E318_0 .net "IsSignChanged", 0 0, L_00C969E0; 1 drivers
-v0066E370_0 .net "Out", 8 0, L_00C96820; 1 drivers
-v0066E3C8_0 .net "TestAdd", 8 0, L_00C97040; 1 drivers
-v0066E420_0 .net *"_s1", 0 0, L_00C97098; 1 drivers
-v0066E478_0 .net *"_s11", 0 0, L_00C971F8; 1 drivers
-v0066E4D0_0 .net *"_s3", 0 0, L_00C970F0; 1 drivers
-v0066E528_0 .net *"_s4", 0 0, L_00C96900; 1 drivers
-v0066E580_0 .net *"_s9", 0 0, L_00C971A0; 1 drivers
-L_00C97098 .part L_00C97250, 7, 1;
-L_00C970F0 .part L_00C972A8, 7, 1;
-L_00C97148 .reduce/nor L_00C96900;
-L_00C971A0 .part L_00C97250, 7, 1;
-L_00C971F8 .part L_00C97040, 8, 1;
-S_00636FB8 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00636F30;
- .timescale 0 0;
-v0066E0B0_0 .net *"_s0", 8 0, L_00C96F90; 1 drivers
-v0066E108_0 .net *"_s3", 0 0, C4<0>; 1 drivers
-v0066E160_0 .net *"_s4", 8 0, L_00C96FE8; 1 drivers
-v0066E1B8_0 .net *"_s7", 0 0, C4<0>; 1 drivers
-L_00C96F90 .concat [ 8 1 0 0], L_00C97250, C4<0>;
-L_00C96FE8 .concat [ 8 1 0 0], L_00C972A8, C4<0>;
-L_00C97040 .arith/sum 9, L_00C96F90, L_00C96FE8;
-S_00637040 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00636FB8;
- .timescale 0 0;
-L_00C96820 .functor BUFZ 9, L_00C97040, C4<000000000>, C4<000000000>, C4<000000000>;
-S_00636C88 .scope generate, "foldLoop[2]" "foldLoop[2]" 3 41, 3 41, S_0062F0C0;
- .timescale 0 0;
-P_0062A04C .param/l "gi" 3 41, +C4<010>;
-S_00636D10 .scope module, "aS" "MFP_Adder" 3 44, 2 89, S_00636C88;
- .timescale 0 0;
-P_005D74EC .param/l "In1W" 2 91, +C4<01000>;
-P_005D7500 .param/l "In2W" 2 92, +C4<01000>;
-P_005D7514 .param/l "OutW" 2 93, +C4<01001>;
-P_005D7528 .param/l "Saturate" 2 95, +C4<0>;
-P_005D753C .param/l "isUnsigned" 2 96, +C4<0>;
-P_005D7550 .param/l "maxPosOut" 2 106, +C4<011111111>;
-P_005D7564 .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00C96C10 .functor XOR 1, L_00C97460, L_00C974B8, C4<0>, C4<0>;
-L_00C96CF0 .functor XOR 1, L_00C97568, L_00C975C0, C4<0>, C4<0>;
-v0066DCE8_0 .net "In1", 7 0, L_00C97618; 1 drivers
-v0066DD40_0 .net "In2", 7 0, L_00C97670; 1 drivers
-v0066DD98_0 .net "IsSameSign", 0 0, L_00C97510; 1 drivers
-v0066DDF0_0 .net "IsSignChanged", 0 0, L_00C96CF0; 1 drivers
-v0066DE48_0 .net "Out", 8 0, L_00C96B30; 1 drivers
-v0066DEA0_0 .net "TestAdd", 8 0, L_00C97408; 1 drivers
-v0066DEF8_0 .net *"_s1", 0 0, L_00C97460; 1 drivers
-v0066DF50_0 .net *"_s11", 0 0, L_00C975C0; 1 drivers
-v0066DFA8_0 .net *"_s3", 0 0, L_00C974B8; 1 drivers
-v0066E000_0 .net *"_s4", 0 0, L_00C96C10; 1 drivers
-v0066E058_0 .net *"_s9", 0 0, L_00C97568; 1 drivers
-L_00C97460 .part L_00C97618, 7, 1;
-L_00C974B8 .part L_00C97670, 7, 1;
-L_00C97510 .reduce/nor L_00C96C10;
-L_00C97568 .part L_00C97618, 7, 1;
-L_00C975C0 .part L_00C97408, 8, 1;
-S_00636D98 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00636D10;
- .timescale 0 0;
-v0066DB88_0 .net *"_s0", 8 0, L_00C97358; 1 drivers
-v0066DBE0_0 .net *"_s3", 0 0, C4<0>; 1 drivers
-v0066DC38_0 .net *"_s4", 8 0, L_00C973B0; 1 drivers
-v0066DC90_0 .net *"_s7", 0 0, C4<0>; 1 drivers
-L_00C97358 .concat [ 8 1 0 0], L_00C97618, C4<0>;
-L_00C973B0 .concat [ 8 1 0 0], L_00C97670, C4<0>;
-L_00C97408 .arith/sum 9, L_00C97358, L_00C973B0;
-S_00636E20 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00636D98;
- .timescale 0 0;
-L_00C96B30 .functor BUFZ 9, L_00C97408, C4<000000000>, C4<000000000>, C4<000000000>;
-S_00636A68 .scope generate, "foldLoop[3]" "foldLoop[3]" 3 41, 3 41, S_0062F0C0;
- .timescale 0 0;
-P_0062A02C .param/l "gi" 3 41, +C4<011>;
-S_00636AF0 .scope module, "aS" "MFP_Adder" 3 44, 2 89, S_00636A68;
- .timescale 0 0;
-P_005D7454 .param/l "In1W" 2 91, +C4<01000>;
-P_005D7468 .param/l "In2W" 2 92, +C4<01000>;
-P_005D747C .param/l "OutW" 2 93, +C4<01001>;
-P_005D7490 .param/l "Saturate" 2 95, +C4<0>;
-P_005D74A4 .param/l "isUnsigned" 2 96, +C4<0>;
-P_005D74B8 .param/l "maxPosOut" 2 106, +C4<011111111>;
-P_005D74CC .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00C98F40 .functor XOR 1, L_00C97828, L_00C97880, C4<0>, C4<0>;
-L_00C99020 .functor XOR 1, L_00C97930, L_00C97988, C4<0>, C4<0>;
-v0066D790_0 .net "In1", 7 0, L_00C979E0; 1 drivers
-v0066D7E8_0 .net "In2", 7 0, L_00C97A38; 1 drivers
-v0066D840_0 .net "IsSameSign", 0 0, L_00C978D8; 1 drivers
-v0066D898_0 .net "IsSignChanged", 0 0, L_00C99020; 1 drivers
-v0066D8F0_0 .net "Out", 8 0, L_00C98E60; 1 drivers
-v0066D948_0 .net "TestAdd", 8 0, L_00C977D0; 1 drivers
-v0066D9A0_0 .net *"_s1", 0 0, L_00C97828; 1 drivers
-v0066D9F8_0 .net *"_s11", 0 0, L_00C97988; 1 drivers
-v0066DA80_0 .net *"_s3", 0 0, L_00C97880; 1 drivers
-v0066DAD8_0 .net *"_s4", 0 0, L_00C98F40; 1 drivers
-v0066DB30_0 .net *"_s9", 0 0, L_00C97930; 1 drivers
-L_00C97828 .part L_00C979E0, 7, 1;
-L_00C97880 .part L_00C97A38, 7, 1;
-L_00C978D8 .reduce/nor L_00C98F40;
-L_00C97930 .part L_00C979E0, 7, 1;
-L_00C97988 .part L_00C977D0, 8, 1;
-S_00636B78 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00636AF0;
- .timescale 0 0;
-v0066D630_0 .net *"_s0", 8 0, L_00C97720; 1 drivers
-v0066D688_0 .net *"_s3", 0 0, C4<0>; 1 drivers
-v0066D6E0_0 .net *"_s4", 8 0, L_00C97778; 1 drivers
-v0066D738_0 .net *"_s7", 0 0, C4<0>; 1 drivers
-L_00C97720 .concat [ 8 1 0 0], L_00C979E0, C4<0>;
-L_00C97778 .concat [ 8 1 0 0], L_00C97A38, C4<0>;
-L_00C977D0 .arith/sum 9, L_00C97720, L_00C97778;
-S_00636C00 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00636B78;
- .timescale 0 0;
-L_00C98E60 .functor BUFZ 9, L_00C977D0, C4<000000000>, C4<000000000>, C4<000000000>;
-S_00636848 .scope generate, "foldLoop[4]" "foldLoop[4]" 3 41, 3 41, S_0062F0C0;
- .timescale 0 0;
-P_0062A0AC .param/l "gi" 3 41, +C4<0100>;
-S_006368D0 .scope module, "aS" "MFP_Adder" 3 44, 2 89, S_00636848;
- .timescale 0 0;
-P_005D0DCC .param/l "In1W" 2 91, +C4<01000>;
-P_005D0DE0 .param/l "In2W" 2 92, +C4<01000>;
-P_005D0DF4 .param/l "OutW" 2 93, +C4<01001>;
-P_005D0E08 .param/l "Saturate" 2 95, +C4<0>;
-P_005D0E1C .param/l "isUnsigned" 2 96, +C4<0>;
-P_005D0E30 .param/l "maxPosOut" 2 106, +C4<011111111>;
-P_005D0E44 .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00C992C0 .functor XOR 1, L_00C97C48, L_00C97CA0, C4<0>, C4<0>;
-L_00C993A0 .functor XOR 1, L_00C97D50, L_00C97DA8, C4<0>, C4<0>;
-v0066D268_0 .net "In1", 7 0, L_00C97E00; 1 drivers
-v0066D2C0_0 .net "In2", 7 0, L_00C97E58; 1 drivers
-v0066D318_0 .net "IsSameSign", 0 0, L_00C97CF8; 1 drivers
-v0066D370_0 .net "IsSignChanged", 0 0, L_00C993A0; 1 drivers
-v0066D3C8_0 .net "Out", 8 0, L_00C991E0; 1 drivers
-v0066D420_0 .net "TestAdd", 8 0, L_00C97BF0; 1 drivers
-v0066D478_0 .net *"_s1", 0 0, L_00C97C48; 1 drivers
-v0066D4D0_0 .net *"_s11", 0 0, L_00C97DA8; 1 drivers
-v0066D528_0 .net *"_s3", 0 0, L_00C97CA0; 1 drivers
-v0066D580_0 .net *"_s4", 0 0, L_00C992C0; 1 drivers
-v0066D5D8_0 .net *"_s9", 0 0, L_00C97D50; 1 drivers
-L_00C97C48 .part L_00C97E00, 7, 1;
-L_00C97CA0 .part L_00C97E58, 7, 1;
-L_00C97CF8 .reduce/nor L_00C992C0;
-L_00C97D50 .part L_00C97E00, 7, 1;
-L_00C97DA8 .part L_00C97BF0, 8, 1;
-S_00636958 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_006368D0;
- .timescale 0 0;
-v0066D108_0 .net *"_s0", 8 0, L_00C97AE8; 1 drivers
-v0066D160_0 .net *"_s3", 0 0, C4<0>; 1 drivers
-v0066D1B8_0 .net *"_s4", 8 0, L_00C97B40; 1 drivers
-v0066D210_0 .net *"_s7", 0 0, C4<0>; 1 drivers
-L_00C97AE8 .concat [ 8 1 0 0], L_00C97E00, C4<0>;
-L_00C97B40 .concat [ 8 1 0 0], L_00C97E58, C4<0>;
-L_00C97BF0 .arith/sum 9, L_00C97AE8, L_00C97B40;
-S_006369E0 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00636958;
- .timescale 0 0;
-L_00C991E0 .functor BUFZ 9, L_00C97BF0, C4<000000000>, C4<000000000>, C4<000000000>;
-S_00636628 .scope generate, "foldLoop[5]" "foldLoop[5]" 3 41, 3 41, S_0062F0C0;
- .timescale 0 0;
-P_0062A08C .param/l "gi" 3 41, +C4<0101>;
-S_006366B0 .scope module, "aS" "MFP_Adder" 3 44, 2 89, S_00636628;
- .timescale 0 0;
-P_005D0D34 .param/l "In1W" 2 91, +C4<01000>;
-P_005D0D48 .param/l "In2W" 2 92, +C4<01000>;
-P_005D0D5C .param/l "OutW" 2 93, +C4<01001>;
-P_005D0D70 .param/l "Saturate" 2 95, +C4<0>;
-P_005D0D84 .param/l "isUnsigned" 2 96, +C4<0>;
-P_005D0D98 .param/l "maxPosOut" 2 106, +C4<011111111>;
-P_005D0DAC .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00C996B8 .functor XOR 1, L_00C97FB8, L_00C98010, C4<0>, C4<0>;
-L_00C99798 .functor XOR 1, L_00C980C0, L_00C98118, C4<0>, C4<0>;
-v0066CD40_0 .net "In1", 7 0, L_00C98170; 1 drivers
-v0066CD98_0 .net "In2", 7 0, L_00C981C8; 1 drivers
-v0066CDF0_0 .net "IsSameSign", 0 0, L_00C98068; 1 drivers
-v0066CE48_0 .net "IsSignChanged", 0 0, L_00C99798; 1 drivers
-v0066CEA0_0 .net "Out", 8 0, L_00C994F0; 1 drivers
-v0066CEF8_0 .net "TestAdd", 8 0, L_00C97B98; 1 drivers
-v0066CF50_0 .net *"_s1", 0 0, L_00C97FB8; 1 drivers
-v0066CFA8_0 .net *"_s11", 0 0, L_00C98118; 1 drivers
-v0066D000_0 .net *"_s3", 0 0, L_00C98010; 1 drivers
-v0066D058_0 .net *"_s4", 0 0, L_00C996B8; 1 drivers
-v0066D0B0_0 .net *"_s9", 0 0, L_00C980C0; 1 drivers
-L_00C97FB8 .part L_00C98170, 7, 1;
-L_00C98010 .part L_00C981C8, 7, 1;
-L_00C98068 .reduce/nor L_00C996B8;
-L_00C980C0 .part L_00C98170, 7, 1;
-L_00C98118 .part L_00C97B98, 8, 1;
-S_00636738 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_006366B0;
- .timescale 0 0;
-v0066CBE0_0 .net *"_s0", 8 0, L_00C97F08; 1 drivers
-v0066CC38_0 .net *"_s3", 0 0, C4<0>; 1 drivers
-v0066CC90_0 .net *"_s4", 8 0, L_00C97F60; 1 drivers
-v0066CCE8_0 .net *"_s7", 0 0, C4<0>; 1 drivers
-L_00C97F08 .concat [ 8 1 0 0], L_00C98170, C4<0>;
-L_00C97F60 .concat [ 8 1 0 0], L_00C981C8, C4<0>;
-L_00C97B98 .arith/sum 9, L_00C97F08, L_00C97F60;
-S_006367C0 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00636738;
- .timescale 0 0;
-L_00C994F0 .functor BUFZ 9, L_00C97B98, C4<000000000>, C4<000000000>, C4<000000000>;
-S_00636408 .scope generate, "foldLoop[6]" "foldLoop[6]" 3 41, 3 41, S_0062F0C0;
- .timescale 0 0;
-P_0062A3CC .param/l "gi" 3 41, +C4<0110>;
-S_00636490 .scope module, "aS" "MFP_Adder" 3 44, 2 89, S_00636408;
- .timescale 0 0;
-P_005CD5BC .param/l "In1W" 2 91, +C4<01000>;
-P_005CD5D0 .param/l "In2W" 2 92, +C4<01000>;
-P_005CD5E4 .param/l "OutW" 2 93, +C4<01001>;
-P_005CD5F8 .param/l "Saturate" 2 95, +C4<0>;
-P_005CD60C .param/l "isUnsigned" 2 96, +C4<0>;
-P_005CD620 .param/l "maxPosOut" 2 106, +C4<011111111>;
-P_005CD634 .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00C99A00 .functor XOR 1, L_00C98380, L_00C983D8, C4<0>, C4<0>;
-L_00C99AE0 .functor XOR 1, L_00C98488, L_00C984E0, C4<0>, C4<0>;
-v0066C7E8_0 .net "In1", 7 0, L_00C98538; 1 drivers
-v0066C840_0 .net "In2", 7 0, L_00C985E8; 1 drivers
-v0066C898_0 .net "IsSameSign", 0 0, L_00C98430; 1 drivers
-v0066C8F0_0 .net "IsSignChanged", 0 0, L_00C99AE0; 1 drivers
-v0066C948_0 .net "Out", 8 0, L_00C99920; 1 drivers
-v0066C9A0_0 .net "TestAdd", 8 0, L_00C98328; 1 drivers
-v0066C9F8_0 .net *"_s1", 0 0, L_00C98380; 1 drivers
-v0066CA80_0 .net *"_s11", 0 0, L_00C984E0; 1 drivers
-v0066CAD8_0 .net *"_s3", 0 0, L_00C983D8; 1 drivers
-v0066CB30_0 .net *"_s4", 0 0, L_00C99A00; 1 drivers
-v0066CB88_0 .net *"_s9", 0 0, L_00C98488; 1 drivers
-L_00C98380 .part L_00C98538, 7, 1;
-L_00C983D8 .part L_00C985E8, 7, 1;
-L_00C98430 .reduce/nor L_00C99A00;
-L_00C98488 .part L_00C98538, 7, 1;
-L_00C984E0 .part L_00C98328, 8, 1;
-S_00636518 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00636490;
- .timescale 0 0;
-v0066C688_0 .net *"_s0", 8 0, L_00C98278; 1 drivers
-v0066C6E0_0 .net *"_s3", 0 0, C4<0>; 1 drivers
-v0066C738_0 .net *"_s4", 8 0, L_00C982D0; 1 drivers
-v0066C790_0 .net *"_s7", 0 0, C4<0>; 1 drivers
-L_00C98278 .concat [ 8 1 0 0], L_00C98538, C4<0>;
-L_00C982D0 .concat [ 8 1 0 0], L_00C985E8, C4<0>;
-L_00C98328 .arith/sum 9, L_00C98278, L_00C982D0;
-S_006365A0 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00636518;
- .timescale 0 0;
-L_00C99920 .functor BUFZ 9, L_00C98328, C4<000000000>, C4<000000000>, C4<000000000>;
-S_006361E8 .scope generate, "foldLoop[7]" "foldLoop[7]" 3 41, 3 41, S_0062F0C0;
- .timescale 0 0;
-P_0062A48C .param/l "gi" 3 41, +C4<0111>;
-S_00636270 .scope module, "aS" "MFP_Adder" 3 44, 2 89, S_006361E8;
- .timescale 0 0;
-P_005CD524 .param/l "In1W" 2 91, +C4<01000>;
-P_005CD538 .param/l "In2W" 2 92, +C4<01000>;
-P_005CD54C .param/l "OutW" 2 93, +C4<01001>;
-P_005CD560 .param/l "Saturate" 2 95, +C4<0>;
-P_005CD574 .param/l "isUnsigned" 2 96, +C4<0>;
-P_005CD588 .param/l "maxPosOut" 2 106, +C4<011111111>;
-P_005CD59C .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00C99D48 .functor XOR 1, L_00C98748, L_00C987A0, C4<0>, C4<0>;
-L_00C9A710 .functor XOR 1, L_00C98850, L_00C988A8, C4<0>, C4<0>;
-v0066C2C0_0 .net "In1", 7 0, L_00C98900; 1 drivers
-v0066C318_0 .net "In2", 7 0, L_00C98958; 1 drivers
-v0066C370_0 .net "IsSameSign", 0 0, L_00C987F8; 1 drivers
-v0066C3C8_0 .net "IsSignChanged", 0 0, L_00C9A710; 1 drivers
-v0066C420_0 .net "Out", 8 0, L_00C99C68; 1 drivers
-v0066C478_0 .net "TestAdd", 8 0, L_00C986F0; 1 drivers
-v0066C4D0_0 .net *"_s1", 0 0, L_00C98748; 1 drivers
-v0066C528_0 .net *"_s11", 0 0, L_00C988A8; 1 drivers
-v0066C580_0 .net *"_s3", 0 0, L_00C987A0; 1 drivers
-v0066C5D8_0 .net *"_s4", 0 0, L_00C99D48; 1 drivers
-v0066C630_0 .net *"_s9", 0 0, L_00C98850; 1 drivers
-L_00C98748 .part L_00C98900, 7, 1;
-L_00C987A0 .part L_00C98958, 7, 1;
-L_00C987F8 .reduce/nor L_00C99D48;
-L_00C98850 .part L_00C98900, 7, 1;
-L_00C988A8 .part L_00C986F0, 8, 1;
-S_006362F8 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00636270;
- .timescale 0 0;
-v0066C160_0 .net *"_s0", 8 0, L_00C98640; 1 drivers
-v0066C1B8_0 .net *"_s3", 0 0, C4<0>; 1 drivers
-v0066C210_0 .net *"_s4", 8 0, L_00C98698; 1 drivers
-v0066C268_0 .net *"_s7", 0 0, C4<0>; 1 drivers
-L_00C98640 .concat [ 8 1 0 0], L_00C98900, C4<0>;
-L_00C98698 .concat [ 8 1 0 0], L_00C98958, C4<0>;
-L_00C986F0 .arith/sum 9, L_00C98640, L_00C98698;
-S_00636380 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_006362F8;
- .timescale 0 0;
-L_00C99C68 .functor BUFZ 9, L_00C986F0, C4<000000000>, C4<000000000>, C4<000000000>;
-S_0062F038 .scope module, "TB1" "TB1" 4 5;
- .timescale 0 0;
-P_005B7D0C .param/l "In1W" 4 7, +C4<01000>;
-P_005B7D20 .param/l "In2W" 4 8, +C4<01000>;
-P_005B7D34 .param/l "OutW" 4 9, +C4<01111>;
-v00C92B00_0 .net "AA", 7 0, C4<00000000>; 1 drivers
-v00C92B58_0 .net "BB", 7 0, C4<11111111>; 1 drivers
-v00C92BB0_0 .net/s "CC", 8 0, L_00CA07A8; 1 drivers
-RS_0063B3E4 .resolv tri, L_00CA0960, L_00CA0A68, L_00CA0CD0, L_00CA0F38;
-v00C92C08_0 .net8 "ZZZ", 0 0, RS_0063B3E4; 4 drivers
-v00C92C60_0 .net *"_s11", 0 0, C4<0>; 1 drivers
-v00C92CB8_0 .net *"_s4", 8 0, L_00CA06F8; 1 drivers
-v00C92D10_0 .net *"_s7", 0 0, C4<0>; 1 drivers
-v00C92D68_0 .net *"_s8", 8 0, L_00CA0750; 1 drivers
-v00C92DC0_0 .var "clk_", 0 0;
-v00C92E18_0 .var/i "counter", 31 0;
-v00C92E70_0 .net/s "satOut", 14 0, L_00CA31A8; 1 drivers
-E_0062AFA8 .event posedge, v00C92DC0_0;
-L_00CA06F8 .concat [ 8 1 0 0], C4<00000000>, C4<0>;
-L_00CA0750 .concat [ 8 1 0 0], C4<11111111>, C4<0>;
-L_00CA07A8 .arith/sub 9, L_00CA06F8, L_00CA0750;
-L_00CA0960 .part L_00CA0908, 0, 1;
-L_00CA0A68 .part L_00CA0A10, 0, 1;
-L_00CA0CD0 .part L_00CA2308, 0, 1;
-L_00CA0F38 .part L_00CA25E0, 0, 1;
-L_00CA14B8 .part v00C92E18_0, 0, 15;
-S_00628200 .scope module, "Mul" "MFP_Multi" 4 19, 2 26, S_0062F038;
- .timescale 0 0;
-P_0066FE6C .param/l "In1W" 2 28, +C4<0111>;
-P_0066FE80 .param/l "In2EQW" 2 30, +C4<0111>;
-P_0066FE94 .param/l "In2W" 2 29, +C4<0111>;
-P_0066FEA8 .param/l "OutW" 2 35, +C4<01000>;
-P_0066FEBC .param/l "RealOutW" 2 45, +C4<01101>;
-P_0066FED0 .param/l "Saturate" 2 37, +C4<0>;
-P_0066FEE4 .param/l "isFloor" 2 36, +C4<01>;
-P_0066FEF8 .param/l "isUnsigned" 2 38, +C4<0>;
-v00C929A0_0 .net "In1", 6 0, C4<1000001>; 1 drivers
-v00C929F8_0 .net "In2", 6 0, C4<1000001>; 1 drivers
-v00C92A50_0 .net "Out", 7 0, L_00CA0908; 1 drivers
-v00C92AA8_0 .net "Out_", 12 0, L_00CA0080; 1 drivers
-S_00627B18 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_00628200;
- .timescale 0 0;
-P_005D9764 .param/l "InW" 2 138, +C4<01101>;
-P_005D9778 .param/l "OutW" 2 139, +C4<01000>;
-P_005D978C .param/l "Saturate" 2 140, +C4<0>;
-P_005D97A0 .param/l "isFloor" 2 141, +C4<01>;
-P_005D97B4 .param/l "isUnsigned" 2 142, +C4<0>;
-v00C928F0_0 .alias "in", 12 0, v00C92AA8_0;
-v00C92948_0 .alias "out", 7 0, v00C92A50_0;
-L_00CA0908 .part L_00CA0080, 5, 8;
-S_006277E8 .scope generate, "genblk2" "genblk2" 2 157, 2 157, S_00627B18;
- .timescale 0 0;
-S_00627F58 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_00628200;
- .timescale 0 0;
-L_00C9FF30 .functor BUFZ 7, C4<1000001>, C4<0000000>, C4<0000000>, C4<0000000>;
-L_00C9FF68 .functor BUFZ 7, C4<1000001>, C4<0000000>, C4<0000000>, C4<0000000>;
-L_00CA0080 .functor BUFZ 13, L_00CA08B0, C4<0000000000000>, C4<0000000000000>, C4<0000000000000>;
-v00C92738_0 .net/s "In1_s", 6 0, L_00C9FF30; 1 drivers
-v00C92790_0 .net/s "In2_s", 6 0, L_00C9FF68; 1 drivers
-v00C927E8_0 .net/s "Out_s", 12 0, L_00CA08B0; 1 drivers
-v00C92840_0 .net/s *"_s4", 12 0, L_00CA0800; 1 drivers
-v00C92898_0 .net/s *"_s6", 12 0, L_00CA0858; 1 drivers
-L_00CA0800 .extend/s 13, L_00C9FF30;
-L_00CA0858 .extend/s 13, L_00C9FF68;
-L_00CA08B0 .arith/mult 13, L_00CA0800, L_00CA0858;
-S_00627ED0 .scope module, "Muluns" "MFP_Multi" 4 20, 2 26, S_0062F038;
- .timescale 0 0;
-P_005BDD1C .param/l "In1W" 2 28, +C4<01000>;
-P_005BDD30 .param/l "In2EQW" 2 30, +C4<01000>;
-P_005BDD44 .param/l "In2W" 2 29, +C4<01000>;
-P_005BDD58 .param/l "OutW" 2 35, +C4<01000>;
-P_005BDD6C .param/l "RealOutW" 2 45, +C4<010000>;
-P_005BDD80 .param/l "Saturate" 2 37, +C4<0>;
-P_005BDD94 .param/l "isFloor" 2 36, +C4<01>;
-P_005BDDA8 .param/l "isUnsigned" 2 38, +C4<01>;
-v00C925D8_0 .net "In1", 7 0, C4<10000000>; 1 drivers
-v00C92630_0 .net "In2", 7 0, C4<10000000>; 1 drivers
-v00C92688_0 .net "Out", 7 0, L_00CA0A10; 1 drivers
-v00C926E0_0 .net "Out_", 15 0, L_00CA09B8; 1 drivers
-S_00628178 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_00627ED0;
- .timescale 0 0;
-P_005D96F4 .param/l "InW" 2 138, +C4<010000>;
-P_005D9708 .param/l "OutW" 2 139, +C4<01000>;
-P_005D971C .param/l "Saturate" 2 140, +C4<0>;
-P_005D9730 .param/l "isFloor" 2 141, +C4<01>;
-P_005D9744 .param/l "isUnsigned" 2 142, +C4<01>;
-v00C924F8_0 .alias "in", 15 0, v00C926E0_0;
-v00C92580_0 .alias "out", 7 0, v00C92688_0;
-L_00CA0A10 .part L_00CA09B8, 8, 8;
-S_00627FE0 .scope generate, "genblk2" "genblk2" 2 157, 2 157, S_00628178;
- .timescale 0 0;
-S_00627BA0 .scope generate, "genblk1" "genblk1" 2 51, 2 51, S_00627ED0;
- .timescale 0 0;
-L_00CA09B8 .arith/mult 16, C4<10000000>, C4<10000000>;
-S_00621978 .scope module, "Adder" "MFP_Adder" 4 23, 2 89, S_0062F038;
- .timescale 0 0;
-P_00C81EEC .param/l "In1W" 2 91, +C4<01000>;
-P_00C81F00 .param/l "In2W" 2 92, +C4<01000>;
-P_00C81F14 .param/l "OutW" 2 93, +C4<01000>;
-P_00C81F28 .param/l "Saturate" 2 95, +C4<0>;
-P_00C81F3C .param/l "isUnsigned" 2 96, +C4<0>;
-P_00C81F50 .param/l "maxPosOut" 2 106, +C4<01111111>;
-P_00C81F64 .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00CA23E8 .functor XOR 1, L_00CA0B18, L_00CA0B70, C4<0>, C4<0>;
-L_00CA24C8 .functor XOR 1, L_00CA0C20, L_00CA0C78, C4<0>, C4<0>;
-v00C92130_0 .net "In1", 7 0, C4<01111111>; 1 drivers
-v00C92188_0 .net "In2", 7 0, C4<10000001>; 1 drivers
-v00C921E0_0 .net "IsSameSign", 0 0, L_00CA0BC8; 1 drivers
-v00C92238_0 .net "IsSignChanged", 0 0, L_00CA24C8; 1 drivers
-v00C92290_0 .net "Out", 7 0, L_00CA2308; 1 drivers
-v00C922E8_0 .net "TestAdd", 7 0, L_00CA0AC0; 1 drivers
-v00C92340_0 .net *"_s11", 0 0, L_00CA0C20; 1 drivers
-v00C92398_0 .net *"_s13", 0 0, L_00CA0C78; 1 drivers
-v00C923F0_0 .net *"_s3", 0 0, L_00CA0B18; 1 drivers
-v00C92448_0 .net *"_s5", 0 0, L_00CA0B70; 1 drivers
-v00C924A0_0 .net *"_s6", 0 0, L_00CA23E8; 1 drivers
-L_00CA0AC0 .arith/sum 8, C4<01111111>, C4<10000001>;
-L_00CA0B18 .part C4<01111111>, 7, 1;
-L_00CA0B70 .part C4<10000001>, 7, 1;
-L_00CA0BC8 .reduce/nor L_00CA23E8;
-L_00CA0C20 .part C4<01111111>, 7, 1;
-L_00CA0C78 .part L_00CA0AC0, 7, 1;
-S_00621A00 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00621978;
- .timescale 0 0;
-S_00627C28 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00621A00;
- .timescale 0 0;
-L_00CA2308 .functor BUFZ 8, L_00CA0AC0, C4<00000000>, C4<00000000>, C4<00000000>;
-S_00621290 .scope module, "AdderuS" "MFP_Adder" 4 24, 2 89, S_0062F038;
- .timescale 0 0;
-P_00C81E54 .param/l "In1W" 2 91, +C4<01000>;
-P_00C81E68 .param/l "In2W" 2 92, +C4<01000>;
-P_00C81E7C .param/l "OutW" 2 93, +C4<01000>;
-P_00C81E90 .param/l "Saturate" 2 95, +C4<0>;
-P_00C81EA4 .param/l "isUnsigned" 2 96, +C4<01>;
-P_00C81EB8 .param/l "maxPosOut" 2 106, +C4<011111111>;
-P_00C81ECC .param/l "unsignedAddIn2" 2 94, +C4<0>;
-L_00CA26C0 .functor XOR 1, L_00CA0D80, L_00CA0DD8, C4<0>, C4<0>;
-L_00CA27A0 .functor XOR 1, L_00CA0E88, L_00CA0EE0, C4<0>, C4<0>;
-v00C91D68_0 .net "In1", 7 0, C4<11111111>; 1 drivers
-v00C91DC0_0 .net "In2", 7 0, C4<00000001>; 1 drivers
-v00C91E18_0 .net "IsSameSign", 0 0, L_00CA0E30; 1 drivers
-v00C91E70_0 .net "IsSignChanged", 0 0, L_00CA27A0; 1 drivers
-v00C91EC8_0 .net "Out", 7 0, L_00CA25E0; 1 drivers
-v00C91F20_0 .net "TestAdd", 7 0, L_00CA0D28; 1 drivers
-v00C91F78_0 .net *"_s11", 0 0, L_00CA0E88; 1 drivers
-v00C91FD0_0 .net *"_s13", 0 0, L_00CA0EE0; 1 drivers
-v00C92028_0 .net *"_s3", 0 0, L_00CA0D80; 1 drivers
-v00C92080_0 .net *"_s5", 0 0, L_00CA0DD8; 1 drivers
-v00C920D8_0 .net *"_s6", 0 0, L_00CA26C0; 1 drivers
-L_00CA0D28 .arith/sum 8, C4<11111111>, L_00CA2570;
-L_00CA0D80 .part C4<11111111>, 7, 1;
-L_00CA0DD8 .part C4<00000001>, 7, 1;
-L_00CA0E30 .reduce/nor L_00CA26C0;
-L_00CA0E88 .part C4<11111111>, 7, 1;
-L_00CA0EE0 .part L_00CA0D28, 7, 1;
-S_00620CB8 .scope generate, "genblk1" "genblk1" 2 112, 2 112, S_00621290;
- .timescale 0 0;
-L_00CA2570 .functor BUFZ 8, C4<00000001>, C4<00000000>, C4<00000000>, C4<00000000>;
-v00C91D10_0 .net "In2_", 7 0, L_00CA2570; 1 drivers
-S_00620D40 .scope generate, "genblk2" "genblk2" 2 115, 2 115, S_00620CB8;
- .timescale 0 0;
-L_00CA25E0 .functor BUFZ 8, L_00CA0D28, C4<00000000>, C4<00000000>, C4<00000000>;
-S_00621208 .scope module, "sat" "MFP_Saturate" 4 28, 2 198, S_0062F038;
- .timescale 0 0;
-P_00620DCC .param/l "InW" 2 200, +C4<01111>;
-P_00620DE0 .param/l "MAX_POS" 2 208, +C4<011>;
-P_00620DF4 .param/l "OutW" 2 201, +C4<01111>;
-P_00620E08 .param/l "Sat2W" 2 202, +C4<011>;
-P_00620E1C .param/l "checkbits" 2 207, +C4<01100>;
-P_00620E30 .param/l "isUnsigned" 2 203, +C4<0>;
-v00C91C08_0 .net "dataIn", 14 0, L_00CA14B8; 1 drivers
-v00C91C60_0 .alias "dataOut", 14 0, v00C92E70_0;
-v00C91CB8_0 .net "sign", 0 0, L_00CA1460; 1 drivers
-L_00CA0F90 .part L_00CA14B8, 2, 12;
-L_00CA1040 .part L_00CA14B8, 0, 2;
-L_00CA1148 .part L_00CA14B8, 0, 3;
-L_00CA11F8 .part L_00CA14B8, 2, 12;
-L_00CA1300 .part L_00CA14B8, 0, 3;
-L_00CA13B0 .functor MUXZ 3, L_00CA1358, L_00CA11A0, L_00CA1460, C4<>;
-L_00CA1460 .part L_00CA14B8, 14, 1;
-S_00620E50 .scope generate, "genblk2" "genblk2" 2 212, 2 212, S_00621208;
- .timescale 0 0;
-L_00CA2998 .functor AND 1, L_00CA0FE8, L_00CA10F0, C4<1>, C4<1>;
-L_00CA31A8 .functor BUFZ 15, L_00CA1408, C4<000000000000000>, C4<000000000000000>, C4<000000000000000>;
-v00C90888_0 .net/s "Out", 14 0, L_00CA1408; 1 drivers
-v00C908E0_0 .net/s "Out_", 2 0, L_00CA13B0; 1 drivers
-v00C90938_0 .net *"_s0", 11 0, L_00CA0F90; 1 drivers
-v00C91580_0 .net *"_s1", 11 0, C4<111111111111>; 1 drivers
-v00C915D8_0 .net *"_s10", 2 0, C4<000>; 1 drivers
-v00C91630_0 .net *"_s12", 0 0, L_00CA10F0; 1 drivers
-v00C91688_0 .net *"_s14", 0 0, L_00CA2998; 1 drivers
-v00C916E0_0 .net *"_s16", 2 0, L_00CA1148; 1 drivers
-v00C91738_0 .net *"_s17", 2 0, C4<101>; 1 drivers
-v00C91790_0 .net *"_s19", 2 0, L_00CA11A0; 1 drivers
-v00C917E8_0 .net *"_s21", 11 0, L_00CA11F8; 1 drivers
-v00C91840_0 .net *"_s22", 12 0, L_00CA1250; 1 drivers
-v00C91898_0 .net *"_s25", 0 0, C4<0>; 1 drivers
-v00C918F0_0 .net *"_s26", 12 0, C4<0000000000000>; 1 drivers
-v00C91948_0 .net *"_s28", 0 0, L_00CA12A8; 1 drivers
-v00C919A0_0 .net *"_s3", 0 0, L_00CA0FE8; 1 drivers
-v00C919F8_0 .net *"_s30", 2 0, C4<011>; 1 drivers
-v00C91A50_0 .net *"_s32", 2 0, L_00CA1300; 1 drivers
-v00C91AA8_0 .net *"_s33", 2 0, L_00CA1358; 1 drivers
-v00C91B58_0 .net *"_s5", 1 0, L_00CA1040; 1 drivers
-v00C91B00_0 .net *"_s6", 2 0, L_00CA1098; 1 drivers
-v00C91BB0_0 .net *"_s9", 0 0, C4<0>; 1 drivers
-L_00CA0FE8 .cmp/eq 12, L_00CA0F90, C4<111111111111>;
-L_00CA1098 .concat [ 2 1 0 0], L_00CA1040, C4<0>;
-L_00CA10F0 .cmp/ne 3, L_00CA1098, C4<000>;
-L_00CA11A0 .functor MUXZ 3, C4<101>, L_00CA1148, L_00CA2998, C4<>;
-L_00CA1250 .concat [ 12 1 0 0], L_00CA11F8, C4<0>;
-L_00CA12A8 .cmp/ne 13, L_00CA1250, C4<0000000000000>;
-L_00CA1358 .functor MUXZ 3, L_00CA1300, C4<011>, L_00CA12A8, C4<>;
-L_00CA1408 .extend/s 15, L_00CA13B0;
-    .scope S_0062F720;
+v00EB09C0_0 .alias "clk", 0 0, v00EC08E0_0;
+v00EB0A18_0 .alias "en", 0 0, v00EC0938_0;
+v00EB0A70_0 .alias "in", 15 0, v00EB0F98_0;
+v00EB0AC8_0 .alias "out", 15 0, v00EB4048_0;
+S_006379E0 .scope generate, "genblk1" "genblk1" 2 184, 2 184, S_00637958;
+ .timescale 0 0;
+L_00ECFBC0 .functor BUFZ 16, L_00ECEA18, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+S_006378D0 .scope generate, "genblk1" "genblk1" 3 130, 3 130, S_006377C0;
+ .timescale 0 0;
+S_00637848 .scope generate, "genblk3" "genblk3" 3 137, 3 137, S_006377C0;
+ .timescale 0 0;
+S_00637490 .scope module, "round_acc" "MFP_Round" 3 98, 2 135, S_00637408;
+ .timescale 0 0;
+P_005D933C .param/l "InW" 2 138, +C4<010000>;
+P_005D9350 .param/l "OutW" 2 139, +C4<010000>;
+P_005D9364 .param/l "Saturate" 2 140, +C4<0>;
+P_005D9378 .param/l "isFloor" 2 141, +C4<01>;
+P_005D938C .param/l "isUnsigned" 2 142, +C4<0>;
+v00EB0910_0 .alias "in", 15 0, v00EC0518_0;
+v00EB0968_0 .alias "out", 15 0, v00EC03B8_0;
+S_00637518 .scope generate, "genblk4" "genblk4" 2 156, 2 156, S_00637490;
+ .timescale 0 0;
+L_00ED0750 .concat [ 16 0 0 0], L_00ECFFB0;
+S_006371E8 .scope generate, "foldLoop[0]" "foldLoop[0]" 3 41, 3 41, S_0062F1E0;
+ .timescale 0 0;
+P_00629C0C .param/l "gi" 3 41, +C4<00>;
+S_00637270 .scope module, "aS" "MFP_Adder" 3 44, 2 89, S_006371E8;
+ .timescale 0 0;
+P_005D7524 .param/l "In1W" 2 91, +C4<01000>;
+P_005D7538 .param/l "In2W" 2 92, +C4<01000>;
+P_005D754C .param/l "OutW" 2 93, +C4<01001>;
+P_005D7560 .param/l "Saturate" 2 95, +C4<0>;
+P_005D7574 .param/l "isUnsigned" 2 96, +C4<0>;
+P_005D7588 .param/l "maxPosOut" 2 106, +C4<011111111>;
+P_005D759C .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00EC66E0 .functor XOR 1, L_00EC45D0, L_00EC4628, C4<0>, C4<0>;
+L_00EC67C0 .functor XOR 1, L_00EC6F38, L_00EC6F90, C4<0>, C4<0>;
+v0066E858_0 .net "In1", 7 0, L_00EC6FE8; 1 drivers
+v0066E8B0_0 .net "In2", 7 0, L_00EC7040; 1 drivers
+v0066E908_0 .net "IsSameSign", 0 0, L_00EC6EE0; 1 drivers
+v0066E960_0 .net "IsSignChanged", 0 0, L_00EC67C0; 1 drivers
+v0066E9B8_0 .net "Out", 8 0, L_00EC65E0; 1 drivers
+v0066EA10_0 .net "TestAdd", 8 0, L_00EC4578; 1 drivers
+v0066EA68_0 .net *"_s1", 0 0, L_00EC45D0; 1 drivers
+v0066EAC0_0 .net *"_s11", 0 0, L_00EC6F90; 1 drivers
+v0066EB18_0 .net *"_s3", 0 0, L_00EC4628; 1 drivers
+v00EB0860_0 .net *"_s4", 0 0, L_00EC66E0; 1 drivers
+v00EB08B8_0 .net *"_s9", 0 0, L_00EC6F38; 1 drivers
+L_00EC45D0 .part L_00EC6FE8, 7, 1;
+L_00EC4628 .part L_00EC7040, 7, 1;
+L_00EC6EE0 .reduce/nor L_00EC66E0;
+L_00EC6F38 .part L_00EC6FE8, 7, 1;
+L_00EC6F90 .part L_00EC4578, 8, 1;
+S_006372F8 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00637270;
+ .timescale 0 0;
+v0066E6F8_0 .net *"_s0", 8 0, L_00EC44C8; 1 drivers
+v0066E750_0 .net *"_s3", 0 0, C4<0>; 1 drivers
+v0066E7A8_0 .net *"_s4", 8 0, L_00EC4520; 1 drivers
+v0066E800_0 .net *"_s7", 0 0, C4<0>; 1 drivers
+L_00EC44C8 .concat [ 8 1 0 0], L_00EC6FE8, C4<0>;
+L_00EC4520 .concat [ 8 1 0 0], L_00EC7040, C4<0>;
+L_00EC4578 .arith/sum 9, L_00EC44C8, L_00EC4520;
+S_00637380 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_006372F8;
+ .timescale 0 0;
+L_00EC65E0 .functor BUFZ 9, L_00EC4578, C4<000000000>, C4<000000000>, C4<000000000>;
+S_00636FC8 .scope generate, "foldLoop[1]" "foldLoop[1]" 3 41, 3 41, S_0062F1E0;
+ .timescale 0 0;
+P_00629BEC .param/l "gi" 3 41, +C4<01>;
+S_00637050 .scope module, "aS" "MFP_Adder" 3 44, 2 89, S_00636FC8;
+ .timescale 0 0;
+P_005D748C .param/l "In1W" 2 91, +C4<01000>;
+P_005D74A0 .param/l "In2W" 2 92, +C4<01000>;
+P_005D74B4 .param/l "OutW" 2 93, +C4<01001>;
+P_005D74C8 .param/l "Saturate" 2 95, +C4<0>;
+P_005D74DC .param/l "isUnsigned" 2 96, +C4<0>;
+P_005D74F0 .param/l "maxPosOut" 2 106, +C4<011111111>;
+P_005D7504 .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00EC6A60 .functor XOR 1, L_00EC71F8, L_00EC7250, C4<0>, C4<0>;
+L_00EC6B40 .functor XOR 1, L_00EC7300, L_00EC7358, C4<0>, C4<0>;
+v0066E330_0 .net "In1", 7 0, L_00EC73B0; 1 drivers
+v0066E388_0 .net "In2", 7 0, L_00EC7408; 1 drivers
+v0066E3E0_0 .net "IsSameSign", 0 0, L_00EC72A8; 1 drivers
+v0066E438_0 .net "IsSignChanged", 0 0, L_00EC6B40; 1 drivers
+v0066E490_0 .net "Out", 8 0, L_00EC6980; 1 drivers
+v0066E4E8_0 .net "TestAdd", 8 0, L_00EC71A0; 1 drivers
+v0066E540_0 .net *"_s1", 0 0, L_00EC71F8; 1 drivers
+v0066E598_0 .net *"_s11", 0 0, L_00EC7358; 1 drivers
+v0066E5F0_0 .net *"_s3", 0 0, L_00EC7250; 1 drivers
+v0066E648_0 .net *"_s4", 0 0, L_00EC6A60; 1 drivers
+v0066E6A0_0 .net *"_s9", 0 0, L_00EC7300; 1 drivers
+L_00EC71F8 .part L_00EC73B0, 7, 1;
+L_00EC7250 .part L_00EC7408, 7, 1;
+L_00EC72A8 .reduce/nor L_00EC6A60;
+L_00EC7300 .part L_00EC73B0, 7, 1;
+L_00EC7358 .part L_00EC71A0, 8, 1;
+S_006370D8 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00637050;
+ .timescale 0 0;
+v0066E1D0_0 .net *"_s0", 8 0, L_00EC70F0; 1 drivers
+v0066E228_0 .net *"_s3", 0 0, C4<0>; 1 drivers
+v0066E280_0 .net *"_s4", 8 0, L_00EC7148; 1 drivers
+v0066E2D8_0 .net *"_s7", 0 0, C4<0>; 1 drivers
+L_00EC70F0 .concat [ 8 1 0 0], L_00EC73B0, C4<0>;
+L_00EC7148 .concat [ 8 1 0 0], L_00EC7408, C4<0>;
+L_00EC71A0 .arith/sum 9, L_00EC70F0, L_00EC7148;
+S_00637160 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_006370D8;
+ .timescale 0 0;
+L_00EC6980 .functor BUFZ 9, L_00EC71A0, C4<000000000>, C4<000000000>, C4<000000000>;
+S_00636DA8 .scope generate, "foldLoop[2]" "foldLoop[2]" 3 41, 3 41, S_0062F1E0;
+ .timescale 0 0;
+P_0062A16C .param/l "gi" 3 41, +C4<010>;
+S_00636E30 .scope module, "aS" "MFP_Adder" 3 44, 2 89, S_00636DA8;
+ .timescale 0 0;
+P_005D0E04 .param/l "In1W" 2 91, +C4<01000>;
+P_005D0E18 .param/l "In2W" 2 92, +C4<01000>;
+P_005D0E2C .param/l "OutW" 2 93, +C4<01001>;
+P_005D0E40 .param/l "Saturate" 2 95, +C4<0>;
+P_005D0E54 .param/l "isUnsigned" 2 96, +C4<0>;
+P_005D0E68 .param/l "maxPosOut" 2 106, +C4<011111111>;
+P_005D0E7C .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00EC6D70 .functor XOR 1, L_00EC75C0, L_00EC7618, C4<0>, C4<0>;
+L_00EC6E50 .functor XOR 1, L_00EC76C8, L_00EC7720, C4<0>, C4<0>;
+v0066DE08_0 .net "In1", 7 0, L_00EC7778; 1 drivers
+v0066DE60_0 .net "In2", 7 0, L_00EC77D0; 1 drivers
+v0066DEB8_0 .net "IsSameSign", 0 0, L_00EC7670; 1 drivers
+v0066DF10_0 .net "IsSignChanged", 0 0, L_00EC6E50; 1 drivers
+v0066DF68_0 .net "Out", 8 0, L_00EC6C90; 1 drivers
+v0066DFC0_0 .net "TestAdd", 8 0, L_00EC7568; 1 drivers
+v0066E018_0 .net *"_s1", 0 0, L_00EC75C0; 1 drivers
+v0066E070_0 .net *"_s11", 0 0, L_00EC7720; 1 drivers
+v0066E0C8_0 .net *"_s3", 0 0, L_00EC7618; 1 drivers
+v0066E120_0 .net *"_s4", 0 0, L_00EC6D70; 1 drivers
+v0066E178_0 .net *"_s9", 0 0, L_00EC76C8; 1 drivers
+L_00EC75C0 .part L_00EC7778, 7, 1;
+L_00EC7618 .part L_00EC77D0, 7, 1;
+L_00EC7670 .reduce/nor L_00EC6D70;
+L_00EC76C8 .part L_00EC7778, 7, 1;
+L_00EC7720 .part L_00EC7568, 8, 1;
+S_00636EB8 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00636E30;
+ .timescale 0 0;
+v0066DCA8_0 .net *"_s0", 8 0, L_00EC74B8; 1 drivers
+v0066DD00_0 .net *"_s3", 0 0, C4<0>; 1 drivers
+v0066DD58_0 .net *"_s4", 8 0, L_00EC7510; 1 drivers
+v0066DDB0_0 .net *"_s7", 0 0, C4<0>; 1 drivers
+L_00EC74B8 .concat [ 8 1 0 0], L_00EC7778, C4<0>;
+L_00EC7510 .concat [ 8 1 0 0], L_00EC77D0, C4<0>;
+L_00EC7568 .arith/sum 9, L_00EC74B8, L_00EC7510;
+S_00636F40 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00636EB8;
+ .timescale 0 0;
+L_00EC6C90 .functor BUFZ 9, L_00EC7568, C4<000000000>, C4<000000000>, C4<000000000>;
+S_00636B88 .scope generate, "foldLoop[3]" "foldLoop[3]" 3 41, 3 41, S_0062F1E0;
+ .timescale 0 0;
+P_0062A14C .param/l "gi" 3 41, +C4<011>;
+S_00636C10 .scope module, "aS" "MFP_Adder" 3 44, 2 89, S_00636B88;
+ .timescale 0 0;
+P_005D0D6C .param/l "In1W" 2 91, +C4<01000>;
+P_005D0D80 .param/l "In2W" 2 92, +C4<01000>;
+P_005D0D94 .param/l "OutW" 2 93, +C4<01001>;
+P_005D0DA8 .param/l "Saturate" 2 95, +C4<0>;
+P_005D0DBC .param/l "isUnsigned" 2 96, +C4<0>;
+P_005D0DD0 .param/l "maxPosOut" 2 106, +C4<011111111>;
+P_005D0DE4 .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00EC90A0 .functor XOR 1, L_00EC7988, L_00EC79E0, C4<0>, C4<0>;
+L_00EC9180 .functor XOR 1, L_00EC7A90, L_00EC7AE8, C4<0>, C4<0>;
+v0066D8B0_0 .net "In1", 7 0, L_00EC7B40; 1 drivers
+v0066D908_0 .net "In2", 7 0, L_00EC7B98; 1 drivers
+v0066D960_0 .net "IsSameSign", 0 0, L_00EC7A38; 1 drivers
+v0066D9B8_0 .net "IsSignChanged", 0 0, L_00EC9180; 1 drivers
+v0066DA10_0 .net "Out", 8 0, L_00EC8FC0; 1 drivers
+v0066DA68_0 .net "TestAdd", 8 0, L_00EC7930; 1 drivers
+v0066DAC0_0 .net *"_s1", 0 0, L_00EC7988; 1 drivers
+v0066DB18_0 .net *"_s11", 0 0, L_00EC7AE8; 1 drivers
+v0066DBA0_0 .net *"_s3", 0 0, L_00EC79E0; 1 drivers
+v0066DBF8_0 .net *"_s4", 0 0, L_00EC90A0; 1 drivers
+v0066DC50_0 .net *"_s9", 0 0, L_00EC7A90; 1 drivers
+L_00EC7988 .part L_00EC7B40, 7, 1;
+L_00EC79E0 .part L_00EC7B98, 7, 1;
+L_00EC7A38 .reduce/nor L_00EC90A0;
+L_00EC7A90 .part L_00EC7B40, 7, 1;
+L_00EC7AE8 .part L_00EC7930, 8, 1;
+S_00636C98 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00636C10;
+ .timescale 0 0;
+v0066D750_0 .net *"_s0", 8 0, L_00EC7880; 1 drivers
+v0066D7A8_0 .net *"_s3", 0 0, C4<0>; 1 drivers
+v0066D800_0 .net *"_s4", 8 0, L_00EC78D8; 1 drivers
+v0066D858_0 .net *"_s7", 0 0, C4<0>; 1 drivers
+L_00EC7880 .concat [ 8 1 0 0], L_00EC7B40, C4<0>;
+L_00EC78D8 .concat [ 8 1 0 0], L_00EC7B98, C4<0>;
+L_00EC7930 .arith/sum 9, L_00EC7880, L_00EC78D8;
+S_00636D20 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00636C98;
+ .timescale 0 0;
+L_00EC8FC0 .functor BUFZ 9, L_00EC7930, C4<000000000>, C4<000000000>, C4<000000000>;
+S_00636968 .scope generate, "foldLoop[4]" "foldLoop[4]" 3 41, 3 41, S_0062F1E0;
+ .timescale 0 0;
+P_0062A1CC .param/l "gi" 3 41, +C4<0100>;
+S_006369F0 .scope module, "aS" "MFP_Adder" 3 44, 2 89, S_00636968;
+ .timescale 0 0;
+P_005CD5F4 .param/l "In1W" 2 91, +C4<01000>;
+P_005CD608 .param/l "In2W" 2 92, +C4<01000>;
+P_005CD61C .param/l "OutW" 2 93, +C4<01001>;
+P_005CD630 .param/l "Saturate" 2 95, +C4<0>;
+P_005CD644 .param/l "isUnsigned" 2 96, +C4<0>;
+P_005CD658 .param/l "maxPosOut" 2 106, +C4<011111111>;
+P_005CD66C .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00EC9420 .functor XOR 1, L_00EC7DA8, L_00EC7E00, C4<0>, C4<0>;
+L_00EC9500 .functor XOR 1, L_00EC7EB0, L_00EC7F08, C4<0>, C4<0>;
+v0066D388_0 .net "In1", 7 0, L_00EC7F60; 1 drivers
+v0066D3E0_0 .net "In2", 7 0, L_00EC7FB8; 1 drivers
+v0066D438_0 .net "IsSameSign", 0 0, L_00EC7E58; 1 drivers
+v0066D490_0 .net "IsSignChanged", 0 0, L_00EC9500; 1 drivers
+v0066D4E8_0 .net "Out", 8 0, L_00EC9340; 1 drivers
+v0066D540_0 .net "TestAdd", 8 0, L_00EC7D50; 1 drivers
+v0066D598_0 .net *"_s1", 0 0, L_00EC7DA8; 1 drivers
+v0066D5F0_0 .net *"_s11", 0 0, L_00EC7F08; 1 drivers
+v0066D648_0 .net *"_s3", 0 0, L_00EC7E00; 1 drivers
+v0066D6A0_0 .net *"_s4", 0 0, L_00EC9420; 1 drivers
+v0066D6F8_0 .net *"_s9", 0 0, L_00EC7EB0; 1 drivers
+L_00EC7DA8 .part L_00EC7F60, 7, 1;
+L_00EC7E00 .part L_00EC7FB8, 7, 1;
+L_00EC7E58 .reduce/nor L_00EC9420;
+L_00EC7EB0 .part L_00EC7F60, 7, 1;
+L_00EC7F08 .part L_00EC7D50, 8, 1;
+S_00636A78 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_006369F0;
+ .timescale 0 0;
+v0066D228_0 .net *"_s0", 8 0, L_00EC7C48; 1 drivers
+v0066D280_0 .net *"_s3", 0 0, C4<0>; 1 drivers
+v0066D2D8_0 .net *"_s4", 8 0, L_00EC7CA0; 1 drivers
+v0066D330_0 .net *"_s7", 0 0, C4<0>; 1 drivers
+L_00EC7C48 .concat [ 8 1 0 0], L_00EC7F60, C4<0>;
+L_00EC7CA0 .concat [ 8 1 0 0], L_00EC7FB8, C4<0>;
+L_00EC7D50 .arith/sum 9, L_00EC7C48, L_00EC7CA0;
+S_00636B00 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00636A78;
+ .timescale 0 0;
+L_00EC9340 .functor BUFZ 9, L_00EC7D50, C4<000000000>, C4<000000000>, C4<000000000>;
+S_00636748 .scope generate, "foldLoop[5]" "foldLoop[5]" 3 41, 3 41, S_0062F1E0;
+ .timescale 0 0;
+P_0062A1AC .param/l "gi" 3 41, +C4<0101>;
+S_006367D0 .scope module, "aS" "MFP_Adder" 3 44, 2 89, S_00636748;
+ .timescale 0 0;
+P_005CD55C .param/l "In1W" 2 91, +C4<01000>;
+P_005CD570 .param/l "In2W" 2 92, +C4<01000>;
+P_005CD584 .param/l "OutW" 2 93, +C4<01001>;
+P_005CD598 .param/l "Saturate" 2 95, +C4<0>;
+P_005CD5AC .param/l "isUnsigned" 2 96, +C4<0>;
+P_005CD5C0 .param/l "maxPosOut" 2 106, +C4<011111111>;
+P_005CD5D4 .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00EC9818 .functor XOR 1, L_00EC8118, L_00EC8170, C4<0>, C4<0>;
+L_00EC98F8 .functor XOR 1, L_00EC8220, L_00EC8278, C4<0>, C4<0>;
+v0066CE60_0 .net "In1", 7 0, L_00EC82D0; 1 drivers
+v0066CEB8_0 .net "In2", 7 0, L_00EC8328; 1 drivers
+v0066CF10_0 .net "IsSameSign", 0 0, L_00EC81C8; 1 drivers
+v0066CF68_0 .net "IsSignChanged", 0 0, L_00EC98F8; 1 drivers
+v0066CFC0_0 .net "Out", 8 0, L_00EC9650; 1 drivers
+v0066D018_0 .net "TestAdd", 8 0, L_00EC7CF8; 1 drivers
+v0066D070_0 .net *"_s1", 0 0, L_00EC8118; 1 drivers
+v0066D0C8_0 .net *"_s11", 0 0, L_00EC8278; 1 drivers
+v0066D120_0 .net *"_s3", 0 0, L_00EC8170; 1 drivers
+v0066D178_0 .net *"_s4", 0 0, L_00EC9818; 1 drivers
+v0066D1D0_0 .net *"_s9", 0 0, L_00EC8220; 1 drivers
+L_00EC8118 .part L_00EC82D0, 7, 1;
+L_00EC8170 .part L_00EC8328, 7, 1;
+L_00EC81C8 .reduce/nor L_00EC9818;
+L_00EC8220 .part L_00EC82D0, 7, 1;
+L_00EC8278 .part L_00EC7CF8, 8, 1;
+S_00636858 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_006367D0;
+ .timescale 0 0;
+v0066CD00_0 .net *"_s0", 8 0, L_00EC8068; 1 drivers
+v0066CD58_0 .net *"_s3", 0 0, C4<0>; 1 drivers
+v0066CDB0_0 .net *"_s4", 8 0, L_00EC80C0; 1 drivers
+v0066CE08_0 .net *"_s7", 0 0, C4<0>; 1 drivers
+L_00EC8068 .concat [ 8 1 0 0], L_00EC82D0, C4<0>;
+L_00EC80C0 .concat [ 8 1 0 0], L_00EC8328, C4<0>;
+L_00EC7CF8 .arith/sum 9, L_00EC8068, L_00EC80C0;
+S_006368E0 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00636858;
+ .timescale 0 0;
+L_00EC9650 .functor BUFZ 9, L_00EC7CF8, C4<000000000>, C4<000000000>, C4<000000000>;
+S_00636528 .scope generate, "foldLoop[6]" "foldLoop[6]" 3 41, 3 41, S_0062F1E0;
+ .timescale 0 0;
+P_0062A4EC .param/l "gi" 3 41, +C4<0110>;
+S_006365B0 .scope module, "aS" "MFP_Adder" 3 44, 2 89, S_00636528;
+ .timescale 0 0;
+P_00BDE094 .param/l "In1W" 2 91, +C4<01000>;
+P_00BDE0A8 .param/l "In2W" 2 92, +C4<01000>;
+P_00BDE0BC .param/l "OutW" 2 93, +C4<01001>;
+P_00BDE0D0 .param/l "Saturate" 2 95, +C4<0>;
+P_00BDE0E4 .param/l "isUnsigned" 2 96, +C4<0>;
+P_00BDE0F8 .param/l "maxPosOut" 2 106, +C4<011111111>;
+P_00BDE10C .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00EC9B60 .functor XOR 1, L_00EC84E0, L_00EC8538, C4<0>, C4<0>;
+L_00EC9C40 .functor XOR 1, L_00EC85E8, L_00EC8640, C4<0>, C4<0>;
+v0066C908_0 .net "In1", 7 0, L_00EC8698; 1 drivers
+v0066C960_0 .net "In2", 7 0, L_00EC8748; 1 drivers
+v0066C9B8_0 .net "IsSameSign", 0 0, L_00EC8590; 1 drivers
+v0066CA10_0 .net "IsSignChanged", 0 0, L_00EC9C40; 1 drivers
+v0066CA68_0 .net "Out", 8 0, L_00EC9A80; 1 drivers
+v0066CAC0_0 .net "TestAdd", 8 0, L_00EC8488; 1 drivers
+v0066CB18_0 .net *"_s1", 0 0, L_00EC84E0; 1 drivers
+v0066CBA0_0 .net *"_s11", 0 0, L_00EC8640; 1 drivers
+v0066CBF8_0 .net *"_s3", 0 0, L_00EC8538; 1 drivers
+v0066CC50_0 .net *"_s4", 0 0, L_00EC9B60; 1 drivers
+v0066CCA8_0 .net *"_s9", 0 0, L_00EC85E8; 1 drivers
+L_00EC84E0 .part L_00EC8698, 7, 1;
+L_00EC8538 .part L_00EC8748, 7, 1;
+L_00EC8590 .reduce/nor L_00EC9B60;
+L_00EC85E8 .part L_00EC8698, 7, 1;
+L_00EC8640 .part L_00EC8488, 8, 1;
+S_00636638 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_006365B0;
+ .timescale 0 0;
+v0066C7A8_0 .net *"_s0", 8 0, L_00EC83D8; 1 drivers
+v0066C800_0 .net *"_s3", 0 0, C4<0>; 1 drivers
+v0066C858_0 .net *"_s4", 8 0, L_00EC8430; 1 drivers
+v0066C8B0_0 .net *"_s7", 0 0, C4<0>; 1 drivers
+L_00EC83D8 .concat [ 8 1 0 0], L_00EC8698, C4<0>;
+L_00EC8430 .concat [ 8 1 0 0], L_00EC8748, C4<0>;
+L_00EC8488 .arith/sum 9, L_00EC83D8, L_00EC8430;
+S_006366C0 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00636638;
+ .timescale 0 0;
+L_00EC9A80 .functor BUFZ 9, L_00EC8488, C4<000000000>, C4<000000000>, C4<000000000>;
+S_00636308 .scope generate, "foldLoop[7]" "foldLoop[7]" 3 41, 3 41, S_0062F1E0;
+ .timescale 0 0;
+P_0062A5AC .param/l "gi" 3 41, +C4<0111>;
+S_00636390 .scope module, "aS" "MFP_Adder" 3 44, 2 89, S_00636308;
+ .timescale 0 0;
+P_00BDDFFC .param/l "In1W" 2 91, +C4<01000>;
+P_00BDE010 .param/l "In2W" 2 92, +C4<01000>;
+P_00BDE024 .param/l "OutW" 2 93, +C4<01001>;
+P_00BDE038 .param/l "Saturate" 2 95, +C4<0>;
+P_00BDE04C .param/l "isUnsigned" 2 96, +C4<0>;
+P_00BDE060 .param/l "maxPosOut" 2 106, +C4<011111111>;
+P_00BDE074 .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00EC9EA8 .functor XOR 1, L_00EC88A8, L_00EC8900, C4<0>, C4<0>;
+L_00ECA870 .functor XOR 1, L_00EC89B0, L_00EC8A08, C4<0>, C4<0>;
+v0066C3E0_0 .net "In1", 7 0, L_00EC8A60; 1 drivers
+v0066C438_0 .net "In2", 7 0, L_00EC8AB8; 1 drivers
+v0066C490_0 .net "IsSameSign", 0 0, L_00EC8958; 1 drivers
+v0066C4E8_0 .net "IsSignChanged", 0 0, L_00ECA870; 1 drivers
+v0066C540_0 .net "Out", 8 0, L_00EC9DC8; 1 drivers
+v0066C598_0 .net "TestAdd", 8 0, L_00EC8850; 1 drivers
+v0066C5F0_0 .net *"_s1", 0 0, L_00EC88A8; 1 drivers
+v0066C648_0 .net *"_s11", 0 0, L_00EC8A08; 1 drivers
+v0066C6A0_0 .net *"_s3", 0 0, L_00EC8900; 1 drivers
+v0066C6F8_0 .net *"_s4", 0 0, L_00EC9EA8; 1 drivers
+v0066C750_0 .net *"_s9", 0 0, L_00EC89B0; 1 drivers
+L_00EC88A8 .part L_00EC8A60, 7, 1;
+L_00EC8900 .part L_00EC8AB8, 7, 1;
+L_00EC8958 .reduce/nor L_00EC9EA8;
+L_00EC89B0 .part L_00EC8A60, 7, 1;
+L_00EC8A08 .part L_00EC8850, 8, 1;
+S_00636418 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00636390;
+ .timescale 0 0;
+v0066C280_0 .net *"_s0", 8 0, L_00EC87A0; 1 drivers
+v0066C2D8_0 .net *"_s3", 0 0, C4<0>; 1 drivers
+v0066C330_0 .net *"_s4", 8 0, L_00EC87F8; 1 drivers
+v0066C388_0 .net *"_s7", 0 0, C4<0>; 1 drivers
+L_00EC87A0 .concat [ 8 1 0 0], L_00EC8A60, C4<0>;
+L_00EC87F8 .concat [ 8 1 0 0], L_00EC8AB8, C4<0>;
+L_00EC8850 .arith/sum 9, L_00EC87A0, L_00EC87F8;
+S_006364A0 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00636418;
+ .timescale 0 0;
+L_00EC9DC8 .functor BUFZ 9, L_00EC8850, C4<000000000>, C4<000000000>, C4<000000000>;
+S_0062F158 .scope module, "TB1" "TB1" 4 5;
+ .timescale 0 0;
+P_005B7CC4 .param/l "In1W" 4 7, +C4<01000>;
+P_005B7CD8 .param/l "In2W" 4 8, +C4<01000>;
+P_005B7CEC .param/l "OutW" 4 9, +C4<01111>;
+v00EC2C60_0 .net "AA", 7 0, C4<00000000>; 1 drivers
+v00EC2CB8_0 .net "BB", 7 0, C4<11111111>; 1 drivers
+v00EC2D10_0 .net/s "CC", 8 0, L_00ED0908; 1 drivers
+RS_0063B504 .resolv tri, L_00ED0AC0, L_00ED0BC8, L_00ED0E30, L_00ED1098;
+v00EC2D68_0 .net8 "ZZZ", 0 0, RS_0063B504; 4 drivers
+v00EC2DC0_0 .net *"_s11", 0 0, C4<0>; 1 drivers
+v00EC2E18_0 .net *"_s4", 8 0, L_00ED0858; 1 drivers
+v00EC2E70_0 .net *"_s7", 0 0, C4<0>; 1 drivers
+v00EC2EC8_0 .net *"_s8", 8 0, L_00ED08B0; 1 drivers
+v00EC2F20_0 .var "clk_", 0 0;
+v00EC2F78_0 .var/i "counter", 31 0;
+v00EC2FD0_0 .net/s "satOut", 14 0, L_00ED3308; 1 drivers
+E_0062B0C8 .event posedge, v00EC2F20_0;
+L_00ED0858 .concat [ 8 1 0 0], C4<00000000>, C4<0>;
+L_00ED08B0 .concat [ 8 1 0 0], C4<11111111>, C4<0>;
+L_00ED0908 .arith/sub 9, L_00ED0858, L_00ED08B0;
+L_00ED0AC0 .part L_00ED0A68, 0, 1;
+L_00ED0BC8 .part L_00ED0B70, 0, 1;
+L_00ED0E30 .part L_00ED2468, 0, 1;
+L_00ED1098 .part L_00ED2740, 0, 1;
+L_00ED1618 .part v00EC2F78_0, 0, 15;
+S_00628320 .scope module, "Mul" "MFP_Multi" 4 19, 2 26, S_0062F158;
+ .timescale 0 0;
+P_005BDE04 .param/l "In1W" 2 28, +C4<0111>;
+P_005BDE18 .param/l "In2EQW" 2 30, +C4<0111>;
+P_005BDE2C .param/l "In2W" 2 29, +C4<0111>;
+P_005BDE40 .param/l "OutW" 2 35, +C4<01000>;
+P_005BDE54 .param/l "RealOutW" 2 45, +C4<01101>;
+P_005BDE68 .param/l "Saturate" 2 37, +C4<0>;
+P_005BDE7C .param/l "isFloor" 2 36, +C4<01>;
+P_005BDE90 .param/l "isUnsigned" 2 38, +C4<0>;
+v00EC2B00_0 .net "In1", 6 0, C4<1000001>; 1 drivers
+v00EC2B58_0 .net "In2", 6 0, C4<1000001>; 1 drivers
+v00EC2BB0_0 .net "Out", 7 0, L_00ED0A68; 1 drivers
+v00EC2C08_0 .net "Out_", 12 0, L_00ED01E0; 1 drivers
+S_00627C38 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_00628320;
+ .timescale 0 0;
+P_005D979C .param/l "InW" 2 138, +C4<01101>;
+P_005D97B0 .param/l "OutW" 2 139, +C4<01000>;
+P_005D97C4 .param/l "Saturate" 2 140, +C4<0>;
+P_005D97D8 .param/l "isFloor" 2 141, +C4<01>;
+P_005D97EC .param/l "isUnsigned" 2 142, +C4<0>;
+v00EC2A50_0 .alias "in", 12 0, v00EC2C08_0;
+v00EC2AA8_0 .alias "out", 7 0, v00EC2BB0_0;
+L_00ED0A68 .part L_00ED01E0, 5, 8;
+S_00627908 .scope generate, "genblk2" "genblk2" 2 157, 2 157, S_00627C38;
+ .timescale 0 0;
+S_00628078 .scope generate, "genblk2" "genblk2" 2 51, 2 51, S_00628320;
+ .timescale 0 0;
+L_00ED0090 .functor BUFZ 7, C4<1000001>, C4<0000000>, C4<0000000>, C4<0000000>;
+L_00ED00C8 .functor BUFZ 7, C4<1000001>, C4<0000000>, C4<0000000>, C4<0000000>;
+L_00ED01E0 .functor BUFZ 13, L_00ED0A10, C4<0000000000000>, C4<0000000000000>, C4<0000000000000>;
+v00EC2898_0 .net/s "In1_s", 6 0, L_00ED0090; 1 drivers
+v00EC28F0_0 .net/s "In2_s", 6 0, L_00ED00C8; 1 drivers
+v00EC2948_0 .net/s "Out_s", 12 0, L_00ED0A10; 1 drivers
+v00EC29A0_0 .net/s *"_s4", 12 0, L_00ED0960; 1 drivers
+v00EC29F8_0 .net/s *"_s6", 12 0, L_00ED09B8; 1 drivers
+L_00ED0960 .extend/s 13, L_00ED0090;
+L_00ED09B8 .extend/s 13, L_00ED00C8;
+L_00ED0A10 .arith/mult 13, L_00ED0960, L_00ED09B8;
+S_00627FF0 .scope module, "Muluns" "MFP_Multi" 4 20, 2 26, S_0062F158;
+ .timescale 0 0;
+P_005BDD54 .param/l "In1W" 2 28, +C4<01000>;
+P_005BDD68 .param/l "In2EQW" 2 30, +C4<01000>;
+P_005BDD7C .param/l "In2W" 2 29, +C4<01000>;
+P_005BDD90 .param/l "OutW" 2 35, +C4<01000>;
+P_005BDDA4 .param/l "RealOutW" 2 45, +C4<010000>;
+P_005BDDB8 .param/l "Saturate" 2 37, +C4<0>;
+P_005BDDCC .param/l "isFloor" 2 36, +C4<01>;
+P_005BDDE0 .param/l "isUnsigned" 2 38, +C4<01>;
+v00EC2738_0 .net "In1", 7 0, C4<10000000>; 1 drivers
+v00EC2790_0 .net "In2", 7 0, C4<10000000>; 1 drivers
+v00EC27E8_0 .net "Out", 7 0, L_00ED0B70; 1 drivers
+v00EC2840_0 .net "Out_", 15 0, L_00ED0B18; 1 drivers
+S_00628298 .scope module, "roun" "MFP_Round" 2 63, 2 135, S_00627FF0;
+ .timescale 0 0;
+P_005D972C .param/l "InW" 2 138, +C4<010000>;
+P_005D9740 .param/l "OutW" 2 139, +C4<01000>;
+P_005D9754 .param/l "Saturate" 2 140, +C4<0>;
+P_005D9768 .param/l "isFloor" 2 141, +C4<01>;
+P_005D977C .param/l "isUnsigned" 2 142, +C4<01>;
+v00EC2658_0 .alias "in", 15 0, v00EC2840_0;
+v00EC26E0_0 .alias "out", 7 0, v00EC27E8_0;
+L_00ED0B70 .part L_00ED0B18, 8, 8;
+S_00628100 .scope generate, "genblk2" "genblk2" 2 157, 2 157, S_00628298;
+ .timescale 0 0;
+S_00627CC0 .scope generate, "genblk1" "genblk1" 2 51, 2 51, S_00627FF0;
+ .timescale 0 0;
+L_00ED0B18 .arith/mult 16, C4<10000000>, C4<10000000>;
+S_00621A98 .scope module, "Adder" "MFP_Adder" 4 23, 2 89, S_0062F158;
+ .timescale 0 0;
+P_00EB1EEC .param/l "In1W" 2 91, +C4<01000>;
+P_00EB1F00 .param/l "In2W" 2 92, +C4<01000>;
+P_00EB1F14 .param/l "OutW" 2 93, +C4<01000>;
+P_00EB1F28 .param/l "Saturate" 2 95, +C4<0>;
+P_00EB1F3C .param/l "isUnsigned" 2 96, +C4<0>;
+P_00EB1F50 .param/l "maxPosOut" 2 106, +C4<01111111>;
+P_00EB1F64 .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00ED2548 .functor XOR 1, L_00ED0C78, L_00ED0CD0, C4<0>, C4<0>;
+L_00ED2628 .functor XOR 1, L_00ED0D80, L_00ED0DD8, C4<0>, C4<0>;
+v00EC2290_0 .net "In1", 7 0, C4<01111111>; 1 drivers
+v00EC22E8_0 .net "In2", 7 0, C4<10000001>; 1 drivers
+v00EC2340_0 .net "IsSameSign", 0 0, L_00ED0D28; 1 drivers
+v00EC2398_0 .net "IsSignChanged", 0 0, L_00ED2628; 1 drivers
+v00EC23F0_0 .net "Out", 7 0, L_00ED2468; 1 drivers
+v00EC2448_0 .net "TestAdd", 7 0, L_00ED0C20; 1 drivers
+v00EC24A0_0 .net *"_s11", 0 0, L_00ED0D80; 1 drivers
+v00EC24F8_0 .net *"_s13", 0 0, L_00ED0DD8; 1 drivers
+v00EC2550_0 .net *"_s3", 0 0, L_00ED0C78; 1 drivers
+v00EC25A8_0 .net *"_s5", 0 0, L_00ED0CD0; 1 drivers
+v00EC2600_0 .net *"_s6", 0 0, L_00ED2548; 1 drivers
+L_00ED0C20 .arith/sum 8, C4<01111111>, C4<10000001>;
+L_00ED0C78 .part C4<01111111>, 7, 1;
+L_00ED0CD0 .part C4<10000001>, 7, 1;
+L_00ED0D28 .reduce/nor L_00ED2548;
+L_00ED0D80 .part C4<01111111>, 7, 1;
+L_00ED0DD8 .part L_00ED0C20, 7, 1;
+S_00621B20 .scope generate, "genblk4" "genblk4" 2 112, 2 112, S_00621A98;
+ .timescale 0 0;
+S_00627D48 .scope generate, "genblk5" "genblk5" 2 122, 2 122, S_00621B20;
+ .timescale 0 0;
+L_00ED2468 .functor BUFZ 8, L_00ED0C20, C4<00000000>, C4<00000000>, C4<00000000>;
+S_006213B0 .scope module, "AdderuS" "MFP_Adder" 4 24, 2 89, S_0062F158;
+ .timescale 0 0;
+P_00EB1E54 .param/l "In1W" 2 91, +C4<01000>;
+P_00EB1E68 .param/l "In2W" 2 92, +C4<01000>;
+P_00EB1E7C .param/l "OutW" 2 93, +C4<01000>;
+P_00EB1E90 .param/l "Saturate" 2 95, +C4<0>;
+P_00EB1EA4 .param/l "isUnsigned" 2 96, +C4<01>;
+P_00EB1EB8 .param/l "maxPosOut" 2 106, +C4<011111111>;
+P_00EB1ECC .param/l "unsignedAddIn2" 2 94, +C4<0>;
+L_00ED2820 .functor XOR 1, L_00ED0EE0, L_00ED0F38, C4<0>, C4<0>;
+L_00ED2900 .functor XOR 1, L_00ED0FE8, L_00ED1040, C4<0>, C4<0>;
+v00EC1EC8_0 .net "In1", 7 0, C4<11111111>; 1 drivers
+v00EC1F20_0 .net "In2", 7 0, C4<00000001>; 1 drivers
+v00EC1F78_0 .net "IsSameSign", 0 0, L_00ED0F90; 1 drivers
+v00EC1FD0_0 .net "IsSignChanged", 0 0, L_00ED2900; 1 drivers
+v00EC2028_0 .net "Out", 7 0, L_00ED2740; 1 drivers
+v00EC2080_0 .net "TestAdd", 7 0, L_00ED0E88; 1 drivers
+v00EC20D8_0 .net *"_s11", 0 0, L_00ED0FE8; 1 drivers
+v00EC2130_0 .net *"_s13", 0 0, L_00ED1040; 1 drivers
+v00EC2188_0 .net *"_s3", 0 0, L_00ED0EE0; 1 drivers
+v00EC21E0_0 .net *"_s5", 0 0, L_00ED0F38; 1 drivers
+v00EC2238_0 .net *"_s6", 0 0, L_00ED2820; 1 drivers
+L_00ED0E88 .arith/sum 8, C4<11111111>, L_00ED26D0;
+L_00ED0EE0 .part C4<11111111>, 7, 1;
+L_00ED0F38 .part C4<00000001>, 7, 1;
+L_00ED0F90 .reduce/nor L_00ED2820;
+L_00ED0FE8 .part C4<11111111>, 7, 1;
+L_00ED1040 .part L_00ED0E88, 7, 1;
+S_00620DD8 .scope generate, "genblk1" "genblk1" 2 112, 2 112, S_006213B0;
+ .timescale 0 0;
+L_00ED26D0 .functor BUFZ 8, C4<00000001>, C4<00000000>, C4<00000000>, C4<00000000>;
+v00EC1E70_0 .net "In2_", 7 0, L_00ED26D0; 1 drivers
+S_00620E60 .scope generate, "genblk2" "genblk2" 2 115, 2 115, S_00620DD8;
+ .timescale 0 0;
+L_00ED2740 .functor BUFZ 8, L_00ED0E88, C4<00000000>, C4<00000000>, C4<00000000>;
+S_00621328 .scope module, "sat" "MFP_Saturate" 4 28, 2 198, S_0062F158;
+ .timescale 0 0;
+P_00620EEC .param/l "InW" 2 200, +C4<01111>;
+P_00620F00 .param/l "MAX_POS" 2 208, +C4<011>;
+P_00620F14 .param/l "OutW" 2 201, +C4<01111>;
+P_00620F28 .param/l "Sat2W" 2 202, +C4<011>;
+P_00620F3C .param/l "checkbits" 2 207, +C4<01100>;
+P_00620F50 .param/l "isUnsigned" 2 203, +C4<0>;
+v00EC1D68_0 .net "dataIn", 14 0, L_00ED1618; 1 drivers
+v00EC1DC0_0 .alias "dataOut", 14 0, v00EC2FD0_0;
+v00EC1E18_0 .net "sign", 0 0, L_00ED15C0; 1 drivers
+L_00ED10F0 .part L_00ED1618, 2, 12;
+L_00ED11A0 .part L_00ED1618, 0, 2;
+L_00ED12A8 .part L_00ED1618, 0, 3;
+L_00ED1358 .part L_00ED1618, 2, 12;
+L_00ED1460 .part L_00ED1618, 0, 3;
+L_00ED1510 .functor MUXZ 3, L_00ED14B8, L_00ED1300, L_00ED15C0, C4<>;
+L_00ED15C0 .part L_00ED1618, 14, 1;
+S_00620F70 .scope generate, "genblk2" "genblk2" 2 212, 2 212, S_00621328;
+ .timescale 0 0;
+L_00ED2AF8 .functor AND 1, L_00ED1148, L_00ED1250, C4<1>, C4<1>;
+L_00ED3308 .functor BUFZ 15, L_00ED1568, C4<000000000000000>, C4<000000000000000>, C4<000000000000000>;
+v00EC09E8_0 .net/s "Out", 14 0, L_00ED1568; 1 drivers
+v00EC0A40_0 .net/s "Out_", 2 0, L_00ED1510; 1 drivers
+v00EC0A98_0 .net *"_s0", 11 0, L_00ED10F0; 1 drivers
+v00EC16E0_0 .net *"_s1", 11 0, C4<111111111111>; 1 drivers
+v00EC1738_0 .net *"_s10", 2 0, C4<000>; 1 drivers
+v00EC1790_0 .net *"_s12", 0 0, L_00ED1250; 1 drivers
+v00EC17E8_0 .net *"_s14", 0 0, L_00ED2AF8; 1 drivers
+v00EC1840_0 .net *"_s16", 2 0, L_00ED12A8; 1 drivers
+v00EC1898_0 .net *"_s17", 2 0, C4<101>; 1 drivers
+v00EC18F0_0 .net *"_s19", 2 0, L_00ED1300; 1 drivers
+v00EC1948_0 .net *"_s21", 11 0, L_00ED1358; 1 drivers
+v00EC19A0_0 .net *"_s22", 12 0, L_00ED13B0; 1 drivers
+v00EC19F8_0 .net *"_s25", 0 0, C4<0>; 1 drivers
+v00EC1A50_0 .net *"_s26", 12 0, C4<0000000000000>; 1 drivers
+v00EC1AA8_0 .net *"_s28", 0 0, L_00ED1408; 1 drivers
+v00EC1B00_0 .net *"_s3", 0 0, L_00ED1148; 1 drivers
+v00EC1B58_0 .net *"_s30", 2 0, C4<011>; 1 drivers
+v00EC1BB0_0 .net *"_s32", 2 0, L_00ED1460; 1 drivers
+v00EC1C08_0 .net *"_s33", 2 0, L_00ED14B8; 1 drivers
+v00EC1CB8_0 .net *"_s5", 1 0, L_00ED11A0; 1 drivers
+v00EC1C60_0 .net *"_s6", 2 0, L_00ED11F8; 1 drivers
+v00EC1D10_0 .net *"_s9", 0 0, C4<0>; 1 drivers
+L_00ED1148 .cmp/eq 12, L_00ED10F0, C4<111111111111>;
+L_00ED11F8 .concat [ 2 1 0 0], L_00ED11A0, C4<0>;
+L_00ED1250 .cmp/ne 3, L_00ED11F8, C4<000>;
+L_00ED1300 .functor MUXZ 3, C4<101>, L_00ED12A8, L_00ED2AF8, C4<>;
+L_00ED13B0 .concat [ 12 1 0 0], L_00ED1358, C4<0>;
+L_00ED1408 .cmp/ne 13, L_00ED13B0, C4<0000000000000>;
+L_00ED14B8 .functor MUXZ 3, L_00ED1460, C4<011>, L_00ED1408, C4<>;
+L_00ED1568 .extend/s 15, L_00ED1510;
+    .scope S_0062F840;
 T_0 ;
-    %wait E_0062A788;
-    %load/v 8, v0066C000_0, 1;
+    %wait E_0062A8A8;
+    %load/v 8, v0066C120_0, 1;
     %jmp/0  T_0.0, 8;
-    %load/v 9, v0066C108_0, 15;
+    %load/v 9, v0066C228_0, 15;
     %jmp/1  T_0.2, 8;
 T_0.0 ; End of true expr.
-    %load/v 24, v0066BF50_0, 15;
+    %load/v 24, v0066C070_0, 15;
     %jmp/0  T_0.1, 8;
  ; End of false expr.
     %blend  9, 24, 15; Condition unknown.
@@ -1856,31 +1856,31 @@ T_0.0 ; End of true expr.
 T_0.1 ;
     %mov 9, 24, 15; Return false value
 T_0.2 ;
-    %set/v v0066BEF8_0, 9, 15;
+    %set/v v0066C018_0, 9, 15;
     %jmp T_0;
     .thread T_0;
-    .scope S_0062F038;
+    .scope S_0062F158;
 T_1 ;
     %delay 2, 0;
-    %load/v 8, v00C92DC0_0, 1;
+    %load/v 8, v00EC2F20_0, 1;
     %inv 8, 1;
-    %set/v v00C92DC0_0, 8, 1;
+    %set/v v00EC2F20_0, 8, 1;
     %jmp T_1;
     .thread T_1;
-    .scope S_0062F038;
+    .scope S_0062F158;
 T_2 ;
-    %wait E_0062AFA8;
-    %load/v 8, v00C92E18_0, 32;
+    %wait E_0062B0C8;
+    %load/v 8, v00EC2F78_0, 32;
     %mov 40, 39, 1;
     %addi 8, 1, 33;
-    %set/v v00C92E18_0, 8, 32;
+    %set/v v00EC2F78_0, 8, 32;
     %jmp T_2;
     .thread T_2;
-    .scope S_0062F038;
+    .scope S_0062F158;
 T_3 ;
     %movi 8, 4294967196, 32;
-    %set/v v00C92E18_0, 8, 32;
-    %set/v v00C92DC0_0, 0, 1;
+    %set/v v00EC2F78_0, 8, 32;
+    %set/v v00EC2F20_0, 0, 1;
     %vpi_call 4 40 "$dumpfile", "wave.vcd";
     %vpi_call 4 41 "$dumpvars";
     %delay 1024, 0;
