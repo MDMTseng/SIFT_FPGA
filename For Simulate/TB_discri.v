@@ -34,12 +34,12 @@ always@(posedge clk)begin
 	XTableReg={XVar,XTableReg[TableL*dataW-1:dataW]};
 	YTableReg={YVar,YTableReg[TableL*dataW-1:dataW]};
 end
-/*
+
 wire [89*dataW-1:0]ExtractRegion;
 regionExtractor#(.winHW(winW),.xoffSet(-4),.yoffSet(-4))
 rE(window,ExtractRegion);
 
-
+/*
 parameter regionSize=89*dataW;
 wire [regionSize*9-1:0]ExtractRegions;
 regionsFor19WinExtractor
@@ -50,6 +50,10 @@ wire [8*8-1:0]HistoP;
 HistogramPipeLine_StreamData
 #(.dataW(dataW),.dataL(20))
 HPSD(clk,en,clr,{20{R}},{20{K>>3}},HistoP);
+
+
+
+
 
 integer i,j;
 initial
@@ -69,4 +73,124 @@ begin
 	#30 clr=0;
     #1024 $finish;
 end
+endmodule
+
+
+module blkRAM_W32D640_SP(
+			input clka,ena,wea,
+			input [10:0]addra,
+			input [31:0]dina,
+			output [31:0]douta);
+	reg[31:0]BlkRAM[0:639];
+	assign douta=BlkRAM[addra];
+	always@(posedge clka)
+	if(ena)begin
+		BlkRAM[addra]=dina;
+	end
+	
+endmodule
+
+
+module ScanLWindow_blkRAM
+#(parameter
+
+	 block_width=1,
+	 block_height=8,
+	 frame_width=640,
+	 pixel_depth=8
+)
+(input clk,input enable,input [pixel_depth-1:0]inData,output reg[block_width*block_height*pixel_depth-1:0] Window);
+
+	
+	localparam basic_depth=32;
+	
+	
+	
+	localparam stackK=basic_depth/pixel_depth;
+	localparam blksets=block_height/stackK+(block_height%stackK==0)?0:1;
+	
+	
+	localparam RAMAccessSpace=frame_width-0;
+	
+	reg [10-1:0]addra_bramR;
+	always@(posedge clk)
+	begin
+		if(enable)begin
+			if(addra_bramR==RAMAccessSpace-2)
+			addra_bramR=0;
+			else
+			addra_bramR=addra_bramR+1;
+		end
+	end
+	
+/*	
+
+xxxxSSSRRRRRRRRRR
+RRRRSSSRRRRRRRRRR
+RRRRSSS
+
+R: data in the RAM block(blkRAM_W32D640_SP)
+S: data in the shift register(Window)
+	
+	
+	
+
+xxxx S S<S>RRRRRRRRRR
+RRRR[S]S<S>RRRRRRRRRR
+RRRR[S]S S
+
+
+[?]: data saaign to RAMFEED[?].inRAMIf
+<?>: data saaign to RAMFEED[?].outRAMIf
+
+*/	
+	localparam shiftRegSliceL=block_width*pixel_depth;
+	
+	genvar bri;
+	genvar gj;
+	generate
+	
+	
+	
+	
+	
+	
+		for(bri=0;bri<blksets-1;bri=bri+1)begin:RAMFEED
+			wire [basic_depth-1:0]inRAMIf,outRAMIf;
+			/*
+			
+			xxxx S S<S>RRRRRRRRRR
+			RRRR[S]S<S>RRRRRRRRRR
+			RRRR[@]S S
+
+			Window= {S S <S> [S] S <S> [@] S S}
+			[@] presents inRAMIf at bri=1
+			*/
+			wire [pixel_depth-1:0]NewData;
+			if(bri==0)assign NewData=inData;
+			else		 assign NewData=RAMFEED[bri-1].outRAMIf[(stackK-1)*pixel_depth+:pixel_depth];
+			
+			
+			assign inRAMIf={outRAMIf[0+:basic_depth-pixel_depth],NewData};//Window[(bri+1)*shiftRegSliceL-1-:pixel_depth];
+			
+			
+			blkRAM_W32D640_SP RAM(
+			.clka(clk),
+			.ena(enable),
+			.wea(~0),
+			.addra(addra_bramR),
+			.dina(inRAMIf),
+			.douta(outRAMIf)
+			);
+			
+			for(gj=0;gj<stackK;gj=gj+1)begin:ShiftRegAssign
+					always@(posedge clk)if(enable)
+						Window[(bri*stackK+gj)*shiftRegSliceL+:shiftRegSliceL]=
+						{Window[(bri*stackK+gj)*shiftRegSliceL+:shiftRegSliceL],inRAMIf[gj*pixel_depth+:pixel_depth]};
+					
+			end
+		end
+	endgenerate
+	
+
 endmodule

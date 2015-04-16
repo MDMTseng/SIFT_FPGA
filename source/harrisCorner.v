@@ -6,25 +6,24 @@ parameter
 ImageW=640,
 dataW=8,
 outW=dataW,
-cornorwindowSize=5
+cornorwindowSize=5,
+ts=12
 )
 (
 input clk,input en,input rst,
-input [dataW-1:0]dataIn,
+input [dataW*3-1:0]dataCol3X1,
 output [outW-1:0]cornerResponse
 );
 
 
+wire [dataW*3-1:0]Buff3x1=dataCol3X1;
 
-wire [32*3-1:0]WinX;
-wire [dataW*3-1:0]Buff3x1;
+/*
 
-
-ScanLWindow_blkRAM #(.block_height(3),.block_width(1),.frame_width(ImageW)) 
-win1(clk,en,dataIn,WinX);
-groupArrReOrderBABA2BBAA#
-(.Arr1EleW(dataW),.Arr2EleW(32-dataW),.Arr3EleW(0),.Arr4EleW(0),.ArrL(3))
-gARO(WinX,Buff3x1);
+ScanLWindow_blkRAM_adv #(
+.block_height(3),
+.block_width(1),.frame_width(ImageW),
+.pixel_depth(dataW)) win1(clk,en,dataIn,Buff3x1);*/
 
 
 
@@ -69,13 +68,32 @@ wire [32*cornorwindowSize-1:0]WinX_Coeffs;
 wire [mulW*cornorwindowSize-1:0]IxIx_col;
 wire [mulW*cornorwindowSize-1:0]IyIy_col;
 wire [mulW*cornorwindowSize-1:0]IxIy_col;
-
-ScanLWindow_blkRAM #(.block_height(cornorwindowSize),.block_width(1),
+/*
+ScanLWindow_blkRAM_32W #(.block_height(cornorwindowSize),.block_width(1),
 .frame_width(ImageW)) cornorWindow(clk,en,{IxIy,IyIy,IxIx},WinX_Coeffs);
 
 groupArrReOrderBABA2BBAA#
 (.Arr1EleW(mulW),.Arr2EleW(mulW),.Arr3EleW(mulW),.Arr4EleW(32-mulW*3),.ArrL(cornorwindowSize))
 gARO_cornorWindow(WinX_Coeffs,{IxIy_col,IyIy_col,IxIx_col});
+*/
+
+
+ScanLWindow_blkRAM_adv #(
+.block_height(cornorwindowSize),
+.block_width(1),.frame_width(ImageW),
+.pixel_depth(mulW)) winIxIx(clk,en,IxIx,IxIx_col);
+
+ScanLWindow_blkRAM_adv #(
+.block_height(cornorwindowSize),
+.block_width(1),.frame_width(ImageW),
+.pixel_depth(mulW)) winIxIy(clk,en,IxIy,IxIy_col);
+
+ScanLWindow_blkRAM_adv #(
+.block_height(cornorwindowSize),
+.block_width(1),.frame_width(ImageW),
+.pixel_depth(mulW)) winIyIy(clk,en,IyIy,IyIy_col);
+
+
 
 parameter abcColSumW=mulW+1+($clog2(cornorwindowSize)+1);
 /*append each elements in col*/
@@ -188,27 +206,27 @@ MFP_Saturate#(.InW(abcWinSumW),.OutW(abcWinSumW-win_sum_satW),.isUnsigned(0))
 winSumIyySat(IyIy_win_sum,IyIy_win_sum_sat);
 
 
-wire signed[outW-1:0]IxIx_sum_round;
-wire signed[outW-1:0]IyIy_sum_round;
-wire signed[outW-1:0]IxIy_sum_round;
+wire signed[dataW-1:0]IxIx_sum_round;
+wire signed[dataW-1:0]IyIy_sum_round;
+wire signed[dataW-1:0]IxIy_sum_round;
 
 MFP_Round
-#(.InW(abcWinSumW-win_sum_satW),.OutW(outW),.isFloor(1),.isUnsigned(0)) 
+#(.InW(abcWinSumW-win_sum_satW),.OutW(dataW),.isFloor(1),.isUnsigned(0)) 
 IxIxRound(IxIx_win_sum_sat,IxIx_sum_round);
 MFP_Round
-#(.InW(abcWinSumW-win_sum_satW),.OutW(outW),.isFloor(1),.isUnsigned(0)) 
+#(.InW(abcWinSumW-win_sum_satW),.OutW(dataW),.isFloor(1),.isUnsigned(0)) 
 IyIyRound(IyIy_win_sum_sat,IyIy_sum_round);
 MFP_Round
-#(.InW(abcWinSumW-win_sum_satW),.OutW(outW),.isFloor(1),.isUnsigned(0)) 
+#(.InW(abcWinSumW-win_sum_satW),.OutW(dataW),.isFloor(1),.isUnsigned(0)) 
 IxIyRound(IxIy_win_sum_sat,IxIy_sum_round);
 
 
 
 wire signed[outW+3-1:0]aijcij;
-MFP_Multi #(.In1W(outW),.OutW(outW+3),.isUnsigned(0)) m_ac(IxIx_sum_round,IyIy_sum_round,aijcij);		
+MFP_Multi #(.In1W(dataW),.OutW(outW+3),.isUnsigned(0)) m_ac(IxIx_sum_round-ts,IyIy_sum_round-ts,aijcij);		
 	
 wire signed[outW+3-1:0]bijbij;
-MFP_Multi #(.In1W(outW),.OutW(outW+3),.isUnsigned(0)) m_bb(IxIy_sum_round,IxIy_sum_round,bijbij);	
+MFP_Multi #(.In1W(dataW),.OutW(outW+3),.isUnsigned(0)) m_bb(IxIy_sum_round,IxIy_sum_round,bijbij);	
 	
 
 wire signed[outW+1-1:0]acSbb=aijcij/4-bijbij/4;

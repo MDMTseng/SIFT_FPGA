@@ -1,25 +1,45 @@
 [*]
 [*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
-[*] Wed Apr 15 10:19:35 2015
+[*] Thu Apr 16 09:06:21 2015
 [*]
 [dumpfile] "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\For Simulate\wave.vcd"
-[dumpfile_mtime] "Wed Apr 15 10:19:05 2015"
-[dumpfile_size] 290972
+[dumpfile_mtime] "Thu Apr 16 09:06:00 2015"
+[dumpfile_size] 350694
 [savefile] "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\For Simulate\_Save1.gtk"
-[timestart] 0
-[size] 1920 1018
-[pos] -259 -259
-*-4.000000 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[timestart] 6386
+[size] 1916 1018
+[pos] -1 -1
+*-3.000000 6386 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] TB1.
-[treeopen] TB1.HPSD.
-[sst_width] 197
-[signals_width] 118
+[treeopen] TB1.Sb.
+[treeopen] TB1.Sb.RAMFEED[0].
+[sst_width] 283
+[signals_width] 388
 [sst_expanded] 1
-[sst_vpaned_height] 300
+[sst_vpaned_height] 301
+@28
+TB1.clk
 @22
-TB1.HPSD.HisV[0].H0[7:0]
-TB1.HPSD.HisV[6].H0[7:0]
+TB1.douta[31:0]
+TB1.din[31:0]
+@28
+TB1.Sb.SSS
+@22
+TB1.Sb.addra_bramR[9:0]
+TB1.din[31:0]
+TB1.douta[31:0]
+TB1.Sb.addra_bramR[9:0]
+@28
+TB1.Sb.SSS
+@24
+TB1.Sb.RAMFEED[0].RAM.addra[20:0]
+@22
+TB1.Sb.RAMFEED[0].outRAMIf[31:0]
+TB1.Sb.Window[39:0]
+TB1.Sb.Window[39:0]
+@24
+TB1.Sb.RAMFEED[0].RAM.addra[20:0]
 @23
-TB1.HPSD.Histo[63:0]
+TB1.Sb.Window[39:0]
 [pattern_trace] 1
 [pattern_trace] 0

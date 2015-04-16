@@ -159,21 +159,20 @@ SGMDataDepth=6
 	parameter GausTableN=5;
 	localparam dataW=8;//unsigned data
 	localparam sidataW=dataW;
-	wire [sidataW-1:0]DoGOut[0:GausTableN-1-1];
-	wire [sidataW-1:0]DoGOut2[0:GausTableN-1-1];
+	wire [dataW-1:0]GOut[0:7];
 	
 	always@(*)
 	begin
 		case(SaData[0])
-		 0:spiRet<=DoGOut[0];
-		 1:spiRet<=DoGOut[1];
-		 2:spiRet<=DoGOut[2];
-		 3:spiRet<=DoGOut[3];
+		 0:spiRet<=GOut[0];
+		 1:spiRet<=GOut[1];
+		 2:spiRet<=GOut[2];
+		 3:spiRet<=GOut[3];
 		
-		 4:spiRet<=DoGOut2[0];
-		 5:spiRet<=DoGOut2[1];
-		 6:spiRet<=DoGOut2[2];
-		 7:spiRet<=DoGOut2[3];
+		 4:spiRet<=GOut[4];
+		 5:spiRet<=GOut[5];
+		 6:spiRet<=GOut[6];
+		 7:spiRet<=GOut[7];
 		 
 		// 3:spiRet<=DIxL;
 		 //4:spiRet<=(DIxL==0)?0:255;
@@ -194,94 +193,109 @@ SGMDataDepth=6
 	PixCoordinator # (.frameW(ImageW),.frameH(ImageH)) 
 	Pc1(clk_p,en_p,rst_p,pixX,pixY);
 	
-	/*
-	wire [GausTableN*dataW-1:0]Gaussian1;//unsigned
-	wire [GausTableN*dataW-1:0]Gaussian2;
 	
 	
-	octaveModule#(.frameW(ImageW)) 
-	OM1(clk_p,en_p,DI1r[0+:8],pixX,pixY,Gaussian1);
 	
 	
-	octaveModule#(.frameW(ImageW),.downS(2)) 
-	OM2(clk_p,en_p,DI1r[0+:8],pixX,pixY,Gaussian2);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	parameter GaussianOut=dataW;
+	wire [GausTableN*GaussianOut-1:0]Gaussian1;//unsigned
+	wire [GaussianOut+1-1:0]harrisRes1;
+	octaveModule#(.frameW(ImageW),.outW(GaussianOut)) 
+	OM1(clk_p,en_p,DI1r[0+:8],pixX,pixY,Gaussian1,harrisRes1);
+	
+	assign GOut[0]=GOut[1]/2+harrisRes1/2;
+	assign GOut[1]=Gaussian1[0*GaussianOut+:dataW];
+	assign GOut[2]=DHL[0].DoGOffset/2+harrisRes1/2;
+	assign GOut[3]=DHL[0].DoGOffset;
+	
+	
+	
+	
+	assign GOut[4]=DHL[0].DoGXHarrisOffset;
+	
 
 	generate
 		genvar gi;
 		 for(gi=0;gi<GausTableN-1;gi=gi+1)
-		 begin:FilterL
-			wire signed[sidataW-1:0] GaussianA=Gaussian1[gi*dataW+:dataW];
-			wire signed[sidataW-1:0] GaussianB=Gaussian1[(gi+1)*dataW+:dataW];
-			assign DoGOut[gi]=128+GaussianA-GaussianB;
+		 begin:DHL
+			wire signed[GaussianOut+1-1:0] GaussianA=Gaussian1[gi*dataW+:dataW];
+			wire signed[GaussianOut+1-1:0] GaussianB=Gaussian1[(gi+1)*dataW+:dataW];
+			wire signed[GaussianOut+1-1:0] DoG=GaussianA-GaussianB;
+			wire signed[GaussianOut-1:0] DoGOffset=128+DoG;
 			
-			wire signed[sidataW-1:0] GaussianA2=Gaussian2[gi*dataW+:dataW];
-			wire signed[sidataW-1:0] GaussianB2=Gaussian2[(gi+1)*dataW+:dataW];
-			assign DoGOut2[gi]=128+GaussianA2-GaussianB2;
+			
+			wire signed[GaussianOut-1:0] DoGXHarris;
+			
+			MFP_Multi #(.In1W(GaussianOut),.In2W(GaussianOut+1),.OutW(GaussianOut+2),.isUnsigned(0)) 
+			m_ac(DoG,harrisRes1,DoGXHarris);
+			wire signed[GaussianOut-1:0] DoGXHarrisOffset=128+DoGXHarris/2;
 			
 		 end
 	endgenerate	
-	*/
 	
 	
 	
-	/*harrisCornerResponse  #(.dataW(dataW),.ImageW(ImageW),.cornorwindowSize(5))hCornor
-	(clk_p,en_p,rst_p,DI1r[0+:8],DoGOut[0]);*/
 	
 	
 	
-	/*parameter testWin=16;
-	wire [32*testWin*testWin-1:0]WinX;
-	wire [dataW*testWin*testWin-1:0]BuffNxN;
-	wire [dataW*testWin*testWin-1:0]BuffWinRotate;
-	reg [dataW*testWin*testWin-1:0]BuffWinRotateReg;
+	parameter extWinsize=3;
 	
-	always@(posedge clk_p)if(en_p)BuffWinRotateReg=BuffWinRotate;
-	assign DoGOut[0]= ^BuffWinRotateReg;
+	parameter HalfSize=(extWinsize*extWinsize-1)/2;
+	wire [extWinsize*extWinsize*GaussianOut-1:0]W1;
 
-	ScanLWindow_blkRAM #(.block_height(testWin),.block_width(testWin),.frame_width(ImageW)) 
-	win1(clk_p,en_p,DI1r[0+:8],WinX);
-	groupArrReOrderBABA2BBAA#
-	(.Arr1EleW(dataW),.Arr2EleW(32-dataW),.Arr3EleW(0),.Arr4EleW(0),.ArrL(testWin*testWin))
-	gARO(WinX,BuffNxN);
-	
-	
-	windowRotate360#(.winW(testWin),.dataW(dataW),.nonPipe(0),.interpolateBits(4))
-	wS0(clk_p,en_p,pixX&7,BuffNxN,BuffWinRotate);
-	*/
+
+	ScanLWindow_blkRAM_adv #(.block_height(extWinsize),.block_width(extWinsize)
+	,.frame_width(ImageW),.pixel_depth(GaussianOut))
+	win1(clk_p,en_p,DHL[0].DoGXHarris,W1);
+
+	wire [2*HalfSize*GaussianOut-1:0]Win_skipCenter=
+	{W1[(HalfSize+1)*GaussianOut+:HalfSize*GaussianOut],W1[0+:HalfSize*GaussianOut]};
+
+	parameter localExThres=0;
+	genvar pix; 
+	generate 
+		wire signed[GaussianOut-1:0]centerpix=W1[HalfSize*GaussianOut+:GaussianOut];
+		wire signed[GaussianOut-1:0]centerpixT=centerpix-localExThres;
+		wire signed[GaussianOut-1:0]centerpixB=centerpix+localExThres;
+		
+		wire [2*HalfSize-1:0]compArrMax;
+		wire [2*HalfSize-1:0]compArrMin;
+		for (pix=0;pix<2*HalfSize;pix=pix+1) begin:maxpixel
+			
+		  wire signed[GaussianOut-1:0]a= Win_skipCenter[pix*GaussianOut+:GaussianOut];
+		  assign compArrMin[pix]=(centerpixB < a);
+		  assign compArrMax[pix]=(centerpixT > a);
+			
+		end
+
+	endgenerate
+	wire localEx=(compArrMin=={2*HalfSize{1'b1}})||(compArrMax=={2*HalfSize{1'b1}}); 
+		 
+		 
+		 
+	reg [dataW-1:0]EXSym;
+	assign GOut[5]=EXSym;
+	always@(posedge clk_p)if(en_p)begin
+		#1
+		if((compArrMin=={2*HalfSize{1'b1}}))
+			EXSym=0;
+		else if((compArrMax=={2*HalfSize{1'b1}}))
+			EXSym=255;
+		else
+			EXSym=128;
+	end
+
+
 	
 endmodule
 
-
-module regionPick
-#(parameter
-dataW=8,
-xoffSet=0,
-yoffSet=0
-)
-(
-input [winHW*winHW*dataW-1:0]window,
-output [regionPixNum*dataW-1:0]ExtractRegion
-);
-localparam 
-winHW=19,
-regionPixNum=71;
-
-wire[regionPixNum*3:0]CircleTableX={
-           4'd4,4'd5,4'd6,
-    4'd2,4'd3,4'd4,4'd5,4'd6,4'd7,4'd8
-};
-wire[regionPixNum*3:0]CircleTableY={
-			4'd0,4'd0,4'd0,
-	4'd0,4'd0,4'd0,4'd0,4'd0,4'd0,4'd0
-};
-generate
-genvar i;
-for(i=0;i<8;i=i+1)begin:asLoop
-	assign ExtractRegion[i*dataW+:dataW]=
-	window[
-		(CircleTableX[i*4+:4]*winHW+CircleTableX[i*4+:4])*dataW+:dataW
-	];
-end
-endgenerate
 	
-endmodule
