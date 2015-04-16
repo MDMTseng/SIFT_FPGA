@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> 
 Reading constraint file D:/Program/MYPRJ~1/HG_Sync/FPGA/SIFT/source/TOP.XCF.
@@ -138,23 +138,15 @@ INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner
 INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 54. parameter declaration becomes local in harrisCornerResponse with formal parameter declaration list
 INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 98. parameter declaration becomes local in harrisCornerResponse with formal parameter declaration list
 INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 177. parameter declaration becomes local in harrisCornerResponse with formal parameter declaration list
-Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\downSamplePixMem.v" into library work
-Parsing module <downSamplePixMem>.
 Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\SPI_slave.v" into library work
 Parsing module <SPI_slave>.
 Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\PixCoordinator.v" into library work
 Parsing module <PixCoordinator>.
 Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" into library work
 Parsing module <octaveModule>.
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 42. parameter declaration becomes local in octaveModule with formal parameter declaration list
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 43. parameter declaration becomes local in octaveModule with formal parameter declaration list
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 45. parameter declaration becomes local in octaveModule with formal parameter declaration list
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 46. parameter declaration becomes local in octaveModule with formal parameter declaration list
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 47. parameter declaration becomes local in octaveModule with formal parameter declaration list
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 49. parameter declaration becomes local in octaveModule with formal parameter declaration list
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 69. parameter declaration becomes local in octaveModule with formal parameter declaration list
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 85. parameter declaration becomes local in octaveModule with formal parameter declaration list
-INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 86. parameter declaration becomes local in octaveModule with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 67. parameter declaration becomes local in octaveModule with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 68. parameter declaration becomes local in octaveModule with formal parameter declaration list
+Parsing module <ScaleSpace5Module>.
 Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ColorTranse.v" into library work
 Parsing module <ColorTranse>.
 Analyzing Verilog file "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" into library work
@@ -288,6 +280,73 @@ Back to verilog to continue elaboration
 Going to vhdl side to elaborate module blkRAM_W32D640_SP
 Back to verilog to continue elaboration
 
+Elaborating module <ScaleSpace5Module(dataW=8,outW=8,frameW=32'sb01010000000)>.
+
+Elaborating module <MFP_MAC_symmetric_par(In1W=8,In2W=6,In2EQW=8,ArrL=19,PordW_ROUND=10,AccW_ROUND=8,pipeInterval=2,isFloor=0,isUnsigned=1)>.
+
+Elaborating module <MFP_Adder(In1W=8,In2W=8,OutW=9,isUnsigned=1)>.
+
+Elaborating module <MFP_RegOWire(dataW=10'sb01011010,levelIdx=0,regInterval=2)>.
+
+Elaborating module <MFP_MAC_par(In1W=9,In2W=6,In2EQW=8,ArrL=32'sb01010,PordW_ROUND=11,AccW_ROUND=9,pipeInterval=2,levelIdx=1,isUnsigned=1)>.
+
+Elaborating module <MFP_Multi_Arr(ArrL=32'sb01010,In1W=9,In2W=6,In2EQW=8,OutW=11,isUnsigned=1,isFloor=1)>.
+
+Elaborating module <MFP_Multi(In1W=9,In2W=6,In2EQW=8,OutW=11,Saturate=0,isFloor=1,isUnsigned=1)>.
+
+Elaborating module <MFP_Round(InW=17,OutW=11,isFloor=1,Saturate=0,isUnsigned=1)>.
+
+Elaborating module <MFP_RegOWire(dataW=10'sb01101110,levelIdx=1,regInterval=2)>.
+WARNING:HDLCompiler:1127 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v" Line 95: Assignment to productArr_rounded_stage ignored, since the identifier is never used
+
+Elaborating module <MFP_AdderTree(data_depth=11,ArrL=32'sb01010,levelIdx=2,pipeInterval=2,isUnsigned=1)>.
+
+Elaborating module <MFP_Adder(In1W=11,In2W=11,OutW=11,isUnsigned=1)>.
+
+Elaborating module <MFP_RegOWire(dataW=11,levelIdx=2,regInterval=2)>.
+
+Elaborating module <MFP_AdderTree(data_depth=11,ArrL=32'sb0101,levelIdx=3,pipeInterval=2,isUnsigned=1)>.
+
+Elaborating module <MFP_RegOWire(dataW=11,levelIdx=3,regInterval=2)>.
+
+Elaborating module <MFP_AdderTree(data_depth=11,ArrL=32'sb010,levelIdx=4,pipeInterval=2,isUnsigned=1)>.
+
+Elaborating module <MFP_RegOWire(dataW=11,levelIdx=4,regInterval=2)>.
+
+Elaborating module <MFP_AdderTree(data_depth=11,ArrL=32'sb011,levelIdx=4,pipeInterval=2,isUnsigned=1)>.
+
+Elaborating module <MFP_AdderTree(data_depth=11,ArrL=32'sb010,levelIdx=5,pipeInterval=2,isUnsigned=1)>.
+
+Elaborating module <MFP_RegOWire(dataW=11,levelIdx=5,regInterval=2)>.
+
+Elaborating module <MFP_Round(InW=11,OutW=9,isUnsigned=1)>.
+WARNING:HDLCompiler:1127 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v" Line 56: Assignment to extrasum_roundedBit ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 130: Size mismatch in connection of port <Coeff>. Formal port size is 60-bit while actual signal size is 114-bit.
+WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 134: Result of 160-bit expression is truncated to fit in 152-bit target.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 140: Size mismatch in connection of port <Coeff>. Formal port size is 60-bit while actual signal size is 114-bit.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 130: Size mismatch in connection of port <Coeff>. Formal port size is 60-bit while actual signal size is 114-bit.
+WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 134: Result of 160-bit expression is truncated to fit in 152-bit target.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 140: Size mismatch in connection of port <Coeff>. Formal port size is 60-bit while actual signal size is 114-bit.
+
+Elaborating module <MFP_MAC_symmetric_par(In1W=8,In2W=5,In2EQW=8,ArrL=19,PordW_ROUND=10,AccW_ROUND=8,pipeInterval=2,isFloor=0,isUnsigned=1)>.
+
+Elaborating module <MFP_MAC_par(In1W=9,In2W=5,In2EQW=8,ArrL=32'sb01010,PordW_ROUND=11,AccW_ROUND=9,pipeInterval=2,levelIdx=1,isUnsigned=1)>.
+
+Elaborating module <MFP_Multi_Arr(ArrL=32'sb01010,In1W=9,In2W=5,In2EQW=8,OutW=11,isUnsigned=1,isFloor=1)>.
+
+Elaborating module <MFP_Multi(In1W=9,In2W=5,In2EQW=8,OutW=11,Saturate=0,isFloor=1,isUnsigned=1)>.
+WARNING:HDLCompiler:1127 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v" Line 95: Assignment to productArr_rounded_stage ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v" Line 56: Assignment to extrasum_roundedBit ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 151: Size mismatch in connection of port <Coeff>. Formal port size is 50-bit while actual signal size is 114-bit.
+WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 155: Result of 160-bit expression is truncated to fit in 152-bit target.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 161: Size mismatch in connection of port <Coeff>. Formal port size is 50-bit while actual signal size is 114-bit.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 151: Size mismatch in connection of port <Coeff>. Formal port size is 50-bit while actual signal size is 114-bit.
+WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 155: Result of 160-bit expression is truncated to fit in 152-bit target.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 161: Size mismatch in connection of port <Coeff>. Formal port size is 50-bit while actual signal size is 114-bit.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 151: Size mismatch in connection of port <Coeff>. Formal port size is 50-bit while actual signal size is 114-bit.
+WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 155: Result of 160-bit expression is truncated to fit in 152-bit target.
+WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 161: Size mismatch in connection of port <Coeff>. Formal port size is 50-bit while actual signal size is 114-bit.
+
 Elaborating module <harrisCornerResponse(dataW=8,ImageW=32'sb01010000000,cornorwindowSize=5,outW=8,ts=15)>.
 WARNING:HDLCompiler:604 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 36: Module instantiation should have an instance name
 
@@ -343,75 +402,8 @@ Elaborating module <MFP_Multi(In1W=8,OutW=11,isUnsigned=0)>.
 Elaborating module <MFP_Round(InW=15,OutW=11,isFloor=1,Saturate=0,isUnsigned=0)>.
 WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 226: Size mismatch in connection of port <In1>. Formal port size is 8-bit while actual signal size is 32-bit.
 WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v" Line 234: Result of 32-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 94: Result of 80-bit expression is truncated to fit in 72-bit target.
-
-Elaborating module <MFP_MAC_symmetric_par(In1W=8,In2W=6,In2EQW=8,ArrL=19,PordW_ROUND=10,AccW_ROUND=8,pipeInterval=2,isFloor=0,isUnsigned=1)>.
-
-Elaborating module <MFP_Adder(In1W=8,In2W=8,OutW=9,isUnsigned=1)>.
-
-Elaborating module <MFP_RegOWire(dataW=10'sb01011010,levelIdx=0,regInterval=2)>.
-
-Elaborating module <MFP_MAC_par(In1W=9,In2W=6,In2EQW=8,ArrL=32'sb01010,PordW_ROUND=11,AccW_ROUND=9,pipeInterval=2,levelIdx=1,isUnsigned=1)>.
-
-Elaborating module <MFP_Multi_Arr(ArrL=32'sb01010,In1W=9,In2W=6,In2EQW=8,OutW=11,isUnsigned=1,isFloor=1)>.
-
-Elaborating module <MFP_Multi(In1W=9,In2W=6,In2EQW=8,OutW=11,Saturate=0,isFloor=1,isUnsigned=1)>.
-
-Elaborating module <MFP_Round(InW=17,OutW=11,isFloor=1,Saturate=0,isUnsigned=1)>.
-
-Elaborating module <MFP_RegOWire(dataW=10'sb01101110,levelIdx=1,regInterval=2)>.
-WARNING:HDLCompiler:1127 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v" Line 95: Assignment to productArr_rounded_stage ignored, since the identifier is never used
-
-Elaborating module <MFP_AdderTree(data_depth=11,ArrL=32'sb01010,levelIdx=2,pipeInterval=2,isUnsigned=1)>.
-
-Elaborating module <MFP_Adder(In1W=11,In2W=11,OutW=11,isUnsigned=1)>.
-
-Elaborating module <MFP_RegOWire(dataW=11,levelIdx=2,regInterval=2)>.
-
-Elaborating module <MFP_AdderTree(data_depth=11,ArrL=32'sb0101,levelIdx=3,pipeInterval=2,isUnsigned=1)>.
-
-Elaborating module <MFP_RegOWire(dataW=11,levelIdx=3,regInterval=2)>.
-
-Elaborating module <MFP_AdderTree(data_depth=11,ArrL=32'sb010,levelIdx=4,pipeInterval=2,isUnsigned=1)>.
-
-Elaborating module <MFP_RegOWire(dataW=11,levelIdx=4,regInterval=2)>.
-
-Elaborating module <MFP_AdderTree(data_depth=11,ArrL=32'sb011,levelIdx=4,pipeInterval=2,isUnsigned=1)>.
-
-Elaborating module <MFP_AdderTree(data_depth=11,ArrL=32'sb010,levelIdx=5,pipeInterval=2,isUnsigned=1)>.
-
-Elaborating module <MFP_RegOWire(dataW=11,levelIdx=5,regInterval=2)>.
-
-Elaborating module <MFP_Round(InW=11,OutW=9,isUnsigned=1)>.
-WARNING:HDLCompiler:1127 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v" Line 56: Assignment to extrasum_roundedBit ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 111: Size mismatch in connection of port <Coeff>. Formal port size is 60-bit while actual signal size is 114-bit.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 115: Result of 160-bit expression is truncated to fit in 152-bit target.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 121: Size mismatch in connection of port <Coeff>. Formal port size is 60-bit while actual signal size is 114-bit.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 111: Size mismatch in connection of port <Coeff>. Formal port size is 60-bit while actual signal size is 114-bit.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 115: Result of 160-bit expression is truncated to fit in 152-bit target.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 121: Size mismatch in connection of port <Coeff>. Formal port size is 60-bit while actual signal size is 114-bit.
-
-Elaborating module <MFP_MAC_symmetric_par(In1W=8,In2W=5,In2EQW=8,ArrL=19,PordW_ROUND=10,AccW_ROUND=8,pipeInterval=2,isFloor=0,isUnsigned=1)>.
-
-Elaborating module <MFP_MAC_par(In1W=9,In2W=5,In2EQW=8,ArrL=32'sb01010,PordW_ROUND=11,AccW_ROUND=9,pipeInterval=2,levelIdx=1,isUnsigned=1)>.
-
-Elaborating module <MFP_Multi_Arr(ArrL=32'sb01010,In1W=9,In2W=5,In2EQW=8,OutW=11,isUnsigned=1,isFloor=1)>.
-
-Elaborating module <MFP_Multi(In1W=9,In2W=5,In2EQW=8,OutW=11,Saturate=0,isFloor=1,isUnsigned=1)>.
-WARNING:HDLCompiler:1127 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v" Line 95: Assignment to productArr_rounded_stage ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v" Line 56: Assignment to extrasum_roundedBit ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 132: Size mismatch in connection of port <Coeff>. Formal port size is 50-bit while actual signal size is 114-bit.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 136: Result of 160-bit expression is truncated to fit in 152-bit target.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 142: Size mismatch in connection of port <Coeff>. Formal port size is 50-bit while actual signal size is 114-bit.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 132: Size mismatch in connection of port <Coeff>. Formal port size is 50-bit while actual signal size is 114-bit.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 136: Result of 160-bit expression is truncated to fit in 152-bit target.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 142: Size mismatch in connection of port <Coeff>. Formal port size is 50-bit while actual signal size is 114-bit.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 132: Size mismatch in connection of port <Coeff>. Formal port size is 50-bit while actual signal size is 114-bit.
-WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 136: Result of 160-bit expression is truncated to fit in 152-bit target.
-WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 142: Size mismatch in connection of port <Coeff>. Formal port size is 50-bit while actual signal size is 114-bit.
-
-Elaborating module <MFP_RegOWire(dataW=40,isWire=0)>.
-WARNING:HDLCompiler:634 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 90: Net <rst_p> does not have a driver.
+WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 76: Result of 80-bit expression is truncated to fit in 72-bit target.
+WARNING:HDLCompiler:634 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v" Line 72: Net <rst_p> does not have a driver.
 WARNING:HDLCompiler:189 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 213: Size mismatch in connection of port <X>. Formal port size is 10-bit while actual signal size is 11-bit.
 WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 215: Result of 9-bit expression is truncated to fit in 8-bit target.
 WARNING:HDLCompiler:413 - "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\hijacker.v" Line 217: Result of 9-bit expression is truncated to fit in 8-bit target.
@@ -669,14 +661,9 @@ Synthesizing Unit <octaveModule>.
 WARNING:Xst:647 - Input <X> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Y> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:653 - Signal <rst_p> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-    Found 152-bit register for signal <FilterL6b[0].HerizontalBuff>.
-    Found 152-bit register for signal <FilterL6b[1].HerizontalBuff>.
-    Found 152-bit register for signal <FilterL5b[2].HerizontalBuff>.
-    Found 152-bit register for signal <FilterL5b[3].HerizontalBuff>.
-    Found 152-bit register for signal <FilterL5b[4].HerizontalBuff>.
     Found 72-bit register for signal <cornorResponseRegs>.
     Summary:
-	inferred 832 D-type flip-flop(s).
+	inferred  72 D-type flip-flop(s).
 Unit <octaveModule> synthesized.
 
 Synthesizing Unit <ScanLWindow_blkRAM_adv_1>.
@@ -844,283 +831,19 @@ Synthesizing Unit <ScanLWindow_blkRAM_adv_1>.
 	inferred 162 D-type flip-flop(s).
 Unit <ScanLWindow_blkRAM_adv_1> synthesized.
 
-Synthesizing Unit <harrisCornerResponse>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v".
-        ImageW = 640
+Synthesizing Unit <ScaleSpace5Module>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\octaveModule.v".
         dataW = 8
         outW = 8
-        cornorwindowSize = 5
-        ts = 15
-    Found 65-bit register for signal <IyIy_col_sum_SR>.
-    Found 65-bit register for signal <IxIy_col_sum_SR>.
-    Found 15-bit register for signal <IxIx_win_sum>.
-    Found 15-bit register for signal <IyIy_win_sum>.
-    Found 15-bit register for signal <IxIy_win_sum>.
-    Found 65-bit register for signal <IxIx_col_sum_SR>.
-    Found 15-bit subtractor for signal <IxIx_win_sum[14]_IxIx_cs_tail[12]_sub_60_OUT> created at line 188.
-    Found 15-bit subtractor for signal <IyIy_win_sum[14]_IyIy_cs_tail[12]_sub_62_OUT> created at line 189.
-    Found 15-bit subtractor for signal <IxIy_win_sum[14]_IxIy_cs_tail[12]_sub_64_OUT> created at line 190.
-    Found 11-bit adder for signal <n0086> created at line 39.
-    Found 11-bit adder for signal <n0087> created at line 40.
-    Found 15-bit adder for signal <IxIx_win_sum[14]_IxIx_col_sum[12]_add_58_OUT> created at line 188.
-    Found 15-bit adder for signal <IyIy_win_sum[14]_IyIy_col_sum[12]_add_60_OUT> created at line 189.
-    Found 15-bit adder for signal <IxIy_win_sum[14]_IxIy_col_sum[12]_add_62_OUT> created at line 190.
-    Found 10-bit adder for signal <n0176> created at line 232.
-    Found 10-bit adder for signal <n0177> created at line 232.
-    Found 8-bit subtractor for signal <IxIx_sum_round[7]_GND_19_o_sub_71_OUT<7:0>> created at line 226.
-    Found 8-bit subtractor for signal <IyIy_sum_round[7]_GND_19_o_sub_72_OUT<7:0>> created at line 226.
-    Found 9-bit subtractor for signal <acSbb> created at line 232.
+        frameW = 640
+    Found 152-bit register for signal <FilterL6b[1].HerizontalBuff>.
+    Found 152-bit register for signal <FilterL5b[2].HerizontalBuff>.
+    Found 152-bit register for signal <FilterL5b[3].HerizontalBuff>.
+    Found 152-bit register for signal <FilterL5b[4].HerizontalBuff>.
+    Found 152-bit register for signal <FilterL6b[0].HerizontalBuff>.
     Summary:
-	inferred  13 Adder/Subtractor(s).
-	inferred 240 D-type flip-flop(s).
-	inferred   1 Multiplexer(s).
-Unit <harrisCornerResponse> synthesized.
-
-Synthesizing Unit <sobelEdge>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\sobelEdge.v".
-        dataW = 8
-        outW = 11
-    Found 27-bit register for signal <DX_ShiftReg>.
-    Found 30-bit register for signal <DY_ShiftReg>.
-    Found 11-bit subtractor for signal <YEdge> created at line 40.
-    Found 9-bit subtractor for signal <XFilter> created at line 59.
-    Found 10-bit adder for signal <n0048> created at line 33.
-    Found 10-bit adder for signal <YFilter> created at line 32.
-    Found 11-bit adder for signal <DX0[8]_DX1[8]_add_15_OUT> created at line 67.
-    Found 12-bit adder for signal <n0016> created at line 67.
-    Summary:
-	inferred   6 Adder/Subtractor(s).
-	inferred  57 D-type flip-flop(s).
-Unit <sobelEdge> synthesized.
-
-Synthesizing Unit <MFP_Saturate_1>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        InW = 10
-        OutW = 8
-        Sat2W = 7
-        isUnsigned = 0
-    Summary:
-	inferred   3 Multiplexer(s).
-Unit <MFP_Saturate_1> synthesized.
-
-Synthesizing Unit <MFP_Multi_1>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        In1W = 7
-        In2W = 7
-        In2EQW = 7
-        OutW = 8
-        isFloor = 1
-        Saturate = 0
-        isUnsigned = 0
-    Found 7x7-bit multiplier for signal <n0010> created at line 56.
-    Summary:
-	inferred   1 Multiplier(s).
-Unit <MFP_Multi_1> synthesized.
-
-Synthesizing Unit <MFP_Round_1>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        InW = 13
-        OutW = 8
-        Saturate = 0
-        isFloor = 1
-        isUnsigned = 0
-WARNING:Xst:647 - Input <in<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Summary:
-	no macro.
-Unit <MFP_Round_1> synthesized.
-
-Synthesizing Unit <ScanLWindow_blkRAM_adv_2>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ScanLWindow_blkRAM.v".
-        block_width = 1
-        block_height = 5
-        frame_width = 640
-        pixel_depth = 8
-    Found 1-bit register for signal <Window<7>>.
-    Found 1-bit register for signal <Window<6>>.
-    Found 1-bit register for signal <Window<5>>.
-    Found 1-bit register for signal <Window<4>>.
-    Found 1-bit register for signal <Window<3>>.
-    Found 1-bit register for signal <Window<2>>.
-    Found 1-bit register for signal <Window<1>>.
-    Found 1-bit register for signal <Window<0>>.
-    Found 1-bit register for signal <Window<15>>.
-    Found 1-bit register for signal <Window<14>>.
-    Found 1-bit register for signal <Window<13>>.
-    Found 1-bit register for signal <Window<12>>.
-    Found 1-bit register for signal <Window<11>>.
-    Found 1-bit register for signal <Window<10>>.
-    Found 1-bit register for signal <Window<9>>.
-    Found 1-bit register for signal <Window<8>>.
-    Found 1-bit register for signal <Window<23>>.
-    Found 1-bit register for signal <Window<22>>.
-    Found 1-bit register for signal <Window<21>>.
-    Found 1-bit register for signal <Window<20>>.
-    Found 1-bit register for signal <Window<19>>.
-    Found 1-bit register for signal <Window<18>>.
-    Found 1-bit register for signal <Window<17>>.
-    Found 1-bit register for signal <Window<16>>.
-    Found 1-bit register for signal <Window<31>>.
-    Found 1-bit register for signal <Window<30>>.
-    Found 1-bit register for signal <Window<29>>.
-    Found 1-bit register for signal <Window<28>>.
-    Found 1-bit register for signal <Window<27>>.
-    Found 1-bit register for signal <Window<26>>.
-    Found 1-bit register for signal <Window<25>>.
-    Found 1-bit register for signal <Window<24>>.
-    Found 1-bit register for signal <Window<39>>.
-    Found 1-bit register for signal <Window<38>>.
-    Found 1-bit register for signal <Window<37>>.
-    Found 1-bit register for signal <Window<36>>.
-    Found 1-bit register for signal <Window<35>>.
-    Found 1-bit register for signal <Window<34>>.
-    Found 1-bit register for signal <Window<33>>.
-    Found 1-bit register for signal <Window<32>>.
-    Found 10-bit register for signal <addra_bramR>.
-    Found 10-bit adder for signal <addra_bramR[9]_GND_25_o_add_2_OUT> created at line 55.
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred  50 D-type flip-flop(s).
-Unit <ScanLWindow_blkRAM_adv_2> synthesized.
-
-Synthesizing Unit <MFP_AdderTree_1>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
-        data_depth = 13
-        ArrL = 5
-        levelIdx = 0
-        pipeInterval = 999
-        isUnsigned = 0
-    Summary:
-	no macro.
-Unit <MFP_AdderTree_1> synthesized.
-
-Synthesizing Unit <MFP_Adder_1>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        In1W = 13
-        In2W = 13
-        OutW = 13
-        unsignedAddIn2 = 0
-        Saturate = 0
-        isUnsigned = 0
-    Found 13-bit adder for signal <TestAdd> created at line 121.
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-Unit <MFP_Adder_1> synthesized.
-
-Synthesizing Unit <MFP_RegOWire_1>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        dataW = 13
-        levelIdx = 0
-        regInterval = 999
-        isWire = 1'b0
-    Found 13-bit register for signal <in_reg>.
-    Summary:
-	inferred  13 D-type flip-flop(s).
-Unit <MFP_RegOWire_1> synthesized.
-
-Synthesizing Unit <MFP_AdderTree_2>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
-        data_depth = 13
-        ArrL = 2
-        levelIdx = 1
-        pipeInterval = 999
-        isUnsigned = 0
-    Summary:
-	no macro.
-Unit <MFP_AdderTree_2> synthesized.
-
-Synthesizing Unit <MFP_RegOWire_2>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        dataW = 13
-        levelIdx = 1
-        regInterval = 999
-        isWire = 1'b1
-WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Summary:
-	no macro.
-Unit <MFP_RegOWire_2> synthesized.
-
-Synthesizing Unit <MFP_AdderTree_3>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
-        data_depth = 13
-        ArrL = 3
-        levelIdx = 1
-        pipeInterval = 999
-        isUnsigned = 0
-    Summary:
-	no macro.
-Unit <MFP_AdderTree_3> synthesized.
-
-Synthesizing Unit <MFP_AdderTree_4>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
-        data_depth = 13
-        ArrL = 2
-        levelIdx = 2
-        pipeInterval = 999
-        isUnsigned = 0
-    Summary:
-	no macro.
-Unit <MFP_AdderTree_4> synthesized.
-
-Synthesizing Unit <MFP_RegOWire_3>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        dataW = 13
-        levelIdx = 2
-        regInterval = 999
-        isWire = 1'b1
-WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Summary:
-	no macro.
-Unit <MFP_RegOWire_3> synthesized.
-
-Synthesizing Unit <MFP_Saturate_2>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        InW = 15
-        OutW = 12
-        Sat2W = 12
-        isUnsigned = 0
-    Summary:
-	inferred   3 Multiplexer(s).
-Unit <MFP_Saturate_2> synthesized.
-
-Synthesizing Unit <MFP_Round_2>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        InW = 12
-        OutW = 8
-        Saturate = 0
-        isFloor = 1
-        isUnsigned = 0
-WARNING:Xst:647 - Input <in<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Summary:
-	no macro.
-Unit <MFP_Round_2> synthesized.
-
-Synthesizing Unit <MFP_Multi_2>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        In1W = 8
-        In2W = 8
-        In2EQW = 8
-        OutW = 11
-        isFloor = 1
-        Saturate = 0
-        isUnsigned = 0
-    Found 8x8-bit multiplier for signal <n0010> created at line 56.
-    Summary:
-	inferred   1 Multiplier(s).
-Unit <MFP_Multi_2> synthesized.
-
-Synthesizing Unit <MFP_Round_3>.
-    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        InW = 15
-        OutW = 11
-        Saturate = 0
-        isFloor = 1
-        isUnsigned = 0
-WARNING:Xst:647 - Input <in<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Summary:
-	no macro.
-Unit <MFP_Round_3> synthesized.
+	inferred 760 D-type flip-flop(s).
+Unit <ScaleSpace5Module> synthesized.
 
 Synthesizing Unit <MFP_MAC_symmetric_par_1>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
@@ -1138,7 +861,7 @@ Synthesizing Unit <MFP_MAC_symmetric_par_1>.
 	no macro.
 Unit <MFP_MAC_symmetric_par_1> synthesized.
 
-Synthesizing Unit <MFP_Adder_2>.
+Synthesizing Unit <MFP_Adder_1>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
         In1W = 8
         In2W = 8
@@ -1149,9 +872,9 @@ Synthesizing Unit <MFP_Adder_2>.
     Found 9-bit adder for signal <Out> created at line 114.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-Unit <MFP_Adder_2> synthesized.
+Unit <MFP_Adder_1> synthesized.
 
-Synthesizing Unit <MFP_RegOWire_4>.
+Synthesizing Unit <MFP_RegOWire_1>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
         dataW = 10'sb0001011010
         levelIdx = 0
@@ -1160,7 +883,7 @@ Synthesizing Unit <MFP_RegOWire_4>.
     Found 90-bit register for signal <in_reg>.
     Summary:
 	inferred  90 D-type flip-flop(s).
-Unit <MFP_RegOWire_4> synthesized.
+Unit <MFP_RegOWire_1> synthesized.
 
 Synthesizing Unit <MFP_MAC_par_1>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
@@ -1193,7 +916,7 @@ Synthesizing Unit <MFP_Multi_Arr_1>.
 	no macro.
 Unit <MFP_Multi_Arr_1> synthesized.
 
-Synthesizing Unit <MFP_Multi_3>.
+Synthesizing Unit <MFP_Multi_1>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
         In1W = 9
         In2W = 6
@@ -1205,9 +928,9 @@ Synthesizing Unit <MFP_Multi_3>.
     Found 9x6-bit multiplier for signal <Out_<14:0>> created at line 52.
     Summary:
 	inferred   1 Multiplier(s).
-Unit <MFP_Multi_3> synthesized.
+Unit <MFP_Multi_1> synthesized.
 
-Synthesizing Unit <MFP_Round_4>.
+Synthesizing Unit <MFP_Round_1>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
         InW = 17
         OutW = 11
@@ -1217,9 +940,9 @@ Synthesizing Unit <MFP_Round_4>.
 WARNING:Xst:647 - Input <in<5:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
-Unit <MFP_Round_4> synthesized.
+Unit <MFP_Round_1> synthesized.
 
-Synthesizing Unit <MFP_AdderTree_5>.
+Synthesizing Unit <MFP_AdderTree_1>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
         data_depth = 11
         ArrL = 10
@@ -1228,9 +951,9 @@ Synthesizing Unit <MFP_AdderTree_5>.
         isUnsigned = 1
     Summary:
 	no macro.
-Unit <MFP_AdderTree_5> synthesized.
+Unit <MFP_AdderTree_1> synthesized.
 
-Synthesizing Unit <MFP_Adder_3>.
+Synthesizing Unit <MFP_Adder_2>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
         In1W = 11
         In2W = 11
@@ -1241,9 +964,9 @@ Synthesizing Unit <MFP_Adder_3>.
     Found 11-bit adder for signal <TestAdd> created at line 114.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-Unit <MFP_Adder_3> synthesized.
+Unit <MFP_Adder_2> synthesized.
 
-Synthesizing Unit <MFP_RegOWire_6>.
+Synthesizing Unit <MFP_RegOWire_3>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
         dataW = 11
         levelIdx = 2
@@ -1252,9 +975,9 @@ Synthesizing Unit <MFP_RegOWire_6>.
     Found 11-bit register for signal <in_reg>.
     Summary:
 	inferred  11 D-type flip-flop(s).
-Unit <MFP_RegOWire_6> synthesized.
+Unit <MFP_RegOWire_3> synthesized.
 
-Synthesizing Unit <MFP_AdderTree_6>.
+Synthesizing Unit <MFP_AdderTree_2>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
         data_depth = 11
         ArrL = 5
@@ -1263,9 +986,9 @@ Synthesizing Unit <MFP_AdderTree_6>.
         isUnsigned = 1
     Summary:
 	no macro.
-Unit <MFP_AdderTree_6> synthesized.
+Unit <MFP_AdderTree_2> synthesized.
 
-Synthesizing Unit <MFP_RegOWire_7>.
+Synthesizing Unit <MFP_RegOWire_4>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
         dataW = 11
         levelIdx = 3
@@ -1275,9 +998,9 @@ WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and lef
 WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
-Unit <MFP_RegOWire_7> synthesized.
+Unit <MFP_RegOWire_4> synthesized.
 
-Synthesizing Unit <MFP_AdderTree_7>.
+Synthesizing Unit <MFP_AdderTree_3>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
         data_depth = 11
         ArrL = 2
@@ -1286,9 +1009,9 @@ Synthesizing Unit <MFP_AdderTree_7>.
         isUnsigned = 1
     Summary:
 	no macro.
-Unit <MFP_AdderTree_7> synthesized.
+Unit <MFP_AdderTree_3> synthesized.
 
-Synthesizing Unit <MFP_RegOWire_8>.
+Synthesizing Unit <MFP_RegOWire_5>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
         dataW = 11
         levelIdx = 4
@@ -1297,9 +1020,9 @@ Synthesizing Unit <MFP_RegOWire_8>.
     Found 11-bit register for signal <in_reg>.
     Summary:
 	inferred  11 D-type flip-flop(s).
-Unit <MFP_RegOWire_8> synthesized.
+Unit <MFP_RegOWire_5> synthesized.
 
-Synthesizing Unit <MFP_AdderTree_8>.
+Synthesizing Unit <MFP_AdderTree_4>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
         data_depth = 11
         ArrL = 3
@@ -1308,9 +1031,9 @@ Synthesizing Unit <MFP_AdderTree_8>.
         isUnsigned = 1
     Summary:
 	no macro.
-Unit <MFP_AdderTree_8> synthesized.
+Unit <MFP_AdderTree_4> synthesized.
 
-Synthesizing Unit <MFP_AdderTree_9>.
+Synthesizing Unit <MFP_AdderTree_5>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
         data_depth = 11
         ArrL = 2
@@ -1319,9 +1042,9 @@ Synthesizing Unit <MFP_AdderTree_9>.
         isUnsigned = 1
     Summary:
 	no macro.
-Unit <MFP_AdderTree_9> synthesized.
+Unit <MFP_AdderTree_5> synthesized.
 
-Synthesizing Unit <MFP_RegOWire_9>.
+Synthesizing Unit <MFP_RegOWire_6>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
         dataW = 11
         levelIdx = 5
@@ -1331,9 +1054,9 @@ WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and lef
 WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
-Unit <MFP_RegOWire_9> synthesized.
+Unit <MFP_RegOWire_6> synthesized.
 
-Synthesizing Unit <MFP_Round_5>.
+Synthesizing Unit <MFP_Round_2>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
         InW = 11
         OutW = 9
@@ -1343,7 +1066,7 @@ Synthesizing Unit <MFP_Round_5>.
 WARNING:Xst:647 - Input <in<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
-Unit <MFP_Round_5> synthesized.
+Unit <MFP_Round_2> synthesized.
 
 Synthesizing Unit <MFP_MAC_symmetric_par_2>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
@@ -1392,7 +1115,7 @@ Synthesizing Unit <MFP_Multi_Arr_2>.
 	no macro.
 Unit <MFP_Multi_Arr_2> synthesized.
 
-Synthesizing Unit <MFP_Multi_4>.
+Synthesizing Unit <MFP_Multi_2>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
         In1W = 9
         In2W = 5
@@ -1404,18 +1127,285 @@ Synthesizing Unit <MFP_Multi_4>.
     Found 9x5-bit multiplier for signal <Out_<13:0>> created at line 52.
     Summary:
 	inferred   1 Multiplier(s).
+Unit <MFP_Multi_2> synthesized.
+
+Synthesizing Unit <harrisCornerResponse>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\harrisCorner.v".
+        ImageW = 640
+        dataW = 8
+        outW = 8
+        cornorwindowSize = 5
+        ts = 15
+    Found 65-bit register for signal <IyIy_col_sum_SR>.
+    Found 65-bit register for signal <IxIy_col_sum_SR>.
+    Found 15-bit register for signal <IxIx_win_sum>.
+    Found 15-bit register for signal <IyIy_win_sum>.
+    Found 15-bit register for signal <IxIy_win_sum>.
+    Found 65-bit register for signal <IxIx_col_sum_SR>.
+    Found 15-bit subtractor for signal <IxIx_win_sum[14]_IxIx_cs_tail[12]_sub_60_OUT> created at line 188.
+    Found 15-bit subtractor for signal <IyIy_win_sum[14]_IyIy_cs_tail[12]_sub_62_OUT> created at line 189.
+    Found 15-bit subtractor for signal <IxIy_win_sum[14]_IxIy_cs_tail[12]_sub_64_OUT> created at line 190.
+    Found 11-bit adder for signal <n0086> created at line 39.
+    Found 11-bit adder for signal <n0087> created at line 40.
+    Found 15-bit adder for signal <IxIx_win_sum[14]_IxIx_col_sum[12]_add_58_OUT> created at line 188.
+    Found 15-bit adder for signal <IyIy_win_sum[14]_IyIy_col_sum[12]_add_60_OUT> created at line 189.
+    Found 15-bit adder for signal <IxIy_win_sum[14]_IxIy_col_sum[12]_add_62_OUT> created at line 190.
+    Found 10-bit adder for signal <n0176> created at line 232.
+    Found 10-bit adder for signal <n0177> created at line 232.
+    Found 8-bit subtractor for signal <IxIx_sum_round[7]_GND_45_o_sub_71_OUT<7:0>> created at line 226.
+    Found 8-bit subtractor for signal <IyIy_sum_round[7]_GND_45_o_sub_72_OUT<7:0>> created at line 226.
+    Found 9-bit subtractor for signal <acSbb> created at line 232.
+    Summary:
+	inferred  13 Adder/Subtractor(s).
+	inferred 240 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <harrisCornerResponse> synthesized.
+
+Synthesizing Unit <sobelEdge>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\sobelEdge.v".
+        dataW = 8
+        outW = 11
+    Found 27-bit register for signal <DX_ShiftReg>.
+    Found 30-bit register for signal <DY_ShiftReg>.
+    Found 11-bit subtractor for signal <YEdge> created at line 40.
+    Found 9-bit subtractor for signal <XFilter> created at line 59.
+    Found 10-bit adder for signal <n0048> created at line 33.
+    Found 10-bit adder for signal <YFilter> created at line 32.
+    Found 11-bit adder for signal <DX0[8]_DX1[8]_add_15_OUT> created at line 67.
+    Found 12-bit adder for signal <n0016> created at line 67.
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred  57 D-type flip-flop(s).
+Unit <sobelEdge> synthesized.
+
+Synthesizing Unit <MFP_Saturate_1>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
+        InW = 10
+        OutW = 8
+        Sat2W = 7
+        isUnsigned = 0
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <MFP_Saturate_1> synthesized.
+
+Synthesizing Unit <MFP_Multi_3>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
+        In1W = 7
+        In2W = 7
+        In2EQW = 7
+        OutW = 8
+        isFloor = 1
+        Saturate = 0
+        isUnsigned = 0
+    Found 7x7-bit multiplier for signal <n0010> created at line 56.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <MFP_Multi_3> synthesized.
+
+Synthesizing Unit <MFP_Round_3>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
+        InW = 13
+        OutW = 8
+        Saturate = 0
+        isFloor = 1
+        isUnsigned = 0
+WARNING:Xst:647 - Input <in<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <MFP_Round_3> synthesized.
+
+Synthesizing Unit <ScanLWindow_blkRAM_adv_2>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\ScanLWindow_blkRAM.v".
+        block_width = 1
+        block_height = 5
+        frame_width = 640
+        pixel_depth = 8
+    Found 1-bit register for signal <Window<7>>.
+    Found 1-bit register for signal <Window<6>>.
+    Found 1-bit register for signal <Window<5>>.
+    Found 1-bit register for signal <Window<4>>.
+    Found 1-bit register for signal <Window<3>>.
+    Found 1-bit register for signal <Window<2>>.
+    Found 1-bit register for signal <Window<1>>.
+    Found 1-bit register for signal <Window<0>>.
+    Found 1-bit register for signal <Window<15>>.
+    Found 1-bit register for signal <Window<14>>.
+    Found 1-bit register for signal <Window<13>>.
+    Found 1-bit register for signal <Window<12>>.
+    Found 1-bit register for signal <Window<11>>.
+    Found 1-bit register for signal <Window<10>>.
+    Found 1-bit register for signal <Window<9>>.
+    Found 1-bit register for signal <Window<8>>.
+    Found 1-bit register for signal <Window<23>>.
+    Found 1-bit register for signal <Window<22>>.
+    Found 1-bit register for signal <Window<21>>.
+    Found 1-bit register for signal <Window<20>>.
+    Found 1-bit register for signal <Window<19>>.
+    Found 1-bit register for signal <Window<18>>.
+    Found 1-bit register for signal <Window<17>>.
+    Found 1-bit register for signal <Window<16>>.
+    Found 1-bit register for signal <Window<31>>.
+    Found 1-bit register for signal <Window<30>>.
+    Found 1-bit register for signal <Window<29>>.
+    Found 1-bit register for signal <Window<28>>.
+    Found 1-bit register for signal <Window<27>>.
+    Found 1-bit register for signal <Window<26>>.
+    Found 1-bit register for signal <Window<25>>.
+    Found 1-bit register for signal <Window<24>>.
+    Found 1-bit register for signal <Window<39>>.
+    Found 1-bit register for signal <Window<38>>.
+    Found 1-bit register for signal <Window<37>>.
+    Found 1-bit register for signal <Window<36>>.
+    Found 1-bit register for signal <Window<35>>.
+    Found 1-bit register for signal <Window<34>>.
+    Found 1-bit register for signal <Window<33>>.
+    Found 1-bit register for signal <Window<32>>.
+    Found 10-bit register for signal <addra_bramR>.
+    Found 10-bit adder for signal <addra_bramR[9]_GND_51_o_add_2_OUT> created at line 55.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  50 D-type flip-flop(s).
+Unit <ScanLWindow_blkRAM_adv_2> synthesized.
+
+Synthesizing Unit <MFP_AdderTree_6>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
+        data_depth = 13
+        ArrL = 5
+        levelIdx = 0
+        pipeInterval = 999
+        isUnsigned = 0
+    Summary:
+	no macro.
+Unit <MFP_AdderTree_6> synthesized.
+
+Synthesizing Unit <MFP_Adder_3>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
+        In1W = 13
+        In2W = 13
+        OutW = 13
+        unsignedAddIn2 = 0
+        Saturate = 0
+        isUnsigned = 0
+    Found 13-bit adder for signal <TestAdd> created at line 121.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <MFP_Adder_3> synthesized.
+
+Synthesizing Unit <MFP_RegOWire_7>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
+        dataW = 13
+        levelIdx = 0
+        regInterval = 999
+        isWire = 1'b0
+    Found 13-bit register for signal <in_reg>.
+    Summary:
+	inferred  13 D-type flip-flop(s).
+Unit <MFP_RegOWire_7> synthesized.
+
+Synthesizing Unit <MFP_AdderTree_7>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
+        data_depth = 13
+        ArrL = 2
+        levelIdx = 1
+        pipeInterval = 999
+        isUnsigned = 0
+    Summary:
+	no macro.
+Unit <MFP_AdderTree_7> synthesized.
+
+Synthesizing Unit <MFP_RegOWire_8>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
+        dataW = 13
+        levelIdx = 1
+        regInterval = 999
+        isWire = 1'b1
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <MFP_RegOWire_8> synthesized.
+
+Synthesizing Unit <MFP_AdderTree_8>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
+        data_depth = 13
+        ArrL = 3
+        levelIdx = 1
+        pipeInterval = 999
+        isUnsigned = 0
+    Summary:
+	no macro.
+Unit <MFP_AdderTree_8> synthesized.
+
+Synthesizing Unit <MFP_AdderTree_9>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\MFixPointMAC.v".
+        data_depth = 13
+        ArrL = 2
+        levelIdx = 2
+        pipeInterval = 999
+        isUnsigned = 0
+    Summary:
+	no macro.
+Unit <MFP_AdderTree_9> synthesized.
+
+Synthesizing Unit <MFP_RegOWire_9>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
+        dataW = 13
+        levelIdx = 2
+        regInterval = 999
+        isWire = 1'b1
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <MFP_RegOWire_9> synthesized.
+
+Synthesizing Unit <MFP_Saturate_2>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
+        InW = 15
+        OutW = 12
+        Sat2W = 12
+        isUnsigned = 0
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <MFP_Saturate_2> synthesized.
+
+Synthesizing Unit <MFP_Round_4>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
+        InW = 12
+        OutW = 8
+        Saturate = 0
+        isFloor = 1
+        isUnsigned = 0
+WARNING:Xst:647 - Input <in<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <MFP_Round_4> synthesized.
+
+Synthesizing Unit <MFP_Multi_4>.
+    Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
+        In1W = 8
+        In2W = 8
+        In2EQW = 8
+        OutW = 11
+        isFloor = 1
+        Saturate = 0
+        isUnsigned = 0
+    Found 8x8-bit multiplier for signal <n0010> created at line 56.
+    Summary:
+	inferred   1 Multiplier(s).
 Unit <MFP_Multi_4> synthesized.
 
-Synthesizing Unit <MFP_RegOWire_10>.
+Synthesizing Unit <MFP_Round_5>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
-        dataW = 40
-        levelIdx = 0
-        regInterval = 0
-        isWire = 0
-    Found 40-bit register for signal <in_reg>.
+        InW = 15
+        OutW = 11
+        Saturate = 0
+        isFloor = 1
+        isUnsigned = 0
+WARNING:Xst:647 - Input <in<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
-	inferred  40 D-type flip-flop(s).
-Unit <MFP_RegOWire_10> synthesized.
+	no macro.
+Unit <MFP_Round_5> synthesized.
 
 Synthesizing Unit <MFP_Multi_5>.
     Related source file is "D:\Program\MYPRJ~1\HG_Sync\FPGA\SIFT\source\MFixPoint_ToolBox\/MFixPointBasic.v".
@@ -2599,7 +2589,7 @@ Macro Statistics
  8-bit subtractor                                      : 5
  9-bit adder                                           : 90
  9-bit subtractor                                      : 3
-# Registers                                            : 423
+# Registers                                            : 422
  1-bit register                                        : 222
  10-bit register                                       : 12
  100-bit register                                      : 1
@@ -2616,7 +2606,7 @@ Macro Statistics
  30-bit register                                       : 1
  31-bit register                                       : 4
  4-bit register                                        : 2
- 40-bit register                                       : 4
+ 40-bit register                                       : 3
  48-bit register                                       : 2
  5-bit register                                        : 19
  6-bit register                                        : 8
@@ -2694,10 +2684,19 @@ WARNING:Xst:638 - in unit CamCtl Conflict on KEEP property on signal _n0130<16> 
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1290 - Hierarchical block <FilterL5b[2].MACpV> is unconnected in block <OM1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <FilterL5b[3].MACpV> is unconnected in block <OM1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <FilterL5b[4].MACpV> is unconnected in block <OM1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <FilterL5b[2].MACpH> is unconnected in block <OM1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <FilterL5b[3].MACpH> is unconnected in block <OM1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <FilterL5b[4].MACpH> is unconnected in block <OM1>.
+   It will be removed from the design.
 INFO:Xst:2261 - The FF/Latch <EXSym_0> in Unit <hijacker1> is equivalent to the following 6 FFs/Latches, which will be removed : <EXSym_1> <EXSym_2> <EXSym_3> <EXSym_4> <EXSym_5> <EXSym_6> 
-WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_6> (without init value) has a constant value of 0 in block <iodrp_controller_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_2> (without init value) has a constant value of 0 in block <iodrp_mcb_controller_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_4> (without init value) has a constant value of 0 in block <iodrp_mcb_controller_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_5> (without init value) has a constant value of 0 in block <iodrp_mcb_controller_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_6> (without init value) has a constant value of 0 in block <iodrp_mcb_controller_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <SELFREFRESH_REQ_R1> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
@@ -2727,17 +2726,18 @@ WARNING:Xst:1710 - FF/Latch <in_reg_89> (without init value) has a constant valu
 WARNING:Xst:1710 - FF/Latch <in_reg_89> (without init value) has a constant value of 0 in block <RoW>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <in_reg_89> (without init value) has a constant value of 0 in block <RoW>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <in_reg_89> (without init value) has a constant value of 0 in block <RoW>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <in_reg_89> (without init value) has a constant value of 0 in block <RoW>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <in_reg_89> (without init value) has a constant value of 0 in block <RoW>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <in_reg_89> (without init value) has a constant value of 0 in block <RoW>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <in_reg_89> (without init value) has a constant value of 0 in block <RoW>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <in_reg_89> (without init value) has a constant value of 0 in block <RoW>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <in_reg_89> (without init value) has a constant value of 0 in block <RoW>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <prevRes_1> has a constant value of 0 in block <Inst_SysCon>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <currAddr_1> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <currAddr_2> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <currAddr_3> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <currAddr_4> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <currAddr_5> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <currAddr_6> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <currAddr_7> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <currAddr_1> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_4> (without init value) has a constant value of 0 in block <iodrp_mcb_controller_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_2> (without init value) has a constant value of 0 in block <iodrp_mcb_controller_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_6> (without init value) has a constant value of 0 in block <iodrp_controller_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_5> (without init value) has a constant value of 0 in block <iodrp_controller_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_4> (without init value) has a constant value of 0 in block <iodrp_controller_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_2> (without init value) has a constant value of 0 in block <iodrp_controller_inst>. This FF/Latch will be trimmed during the optimization process.
@@ -2747,13 +2747,9 @@ WARNING:Xst:1710 - FF/Latch <currAddr_5> (without init value) has a constant val
 WARNING:Xst:1710 - FF/Latch <currAddr_4> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <currAddr_3> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <currAddr_2> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <currAddr_1> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <currAddr_7> (without init value) has a constant value of 0 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <currAddr_6> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <currAddr_5> (without init value) has a constant value of 1 in block <Inst_TWICtl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SELFREFRESH_REQ_R2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <c0_dd> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_red>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <c1_dd> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_red>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SELFREFRESH_REQ_R2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <c0_dd> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_green>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <c1_dd> (without init value) has a constant value of 0 in block <Inst_TMDSEncoder_green>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SELFREFRESH_REQ_R3> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
@@ -2770,51 +2766,6 @@ WARNING:Xst:2677 - Node <in_reg_10> of sequential type is unconnected in block <
 WARNING:Xst:2677 - Node <in_reg_0> of sequential type is unconnected in block <RoW>.
 WARNING:Xst:2677 - Node <in_reg_1> of sequential type is unconnected in block <RoW>.
 WARNING:Xst:2677 - Node <in_reg_10> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_0> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_1> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_10> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:1290 - Hierarchical block <RoW> is unconnected in block <ATFP>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <round_acc> is unconnected in block <MACpH>.
-   It will be removed from the design.
-WARNING:Xst:2677 - Node <in_reg_0> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_1> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_10> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:1290 - Hierarchical block <RoW> is unconnected in block <ATFP>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <round_acc> is unconnected in block <MACpH>.
-   It will be removed from the design.
-WARNING:Xst:2677 - Node <in_reg_0> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_1> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_10> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:1290 - Hierarchical block <RoW> is unconnected in block <ATFP>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <round_acc> is unconnected in block <MACpH>.
-   It will be removed from the design.
-WARNING:Xst:2677 - Node <in_reg_16> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_17> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_18> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_19> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_20> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_21> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_22> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_23> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_24> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_25> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_26> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_27> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_28> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_29> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_30> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_31> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_32> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_33> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_34> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_35> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_36> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_37> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_38> of sequential type is unconnected in block <RoW>.
-WARNING:Xst:2677 - Node <in_reg_39> of sequential type is unconnected in block <RoW>.
 WARNING:Xst:2677 - Node <dataG_16> of sequential type is unconnected in block <hijacker1>.
 WARNING:Xst:2677 - Node <dataG_17> of sequential type is unconnected in block <hijacker1>.
 WARNING:Xst:2677 - Node <dataG_18> of sequential type is unconnected in block <hijacker1>.
@@ -3086,8 +3037,8 @@ Macro Statistics
  8-bit updown counter                                  : 1
 # Accumulators                                         : 3
  5-bit up loadable accumulator                         : 3
-# Registers                                            : 3890
- Flip-Flops                                            : 3890
+# Registers                                            : 3850
+ Flip-Flops                                            : 3850
 # Comparators                                          : 70
  10-bit comparator greater                             : 2
  11-bit comparator greater                             : 1
@@ -3372,33 +3323,7 @@ WARNING:Xst:3002 - This design contains one or more registers/latches that are d
 
 Optimizing unit <octaveModule> ...
 
-Optimizing unit <sobelEdge> ...
-
-Optimizing unit <MFP_AdderTree_1> ...
-
-Optimizing unit <MFP_RegOWire_1> ...
-
-Optimizing unit <MFP_AdderTree_2> ...
-
-Optimizing unit <MFP_RegOWire_2> ...
-
-Optimizing unit <MFP_Adder_1> ...
-
-Optimizing unit <MFP_AdderTree_3> ...
-
-Optimizing unit <MFP_AdderTree_4> ...
-
-Optimizing unit <MFP_RegOWire_3> ...
-
-Optimizing unit <MFP_Round_2> ...
-
-Optimizing unit <MFP_Multi_2> ...
-
-Optimizing unit <MFP_Round_3> ...
-
-Optimizing unit <MFP_Multi_1> ...
-
-Optimizing unit <MFP_Round_1> ...
+Optimizing unit <ScaleSpace5Module> ...
 
 Optimizing unit <MFP_MAC_symmetric_par_1> ...
 
@@ -3406,13 +3331,43 @@ Optimizing unit <MFP_MAC_par_1> ...
 
 Optimizing unit <MFP_Multi_Arr_1> ...
 
-Optimizing unit <MFP_Multi_3> ...
+Optimizing unit <MFP_Multi_1> ...
 
-Optimizing unit <MFP_Round_4> ...
+Optimizing unit <MFP_Round_1> ...
+
+Optimizing unit <MFP_AdderTree_1> ...
+
+Optimizing unit <MFP_RegOWire_3> ...
+
+Optimizing unit <MFP_AdderTree_2> ...
+
+Optimizing unit <MFP_RegOWire_4> ...
+
+Optimizing unit <MFP_AdderTree_3> ...
+
+Optimizing unit <MFP_RegOWire_5> ...
+
+Optimizing unit <MFP_Adder_2> ...
+
+Optimizing unit <MFP_AdderTree_4> ...
 
 Optimizing unit <MFP_AdderTree_5> ...
 
 Optimizing unit <MFP_RegOWire_6> ...
+
+Optimizing unit <MFP_Round_2> ...
+
+Optimizing unit <MFP_RegOWire_1> ...
+
+Optimizing unit <MFP_Adder_1> ...
+
+Optimizing unit <MFP_MAC_symmetric_par_2> ...
+
+Optimizing unit <MFP_MAC_par_2> ...
+
+Optimizing unit <MFP_Multi_Arr_2> ...
+
+Optimizing unit <sobelEdge> ...
 
 Optimizing unit <MFP_AdderTree_6> ...
 
@@ -3430,19 +3385,15 @@ Optimizing unit <MFP_AdderTree_9> ...
 
 Optimizing unit <MFP_RegOWire_9> ...
 
+Optimizing unit <MFP_Round_4> ...
+
+Optimizing unit <MFP_Multi_4> ...
+
 Optimizing unit <MFP_Round_5> ...
 
-Optimizing unit <MFP_RegOWire_4> ...
+Optimizing unit <MFP_Multi_3> ...
 
-Optimizing unit <MFP_Adder_2> ...
-
-Optimizing unit <MFP_MAC_symmetric_par_2> ...
-
-Optimizing unit <MFP_MAC_par_2> ...
-
-Optimizing unit <MFP_Multi_Arr_2> ...
-
-Optimizing unit <MFP_RegOWire_10> ...
+Optimizing unit <MFP_Round_3> ...
 
 Optimizing unit <MFP_Multi_5> ...
 
@@ -3466,6 +3417,8 @@ Optimizing unit <PixCoordinator> ...
 
 Optimizing unit <ScanLWindow_blkRAM_adv_1> ...
 
+Optimizing unit <MFP_Multi_2> ...
+
 Optimizing unit <harrisCornerResponse> ...
 
 Optimizing unit <ScanLWindow_blkRAM_adv_2> ...
@@ -3473,8 +3426,6 @@ Optimizing unit <ScanLWindow_blkRAM_adv_2> ...
 Optimizing unit <MFP_Saturate_2> ...
 
 Optimizing unit <MFP_Saturate_1> ...
-
-Optimizing unit <MFP_Multi_4> ...
 
 Optimizing unit <ScanLWindow_blkRAM_adv_3> ...
 
@@ -3523,8 +3474,8 @@ WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/d_d_2> (w
 WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/d_d_1> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_blue/d_d_0> (without init value) has a constant value of 0 in block <VmodCAM_Ref>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_89> (without init value) has a constant value of 0 in block <OM1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <FilterL6b[0].MACpH/RoW/in_reg_89> (without init value) has a constant value of 0 in block <OM1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <FilterL6b[1].MACpV/RoW/in_reg_89> (without init value) has a constant value of 0 in block <OM1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FilterL6b[0].MACpH/RoW/in_reg_89> (without init value) has a constant value of 0 in block <OM1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <FilterL6b[1].MACpH/RoW/in_reg_89> (without init value) has a constant value of 0 in block <OM1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <SELFREFRESH_REQ_R1> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <SELFREFRESH_MCB_REQ> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
@@ -4011,29 +3962,29 @@ WARNING:Xst:2677 - Node <FilterL5b[4].HerizontalBuff_151> of sequential type is 
 WARNING:Xst:2677 - Node <FilterL6b[0].MACpV/MACpH/ATFP/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[0].MACpV/MACpH/ATFP/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[0].MACpV/MACpH/ATFP/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL6b[0].MACpH/MACpH/ATFP/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL6b[0].MACpH/MACpH/ATFP/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL6b[0].MACpH/MACpH/ATFP/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[1].MACpV/MACpH/ATFP/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[1].MACpV/MACpH/ATFP/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[1].MACpV/MACpH/ATFP/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL6b[0].MACpH/MACpH/ATFP/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL6b[0].MACpH/MACpH/ATFP/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL6b[0].MACpH/MACpH/ATFP/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[1].MACpH/MACpH/ATFP/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[1].MACpH/MACpH/ATFP/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[1].MACpH/MACpH/ATFP/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[0].MACpV/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[0].MACpV/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL6b[0].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL6b[0].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[1].MACpV/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[1].MACpV/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL6b[0].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL6b[0].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[1].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[1].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[1].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[1].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL6b[1].MACpV/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL6b[1].MACpV/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[0].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[0].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL6b[1].MACpV/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL6b[1].MACpV/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[0].MACpV/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL6b[0].MACpV/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[4].MACpH/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
@@ -4126,96 +4077,6 @@ WARNING:Xst:2677 - Node <FilterL5b[4].MACpH/RoW/in_reg_86> of sequential type is
 WARNING:Xst:2677 - Node <FilterL5b[4].MACpH/RoW/in_reg_87> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[4].MACpH/RoW/in_reg_88> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[4].MACpH/RoW/in_reg_89> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_11> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_12> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_13> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_14> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_15> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_16> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_17> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_18> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_19> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_20> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_21> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_22> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_23> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_24> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_25> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_26> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_27> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_28> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_29> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_30> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_31> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_32> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_33> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_34> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_35> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_36> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_37> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_38> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_39> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_40> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_41> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_42> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_43> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_44> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_45> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_46> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_47> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_48> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_49> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_50> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_51> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_52> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_53> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_54> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_55> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_56> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_57> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_58> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_59> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_60> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_61> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_62> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_63> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_64> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_65> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_66> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_67> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_68> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_69> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_70> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_71> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_72> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_73> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_74> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_75> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_76> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_77> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_78> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_79> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_80> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_81> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_82> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_83> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_84> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_85> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_86> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_87> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_88> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_89> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
@@ -4306,96 +4167,6 @@ WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/RoW/in_reg_86> of sequential type is
 WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/RoW/in_reg_87> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/RoW/in_reg_88> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/RoW/in_reg_89> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_11> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_12> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_13> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_14> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_15> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_16> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_17> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_18> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_19> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_20> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_21> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_22> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_23> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_24> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_25> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_26> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_27> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_28> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_29> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_30> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_31> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_32> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_33> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_34> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_35> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_36> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_37> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_38> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_39> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_40> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_41> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_42> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_43> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_44> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_45> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_46> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_47> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_48> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_49> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_50> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_51> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_52> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_53> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_54> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_55> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_56> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_57> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_58> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_59> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_60> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_61> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_62> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_63> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_64> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_65> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_66> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_67> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_68> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_69> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_70> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_71> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_72> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_73> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_74> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_75> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_76> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_77> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_78> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_79> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_80> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_81> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_82> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_83> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_84> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_85> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_86> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_87> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_88> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_89> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
@@ -4486,6 +4257,186 @@ WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/RoW/in_reg_86> of sequential type is
 WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/RoW/in_reg_87> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/RoW/in_reg_88> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/RoW/in_reg_89> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_11> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_12> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_13> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_14> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_15> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_16> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_17> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_18> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_19> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_20> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_21> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_22> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_23> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_24> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_25> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_26> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_27> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_28> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_29> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_30> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_31> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_32> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_33> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_34> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_35> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_36> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_37> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_38> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_39> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_40> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_41> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_42> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_43> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_44> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_45> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_46> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_47> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_48> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_49> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_50> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_51> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_52> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_53> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_54> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_55> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_56> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_57> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_58> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_59> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_60> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_61> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_62> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_63> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_64> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_65> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_66> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_67> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_68> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_69> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_70> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_71> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_72> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_73> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_74> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_75> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_76> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_77> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_78> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_79> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_80> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_81> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_82> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_83> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_84> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_85> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_86> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_87> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_88> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/RoW/in_reg_89> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_11> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_12> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_13> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_14> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_15> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_16> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_17> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_18> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_19> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_20> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_21> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_22> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_23> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_24> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_25> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_26> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_27> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_28> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_29> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_30> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_31> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_32> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_33> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_34> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_35> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_36> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_37> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_38> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_39> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_40> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_41> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_42> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_43> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_44> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_45> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_46> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_47> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_48> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_49> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_50> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_51> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_52> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_53> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_54> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_55> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_56> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_57> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_58> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_59> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_60> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_61> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_62> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_63> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_64> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_65> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_66> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_67> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_68> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_69> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_70> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_71> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_72> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_73> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_74> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_75> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_76> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_77> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_78> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_79> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_80> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_81> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_82> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_83> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_84> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_85> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_86> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_87> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_88> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/RoW/in_reg_89> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[2].MACpV/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[2].MACpV/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[2].MACpV/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
@@ -4631,61 +4582,6 @@ WARNING:Xst:2677 - Node <FilterL5b[2].MACpV/MACpH/ATFP/RoW/in_reg_7> of sequenti
 WARNING:Xst:2677 - Node <FilterL5b[2].MACpV/MACpH/ATFP/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[2].MACpV/MACpH/ATFP/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[2].MACpV/MACpH/ATFP/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
@@ -4741,61 +4637,6 @@ WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/MACpH/ATFP/RoW/in_reg_7> of sequenti
 WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/MACpH/ATFP/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/MACpH/ATFP/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[3].MACpV/MACpH/ATFP/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
@@ -4851,6 +4692,116 @@ WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/MACpH/ATFP/RoW/in_reg_7> of sequenti
 WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/MACpH/ATFP/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/MACpH/ATFP/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[4].MACpV/MACpH/ATFP/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[2].MACpH/MACpH/ATFP/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/ATI1/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/_i000001/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/ATI1/_i000001/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_0> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_1> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_2> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_3> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_4> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_5> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_6> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_7> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
+WARNING:Xst:2677 - Node <FilterL5b[3].MACpH/MACpH/ATFP/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[4].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[4].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[4].MACpH/MACpH/ATFP/ATI1/ATI1/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
@@ -4906,30 +4857,6 @@ WARNING:Xst:2677 - Node <FilterL5b[4].MACpH/MACpH/ATFP/RoW/in_reg_7> of sequenti
 WARNING:Xst:2677 - Node <FilterL5b[4].MACpH/MACpH/ATFP/RoW/in_reg_8> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[4].MACpH/MACpH/ATFP/RoW/in_reg_9> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <FilterL5b[4].MACpH/MACpH/ATFP/RoW/in_reg_10> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_39> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_38> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_37> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_36> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_35> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_34> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_33> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_32> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_31> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_30> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_29> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_28> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_27> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_26> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_25> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_24> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_23> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_22> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_21> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_20> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_19> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_18> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_17> of sequential type is unconnected in block <OM1>.
-WARNING:Xst:2677 - Node <RoW/in_reg_16> of sequential type is unconnected in block <OM1>.
 WARNING:Xst:2677 - Node <Inst_SysCon/RSEL_O> of sequential type is unconnected in block <VmodCAM_Ref>.
 WARNING:Xst:2677 - Node <Inst_SysCon/SYNC_SW/gen_bits[0].gen_bit/D_O> of sequential type is unconnected in block <VmodCAM_Ref>.
 WARNING:Xst:2677 - Node <Inst_SysCon/SYNC_SW/gen_bits[1].gen_bit/D_O> of sequential type is unconnected in block <VmodCAM_Ref>.
@@ -5025,10 +4952,7 @@ INFO:Xst:2261 - The FF/Latch <Inst_camctlB/rstCnt_17> in Unit <VmodCAM_Ref> is e
 INFO:Xst:2261 - The FF/Latch <Inst_camctlB/rstCnt_18> in Unit <VmodCAM_Ref> is equivalent to the following FF/Latch, which will be removed : <Inst_camctlA/rstCnt_18> 
 INFO:Xst:2261 - The FF/Latch <Inst_camctlB/rstCnt_19> in Unit <VmodCAM_Ref> is equivalent to the following FF/Latch, which will be removed : <Inst_camctlA/rstCnt_19> 
 INFO:Xst:2261 - The FF/Latch <Inst_DVITransmitter/Inst_TMDSEncoder_red/de_dd> in Unit <VmodCAM_Ref> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_DVITransmitter/Inst_TMDSEncoder_green/de_dd> <Inst_DVITransmitter/Inst_TMDSEncoder_blue/de_dd> 
-INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_77> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_77> 
 INFO:Xst:2261 - The FF/Latch <hCornor/_i000002/DY_ShiftReg_20> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <hCornor/_i000002/DX_ShiftReg_18> 
-INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_78> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_78> 
-INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_79> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_79> 
 INFO:Xst:2261 - The FF/Latch <hCornor/_i000002/DY_ShiftReg_0> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <hCornor/_i000002/DX_ShiftReg_0> 
 INFO:Xst:2261 - The FF/Latch <hCornor/AdderTree_cij/RoW/in_reg_12> in Unit <OM1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/AdderTree_cij/RoW/in_reg_11> <hCornor/AdderTree_cij/RoW/in_reg_10> 
 INFO:Xst:2261 - The FF/Latch <hCornor/IxIy_col_sum_SR_12> in Unit <OM1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIy_col_sum_SR_11> <hCornor/IxIy_col_sum_SR_10> 
@@ -5054,15 +4978,22 @@ INFO:Xst:2261 - The FF/Latch <hCornor/IyIy_col_sum_SR_51> in Unit <OM1> is equiv
 INFO:Xst:2261 - The FF/Latch <hCornor/IyIy_col_sum_SR_64> in Unit <OM1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IyIy_col_sum_SR_63> <hCornor/IyIy_col_sum_SR_62> 
 INFO:Xst:2261 - The FF/Latch <hCornor/IxIx_col_sum_SR_12> in Unit <OM1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIx_col_sum_SR_11> <hCornor/IxIx_col_sum_SR_10> 
 INFO:Xst:2261 - The FF/Latch <hCornor/AdderTree_bij/RoW/in_reg_12> in Unit <OM1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/AdderTree_bij/RoW/in_reg_11> <hCornor/AdderTree_bij/RoW/in_reg_10> 
+INFO:Xst:2261 - The FF/Latch <hCornor/IxIx_col_sum_SR_25> in Unit <OM1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIx_col_sum_SR_24> <hCornor/IxIx_col_sum_SR_23> 
+INFO:Xst:2261 - The FF/Latch <hCornor/IxIx_col_sum_SR_38> in Unit <OM1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIx_col_sum_SR_37> <hCornor/IxIx_col_sum_SR_36> 
+INFO:Xst:2261 - The FF/Latch <hCornor/IxIx_col_sum_SR_51> in Unit <OM1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIx_col_sum_SR_50> <hCornor/IxIx_col_sum_SR_49> 
+INFO:Xst:2261 - The FF/Latch <hCornor/IxIx_col_sum_SR_64> in Unit <OM1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIx_col_sum_SR_63> <hCornor/IxIx_col_sum_SR_62> 
+INFO:Xst:2261 - The FF/Latch <hCornor/_i000002/DY_ShiftReg_10> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <hCornor/_i000002/DX_ShiftReg_9> 
+INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_77> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_77> 
+INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_78> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_78> 
+INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_79> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_79> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_10> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_10> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_11> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_11> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_12> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_12> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_0> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_0> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_13> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_13> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_1> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_1> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IxIx_col_sum_SR_25> in Unit <OM1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIx_col_sum_SR_24> <hCornor/IxIx_col_sum_SR_23> 
-INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_2> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_2> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_14> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_14> 
+INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_2> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_2> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_20> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_20> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_3> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_3> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_15> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_15> 
@@ -5084,16 +5015,14 @@ INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_25> in Unit <OM1> is
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_31> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_31> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_9> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_9> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_26> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_26> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IxIx_col_sum_SR_38> in Unit <OM1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIx_col_sum_SR_37> <hCornor/IxIx_col_sum_SR_36> 
-INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_27> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_27> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_32> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_32> 
+INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_27> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_27> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_33> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_33> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_28> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_28> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_34> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_34> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_29> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_29> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IxIx_col_sum_SR_51> in Unit <OM1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIx_col_sum_SR_50> <hCornor/IxIx_col_sum_SR_49> 
-INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_35> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_35> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_40> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_40> 
+INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_35> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_35> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_41> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_41> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_36> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_36> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_42> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_42> 
@@ -5108,9 +5037,8 @@ INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_51> in Unit <OM1> is
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_46> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_46> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_52> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_52> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_47> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_47> 
-INFO:Xst:2261 - The FF/Latch <hCornor/IxIx_col_sum_SR_64> in Unit <OM1> is equivalent to the following 2 FFs/Latches, which will be removed : <hCornor/IxIx_col_sum_SR_63> <hCornor/IxIx_col_sum_SR_62> 
-INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_48> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_48> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_53> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_53> 
+INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_48> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_48> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_54> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_54> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_49> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_49> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_60> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_60> 
@@ -5129,9 +5057,8 @@ INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_71> in Unit <OM1> is
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_66> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_66> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_72> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_72> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_67> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_67> 
-INFO:Xst:2261 - The FF/Latch <hCornor/_i000002/DY_ShiftReg_10> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <hCornor/_i000002/DX_ShiftReg_9> 
-INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_68> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_68> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_73> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_73> 
+INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_68> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_68> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_74> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_74> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_69> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_69> 
 INFO:Xst:2261 - The FF/Latch <FilterL6b[0].MACpV/RoW/in_reg_80> in Unit <OM1> is equivalent to the following FF/Latch, which will be removed : <FilterL6b[1].MACpV/RoW/in_reg_80> 
@@ -5143,7 +5070,7 @@ Annotating constraints using XCF file 'D:/Program/MYPRJ~1/HG_Sync/FPGA/SIFT/sour
 XCF parsing done.
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <Inst_DVITransmitter/Inst_clk_serializer_10_1/gear_s> in Unit <VmodCAM_Ref> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_DVITransmitter/Inst_d2_serializer_10_1/gear_s> <Inst_DVITransmitter/Inst_d1_serializer_10_1/gear_s> <Inst_DVITransmitter/Inst_d0_serializer_10_1/gear_s> 
-Found area constraint ratio of 100 (+ 5) on block VmodCAM_Ref, actual ratio is 8.
+Found area constraint ratio of 100 (+ 5) on block VmodCAM_Ref, actual ratio is 7.
 
 Final Macro Processing ...
 
@@ -5157,22 +5084,6 @@ INFO:Xst:741 - HDL ADVISOR - A 4-bit shift register was found for signal <Inst_L
 Unit <Inst_FBCtl> processed.
 
 Processing Unit <OM1> :
-	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_0>.
-	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_1>.
-	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_2>.
-	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_3>.
-	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_4>.
-	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_5>.
-	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_6>.
-	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_7>.
-	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_80>.
-	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_81>.
-	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_82>.
-	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_83>.
-	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_84>.
-	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_85>.
-	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_86>.
-	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_87>.
 	Found 2-bit shift register for signal <FilterL6b[1].HerizontalBuff_0>.
 	Found 2-bit shift register for signal <FilterL6b[1].HerizontalBuff_1>.
 	Found 2-bit shift register for signal <FilterL6b[1].HerizontalBuff_2>.
@@ -5189,6 +5100,22 @@ Processing Unit <OM1> :
 	Found 2-bit shift register for signal <FilterL6b[1].HerizontalBuff_85>.
 	Found 2-bit shift register for signal <FilterL6b[1].HerizontalBuff_86>.
 	Found 2-bit shift register for signal <FilterL6b[1].HerizontalBuff_87>.
+	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_0>.
+	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_1>.
+	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_2>.
+	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_3>.
+	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_4>.
+	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_5>.
+	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_6>.
+	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_7>.
+	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_80>.
+	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_81>.
+	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_82>.
+	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_83>.
+	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_84>.
+	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_85>.
+	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_86>.
+	Found 2-bit shift register for signal <FilterL6b[0].HerizontalBuff_87>.
 	Found 8-bit shift register for signal <cornorResponseRegs_64>.
 	Found 8-bit shift register for signal <cornorResponseRegs_65>.
 	Found 8-bit shift register for signal <cornorResponseRegs_66>.
@@ -5239,22 +5166,6 @@ Processing Unit <OM1> :
 	Found 2-bit shift register for signal <hCornor/_i000002/DY_ShiftReg_23>.
 	Found 2-bit shift register for signal <hCornor/_i000002/DY_ShiftReg_22>.
 	Found 2-bit shift register for signal <hCornor/_i000002/DY_ShiftReg_21>.
-	Found 2-bit shift register for signal <RoW/in_reg_15>.
-	Found 2-bit shift register for signal <RoW/in_reg_14>.
-	Found 2-bit shift register for signal <RoW/in_reg_13>.
-	Found 2-bit shift register for signal <RoW/in_reg_12>.
-	Found 2-bit shift register for signal <RoW/in_reg_11>.
-	Found 2-bit shift register for signal <RoW/in_reg_10>.
-	Found 2-bit shift register for signal <RoW/in_reg_9>.
-	Found 2-bit shift register for signal <RoW/in_reg_8>.
-	Found 2-bit shift register for signal <RoW/in_reg_7>.
-	Found 2-bit shift register for signal <RoW/in_reg_6>.
-	Found 2-bit shift register for signal <RoW/in_reg_5>.
-	Found 2-bit shift register for signal <RoW/in_reg_4>.
-	Found 2-bit shift register for signal <RoW/in_reg_3>.
-	Found 2-bit shift register for signal <RoW/in_reg_2>.
-	Found 2-bit shift register for signal <RoW/in_reg_1>.
-	Found 2-bit shift register for signal <RoW/in_reg_0>.
 Unit <OM1> processed.
 
 Processing Unit <VmodCAM_Ref> :
@@ -5279,10 +5190,10 @@ Unit <mcb_soft_calibration_inst> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2169
- Flip-Flops                                            : 2169
-# Shift Registers                                      : 104
- 2-bit shift register                                  : 62
+# Registers                                            : 2185
+ Flip-Flops                                            : 2185
+# Shift Registers                                      : 88
+ 2-bit shift register                                  : 46
  5-bit shift register                                  : 33
  8-bit shift register                                  : 8
  97-bit shift register                                 : 1
@@ -5308,8 +5219,8 @@ Top Level Output File Name         : VmodCAM_Ref.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 4988
-#      GND                         : 9
+# BELS                             : 4990
+#      GND                         : 10
 #      INV                         : 37
 #      LUT1                        : 134
 #      LUT2                        : 927
@@ -5320,7 +5231,7 @@ Primitive and Black Box Usage:
 #      MULT_AND                    : 6
 #      MUXCY                       : 1103
 #      MUXF7                       : 27
-#      VCC                         : 9
+#      VCC                         : 10
 #      XORCY                       : 1144
 # FlipFlops/Latches                : 2282
 #      FD                          : 223
@@ -5337,9 +5248,9 @@ Primitive and Black Box Usage:
 #      ODDR2                       : 2
 # RAMS                             : 66
 #      RAM32X1S                    : 66
-# Shift Registers                  : 107
+# Shift Registers                  : 91
 #      SRL16                       : 1
-#      SRLC16E                     : 103
+#      SRLC16E                     : 87
 #      SRLC32E                     : 3
 # Clock Buffers                    : 10
 #      BUFG                        : 10
@@ -5377,18 +5288,18 @@ Selected Device : 6slx45csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:            2282  out of  54576     4%  
- Number of Slice LUTs:                 2863  out of  27288    10%  
+ Number of Slice LUTs:                 2847  out of  27288    10%  
     Number used as Logic:              2690  out of  27288     9%  
-    Number used as Memory:              173  out of   6408     2%  
+    Number used as Memory:              157  out of   6408     2%  
        Number used as RAM:               66
-       Number used as SRL:              107
+       Number used as SRL:               91
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   4086
-   Number with an unused Flip Flop:    1804  out of   4086    44%  
-   Number with an unused LUT:          1223  out of   4086    29%  
-   Number of fully used LUT-FF pairs:  1059  out of   4086    25%  
-   Number of unique control sets:       126
+ Number of LUT Flip Flop pairs used:   4070
+   Number with an unused Flip Flop:    1788  out of   4070    43%  
+   Number with an unused LUT:          1223  out of   4070    30%  
+   Number of fully used LUT-FF pairs:  1059  out of   4070    26%  
+   Number of unique control sets:       127
 
 IO Utilization: 
  Number of IOs:                         120
@@ -5422,7 +5333,7 @@ Clock Signal                                                                    
 ---------------------------------------------------------------------------------+--------------------------------------+-------+
 CLK_I                                                                            | DCM_SP:CLKFX                         | 241   |
 CLK_I                                                                            | DCM_SP:CLKFX180                      | 2     |
-CAMB_PCLK_I                                                                      | IBUF+BUFG                            | 1610  |
+CAMB_PCLK_I                                                                      | IBUF+BUFG                            | 1594  |
 CAMA_PCLK_I                                                                      | IBUF+BUFG                            | 124   |
 hijacker1/SPI_S1/css_dat_o[6]_AND_3_o(hijacker1/SPI_S1/css_dat_o[6]_AND_3_o1:O)  | NONE(*)(hijacker1/SPI_S1/WSReg_6_LDC)| 1     |
 hijacker1/SPI_S1/css_dat_o[0]_AND_15_o(hijacker1/SPI_S1/css_dat_o[0]_AND_15_o1:O)| NONE(*)(hijacker1/SPI_S1/WSReg_0_LDC)| 1     |
@@ -5486,7 +5397,7 @@ Delay:               5.143ns (Levels of Logic = 4)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CAMB_PCLK_I'
   Clock period: 11.976ns (frequency: 83.502MHz)
-  Total number of paths / destination ports: 2334657 / 3013
+  Total number of paths / destination ports: 2334497 / 2997
 -------------------------------------------------------------------------
 Delay:               11.976ns (Levels of Logic = 14)
   Source:            hijacker1/OM1/hCornor/IxIx_win_sum_13 (FF)
@@ -5500,8 +5411,8 @@ Delay:               11.976ns (Levels of Logic = 14)
     ----------------------------------------  ------------
      FDE:C->Q             12   0.447   1.156  hCornor/IxIx_win_sum_13 (hCornor/IxIx_win_sum_13)
      LUT5:I1->O            3   0.203   0.995  hCornor/winSumIxxSat/n0014<8>1 (hCornor/IxIx_win_sum_sat<8>)
-     LUT6:I1->O            2   0.203   0.617  hCornor/Msub_IxIx_sum_round[7]_GND_19_o_sub_71_OUT<7:0>_xor<6>111 (hCornor/Msub_IxIx_sum_round[7]_GND_19_o_sub_71_OUT<7:0>_xor<6>11)
-     LUT6:I5->O           11   0.205   0.882  hCornor/Msub_IxIx_sum_round[7]_GND_19_o_sub_71_OUT<7:0>_xor<7>11 (hCornor/IxIx_sum_round[7]_GND_19_o_sub_71_OUT<7>)
+     LUT6:I1->O            2   0.203   0.617  hCornor/Msub_IxIx_sum_round[7]_GND_45_o_sub_71_OUT<7:0>_xor<6>111 (hCornor/Msub_IxIx_sum_round[7]_GND_45_o_sub_71_OUT<7:0>_xor<6>11)
+     LUT6:I5->O           11   0.205   0.882  hCornor/Msub_IxIx_sum_round[7]_GND_45_o_sub_71_OUT<7:0>_xor<7>11 (hCornor/IxIx_sum_round[7]_GND_45_o_sub_71_OUT<7>)
      DSP48A1:B7->M6       17   3.364   1.028  hCornor/m_ac/Mmult_n0010 (hCornor/m_ac/n0010<6>)
      LUT4:I3->O           12   0.205   0.909  hCornor/Madd_n0176_Madd_lut<0>1 (hCornor/Madd_n0176_Madd_lut<0>)
      LUT5:I4->O            1   0.205   0.000  hCornor/Msub_acSbb_Madd_lut<2> (hCornor/Msub_acSbb_Madd_lut<2>)
@@ -5621,7 +5532,7 @@ Delay:               1.861ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CAMB_PCLK_I'
-  Total number of paths / destination ports: 486 / 469
+  Total number of paths / destination ports: 470 / 453
 -------------------------------------------------------------------------
 Offset:              5.731ns (Levels of Logic = 4)
   Source:            css (PAD)
@@ -6202,14 +6113,14 @@ CAMB_PCLK_I    |         |         |    2.350|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 60.00 secs
-Total CPU time to Xst completion: 60.28 secs
+Total REAL time to Xst completion: 72.00 secs
+Total CPU time to Xst completion: 71.50 secs
  
 --> 
 
-Total memory usage is 407416 kilobytes
+Total memory usage is 405432 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 2034 (   0 filtered)
+Number of warnings : 1971 (   0 filtered)
 Number of infos    :  272 (   0 filtered)
 

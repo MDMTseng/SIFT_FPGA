@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Command Line:
 D:\Program\FPGA\xilinxISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 -filter iseconfig/filter.filter -intstyle ise -dd _ngo -sd ipcore_dir -nt
-timestamp -uc atlys_vmodcam.ucf -uc timing.ucf -uc atlys.ucf -uc hijacker.ucf
+timestamp -uc hijacker.ucf -uc atlys_vmodcam.ucf -uc timing.ucf -uc atlys.ucf
 -bm sobelEdge.bmm -p xc6slx45-csg324-3 VmodCAM_Ref.ngc VmodCAM_Ref.ngd
 
 Reading NGO file "D:/Program/MYPRJ~1/HG_Sync/FPGA/SIFT/source/VmodCAM_Ref.ngc"
@@ -13,10 +13,10 @@ Loading design module "ipcore_dir/blkRAM_W32D640_SP.ngc"...
 Gathering constraint information from source properties...
 Done.
 
+Annotating constraints to design from ucf file "hijacker.ucf" ...
 Annotating constraints to design from ucf file "atlys_vmodcam.ucf" ...
 Annotating constraints to design from ucf file "timing.ucf" ...
 Annotating constraints to design from ucf file "atlys.ucf" ...
-Annotating constraints to design from ucf file "hijacker.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
 WARNING:ConstraintSystem:119 - Constraint <NET "Inst_InputSync_FVA/sreg<1>"
@@ -747,6 +747,30 @@ WARNING:NgdBuild:452 - logical net 'N208' has no driver
 WARNING:NgdBuild:452 - logical net 'N209' has no driver
 WARNING:NgdBuild:452 - logical net 'N210' has no driver
 WARNING:NgdBuild:452 - logical net 'N211' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<39>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<38>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<37>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<36>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<35>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<34>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<33>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<32>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<31>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<30>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<29>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<28>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<27>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<26>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<25>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<24>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<23>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<22>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<21>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<20>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<19>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<18>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<17>' has no driver
+WARNING:NgdBuild:452 - logical net 'hijacker1/OM1/ScaleSPArr<16>' has no driver
 WARNING:NgdBuild:452 - logical net 'Inst_FBCtl/mcb_ddr2/p0_cmd_byte_addr<29>'
    has no driver
 WARNING:NgdBuild:452 - logical net 'Inst_FBCtl/mcb_ddr2/p0_cmd_byte_addr<28>'
@@ -783,12 +807,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings: 205
+  Number of warnings: 229
 
-Total memory usage is 197480 kilobytes
+Total memory usage is 196264 kilobytes
 
 Writing NGD file "VmodCAM_Ref.ngd" ...
-Total REAL time to NGDBUILD completion:  9 sec
-Total CPU time to NGDBUILD completion:   9 sec
+Total REAL time to NGDBUILD completion:  16 sec
+Total CPU time to NGDBUILD completion:   13 sec
 
 Writing NGDBUILD log file "VmodCAM_Ref.bld"...

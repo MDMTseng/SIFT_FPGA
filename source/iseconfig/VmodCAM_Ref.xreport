@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-04-16T14:47:06</DateModified>
+  <DateModified>2015-04-16T16:40:13</DateModified>
   <ModuleName>VmodCAM_Ref</ModuleName>
-  <SummaryTimeStamp>2015-04-16T14:45:57</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-04-16T16:39:13</SummaryTimeStamp>
   <ImplementationReportsDirectory>D:/Program/MYPRJ~1/HG_Sync/FPGA/SIFT/source\</ImplementationReportsDirectory>
   <DateInitialized>2015-01-26T05:05:58</DateInitialized>
   <SavedFilePath>D:/Program/MYPRJ~1/HG_Sync/FPGA/SIFT/source/iseconfig/VmodCAM_Ref.xreport</SavedFilePath>
