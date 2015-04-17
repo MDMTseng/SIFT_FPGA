@@ -49,7 +49,9 @@
          <ClosedNode>/VmodCAM_Ref - Behavioral D:|Program|MYPRJ~1|HG_Sync|FPGA|SIFT|source|VmodCAM_Ref.vhd/hijacker1 - hijacker/OM1 - octaveModule/MACpH - MFP_MAC_symmetric_par</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral D:|Program|MYPRJ~1|HG_Sync|FPGA|SIFT|source|VmodCAM_Ref.vhd/hijacker1 - hijacker/OM1 - octaveModule/MACpV - MFP_MAC_par</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral D:|Program|MYPRJ~1|HG_Sync|FPGA|SIFT|source|VmodCAM_Ref.vhd/hijacker1 - hijacker/OM1 - octaveModule/MACpV - MFP_MAC_symmetric_par</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral D:|Program|MYPRJ~1|HG_Sync|FPGA|SIFT|source|VmodCAM_Ref.vhd/hijacker1 - hijacker/OM1 - octaveModule/OM1 - ScaleSpace5Module</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral D:|Program|MYPRJ~1|HG_Sync|FPGA|SIFT|source|VmodCAM_Ref.vhd/hijacker1 - hijacker/OM1 - octaveModule/hCornor - harrisCornerResponse</ClosedNode>
+         <ClosedNode>/VmodCAM_Ref - Behavioral D:|Program|MYPRJ~1|HG_Sync|FPGA|SIFT|source|VmodCAM_Ref.vhd/hijacker1 - hijacker/OM1 - octaveModule/m_ac - MFP_Multi</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral D:|Program|MYPRJ~1|HG_Sync|FPGA|SIFT|source|VmodCAM_Ref.vhd/hijacker1 - hijacker/OM1 - octaveModule/win1 - ScanLWindow_blkRAM</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral D:|Program|MYPRJ~1|HG_Sync|FPGA|SIFT|source|VmodCAM_Ref.vhd/hijacker1 - hijacker/OM1 - octaveModule/win1 - ScanLWindow_blkRAM_adv</ClosedNode>
          <ClosedNode>/VmodCAM_Ref - Behavioral D:|Program|MYPRJ~1|HG_Sync|FPGA|SIFT|source|VmodCAM_Ref.vhd/hijacker1 - hijacker/OM2 - octaveModule</ClosedNode>
@@ -135,7 +137,7 @@
       <SelectedItems>
          <SelectedItem>VmodCAM_Ref - Behavioral (D:/Program/MYPRJ~1/HG_Sync/FPGA/SIFT/source/VmodCAM_Ref.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ec000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ec0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
@@ -153,7 +155,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000198000000010000000100000000000000000000000064ffffffff000000810000000000000001000001980000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000153000000010000000100000000000000000000000064ffffffff000000810000000000000001000001530000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -190,13 +192,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -208,13 +210,13 @@
          <ClosedNode>Implement Design/Translate</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >19</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000b80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000142000000010000000100000000000000000000000064ffffffff000000810000000000000001000001420000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001cd0000012601000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
@@ -223,13 +225,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
@@ -237,13 +239,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>

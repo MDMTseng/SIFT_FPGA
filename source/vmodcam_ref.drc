@@ -1,29 +1,29 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Apr 16 16:37:44 2015
+Thu Apr 16 18:32:17 2015
 
 drc -z VmodCAM_Ref.ncd VmodCAM_Ref.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6870_1100 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6882_1095 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6866_1098 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6878_1093 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6862_1096 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6874_1091 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6858_1094 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6870_1089 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6854_1092 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6866_1087 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6850_1090 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6862_1085 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6874_1102 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6886_1097 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance

@@ -19,10 +19,17 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
+
+
+
+
+
+
 module octaveModule
 #(parameter
 downS=0,
 dataW=8,
+respW=dataW,
 outW=dataW,
 frameW=640,
 cornorwindowSize=5
@@ -33,8 +40,10 @@ input [dataW-1:0]dataIn,
 
 input [10-1:0]X,
 input [10-1:0]Y,
-output [outW*GausTableN-1:0]ScaleSPArr,
-output [outW-1:0]cornorResponse
+output [respW*GausTableN-1:0]ScaleSPArr,
+output [respW*(GausTableN-1)-1:0]DoGArr,//signed
+output [respW-1:0]cornorResponse,
+output [outW*(GausTableN-1)-1:0]cornorXDoGArr//signed
 );
 
 
@@ -59,22 +68,43 @@ output [outW-1:0]cornorResponse
 	 //19X1 window
 	
 	
-	ScaleSpace5Module#(.dataW(dataW),.outW(outW),.frameW(downSBufferL)) 
+	ScaleSpace5Module#(.dataW(dataW),.outW(respW),.frameW(downSBufferL)) 
 	OM1(clk,en_op,W1,ScaleSPArr);
 	
 	//MFP_RegOWire#(.dataW(outW*GausTableN),.isWire(0)) RoW(clk,en,FilterOutData,dataOut);
 	
 	parameter cornerDelayX=9;
 	parameter cornerDelayY=7;//Hard coding delay balance with GAUSSIAN
-	wire [outW-1:0]cornorResponseO;
+	wire [respW-1:0]cornorResponseO;
 	harrisCornerResponse  #(.dataW(dataW),.ImageW(downSBufferL),
-	.cornorwindowSize(cornorwindowSize),.outW(outW),.ts(15))hCornor
-	(clk,en_op,rst_p,
-	W1[cornerDelayY*dataW+:dataW*3],
-	cornorResponseO);
-	reg[cornerDelayX*outW-1:0]cornorResponseRegs;
+	.cornorwindowSize(cornorwindowSize),.outW(respW),.ts(15))hCornor
+	(clk,en_op,rst_p,W1[cornerDelayY*dataW+:dataW*3],cornorResponseO);
+	
+	reg[cornerDelayX*respW-1:0]cornorResponseRegs;
 	always@(posedge clk)if(en_op)cornorResponseRegs<={cornorResponseRegs,cornorResponseO};
-	assign cornorResponse=cornorResponseRegs[cornerDelayX*outW-1-:outW];
+	assign cornorResponse=cornorResponseRegs[cornerDelayX*respW-1-:respW];
+	
+	
+	
+	generate
+		genvar gi;
+		 for(gi=0;gi<GausTableN-1;gi=gi+1)
+		 begin:DHL
+			wire signed[respW+1-1:0] GaussianA=ScaleSPArr[gi*respW+:respW];
+			wire signed[respW+1-1:0] GaussianB=ScaleSPArr[(gi+1)*respW+:respW];
+			wire signed[respW-1:0] DoG=GaussianA-GaussianB;
+			assign DoGArr[gi*respW+:respW]=DoG;
+			
+			
+			
+			wire signed[outW-1:0] DoGXHarris;
+			assign cornorXDoGArr[gi*outW+:outW]=DoGXHarris;
+			MFP_Multi #(.In1W(respW),.In2W(respW+1),.OutW(outW+1),.isUnsigned(0)) 
+			m_ac(DoG,cornorResponse,DoGXHarris);
+		 end
+	endgenerate	
+	
+	
 	
 endmodule
 	

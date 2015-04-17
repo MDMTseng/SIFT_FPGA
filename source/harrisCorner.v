@@ -7,7 +7,8 @@ ImageW=640,
 dataW=8,
 outW=dataW,
 cornorwindowSize=5,
-ts=12
+suppressSmoothRegion=1,
+ts=8
 )
 (
 input clk,input en,input rst,
@@ -223,7 +224,13 @@ IxIyRound(IxIy_win_sum_sat,IxIy_sum_round);
 
 
 wire signed[outW+3-1:0]aijcij;
-MFP_Multi #(.In1W(dataW),.OutW(outW+3),.isUnsigned(0)) m_ac(IxIx_sum_round-ts,IyIy_sum_round-ts,aijcij);		
+
+
+wire signed[dataW-1:0]IxIx_sum_roundSubts=IxIx_sum_round-ts;
+MFP_Multi #(.In1W(dataW),.OutW(outW+3),.isUnsigned(0)) m_ac(IxIx_sum_roundSubts,IyIy_sum_round-ts,aijcij);		
+wire isOnEdge=(suppressSmoothRegion)?(!IxIx_sum_roundSubts[dataW-1]):1;
+	
+	
 	
 wire signed[outW+3-1:0]bijbij;
 MFP_Multi #(.In1W(dataW),.OutW(outW+3),.isUnsigned(0)) m_bb(IxIy_sum_round,IxIy_sum_round,bijbij);	
@@ -231,6 +238,6 @@ MFP_Multi #(.In1W(dataW),.OutW(outW+3),.isUnsigned(0)) m_bb(IxIy_sum_round,IxIy_
 
 wire signed[outW+1-1:0]acSbb=aijcij/4-bijbij/4;
 	
-assign cornerResponse=(acSbb[outW])?0:acSbb;
+assign cornerResponse=((!acSbb[outW])&(isOnEdge))?acSbb:0;
 	
 endmodule

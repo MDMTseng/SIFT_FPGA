@@ -207,10 +207,15 @@ SGMDataDepth=6
 	
 	
 	parameter GaussianOut=dataW;
+	parameter HarXDoGW=dataW;
 	wire [GausTableN*GaussianOut-1:0]Gaussian1;//unsigned
 	wire [GaussianOut+1-1:0]harrisRes1;
-	octaveModule#(.frameW(ImageW),.outW(GaussianOut)) 
-	OM1(clk_p,en_p,DI1r[0+:8],pixX,pixY,Gaussian1,harrisRes1);
+	wire [(GausTableN-1)*GaussianOut-1:0]DoGArr;//signed
+	
+	wire [(GausTableN-1)*HarXDoGW-1:0]HarXDoGArr;//signed
+	
+	octaveModule#(.frameW(ImageW),.respW(GaussianOut),.outW(HarXDoGW)) 
+	OM1(clk_p,en_p,DI1r[0+:8],pixX,pixY,Gaussian1,DoGArr,harrisRes1,HarXDoGArr);
 	
 	assign GOut[0]=GOut[1]/2+harrisRes1/2;
 	assign GOut[1]=Gaussian1[0*GaussianOut+:dataW];
@@ -227,17 +232,13 @@ SGMDataDepth=6
 		genvar gi;
 		 for(gi=0;gi<GausTableN-1;gi=gi+1)
 		 begin:DHL
-			wire signed[GaussianOut+1-1:0] GaussianA=Gaussian1[gi*dataW+:dataW];
-			wire signed[GaussianOut+1-1:0] GaussianB=Gaussian1[(gi+1)*dataW+:dataW];
-			wire signed[GaussianOut+1-1:0] DoG=GaussianA-GaussianB;
+			wire signed[GaussianOut-1:0] DoG=DoGArr[gi*GaussianOut+:GaussianOut];
 			wire signed[GaussianOut-1:0] DoGOffset=128+DoG;
 			
 			
-			wire signed[GaussianOut-1:0] DoGXHarris;
+			wire signed[HarXDoGW-1:0] DoGXHarris=HarXDoGArr[gi*HarXDoGW+:HarXDoGW];
 			
-			MFP_Multi #(.In1W(GaussianOut),.In2W(GaussianOut+1),.OutW(GaussianOut+2),.isUnsigned(0)) 
-			m_ac(DoG,harrisRes1,DoGXHarris);
-			wire signed[GaussianOut-1:0] DoGXHarrisOffset=128+DoGXHarris/2;
+			wire signed[dataW-1:0] DoGXHarrisOffset=128+DoGXHarris;
 			
 		 end
 	endgenerate	

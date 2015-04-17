@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-MDM-PC::  Thu Apr 16 16:35:47 2015
+MDM-PC::  Thu Apr 16 18:30:51 2015
 
 par -filter D:/Program/MYPRJ~1/HG_Sync/FPGA/SIFT/source/iseconfig/filter.filter
 -w -intstyle ise -ol std -mt 2 VmodCAM_Ref_map.ncd VmodCAM_Ref.ncd
@@ -24,39 +24,39 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                 2,250 out of  54,576    4%
-    Number used as Flip Flops:               2,233
+  Number of Slice Registers:                 2,256 out of  54,576    4%
+    Number used as Flip Flops:               2,240
     Number used as Latches:                      7
     Number used as Latch-thrus:                  0
-    Number used as AND/OR logics:               10
-  Number of Slice LUTs:                      2,833 out of  27,288   10%
-    Number used as logic:                    2,588 out of  27,288    9%
-      Number using O6 output only:           2,012
-      Number using O5 output only:             169
-      Number using O5 and O6:                  407
+    Number used as AND/OR logics:                9
+  Number of Slice LUTs:                      2,804 out of  27,288   10%
+    Number used as logic:                    2,559 out of  27,288    9%
+      Number using O6 output only:           1,988
+      Number using O5 output only:             179
+      Number using O5 and O6:                  392
       Number used as ROM:                        0
-    Number used as Memory:                      83 out of   6,408    1%
+    Number used as Memory:                      86 out of   6,408    1%
       Number used as Dual Port RAM:              0
       Number used as Single Port RAM:           34
-        Number using O6 output only:             1
-        Number using O5 output only:             1
-        Number using O5 and O6:                 32
-      Number used as Shift Register:            49
-        Number using O6 output only:             9
+        Number using O6 output only:             2
         Number using O5 output only:             0
-        Number using O5 and O6:                 40
-    Number used exclusively as route-thrus:    162
-      Number with same-slice register load:    133
+        Number using O5 and O6:                 32
+      Number used as Shift Register:            52
+        Number using O6 output only:             8
+        Number using O5 output only:             0
+        Number using O5 and O6:                 44
+    Number used exclusively as route-thrus:    159
+      Number with same-slice register load:    130
       Number with same-slice carry load:        29
       Number with other load:                    0
 
 Slice Logic Distribution:
   Number of occupied Slices:                 1,067 out of   6,822   15%
   Number of MUXCYs used:                     1,432 out of  13,644   10%
-  Number of LUT Flip Flop pairs used:        3,068
-    Number with an unused Flip Flop:         1,070 out of   3,068   34%
-    Number with an unused LUT:                 235 out of   3,068    7%
-    Number of fully used LUT-FF pairs:       1,763 out of   3,068   57%
+  Number of LUT Flip Flop pairs used:        3,049
+    Number with an unused Flip Flop:         1,049 out of   3,049   34%
+    Number with an unused LUT:                 245 out of   3,049    8%
+    Number of fully used LUT-FF pairs:       1,755 out of   3,049   57%
     Number of slice register sites lost
       to control set restrictions:               0 out of  54,576    0%
 
@@ -114,40 +114,40 @@ Overall effort level (-ol):   Standard
 Router effort level (-rl):    Standard 
 
 PAR will use up to 2 processors
-WARNING:Timing:3402 - The Clock Modifying COMP, Inst_SysCon/Inst_dcm_fixed/dcm_sp_inst, has the attribute CLK_FEEDBACK set to NONE.  No
-   phase relationship exists between the input and output clocks of this Clock Modifying COMP. Data paths between these clock domains must
-   be constrained using FROM/TO constraints.
 WARNING:Timing:3159 - The DCM, Inst_SysCon/Inst_dcm_recfg/dcm_clkgen_inst, has the attribute DFS_OSCILLATOR_MODE not set to PHASE_FREQ_LOCK.
    No phase relationship exists between the input clock and CLKFX or CLKFX180 outputs of this DCM. Data paths between these clock domains
    must be constrained using FROM/TO constraints.
+WARNING:Timing:3402 - The Clock Modifying COMP, Inst_SysCon/Inst_dcm_fixed/dcm_sp_inst, has the attribute CLK_FEEDBACK set to NONE.  No
+   phase relationship exists between the input and output clocks of this Clock Modifying COMP. Data paths between these clock domains must
+   be constrained using FROM/TO constraints.
 WARNING:Par:288 - The signal TMDS_TX_SDA_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal TMDS_TX_SCL_IBUF has no load.  PAR will not attempt to route this signal.
 Starting Multi-threaded Router
 
 
-Phase  1  : 23022 unrouted;      REAL time: 19 secs 
+Phase  1  : 22853 unrouted;      REAL time: 13 secs 
 
-Phase  2  : 14539 unrouted;      REAL time: 24 secs 
+Phase  2  : 14376 unrouted;      REAL time: 17 secs 
 
-Phase  3  : 5518 unrouted;      REAL time: 40 secs 
+Phase  3  : 5731 unrouted;      REAL time: 28 secs 
 
-Phase  4  : 5664 unrouted; (Setup:333358, Hold:0, Component Switching Limit:498)     REAL time: 47 secs 
+Phase  4  : 5811 unrouted; (Setup:260782, Hold:0, Component Switching Limit:498)     REAL time: 33 secs 
 
 Updating file: VmodCAM_Ref.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:298262, Hold:106, Component Switching Limit:498)     REAL time: 1 mins 22 secs 
+Phase  5  : 0 unrouted; (Setup:269983, Hold:331, Component Switching Limit:498)     REAL time: 54 secs 
 
-Phase  6  : 0 unrouted; (Setup:298262, Hold:106, Component Switching Limit:498)     REAL time: 1 mins 22 secs 
+Phase  6  : 0 unrouted; (Setup:269983, Hold:331, Component Switching Limit:498)     REAL time: 54 secs 
 
-Phase  7  : 0 unrouted; (Setup:298262, Hold:106, Component Switching Limit:498)     REAL time: 1 mins 23 secs 
+Phase  7  : 0 unrouted; (Setup:269983, Hold:331, Component Switching Limit:498)     REAL time: 55 secs 
 
-Phase  8  : 0 unrouted; (Setup:298262, Hold:106, Component Switching Limit:498)     REAL time: 1 mins 23 secs 
+Phase  8  : 0 unrouted; (Setup:269983, Hold:331, Component Switching Limit:498)     REAL time: 55 secs 
 
-Phase  9  : 0 unrouted; (Setup:298262, Hold:0, Component Switching Limit:498)     REAL time: 1 mins 24 secs 
+Phase  9  : 0 unrouted; (Setup:269983, Hold:0, Component Switching Limit:498)     REAL time: 55 secs 
 
-Phase 10  : 0 unrouted; (Setup:296978, Hold:0, Component Switching Limit:498)     REAL time: 1 mins 26 secs 
-Total REAL time to Router completion: 1 mins 26 secs 
-Total CPU time to Router completion (all processors): 1 mins 30 secs 
+Phase 10  : 0 unrouted; (Setup:267200, Hold:0, Component Switching Limit:498)     REAL time: 57 secs 
+Total REAL time to Router completion: 57 secs 
+Total CPU time to Router completion (all processors): 1 mins 7 secs 
 
 Generating "PAR" statistics.
 
@@ -158,39 +158,39 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|            CamBPClk | BUFGMUX_X2Y11| No   |  444 |  0.545     |  1.757      |
+|                PClk | BUFGMUX_X2Y12| No   |   53 |  0.053     |  1.273      |
 +---------------------+--------------+------+------+------------+-------------+
-|              CamClk | BUFGMUX_X3Y13| No   |   88 |  0.543     |  1.756      |
+|            CamBPClk | BUFGMUX_X2Y11| No   |  445 |  0.545     |  1.756      |
 +---------------------+--------------+------+------+------------+-------------+
-|                PClk | BUFGMUX_X2Y12| No   |   54 |  0.060     |  1.273      |
+|         mcb_drp_clk |  BUFGMUX_X2Y4| No   |  102 |  0.086     |  1.299      |
 +---------------------+--------------+------+------+------------+-------------+
-|         mcb_drp_clk |  BUFGMUX_X2Y4| No   |  103 |  0.086     |  1.299      |
+|            CamAPClk |  BUFGMUX_X2Y9| No   |   40 |  0.042     |  1.276      |
 +---------------------+--------------+------+------+------------+-------------+
-|            CamAPClk |  BUFGMUX_X2Y9| No   |   39 |  0.037     |  1.273      |
+|              CamClk | BUFGMUX_X3Y13| No   |   87 |  0.541     |  1.756      |
 +---------------------+--------------+------+------+------------+-------------+
-|              PClkX2 |  BUFGMUX_X2Y1| No   |   14 |  0.236     |  1.456      |
+|              PClkX2 |  BUFGMUX_X2Y1| No   |   16 |  0.236     |  1.456      |
 +---------------------+--------------+------+------+------------+-------------+
 |          CamClk_180 |  BUFGMUX_X2Y2| No   |    2 |  0.022     |  1.750      |
 +---------------------+--------------+------+------+------------+-------------+
 |Inst_SysCon/pllout_x |              |      |      |            |             |
 |                   1 |         Local|      |    2 |  0.000     |  0.681      |
 +---------------------+--------------+------+------+------------+-------------+
-|        lut6870_1100 |         Local|      |    2 |  0.000     |  0.500      |
+|        lut6882_1095 |         Local|      |    2 |  0.000     |  0.500      |
 +---------------------+--------------+------+------+------------+-------------+
-|        lut6866_1098 |         Local|      |    2 |  0.000     |  0.535      |
+|        lut6878_1093 |         Local|      |    2 |  0.000     |  0.546      |
 +---------------------+--------------+------+------+------------+-------------+
-|        lut6862_1096 |         Local|      |    2 |  0.000     |  0.660      |
+|        lut6874_1091 |         Local|      |    2 |  0.000     |  0.536      |
 +---------------------+--------------+------+------+------------+-------------+
-|        lut6858_1094 |         Local|      |    2 |  0.000     |  0.609      |
+|        lut6870_1089 |         Local|      |    2 |  0.000     |  0.521      |
 +---------------------+--------------+------+------+------------+-------------+
-|        lut6854_1092 |         Local|      |    2 |  0.000     |  0.500      |
+|        lut6866_1087 |         Local|      |    2 |  0.000     |  0.921      |
 +---------------------+--------------+------+------+------------+-------------+
-|        lut6850_1090 |         Local|      |    2 |  0.000     |  1.109      |
+|        lut6862_1085 |         Local|      |    2 |  0.000     |  0.471      |
 +---------------------+--------------+------+------+------------+-------------+
-|        lut6874_1102 |         Local|      |    2 |  0.000     |  0.495      |
+|        lut6886_1097 |         Local|      |    2 |  0.000     |  0.474      |
 +---------------------+--------------+------+------+------------+-------------+
 |Inst_SysCon/SysConCL |              |      |      |            |             |
-|                   K |         Local|      |   22 |  5.402     |  8.968      |
+|                   K |         Local|      |   22 |  5.824     |  8.597      |
 +---------------------+--------------+------+------+------------+-------------+
 |          ddr2clk_2x |         Local|      |   34 |  0.571     |  1.543      |
 +---------------------+--------------+------+------+------------+-------------+
@@ -231,7 +231,7 @@ the minimum and maximum path delays which includes logic delays.
 * The fanout is the number of component pins not the individual BEL loads,
 for example SLICE loads not FF loads.
 
-Timing Score: 297476 (Setup: 296978, Hold: 0, Component Switching Limit: 498)
+Timing Score: 267698 (Setup: 267200, Hold: 0, Component Switching Limit: 498)
 
 WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
 
@@ -260,17 +260,17 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-* OFFSET = IN 1.25 ns VALID 7.5 ns BEFORE C | SETUP       |    -4.546ns|     5.796ns|     148|      248121
-  OMP "CAMB_PCLK_I" "RISING"                | HOLD        |     4.464ns|            |       0|           0
+* OFFSET = IN 1.25 ns VALID 7.5 ns BEFORE C | SETUP       |    -3.168ns|     4.418ns|     142|      220597
+  OMP "CAMB_PCLK_I" "RISING"                | HOLD        |     4.465ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-* OFFSET = IN 1.25 ns VALID 7.5 ns BEFORE C | SETUP       |    -2.853ns|     4.103ns|      28|       42976
+* OFFSET = IN 1.25 ns VALID 7.5 ns BEFORE C | SETUP       |    -2.357ns|     3.607ns|      24|       39758
   OMP "CAMA_PCLK_I" "RISING"                | HOLD        |     5.242ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-* TS_CLK_I = PERIOD TIMEGRP "CLK_I" 99.99 M | SETUP       |    -0.927ns|    10.928ns|       6|        5047
-  Hz HIGH 50%                               | HOLD        |     0.299ns|            |       0|           0
+* TS_CLK_I = PERIOD TIMEGRP "CLK_I" 99.99 M | SETUP       |    -1.723ns|    11.724ns|       9|        2820
+  Hz HIGH 50%                               | HOLD        |     0.173ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-* TS_CAMB_PCLK_I = PERIOD TIMEGRP "CAMB_PCL | SETUP       |    -0.713ns|    13.213ns|       3|         834
-  K_I" 80 MHz HIGH 50%                      | HOLD        |     0.357ns|            |       0|           0
+* TS_CAMB_PCLK_I = PERIOD TIMEGRP "CAMB_PCL | SETUP       |    -0.633ns|    13.133ns|      14|        4025
+  K_I" 80 MHz HIGH 50%                      | HOLD        |     0.349ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 * TS_Inst_SysCon_ddr2clk_2x_180 = PERIOD TI | MINPERIOD   |    -0.249ns|     1.249ns|       1|         249
   MEGRP "Inst_SysCon_ddr2clk_2x_180"        |             |            |            |        |            
@@ -285,27 +285,27 @@ Asterisk (*) preceding a constraint indicates it was not met.
   IOD TIMEGRP         "Inst_SysCon_Inst_dcm |             |            |            |        |            
   _recfg_clkfx" TS_CLK_I * 1.08 HIGH 50%    |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_Inst_SysCon_pllout_x2 = PERIOD TIMEGRP | SETUP       |     0.710ns|     3.920ns|       0|           0
-   "Inst_SysCon_pllout_x2"         TS_Inst_ | HOLD        |     0.310ns|            |       0|           0
-  SysCon_Inst_dcm_recfg_clkfx * 2 HIGH 50%  |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_Inst_SysCon_mcb_drp_clk_bfg = PERIOD T | SETUP       |     0.899ns|     7.101ns|       0|           0
-  IMEGRP "Inst_SysCon_mcb_drp_clk_bfg"      | HOLD        |     0.390ns|            |       0|           0
+  TS_Inst_SysCon_mcb_drp_clk_bfg = PERIOD T | SETUP       |     0.449ns|     7.551ns|       0|           0
+  IMEGRP "Inst_SysCon_mcb_drp_clk_bfg"      | HOLD        |     0.398ns|            |       0|           0
       TS_CLK_I * 1.25 HIGH 50%              |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_CAMA_PCLK_I = PERIOD TIMEGRP "CAMA_PCL | SETUP       |     1.734ns|    10.766ns|       0|           0
-  K_I" 80 MHz HIGH 50%                      | HOLD        |     0.359ns|            |       0|           0
+  TS_Inst_SysCon_pllout_x2 = PERIOD TIMEGRP | SETUP       |     0.512ns|     4.118ns|       0|           0
+   "Inst_SysCon_pllout_x2"         TS_Inst_ | HOLD        |     0.414ns|            |       0|           0
+  SysCon_Inst_dcm_recfg_clkfx * 2 HIGH 50%  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_Inst_SysCon_pllout_x1 = PERIOD TIMEGRP | SETUP       |     2.449ns|     6.811ns|       0|           0
-   "Inst_SysCon_pllout_x1"         TS_Inst_ | HOLD        |     0.378ns|            |       0|           0
+  TS_CAMA_PCLK_I = PERIOD TIMEGRP "CAMA_PCL | SETUP       |     1.092ns|    11.408ns|       0|           0
+  K_I" 80 MHz HIGH 50%                      | HOLD        |     0.393ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_Inst_SysCon_pllout_x1 = PERIOD TIMEGRP | SETUP       |     2.153ns|     7.107ns|       0|           0
+   "Inst_SysCon_pllout_x1"         TS_Inst_ | HOLD        |     0.427ns|            |       0|           0
   SysCon_Inst_dcm_recfg_clkfx HIGH 50%      |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_Inst_SysCon_Inst_dcm_fixed_clkfx = PER | SETUP       |    28.095ns|    13.575ns|       0|           0
-  IOD TIMEGRP         "Inst_SysCon_Inst_dcm | HOLD        |     0.301ns|            |       0|           0
-  _fixed_clkfx" TS_CLK_I * 0.24 HIGH 50%    |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_sck = PERIOD TIMEGRP "sck" 30 MHz HIGH | MINPERIOD   |    32.274ns|     1.059ns|       0|           0
    50%                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_Inst_SysCon_Inst_dcm_fixed_clkfx = PER | SETUP       |    33.116ns|     8.554ns|       0|           0
+  IOD TIMEGRP         "Inst_SysCon_Inst_dcm | HOLD        |     0.277ns|            |       0|           0
+  _fixed_clkfx" TS_CLK_I * 0.24 HIGH 50%    |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_Inst_SysCon_Inst_dcm_fixed_clkfx180 =  | MINPERIOD   |    39.940ns|     1.730ns|       0|           0
   PERIOD TIMEGRP         "Inst_SysCon_Inst_ |             |            |            |        |            
@@ -328,19 +328,19 @@ Derived Constraints for TS_CLK_I
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_CLK_I                       |     10.001ns|     10.928ns|     12.490ns|            6|            2|          340|        22122|
+|TS_CLK_I                       |     10.001ns|     11.724ns|     12.490ns|            9|            2|          345|        22243|
 | TS_Inst_SysCon_Inst_dcm_fixed_|     41.671ns|      1.730ns|          N/A|            0|            0|            0|            0|
 | clkfx180                      |             |             |             |             |             |             |             |
-| TS_Inst_SysCon_Inst_dcm_recfg_|      9.260ns|      3.334ns|      7.840ns|            0|            0|            0|         3112|
+| TS_Inst_SysCon_Inst_dcm_fixed_|     41.671ns|      8.554ns|          N/A|            0|            0|         6118|            0|
 | clkfx                         |             |             |             |             |             |             |             |
-|  TS_Inst_SysCon_pllout_x2     |      4.630ns|      3.920ns|          N/A|            0|            0|           83|            0|
+| TS_Inst_SysCon_Inst_dcm_recfg_|      9.260ns|      3.334ns|      8.236ns|            0|            0|            0|         3214|
+| clkfx                         |             |             |             |             |             |             |             |
+|  TS_Inst_SysCon_pllout_x2     |      4.630ns|      4.118ns|          N/A|            0|            0|           83|            0|
 |  TS_Inst_SysCon_pllout_xs     |      0.926ns|          N/A|          N/A|            0|            0|            0|            0|
-|  TS_Inst_SysCon_pllout_x1     |      9.260ns|      6.811ns|          N/A|            0|            0|         3029|            0|
-| TS_Inst_SysCon_Inst_dcm_fixed_|     41.671ns|     13.575ns|          N/A|            0|            0|         6077|            0|
-| clkfx                         |             |             |             |             |             |             |             |
+|  TS_Inst_SysCon_pllout_x1     |      9.260ns|      7.107ns|          N/A|            0|            0|         3131|            0|
 | TS_Inst_SysCon_ddr2clk_2x_180 |      1.000ns|      1.249ns|          N/A|            1|            0|            0|            0|
 | TS_Inst_SysCon_ddr2clk_2x     |      1.000ns|      1.249ns|          N/A|            1|            0|            0|            0|
-| TS_Inst_SysCon_mcb_drp_clk_bfg|      8.001ns|      7.101ns|          N/A|            0|            0|        12933|            0|
+| TS_Inst_SysCon_mcb_drp_clk_bfg|      8.001ns|      7.551ns|          N/A|            0|            0|        12911|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 6 constraints not met.
@@ -357,14 +357,14 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 1 mins 29 secs 
-Total CPU time to PAR completion (all processors): 1 mins 33 secs 
+Total REAL time to PAR completion: 59 secs 
+Total CPU time to PAR completion (all processors): 1 mins 9 secs 
 
-Peak Memory Usage:  858 MB
+Peak Memory Usage:  862 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
-Timing: Completed - 189 errors found.
+Timing: Completed - 193 errors found.
 
 Number of error messages: 0
 Number of warning messages: 7
