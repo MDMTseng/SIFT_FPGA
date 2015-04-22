@@ -240,13 +240,31 @@ SGMDataDepth=6
 			
 			wire signed[dataW-1:0] DoGXHarrisOffset=128+DoGXHarris;
 			
+			
+			
 		 end
+		 for(gi=0;gi<2;gi=gi+1)
+		 begin:EXTL
+			
+			wire[1:0]ExT;
+			assign GOut[5+gi]=(ExT==0)?127:((ExT==1)?0:255);
+			
+			SIFTExtrema
+			#(.frame_width(ImageW),.dataW(GaussianOut)) loEx(
+			clk_p,en_p,
+			{DHL[2+gi].DoGXHarris,DHL[1+gi].DoGXHarris,DHL[0+gi].DoGXHarris},
+			ExT);
+			
+			
+		 end
+		 
 	endgenerate	
 	
+
+
+
 	
-	
-	
-	
+	/*
 	
 	parameter extWinsize=3;
 	
@@ -293,7 +311,7 @@ SGMDataDepth=6
 			EXSym=255;
 		else
 			EXSym=128;
-	end
+	end*/
 
 
 	
